@@ -111,7 +111,7 @@ button:disabled {
   border-radius: 999px;
   background: #141414;
   color: #ffffff;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .brand strong,
@@ -122,7 +122,7 @@ button:disabled {
 .brand strong {
   font-family: var(--font-ui);
   font-size: 1.25rem;
-  font-weight: 720;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -288,14 +288,14 @@ button:disabled {
 .hero-mini-card small {
   color: var(--muted);
   font-size: 0.82rem;
-  font-weight: 750;
+  font-weight: 600;
 }
 
 .hero-mini-card strong {
   display: block;
   font-family: var(--font-ui);
   font-size: 3.8rem;
-  font-weight: 720;
+  font-weight: 600;
   line-height: 0.9;
   letter-spacing: 0;
 }
@@ -402,14 +402,14 @@ button:disabled {
 .eyebrow {
   color: #89857e;
   font-size: 0.75rem;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
 }
 
 .metric-card strong {
   font-family: var(--font-ui);
-  font-weight: 720;
+  font-weight: 600;
   font-size: 2.05rem;
   line-height: 1;
   letter-spacing: 0;
@@ -470,7 +470,7 @@ button:disabled {
   background: rgba(240, 239, 234, 0.72);
   color: #5e5a53;
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .reflection-orbit {
@@ -494,7 +494,7 @@ button:disabled {
 
 .reflection-orbit strong {
   font-family: var(--font-ui);
-  font-weight: 720;
+  font-weight: 600;
   font-size: 3rem;
   line-height: 1;
   letter-spacing: 0;
@@ -505,7 +505,7 @@ button:disabled {
   margin-top: 8px;
   color: var(--muted);
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -576,7 +576,7 @@ button:disabled {
 
 .panel-header h2 {
   font-size: 1.08rem;
-  font-weight: 720;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -643,7 +643,7 @@ button:disabled {
   background: rgba(240, 239, 234, 0.78);
   color: #3e3b36;
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -788,7 +788,7 @@ button:disabled {
 .vocab-meta {
   color: #aaa69e;
   font-size: 0.74rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .vocab-definition {
@@ -815,7 +815,7 @@ button:disabled {
   gap: 6px;
   color: var(--muted);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .field.wide {
@@ -868,7 +868,7 @@ button:disabled {
   background: var(--graphite-soft);
   color: var(--graphite-ink);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .check.done {
@@ -884,7 +884,7 @@ button:disabled {
 .form-error {
   background: var(--blush);
   color: var(--blush-ink);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .form-actions {
@@ -895,7 +895,7 @@ button:disabled {
 
 .vocab-card h3 {
   font-family: var(--font-display);
-  font-weight: 620;
+  font-weight: 600;
   margin-top: 2px;
   font-size: 2.25rem;
   line-height: 1;
@@ -946,7 +946,7 @@ button:disabled {
   padding-top: 1px;
   color: #4a4741;
   font-size: 0.74rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .tool-label strong,
@@ -957,7 +957,7 @@ button:disabled {
 .tool-label small {
   color: #aaa69e;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .tool-content {
@@ -985,7 +985,7 @@ button:disabled {
   padding: 0 10px;
   border-radius: 999px;
   font-size: 0.78rem;
-  font-weight: 750;
+  font-weight: 600;
   line-height: 1.1;
   overflow-wrap: anywhere;
 }
@@ -1039,7 +1039,7 @@ button:disabled {
   gap: 6px;
   color: var(--muted);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .edit-grid input,
@@ -1097,7 +1097,7 @@ button:disabled {
 
 .session-progress span {
   color: rgba(24, 24, 24, 0.66);
-  font-weight: 700;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -1149,7 +1149,7 @@ button:disabled {
   margin: 0;
   color: rgba(24, 24, 24, 0.58);
   font-size: 0.84rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .deck-shell {
@@ -1242,7 +1242,7 @@ button:disabled {
   background: rgba(238, 237, 232, 0.82);
   color: #6f6b64;
   font-size: 0.76rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .card-word {
@@ -1258,7 +1258,7 @@ button:disabled {
 .answer-word {
   font-family: var(--font-ui);
   font-size: 3.15rem;
-  font-weight: 720;
+  font-weight: 600;
   line-height: 1.02;
 }
 
@@ -1281,7 +1281,7 @@ button:disabled {
   background: rgba(255, 255, 255, 0.64);
   color: #45423c;
   font-size: 0.82rem;
-  font-weight: 760;
+  font-weight: 600;
 }
 
 .flip-card:focus-visible .flip-face {
@@ -1432,7 +1432,7 @@ button:disabled {
 .readiness-score strong {
   font-family: var(--font-ui);
   font-size: 4.8rem;
-  font-weight: 720;
+  font-weight: 600;
   line-height: 0.9;
   letter-spacing: 0;
 }
@@ -1460,7 +1460,7 @@ button:disabled {
 .coverage-note strong {
   font-family: var(--font-ui);
   font-size: 1.35rem;
-  font-weight: 720;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -1482,7 +1482,7 @@ button:disabled {
 
 .streak-card strong {
   font-family: var(--font-ui);
-  font-weight: 720;
+  font-weight: 600;
   display: block;
   margin-top: 4px;
   font-size: 1.5rem;
