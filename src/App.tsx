@@ -549,7 +549,7 @@ function HomeView({
   return (
     <section className="view-stack">
       <div className="hero-band">
-        <div>
+        <div className="hero-copy">
           <span className="eyebrow">Bonjour Tim</span>
           <h1>{status}</h1>
           <p>
@@ -558,39 +558,58 @@ function HomeView({
               : "Your queue is clear. This is a good moment to strengthen weak words or add new vocabulary."}
           </p>
         </div>
-        <div className="hero-actions">
-          {dueWords.length > 0 ? (
-            <button className="primary-action" onClick={onStartReview}>
-              <Play size={18} />
-              Start review
-            </button>
-          ) : (
-            <button className="primary-action" onClick={onAddWord}>
-              <Plus size={18} />
-              Add word
-            </button>
-          )}
-          {dueWords.length > 0 ? (
-            <button className="secondary-action" onClick={onAddWord}>
-              <Plus size={18} />
-              Capture vocab
-            </button>
-          ) : (
-            <button className="secondary-action" onClick={onOpenAnalytics}>
-              <LineChart size={18} />
-              Analytics
-            </button>
-          )}
-          {dueWords.length > 0 && (
-            <>
-              <button className="icon-action" onClick={onOpenVocabulary} title="Open vocabulary">
-                <BookOpen size={18} />
+        <div className="hero-side">
+          <div className="hero-card-stack" aria-label="Today summary">
+            <div className="hero-mini-card primary">
+              <span>{new Date().toLocaleDateString(undefined, { weekday: "long" })}</span>
+              <strong>{dueWords.length}</strong>
+              <small>reviews due</small>
+            </div>
+            <div className="hero-mini-card">
+              <Flame size={18} />
+              <strong>{analytics.streak.current}</strong>
+              <small>day streak</small>
+            </div>
+            <div className="hero-mini-card">
+              <Target size={18} />
+              <strong>{analytics.tcf.accuracy}%</strong>
+              <small>TCF recall</small>
+            </div>
+          </div>
+          <div className="hero-actions">
+            {dueWords.length > 0 ? (
+              <button className="primary-action" onClick={onStartReview}>
+                <Play size={18} />
+                Start review
               </button>
-              <button className="icon-action" onClick={onOpenAnalytics} title="Open analytics">
+            ) : (
+              <button className="primary-action" onClick={onAddWord}>
+                <Plus size={18} />
+                Add word
+              </button>
+            )}
+            {dueWords.length > 0 ? (
+              <button className="secondary-action" onClick={onAddWord}>
+                <Plus size={18} />
+                Capture vocab
+              </button>
+            ) : (
+              <button className="secondary-action" onClick={onOpenAnalytics}>
                 <LineChart size={18} />
+                Analytics
               </button>
-            </>
-          )}
+            )}
+            {dueWords.length > 0 && (
+              <>
+                <button className="icon-action" onClick={onOpenVocabulary} title="Open vocabulary">
+                  <BookOpen size={18} />
+                </button>
+                <button className="icon-action" onClick={onOpenAnalytics} title="Open analytics">
+                  <LineChart size={18} />
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
 
@@ -769,10 +788,10 @@ function VocabularyView({
           return (
             <article className="vocab-card" key={word.id}>
               <div className="vocab-main">
-                <div>
-                  <span className="eyebrow">{word.level} / {word.partOfSpeech}</span>
+                <div className="vocab-body">
+                  <span className="vocab-meta">{word.level} / {word.partOfSpeech}</span>
                   <h3>{word.french}</h3>
-                  <p>{word.meaning}</p>
+                  <p className="vocab-definition">{word.meaning}</p>
                   <small>{word.example}</small>
                 </div>
                 <button className="icon-action compact" onClick={() => setEditingId(isEditing ? null : word.id)} title="Edit word">
@@ -950,8 +969,11 @@ function LearningTools({ compact = false, word }: { compact?: boolean; word: Voc
   return (
     <span className={`learning-tools ${compact ? "compact" : ""}`}>
       {ladder.length > 0 && (
-        <span className="learning-tool-row">
-          <span className="tool-label">Synonyms</span>
+        <span className="learning-tool-row tool-card">
+          <span className="tool-label">
+            <strong>Synonyms</strong>
+            <small>{ladder.length} options</small>
+          </span>
           <span className="tool-content ladder-row">
             {ladder.map((item, index) => (
               <span className="ladder-chip" key={`${word.id}-ladder-${item}`}>
@@ -964,8 +986,11 @@ function LearningTools({ compact = false, word }: { compact?: boolean; word: Voc
       )}
 
       {family.length > 0 && (
-        <span className="learning-tool-row">
-          <span className="tool-label">Family</span>
+        <span className="learning-tool-row tool-card">
+          <span className="tool-label">
+            <strong>Family</strong>
+            <small>same root</small>
+          </span>
           <span className="tool-content family-row">
             {family.map((item) => (
               <span className="family-chip" key={`${word.id}-family-${item}`}>{item}</span>
@@ -975,8 +1000,11 @@ function LearningTools({ compact = false, word }: { compact?: boolean; word: Voc
       )}
 
       {patterns.length > 0 && (
-        <span className="learning-tool-row">
-          <span className="tool-label">Pattern</span>
+        <span className="learning-tool-row tool-card">
+          <span className="tool-label">
+            <strong>Pattern</strong>
+            <small>usage</small>
+          </span>
           <span className="tool-content pattern-row">
             {patterns.map((item) => (
               <span className="pattern-chip" key={`${word.id}-pattern-${item}`}>{item}</span>
@@ -1052,7 +1080,7 @@ function ReviewView({
   const progress = sessionTotal === 0 ? 0 : Math.round((sessionStats.reviewed / sessionTotal) * 100);
 
   return (
-    <section className="review-layout">
+    <section className="review-layout review-stage">
       <div className="session-header">
         <div>
           <span className="eyebrow">Review session</span>
@@ -1066,47 +1094,62 @@ function ReviewView({
         </div>
       </div>
 
-      <div
-        className={`flip-card ${revealed ? "flipped" : ""}`}
-        onClick={() => setRevealed((value) => !value)}
-        onKeyDown={(event) => {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            setRevealed((value) => !value);
-          }
-        }}
-        role="button"
-        tabIndex={0}
-        aria-pressed={revealed}
-      >
-        <div className="flip-card-inner">
+      <div className="flashcard-scene">
+        <div className="review-copy">
+          <span className="eyebrow">Today's card</span>
+          <h1>{revealed ? "Place the meaning, then rate the recall." : "Read it once. Say it before you flip."}</h1>
+          <p>{word.level} / {word.partOfSpeech} / {word.status}</p>
+        </div>
+
+        <div className="deck-shell">
+          <span className="deck-layer layer-one" aria-hidden="true" />
+          <span className="deck-layer layer-two" aria-hidden="true" />
           <div
-            className="flip-face flip-front"
-            style={{
-              opacity: revealed ? 0 : 1,
-              transform: revealed ? "rotateY(-180deg)" : "rotateY(0deg)"
+            className={`flip-card ${revealed ? "flipped" : ""}`}
+            onClick={() => setRevealed((value) => !value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                setRevealed((value) => !value);
+              }
             }}
+            role="button"
+            tabIndex={0}
+            aria-pressed={revealed}
           >
-            <span className="eyebrow">{dueWords.length} due / Flashcards</span>
-            <span className="card-word">{word.french}</span>
-            <span className="card-example">{word.example}</span>
-            <span className="flip-hint">Click card to reveal answer</span>
-          </div>
-          <div
-            className="flip-face flip-back"
-            style={{
-              opacity: revealed ? 1 : 0,
-              transform: revealed ? "rotateY(0deg)" : "rotateY(180deg)"
-            }}
-          >
-            <span className="eyebrow">Answer</span>
-            <span className="card-word answer-word">{word.meaning}</span>
-            <span className="card-example">{word.translation}</span>
-            <span className="tag-row">
-              {word.structures.map((structure) => <span className="pill" key={structure}>{structure}</span>)}
-            </span>
-            <LearningTools word={word} />
-            <span className="flip-hint">Click card to see prompt again</span>
+            <div className="flip-card-inner">
+              <div
+                className="flip-face flip-front"
+                style={{
+                  opacity: revealed ? 0 : 1,
+                  transform: revealed ? "rotateY(-180deg)" : "rotateY(0deg)"
+                }}
+              >
+                <span className="card-media" aria-hidden="true">
+                  <span />
+                </span>
+                <span className="eyebrow">{dueWords.length} due / Flashcards</span>
+                <span className="card-word">{word.french}</span>
+                <span className="card-example">{word.example}</span>
+                <span className="flip-hint">Tap to reveal answer</span>
+              </div>
+              <div
+                className="flip-face flip-back"
+                style={{
+                  opacity: revealed ? 1 : 0,
+                  transform: revealed ? "rotateY(0deg)" : "rotateY(180deg)"
+                }}
+              >
+                <span className="eyebrow">Answer</span>
+                <span className="card-word answer-word">{word.meaning}</span>
+                <span className="card-example">{word.translation}</span>
+                <span className="tag-row">
+                  {word.structures.map((structure) => <span className="pill" key={structure}>{structure}</span>)}
+                </span>
+                <LearningTools word={word} />
+                <span className="flip-hint">Tap to see prompt again</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
