@@ -7,6 +7,8 @@ The product should feel like a calm, modern learning app: simple, spacious, mobi
 ## Principles
 
 - Use a neutral canvas with black/graphite type and subtle warm-gray surfaces.
+- Typography should feel clean and phone-native: Avenir-style sans, calm sizing, no negative tracking, and fixed breakpoint sizes rather than viewport-scaled type.
+- Surfaces should feel soft and translucent, closer to frosted task cards than heavy dashboard panels.
 - Keep actions obvious and icon-led, with compact text only where it improves clarity.
 - Prefer list-like learning surfaces over dense dashboard blocks.
 - Use rounded app controls and soft glassy panels, but keep content cards restrained and structured.
