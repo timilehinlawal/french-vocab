@@ -1097,13 +1097,12 @@ function ReviewView({
       <div className="flashcard-scene">
         <div className="review-copy">
           <span className="eyebrow">Today's card</span>
-          <h1>{revealed ? "Place the meaning, then rate the recall." : "Read it once. Say it before you flip."}</h1>
+          <h1>{revealed ? "Rate your recall." : "Say it first."}</h1>
           <p>{word.level} / {word.partOfSpeech} / {word.status}</p>
         </div>
 
         <div className="deck-shell">
           <span className="deck-layer layer-one" aria-hidden="true" />
-          <span className="deck-layer layer-two" aria-hidden="true" />
           <div
             className={`flip-card ${revealed ? "flipped" : ""}`}
             onClick={() => setRevealed((value) => !value)}
@@ -1125,10 +1124,7 @@ function ReviewView({
                   transform: revealed ? "rotateY(-180deg)" : "rotateY(0deg)"
                 }}
               >
-                <span className="card-media" aria-hidden="true">
-                  <span />
-                </span>
-                <span className="eyebrow">{dueWords.length} due / Flashcards</span>
+                <span className="card-kicker">{dueWords.length} due / French prompt</span>
                 <span className="card-word">{word.french}</span>
                 <span className="card-example">{word.example}</span>
                 <span className="flip-hint">Tap to reveal answer</span>
@@ -1140,7 +1136,7 @@ function ReviewView({
                   transform: revealed ? "rotateY(0deg)" : "rotateY(180deg)"
                 }}
               >
-                <span className="eyebrow">Answer</span>
+                <span className="card-kicker">Answer</span>
                 <span className="card-word answer-word">{word.meaning}</span>
                 <span className="card-example">{word.translation}</span>
                 <span className="tag-row">

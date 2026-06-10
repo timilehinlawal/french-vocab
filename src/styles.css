@@ -1054,18 +1054,18 @@ button:disabled {
 .review-layout {
   position: relative;
   display: grid;
-  gap: 20px;
-  max-width: 1040px;
+  gap: 14px;
+  max-width: 980px;
 }
 
 .review-stage {
   overflow: hidden;
-  padding: 18px;
+  padding: 16px;
   border: 1px solid rgba(228, 226, 220, 0.72);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.72) 0 12%, transparent 32%),
-    linear-gradient(145deg, rgba(247, 247, 244, 0.9), rgba(228, 228, 223, 0.78));
+    radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.78) 0 7rem, transparent 17rem),
+    linear-gradient(145deg, rgba(248, 248, 245, 0.92), rgba(232, 232, 227, 0.74));
   box-shadow: 0 24px 80px rgba(20, 20, 20, 0.075);
 }
 
@@ -1073,10 +1073,10 @@ button:disabled {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-columns: minmax(0, 1fr) 190px;
   align-items: center;
   gap: 18px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.76);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.54);
@@ -1087,7 +1087,7 @@ button:disabled {
 .session-header strong {
   display: block;
   margin-top: 4px;
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .session-progress {
@@ -1117,11 +1117,11 @@ button:disabled {
 .flashcard-scene {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(240px, 0.86fr) minmax(360px, 1.14fr);
-  align-items: end;
-  gap: clamp(18px, 4vw, 44px);
-  min-height: 610px;
-  padding: clamp(18px, 4vw, 46px);
+  grid-template-columns: 220px minmax(360px, 1fr);
+  align-items: center;
+  gap: 22px;
+  min-height: 430px;
+  padding: 18px 12px 10px;
 }
 
 .review-copy {
@@ -1129,18 +1129,18 @@ button:disabled {
   z-index: 1;
   display: grid;
   align-self: start;
-  gap: 12px;
-  padding-top: clamp(12px, 5vw, 54px);
+  gap: 10px;
+  padding: 10px 0 0 4px;
 }
 
 .review-copy h1 {
-  max-width: 520px;
+  max-width: 220px;
   margin: 0;
   color: rgba(20, 20, 20, 0.9);
   font-family: var(--font-display);
-  font-size: 4.9rem;
+  font-size: 3.15rem;
   font-weight: 520;
-  line-height: 0.96;
+  line-height: 0.95;
   letter-spacing: 0;
   text-wrap: balance;
 }
@@ -1148,21 +1148,22 @@ button:disabled {
 .review-copy p {
   margin: 0;
   color: rgba(24, 24, 24, 0.58);
-  font-weight: 800;
+  font-size: 0.84rem;
+  font-weight: 760;
 }
 
 .deck-shell {
   position: relative;
   isolation: isolate;
-  width: min(100%, 560px);
+  width: min(100%, 520px);
   justify-self: center;
 }
 
 .deck-layer {
   position: absolute;
-  left: 24px;
-  right: 24px;
-  height: 86px;
+  left: 18px;
+  right: 18px;
+  height: 62px;
   border: 1px solid rgba(228, 226, 220, 0.64);
   border-radius: 8px;
   box-shadow: 0 18px 44px rgba(24, 24, 24, 0.08);
@@ -1170,22 +1171,20 @@ button:disabled {
 }
 
 .layer-one {
-  bottom: -28px;
+  bottom: -18px;
   z-index: -1;
   background: #deded8;
 }
 
 .layer-two {
-  bottom: -50px;
-  z-index: -2;
-  background: #c9c8c1;
+  display: none;
 }
 
 .flip-card {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 508px;
+  min-height: 380px;
   padding: 0;
   border: 0;
   border-radius: 8px;
@@ -1197,7 +1196,7 @@ button:disabled {
 .flip-card-inner {
   position: relative;
   display: block;
-  min-height: 508px;
+  min-height: 380px;
   border-radius: 8px;
   transform-style: preserve-3d;
 }
@@ -1206,17 +1205,17 @@ button:disabled {
   position: absolute;
   inset: 0;
   display: grid;
-  align-content: center;
-  gap: 20px;
+  align-content: space-between;
+  gap: 16px;
   overflow: auto;
-  min-height: 508px;
-  padding: clamp(20px, 4vw, 34px);
+  min-height: 380px;
+  padding: 26px;
   border: 1px solid rgba(255, 255, 255, 0.84);
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 252, 0.94), rgba(247, 246, 241, 0.88)),
     #fffefa;
-  box-shadow: 0 26px 70px rgba(20, 20, 20, 0.12);
+  box-shadow: 0 22px 60px rgba(20, 20, 20, 0.11);
   text-align: left;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -1233,59 +1232,23 @@ button:disabled {
   opacity: 0;
 }
 
-.card-media {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 1.85;
-  border: 1px solid rgba(24, 23, 33, 0.1);
-  border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(21, 24, 31, 0.04), rgba(21, 24, 31, 0.16)),
-    linear-gradient(24deg, transparent 0 44%, rgba(162, 154, 139, 0.55) 45% 47%, transparent 48% 100%),
-    radial-gradient(circle at 58% 66%, rgba(196, 185, 164, 0.78) 0 4%, transparent 12%),
-    linear-gradient(170deg, rgba(34, 35, 35, 0.76), rgba(158, 157, 146, 0.62) 48%, rgba(71, 70, 66, 0.82));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
-}
-
-.card-media::before,
-.card-media::after,
-.card-media span {
-  position: absolute;
-  content: "";
-}
-
-.card-media::before {
-  left: 9%;
-  top: 35%;
-  width: 24%;
-  height: 24%;
-  clip-path: polygon(50% 0, 100% 52%, 86% 52%, 86% 100%, 15% 100%, 15% 52%, 0 52%);
-  background: rgba(255, 251, 235, 0.9);
-  box-shadow: 42px 4px 0 rgba(255, 251, 235, 0.62);
-}
-
-.card-media::after {
-  inset: auto 0 0;
-  height: 36%;
-  background: linear-gradient(180deg, rgba(36, 44, 39, 0), rgba(22, 31, 27, 0.78));
-}
-
-.card-media span {
-  right: 30%;
-  bottom: 22%;
-  width: 32px;
-  height: 32px;
+.card-kicker {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 28px;
+  align-items: center;
+  padding: 0 10px;
   border-radius: 999px;
-  background: radial-gradient(circle, #ffd56f 0 22%, #ff6f42 28% 52%, transparent 58%);
-  filter: blur(0.2px);
+  background: rgba(238, 237, 232, 0.82);
+  color: #6f6b64;
+  font-size: 0.76rem;
+  font-weight: 760;
 }
 
 .card-word {
   display: block;
   font-family: var(--font-display);
-  font-size: 5.8rem;
+  font-size: 4.35rem;
   font-weight: 520;
   line-height: 0.92;
   color: #141414;
@@ -1294,7 +1257,7 @@ button:disabled {
 
 .answer-word {
   font-family: var(--font-ui);
-  font-size: 4.1rem;
+  font-size: 3.15rem;
   font-weight: 720;
   line-height: 1.02;
 }
@@ -1303,8 +1266,8 @@ button:disabled {
   display: block;
   max-width: 640px;
   color: rgba(20, 20, 20, 0.58);
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .flip-hint {
@@ -1318,7 +1281,7 @@ button:disabled {
   background: rgba(255, 255, 255, 0.64);
   color: #45423c;
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 760;
 }
 
 .flip-card:focus-visible .flip-face {
@@ -1345,19 +1308,19 @@ button:disabled {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  padding: 12px;
+  gap: 8px;
+  padding: 8px;
   border: 1px solid rgba(255, 255, 255, 0.74);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.56);
   backdrop-filter: blur(18px);
 }
 
 .rating-button {
   display: grid;
   gap: 4px;
-  min-height: 74px;
-  padding: 12px;
+  min-height: 64px;
+  padding: 10px;
   border: 1px solid rgba(24, 24, 24, 0.08);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
@@ -1383,7 +1346,7 @@ button:disabled {
 
 .rating-button span {
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .mini-chart {
@@ -1628,16 +1591,17 @@ button:disabled {
   .flashcard-scene {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding: 26px;
+    padding: 18px;
   }
 
   .review-copy {
     max-width: 680px;
-    padding-top: 8px;
+    padding: 0;
   }
 
   .review-copy h1 {
-    font-size: 4.2rem;
+    max-width: none;
+    font-size: 2.8rem;
   }
 
   .deck-shell {
@@ -1812,12 +1776,12 @@ button:disabled {
   }
 
   .flashcard-scene {
-    gap: 14px;
-    padding: 14px 6px 22px;
+    gap: 12px;
+    padding: 12px 4px 14px;
   }
 
   .review-copy h1 {
-    font-size: 2.15rem;
+    font-size: 2rem;
     line-height: 1;
   }
 
@@ -1826,39 +1790,40 @@ button:disabled {
   }
 
   .deck-shell {
-    padding-bottom: 34px;
+    padding-bottom: 14px;
   }
 
   .deck-layer {
-    left: 16px;
-    right: 16px;
-    height: 62px;
+    left: 14px;
+    right: 14px;
+    height: 48px;
   }
 
   .layer-one {
-    bottom: 8px;
+    bottom: -2px;
   }
 
   .layer-two {
-    bottom: -10px;
+    display: none;
   }
 
-  .card-media {
-    aspect-ratio: 3.2;
+  .card-kicker {
+    min-height: 26px;
+    font-size: 0.72rem;
   }
 
   .card-word {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .answer-word {
-    font-size: 2.3rem;
+    font-size: 2.05rem;
   }
 
   .rating-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     position: sticky;
-    bottom: 92px;
+    bottom: 94px;
     padding: 8px;
   }
 
@@ -1910,7 +1875,12 @@ button:disabled {
   .flip-card,
   .flip-card-inner,
   .flip-face {
-    min-height: 320px;
+    min-height: 300px;
+  }
+
+  .flip-face {
+    gap: 12px;
+    padding: 18px;
   }
 
   .learning-tool-row {
