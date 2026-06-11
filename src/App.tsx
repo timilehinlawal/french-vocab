@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   BarChart3,
-  BookOpen,
   Brain,
   CheckCircle2,
   ChevronRight,
@@ -18,9 +17,11 @@ import {
   Save,
   Search,
   Sparkles,
-  Target
+  Target,
+  Volume2
 } from "lucide-react";
 import { accuracy, byStatus, countBy, difficultWords, importGrowth, isDue, reviewVolumeLast7Days, streakSummary, tcfReadiness } from "./lib/analytics";
+import { createContextualExample, createContextualTranslation } from "./lib/examples";
 import { loadAttempts, loadImports, loadVocabulary, saveAttempts, saveVocabulary } from "./lib/storage";
 import type { CefrLevel, Priority, ReviewAttempt, ReviewRating, VocabularyItem, VocabularyStatus } from "./lib/types";
 
@@ -91,7 +92,7 @@ const learnerStatus = (vocabulary: VocabularyItem[], attempts: ReviewAttempt[]) 
   const dueCount = vocabulary.filter((word) => isDue(word)).length;
   const highPriority = tcfReadiness(vocabulary, attempts);
 
-  if (dueCount > 10) return "TCF Review Sprint";
+  if (dueCount > 10) return "French Vocabulary Sprint";
   if (highPriority.accuracy >= 80 && masteredCount > vocabulary.length * 0.35) return "Strengthening Active Recall";
   if (masteredCount > vocabulary.length * 0.2) return "Building B2 Range";
   return "Building B2 Foundation";
@@ -157,14 +158,20 @@ const nextDueForRating = (rating: ReviewRating, nextLapses: number) => {
 const createSuggestedSetup = (form: AddWordForm) => {
   const french = form.french.trim() || "ce mot";
   const meaning = form.meaning.trim() || "this idea";
+  const exampleWord = {
+    french,
+    meaning,
+    partOfSpeech: form.partOfSpeech.trim() || (french.includes(" ") ? "expression" : "word")
+  };
+
   return {
-    example: `Il est utile de savoir employer « ${french} » dans un contexte formel.`,
-    translation: `It is useful to know how to use "${french}" in a formal context.`,
-    structures: form.structures.trim() || `${french} dans un contexte formel`,
+    example: createContextualExample(exampleWord),
+    translation: createContextualTranslation(exampleWord),
+    structures: form.structures.trim() || `${french} en contexte`,
     synonymLadder: form.synonymLadder.trim(),
     wordFamily: form.wordFamily.trim(),
     tags: form.tags.trim() || "manual, needs-practice",
-    partOfSpeech: form.partOfSpeech.trim() || (french.includes(" ") ? "expression" : "word"),
+    partOfSpeech: exampleWord.partOfSpeech,
     source: form.source.trim() || "Manual entry",
     meaning
   };
@@ -384,7 +391,6 @@ function App() {
             analytics={analytics}
             onStartReview={startReview}
             onAddWord={openAddWord}
-            onOpenVocabulary={() => setView("vocabulary")}
             onOpenAnalytics={() => setView("analytics")}
           />
         )}
@@ -438,32 +444,34 @@ function NavButton({ active, icon, label, onClick }: { active: boolean; icon: Re
   );
 }
 
-function PlanStep({
-  action,
-  disabled = false,
-  done,
-  label,
-  meta,
-  onAction
-}: {
-  action: string;
-  disabled?: boolean;
-  done: boolean;
-  label: string;
-  meta: string;
-  onAction: () => void;
-}) {
+function PronunciationButton({ label = "Play pronunciation", text }: { label?: string; text: string }) {
+  const speak = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+
+    if (!("speechSynthesis" in window)) return;
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    const voices = window.speechSynthesis.getVoices();
+    const frenchVoice = voices.find((voice) => voice.lang.toLowerCase().startsWith("fr"));
+    utterance.lang = frenchVoice?.lang ?? "fr-FR";
+    utterance.voice = frenchVoice ?? null;
+    utterance.rate = 0.86;
+    utterance.pitch = 1;
+
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+  };
+
   return (
-    <div className={`plan-step ${done ? "done" : ""}`}>
-      <div className="plan-status">{done ? <CheckCircle2 size={18} /> : <Clock3 size={18} />}</div>
-      <div>
-        <strong>{label}</strong>
-        <span>{meta}</span>
-      </div>
-      <button className={done ? "secondary-action" : "primary-action"} disabled={disabled} onClick={onAction}>
-        {action}
-      </button>
-    </div>
+    <button
+      className="icon-action pronunciation-action"
+      onClick={speak}
+      onKeyDown={(event) => event.stopPropagation()}
+      title={label}
+      aria-label={`${label}: ${text}`}
+    >
+      <Volume2 size={17} />
+    </button>
   );
 }
 
@@ -475,49 +483,22 @@ function wordQuality(word: VocabularyItem) {
 
 function ReflectionCard({
   analytics,
-  dueWords,
-  mastered
+  dueWords
 }: {
   analytics: ReturnType<typeof getAnalyticsShape>;
   dueWords: VocabularyItem[];
-  mastered: number;
 }) {
-  const totalTcf = Math.max(analytics.tcf.total, 1);
-  const readiness = Math.round((analytics.tcf.mastered / totalTcf) * 100);
-  const themes = [
-    analytics.levelCounts[0]?.label ?? "B2",
-    analytics.weak[0]?.level ?? "Active recall",
-    analytics.statusCounts[0]?.status ?? "New"
-  ];
+  const focus = analytics.weak[0]?.french ?? analytics.levelCounts[0]?.label ?? "today's vocabulary";
+  const reviewTarget = Math.min(dueWords.length, analytics.streak.dailyGoal);
 
   return (
     <section className="reflection-card">
       <div className="reflection-copy">
         <span className="eyebrow">Weekly reflection</span>
-        <h2>Your vocabulary is starting to show patterns.</h2>
+        <h2>Keep the next session small.</h2>
         <p>
-          You are building range through {themes[0].toLowerCase()} while {analytics.weak[0]?.french ?? "new expressions"} still needs a slower pass.
-          Keep today small: review {Math.min(dueWords.length, analytics.streak.dailyGoal)} cards, then capture one useful phrase from your notes.
+          Review {reviewTarget} due cards, then use {focus} in one full TCF-style sentence.
         </p>
-        <div className="theme-row">
-          {themes.map((theme) => (
-            <span key={theme}>{theme}</span>
-          ))}
-        </div>
-      </div>
-      <div className="reflection-orbit" aria-label="Progress summary">
-        <div>
-          <strong>{readiness}%</strong>
-          <span>TCF readiness</span>
-        </div>
-        <div>
-          <strong>{mastered}</strong>
-          <span>active words</span>
-        </div>
-        <div>
-          <strong>{analytics.streak.current}</strong>
-          <span>day streak</span>
-        </div>
       </div>
     </section>
   );
@@ -530,7 +511,6 @@ function HomeView({
   analytics,
   onStartReview,
   onAddWord,
-  onOpenVocabulary,
   onOpenAnalytics
 }: {
   vocabulary: VocabularyItem[];
@@ -539,12 +519,12 @@ function HomeView({
   analytics: ReturnType<typeof getAnalyticsShape>;
   onStartReview: () => void;
   onAddWord: () => void;
-  onOpenVocabulary: () => void;
   onOpenAnalytics: () => void;
 }) {
   const status = learnerStatus(vocabulary, attempts);
-  const mastered = vocabulary.filter((word) => word.status === "Active" || word.status === "Mastered").length;
   const recommended = dueWords.length > 0 ? dueWords[0] : analytics.weak[0] ?? vocabulary[0];
+  const tcfRecallValue = analytics.tcf.attempts > 0 ? `${analytics.tcf.accuracy}%` : "—";
+  const tcfRecallLabel = analytics.tcf.attempts > 0 ? "TCF recall" : "no TCF reviews yet";
 
   return (
     <section className="view-stack">
@@ -554,8 +534,8 @@ function HomeView({
           <h1>{status}</h1>
           <p>
             {dueWords.length > 0
-              ? `You have ${dueWords.length} words ready for review. Start with ${recommended?.french ?? "your queue"} and keep the streak alive.`
-              : "Your queue is clear. This is a good moment to strengthen weak words or add new vocabulary."}
+              ? `${dueWords.length} words are ready. Start with ${recommended?.french ?? "your queue"}.`
+              : "Your queue is clear. Add a useful word or check your analytics."}
           </p>
         </div>
         <div className="hero-side">
@@ -566,14 +546,19 @@ function HomeView({
               <small>reviews due</small>
             </div>
             <div className="hero-mini-card">
+              <Database size={18} />
+              <strong>{vocabulary.length}</strong>
+              <small>total words</small>
+            </div>
+            <div className="hero-mini-card">
               <Flame size={18} />
               <strong>{analytics.streak.current}</strong>
               <small>day streak</small>
             </div>
             <div className="hero-mini-card">
               <Target size={18} />
-              <strong>{analytics.tcf.accuracy}%</strong>
-              <small>TCF recall</small>
+              <strong>{tcfRecallValue}</strong>
+              <small>{tcfRecallLabel}</small>
             </div>
           </div>
           <div className="hero-actions">
@@ -599,105 +584,11 @@ function HomeView({
                 Analytics
               </button>
             )}
-            {dueWords.length > 0 && (
-              <>
-                <button className="icon-action" onClick={onOpenVocabulary} title="Open vocabulary">
-                  <BookOpen size={18} />
-                </button>
-                <button className="icon-action" onClick={onOpenAnalytics} title="Open analytics">
-                  <LineChart size={18} />
-                </button>
-              </>
-            )}
           </div>
         </div>
       </div>
 
-      <div className="metric-grid">
-        <Metric icon={<Database />} label="Total words" value={vocabulary.length.toString()} detail={`${analytics.importedTotal} in source database`} />
-        <Metric icon={<Clock3 />} label="Due today" value={dueWords.length.toString()} detail={`${Math.max(4, dueWords.length * 2)} min estimated`} />
-        <Metric icon={<CheckCircle2 />} label="Active or mastered" value={mastered.toString()} detail={`${Math.round((mastered / vocabulary.length) * 100)}% of current seed`} />
-        <Metric
-          icon={<Flame />}
-          label="Current streak"
-          value={`${analytics.streak.current} days`}
-          detail={analytics.streak.maintainedToday ? `Maintained today / longest ${analytics.streak.longest}` : `${analytics.streak.reviewsNeeded} reviews to maintain`}
-        />
-      </div>
-
-      <ReflectionCard analytics={analytics} dueWords={dueWords} mastered={mastered} />
-
-      <Panel title="Today Plan">
-        <div className="plan-list">
-          <PlanStep
-            done={dueWords.length === 0}
-            label="Review due vocabulary"
-            meta={dueWords.length === 0 ? "Queue clear" : `${dueWords.length} due now`}
-            action={dueWords.length === 0 ? "Clear" : "Start"}
-            disabled={dueWords.length === 0}
-            onAction={onStartReview}
-          />
-          <PlanStep
-            done={analytics.streak.maintainedToday}
-            label="Maintain study streak"
-            meta={analytics.streak.maintainedToday ? "Daily goal met" : `${analytics.streak.reviewsNeeded} reviews remaining`}
-            action="Review"
-            onAction={onStartReview}
-          />
-          <PlanStep
-            done={false}
-            label="Capture new vocabulary"
-            meta="Add from notes, textbook, or class"
-            action="Add word"
-            onAction={onAddWord}
-          />
-          <PlanStep
-            done={analytics.weak.length === 0}
-            label="Resolve weak area"
-            meta={analytics.weak[0] ? `${analytics.weak[0].french} needs attention` : "No weak words flagged"}
-            action="Inspect"
-            onAction={onOpenAnalytics}
-          />
-        </div>
-      </Panel>
-
-      <div className="two-column">
-        <Panel title="Mastery Status" action="View analytics" onAction={onOpenAnalytics}>
-          <StatusBars rows={analytics.statusCounts.map((row) => ({ label: row.status, count: row.count }))} total={vocabulary.length} />
-        </Panel>
-
-        <Panel title="Weak Areas" action="Practice" onAction={onStartReview}>
-          <div className="word-stack">
-            {analytics.weak.slice(0, 4).map((word) => (
-              <div className="word-row" key={word.id}>
-                <div>
-                  <strong>{word.french}</strong>
-                  <span>{word.meaning}</span>
-                </div>
-                <span className="pill danger">{word.lapses} lapses</span>
-              </div>
-            ))}
-          </div>
-        </Panel>
-      </div>
-
-      <section className="notes-panel">
-        <div>
-          <span className="eyebrow">Notes to self</span>
-          <ul>
-            <li>Use {analytics.weak[0]?.french ?? "one weak word"} in a full opinion sentence.</li>
-            <li>Review {analytics.streak.reviewsNeeded === 0 ? "one stretch card" : `${analytics.streak.reviewsNeeded} more cards`} before ending today.</li>
-            <li>Tag the next batch by source so growth stays traceable.</li>
-          </ul>
-        </div>
-        <div>
-          <span className="eyebrow">Continuous threads</span>
-          <ul>
-            <li>{analytics.levelCounts[0]?.label ?? "B2"} words are becoming your strongest lane.</li>
-            <li>{analytics.weak[0]?.level ?? "B2"} recall still needs retrieval practice.</li>
-          </ul>
-        </div>
-      </section>
+      <ReflectionCard analytics={analytics} dueWords={dueWords} />
     </section>
   );
 }
@@ -794,9 +685,12 @@ function VocabularyView({
                   <p className="vocab-definition">{word.meaning}</p>
                   <small>{word.example}</small>
                 </div>
-                <button className="icon-action compact" onClick={() => setEditingId(isEditing ? null : word.id)} title="Edit word">
-                  <Pencil size={16} />
-                </button>
+                <div className="word-actions">
+                  <PronunciationButton text={word.french} />
+                  <button className="icon-action compact" onClick={() => setEditingId(isEditing ? null : word.id)} title="Edit word">
+                    <Pencil size={16} />
+                  </button>
+                </div>
               </div>
               <div className="tag-row">
                 <span className="pill">{word.status}</span>
@@ -1054,7 +948,7 @@ function ReviewView({
         <p>
           {sessionStats.reviewed > 0
             ? `${sessionStats.correct} of ${sessionStats.reviewed} cards moved forward. ${streak.reviewsNeeded} reviews left for today's streak goal.`
-            : "No vocabulary is due right now. Add new words or inspect weak areas."}
+            : "No vocabulary is due right now. Add new words or check analytics."}
         </p>
         <div className="completion-actions">
           {sessionStats.reviewed > 0 && (
@@ -1078,6 +972,8 @@ function ReviewView({
 
   const sessionTotal = sessionStats.reviewed + dueWords.length;
   const progress = sessionTotal === 0 ? 0 : Math.round((sessionStats.reviewed / sessionTotal) * 100);
+  const nextPreview = dueWords[1];
+  const laterPreview = dueWords[2];
 
   return (
     <section className="review-layout review-stage">
@@ -1102,7 +998,14 @@ function ReviewView({
         </div>
 
         <div className="deck-shell">
-          <span className="deck-layer layer-one" aria-hidden="true" />
+          <span className="deck-layer layer-two" aria-hidden="true" key={laterPreview?.id ?? "later-preview"}>
+            <span>{laterPreview?.level ?? word.level}</span>
+            <strong>{laterPreview?.french ?? "Encore une carte"}</strong>
+          </span>
+          <span className="deck-layer layer-one" aria-hidden="true" key={nextPreview?.id ?? "next-preview"}>
+            <span>{nextPreview?.level ?? word.level}</span>
+            <strong>{nextPreview?.french ?? "Carte suivante"}</strong>
+          </span>
           <div
             className={`flip-card ${revealed ? "flipped" : ""}`}
             onClick={() => setRevealed((value) => !value)}
@@ -1124,7 +1027,10 @@ function ReviewView({
                   transform: revealed ? "rotateY(-180deg)" : "rotateY(0deg)"
                 }}
               >
-                <span className="card-kicker">{dueWords.length} due / French prompt</span>
+                <span className="card-topline">
+                  <span className="card-kicker">{dueWords.length} due / French prompt</span>
+                  <PronunciationButton text={word.french} />
+                </span>
                 <span className="card-word">{word.french}</span>
                 <span className="card-example">{word.example}</span>
                 <span className="flip-hint">Tap to reveal answer</span>
@@ -1136,7 +1042,10 @@ function ReviewView({
                   transform: revealed ? "rotateY(0deg)" : "rotateY(180deg)"
                 }}
               >
-                <span className="card-kicker">Answer</span>
+                <span className="card-topline">
+                  <span className="card-kicker">Answer</span>
+                  <PronunciationButton text={word.french} />
+                </span>
                 <span className="card-word answer-word">{word.meaning}</span>
                 <span className="card-example">{word.translation}</span>
                 <span className="tag-row">
@@ -1176,6 +1085,7 @@ function AnalyticsView({
   const readiness = analytics.tcf.total === 0 ? 0 : Math.round((analytics.tcf.mastered / analytics.tcf.total) * 100);
   const nextFocus = analytics.weak[0];
   const highPriorityRemaining = Math.max(0, analytics.tcf.total - analytics.tcf.mastered);
+  const maxReviewVolume = Math.max(1, ...analytics.reviewVolume.map((day) => day.count));
 
   return (
     <section className="view-stack">
@@ -1201,7 +1111,7 @@ function AnalyticsView({
             <p>
               {nextFocus
                 ? `This word is hurting recall most. Review it, then use it in one TCF-style opinion sentence.`
-                : `No weak words are flagged. Complete ${analytics.streak.dailyGoal} reviews to protect the habit.`}
+                : `No repair words are flagged. Complete ${analytics.streak.dailyGoal} reviews to protect the habit.`}
             </p>
           </div>
           <div className="readiness-score">
@@ -1214,7 +1124,7 @@ function AnalyticsView({
           <div className="mini-chart compact-chart">
             {analytics.reviewVolume.map((day) => (
               <div className="bar-column" key={day.label}>
-                <div style={{ height: `${Math.max(8, day.count * 18)}px` }} />
+                <div style={{ height: `${day.count === 0 ? 8 : Math.max(10, Math.round((day.count / maxReviewVolume) * 100))}%` }} />
                 <span>{day.label}</span>
               </div>
             ))}
@@ -1223,6 +1133,10 @@ function AnalyticsView({
       </div>
 
       <div className="analytics-grid secondary">
+        <Panel title="Mastery Status">
+          <StatusBars rows={analytics.statusCounts.map((row) => ({ label: row.status, count: row.count }))} total={vocabulary.length} />
+        </Panel>
+
         <Panel title="Repair Queue">
           <div className="focus-list">
             {analytics.weak.length === 0 ? (
@@ -1313,7 +1227,7 @@ function getAnalyticsShape() {
     levelCounts: [] as { label: string; count: number }[],
     sourceCounts: [] as { label: string; count: number }[],
     weak: [] as (VocabularyItem & { difficultyScore: number })[],
-    tcf: { total: 0, mastered: 0, accuracy: 0 },
+    tcf: { total: 0, mastered: 0, attempts: 0, accuracy: 0 },
     streak: { current: 0, longest: 0, dailyGoal: 5, reviewsToday: 0, reviewsNeeded: 5, maintainedToday: false },
     accuracy: 0,
     reviewVolume: [] as { label: string; count: number }[],

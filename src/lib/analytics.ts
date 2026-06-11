@@ -2,6 +2,33 @@ import type { ImportBatch, ReviewAttempt, VocabularyItem, VocabularyStatus } fro
 
 const statuses: VocabularyStatus[] = ["New", "Learning", "Familiar", "Active", "Mastered"];
 
+const localDateKey = (date: Date) => {
+  const year = date.getFullYear();
+  const month = `${date.getMonth() + 1}`.padStart(2, "0");
+  const day = `${date.getDate()}`.padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
+
+const attemptDateKey = (attempt: ReviewAttempt) => localDateKey(new Date(attempt.createdAt));
+
+const getDailyReviewCounts = (attempts: ReviewAttempt[]) => {
+  const counts = new Map<string, number>();
+
+  attempts.forEach((attempt) => {
+    const key = attemptDateKey(attempt);
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  });
+
+  return counts;
+};
+
+const addDaysToKey = (dateKey: string, days: number) => {
+  const [year, month, day] = dateKey.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
+  date.setDate(date.getDate() + days);
+  return localDateKey(date);
+};
+
 export const isDue = (word: VocabularyItem, now = new Date()) => {
   return new Date(word.dueAt).getTime() <= now.getTime();
 };
@@ -45,21 +72,23 @@ export const difficultWords = (vocabulary: VocabularyItem[], attempts: ReviewAtt
 
 export const reviewVolumeLast7Days = (attempts: ReviewAttempt[]) => {
   const now = new Date();
+  const dailyCounts = getDailyReviewCounts(attempts);
+
   return Array.from({ length: 7 }).map((_, index) => {
     const date = new Date(now);
     date.setDate(now.getDate() - (6 - index));
-    const key = date.toISOString().slice(0, 10);
-    const count = attempts.filter((attempt) => attempt.createdAt.slice(0, 10) === key).length;
+    const key = localDateKey(date);
+    const count = dailyCounts.get(key) ?? 0;
     return { label: date.toLocaleDateString(undefined, { weekday: "short" }), count };
   });
 };
 
 export const currentStreak = (attempts: ReviewAttempt[]) => {
-  const reviewedDates = new Set(attempts.map((attempt) => attempt.createdAt.slice(0, 10)));
+  const reviewedDates = new Set(attempts.map(attemptDateKey));
   let streak = 0;
   const cursor = new Date();
 
-  while (reviewedDates.has(cursor.toISOString().slice(0, 10))) {
+  while (reviewedDates.has(localDateKey(cursor))) {
     streak += 1;
     cursor.setDate(cursor.getDate() - 1);
   }
@@ -68,23 +97,23 @@ export const currentStreak = (attempts: ReviewAttempt[]) => {
 };
 
 export const streakSummary = (attempts: ReviewAttempt[], dailyGoal = 5) => {
-  const reviewedDates = new Set(attempts.map((attempt) => attempt.createdAt.slice(0, 10)));
+  const dailyCounts = getDailyReviewCounts(attempts);
   const today = new Date();
-  const todayKey = today.toISOString().slice(0, 10);
+  const todayKey = localDateKey(today);
   const yesterday = new Date(today);
   yesterday.setDate(today.getDate() - 1);
-  const yesterdayKey = yesterday.toISOString().slice(0, 10);
-  const reviewsToday = attempts.filter((attempt) => attempt.createdAt.slice(0, 10) === todayKey).length;
-  const startDate = reviewedDates.has(todayKey) ? today : reviewedDates.has(yesterdayKey) ? yesterday : today;
-  const cursor = new Date(startDate);
+  const yesterdayKey = localDateKey(yesterday);
+  const reviewsToday = dailyCounts.get(todayKey) ?? 0;
+  const qualifiedDates = new Set([...dailyCounts.entries()].filter(([, count]) => count >= dailyGoal).map(([dateKey]) => dateKey));
+  let cursorKey = qualifiedDates.has(todayKey) ? todayKey : qualifiedDates.has(yesterdayKey) ? yesterdayKey : todayKey;
   let current = 0;
 
-  while (reviewedDates.has(cursor.toISOString().slice(0, 10))) {
+  while (qualifiedDates.has(cursorKey)) {
     current += 1;
-    cursor.setDate(cursor.getDate() - 1);
+    cursorKey = addDaysToKey(cursorKey, -1);
   }
 
-  const sortedDates = [...reviewedDates].sort();
+  const sortedDates = [...qualifiedDates].sort();
   let longest = 0;
   let run = 0;
   let previous = "";
@@ -93,9 +122,7 @@ export const streakSummary = (attempts: ReviewAttempt[], dailyGoal = 5) => {
     if (!previous) {
       run = 1;
     } else {
-      const expected = new Date(previous);
-      expected.setDate(expected.getDate() + 1);
-      run = expected.toISOString().slice(0, 10) === dateKey ? run + 1 : 1;
+      run = addDaysToKey(previous, 1) === dateKey ? run + 1 : 1;
     }
 
     longest = Math.max(longest, run);
@@ -118,12 +145,14 @@ export const importGrowth = (imports: ImportBatch[]) => {
 
 export const tcfReadiness = (vocabulary: VocabularyItem[], attempts: ReviewAttempt[]) => {
   const tcfWords = vocabulary.filter((word) => word.tcfPriority === "High");
+  const tcfWordIds = new Set(tcfWords.map((word) => word.id));
   const mastered = tcfWords.filter((word) => word.status === "Active" || word.status === "Mastered").length;
-  const relatedAttempts = attempts.filter((attempt) => tcfWords.some((word) => word.id === attempt.wordId));
+  const relatedAttempts = attempts.filter((attempt) => tcfWordIds.has(attempt.wordId));
 
   return {
     total: tcfWords.length,
     mastered,
+    attempts: relatedAttempts.length,
     accuracy: accuracy(relatedAttempts)
   };
 };

@@ -1,9 +1,11 @@
-import { seedAttempts, seedImports, seedVocabulary } from "../data/seedVocabulary";
+import { seedImports, seedVocabulary } from "../data/seedVocabulary";
+import { createContextualExample, createContextualTranslation, isGenericExample } from "./examples";
 import type { ImportBatch, ReviewAttempt, VocabularyItem } from "./types";
 
 const VOCABULARY_KEY = "fvt:vocabulary";
 const ATTEMPTS_KEY = "fvt:attempts";
 const IMPORTS_KEY = "fvt:imports";
+const DEMO_ATTEMPT_IDS = new Set(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]);
 
 const normalizeTerm = (value: string) => {
   const base = value
@@ -48,6 +50,8 @@ const mergeSeedVocabulary = (stored: VocabularyItem[]) => {
     merged.set(key, {
       ...seeded,
       ...word,
+      example: generatedSeedSource ? seeded?.example ?? word.example : word.example,
+      translation: generatedSeedSource ? seeded?.translation ?? word.translation : word.translation,
       synonymLadder: generatedSeedSource ? seeded?.synonymLadder : word.synonymLadder?.length ? word.synonymLadder : seeded?.synonymLadder,
       wordFamily: generatedSeedSource ? seeded?.wordFamily : word.wordFamily?.length ? word.wordFamily : seeded?.wordFamily,
       repairPrompt: generatedSeedSource ? seeded?.repairPrompt : word.repairPrompt || seeded?.repairPrompt
@@ -68,12 +72,29 @@ const mergeSeedImports = (stored: ImportBatch[]) => {
   return [...merged.values()];
 };
 
-export const loadVocabulary = () =>
-  mergeSeedVocabulary(read<VocabularyItem[]>(VOCABULARY_KEY, [])).map((word) => ({
+const withFallbackExample = (word: VocabularyItem): VocabularyItem => {
+  const french = word.french.trim() || "ce mot";
+  const example = !word.example?.trim() || isGenericExample(word.example) ? createContextualExample(word) : word.example.trim();
+  const translation =
+    !word.translation?.trim() || isGenericExample(word.example)
+      ? createContextualTranslation(word)
+      : word.translation.trim();
+
+  return {
     ...word,
-    meaningConfirmed: word.meaningConfirmed ?? true
-  }));
-export const loadAttempts = () => read<ReviewAttempt[]>(ATTEMPTS_KEY, seedAttempts);
+    example,
+    translation
+  };
+};
+
+export const loadVocabulary = () =>
+  mergeSeedVocabulary(read<VocabularyItem[]>(VOCABULARY_KEY, [])).map((word) =>
+    withFallbackExample({
+      ...word,
+      meaningConfirmed: word.meaningConfirmed ?? true
+    })
+  );
+export const loadAttempts = () => read<ReviewAttempt[]>(ATTEMPTS_KEY, []).filter((attempt) => !DEMO_ATTEMPT_IDS.has(attempt.id));
 export const loadImports = () => mergeSeedImports(read<ImportBatch[]>(IMPORTS_KEY, []));
 
 export const saveVocabulary = (items: VocabularyItem[]) => {

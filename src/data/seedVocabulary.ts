@@ -1,4 +1,5 @@
 import type { ImportBatch, ReviewAttempt, VocabularyItem } from "../lib/types";
+import { createExpandedVocabulary } from "./expandedVocabulary";
 
 const today = new Date();
 const iso = (offsetDays: number) => {
@@ -347,8 +348,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « guérison » peut être utile dans une conversation quotidienne.",
-    "translation": "healing, recovery",
+    "example": "La guérison revient souvent pendant la réunion.",
+    "translation": "The topic of healing often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -395,8 +396,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « pointe du doigt » peut être utile dans une conversation quotidienne.",
-    "translation": "fingertip",
+    "example": "Le pointe du doigt revient souvent pendant la réunion.",
+    "translation": "The topic of fingertip often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -447,8 +448,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « inférieur » peut être utile dans une conversation quotidienne.",
-    "translation": "inferior, lower",
+    "example": "Ce choix semble inférieur à première vue.",
+    "translation": "This choice seems inferior at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -471,8 +472,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ménager » dans un contexte naturel.",
-    "translation": "to spare, to handle carefully",
+    "example": "Il faut ménager ses efforts pendant la préparation.",
+    "translation": "You have to pace your efforts during preparation.",
     "structures": [
       "ménager + complément"
     ],
@@ -498,8 +499,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « puer » dans un contexte naturel.",
-    "translation": "to stink",
+    "example": "La poubelle commence à puer après plusieurs jours.",
+    "translation": "The bin starts to stink after several days.",
     "structures": [
       "puer + complément"
     ],
@@ -525,8 +526,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « tabou » peut être utile dans une conversation quotidienne.",
-    "translation": "taboo",
+    "example": "Ce choix semble tabou à première vue.",
+    "translation": "This choice seems taboo at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -549,8 +550,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « alors jusqu'au bout » peut être utile dans une conversation quotidienne.",
-    "translation": "then to the very end",
+    "example": "L’alors jusqu'au bout revient souvent pendant la réunion.",
+    "translation": "The topic of then to the very end often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -573,8 +574,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « banaliser » dans un contexte naturel.",
-    "translation": "to trivialise",
+    "example": "Elle apprend à banaliser avec plus de confiance.",
+    "translation": "She is learning to trivialise with more confidence.",
     "structures": [
       "banaliser + complément"
     ],
@@ -601,8 +602,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mener » dans un contexte naturel.",
-    "translation": "to lead, to conduct",
+    "example": "Elle apprend à mener avec plus de confiance.",
+    "translation": "She is learning to lead with more confidence.",
     "structures": [
       "mener + complément"
     ],
@@ -629,8 +630,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « précoce, précocement » peut être utile dans une conversation quotidienne.",
-    "translation": "premature; prematurely",
+    "example": "Ce choix semble précoce à première vue.",
+    "translation": "This choice seems premature; prematurely at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -654,8 +655,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « scolarisation » peut être utile dans une conversation quotidienne.",
-    "translation": "schooling",
+    "example": "La scolarisation revient souvent pendant la réunion.",
+    "translation": "The topic of schooling often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -679,8 +680,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « assidûment » peut être utile dans une conversation quotidienne.",
-    "translation": "diligently",
+    "example": "Assidûment, elle a préparé son dossier avant l’examen.",
+    "translation": "Diligently, she prepared her file before the exam.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -704,8 +705,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « flou » peut être utile dans une conversation quotidienne.",
-    "translation": "blurred, unclear",
+    "example": "Ce choix semble flou à première vue.",
+    "translation": "This choice seems blurred at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -1261,8 +1262,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « un tiers de » peut être utile dans une conversation quotidienne.",
-    "translation": "a third of",
+    "example": "Un tiers de peut jouer un rôle important dans cette situation.",
+    "translation": "A third of can play an important role in this situation.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -1817,8 +1818,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « aucun, aucune » peut être utile dans une conversation quotidienne.",
-    "translation": "none, no",
+    "example": "L’aucun revient souvent pendant la réunion.",
+    "translation": "The topic of none often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -1841,8 +1842,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « aucun d'entre eux » peut être utile dans une conversation quotidienne.",
-    "translation": "none of them",
+    "example": "L’aucun d'entre eux revient souvent pendant la réunion.",
+    "translation": "The topic of none of them often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -1865,8 +1866,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « aucune idée » peut être utile dans une conversation quotidienne.",
-    "translation": "no idea",
+    "example": "L’aucune idée revient souvent pendant la réunion.",
+    "translation": "The topic of no idea often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2197,8 +2198,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « je ne sais pas » peut être utile dans une conversation quotidienne.",
-    "translation": "I don't know",
+    "example": "Le je ne sais pas revient souvent pendant la réunion.",
+    "translation": "The topic of I don't know often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2221,8 +2222,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « la plupart » peut être utile dans une conversation quotidienne.",
-    "translation": "most, majority",
+    "example": "La plupart peut jouer un rôle important dans cette situation.",
+    "translation": "Most can play an important role in this situation.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2245,8 +2246,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « moins » peut être utile dans une conversation quotidienne.",
-    "translation": "less",
+    "example": "Le moins revient souvent pendant la réunion.",
+    "translation": "The topic of less often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2269,8 +2270,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « lendemain » peut être utile dans une conversation quotidienne.",
-    "translation": "the next day",
+    "example": "Le lendemain revient souvent pendant la réunion.",
+    "translation": "The topic of the next day often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2293,8 +2294,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « sous » peut être utile dans une conversation quotidienne.",
-    "translation": "under",
+    "example": "Sous, elle a mieux compris la situation.",
+    "translation": "Under, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2317,8 +2318,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « boule dans la gorge » peut être utile dans une conversation quotidienne.",
-    "translation": "lump in the throat",
+    "example": "La boule dans la gorge revient souvent pendant la réunion.",
+    "translation": "The topic of lump in the throat often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2341,8 +2342,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « partout » peut être utile dans une conversation quotidienne.",
-    "translation": "everywhere",
+    "example": "Le partout revient souvent pendant la réunion.",
+    "translation": "The topic of everywhere often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2477,8 +2478,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Expression",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « sans critiques » peut être utile dans une conversation quotidienne.",
-    "translation": "without criticism",
+    "example": "Sans critiques, elle a mieux compris la situation.",
+    "translation": "Without criticism, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2893,8 +2894,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « travail d'équipe » peut être utile dans une conversation quotidienne.",
-    "translation": "teamwork",
+    "example": "La travail d'équipe revient souvent pendant la réunion.",
+    "translation": "The topic of teamwork often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -2917,8 +2918,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « équipe » peut être utile dans une conversation quotidienne.",
-    "translation": "team",
+    "example": "L’équipe revient souvent pendant la réunion.",
+    "translation": "The topic of team often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -2941,8 +2942,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « compagnie de téléphone » peut être utile dans une conversation quotidienne.",
-    "translation": "telephone company",
+    "example": "La compagnie de téléphone revient souvent pendant la réunion.",
+    "translation": "The topic of telephone company often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -2965,8 +2966,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « réseau » peut être utile dans une conversation quotidienne.",
-    "translation": "network",
+    "example": "Ce choix semble réseau à première vue.",
+    "translation": "This choice seems network at first glance.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -2989,8 +2990,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « recherche » peut être utile dans une conversation quotidienne.",
-    "translation": "research",
+    "example": "La recherche revient souvent pendant la réunion.",
+    "translation": "The topic of research often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -3013,8 +3014,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « chercheur, chercheuse » peut être utile dans une conversation quotidienne.",
-    "translation": "researcher",
+    "example": "Le chercheur revient souvent pendant la réunion.",
+    "translation": "The topic of researcher often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3065,8 +3066,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « métier » dans un contexte naturel.",
-    "translation": "job, profession",
+    "example": "Elle apprend à métier avec plus de confiance.",
+    "translation": "She is learning to job with more confidence.",
     "structures": [
       "métier + complément"
     ],
@@ -3092,8 +3093,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « écolier, écolière » dans un contexte naturel.",
-    "translation": "schoolboy, schoolgirl",
+    "example": "Elle apprend à écolier avec plus de confiance.",
+    "translation": "She is learning to schoolboy with more confidence.",
     "structures": [
       "écolier, écolière + complément"
     ],
@@ -3119,8 +3120,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « stage » peut être utile dans une conversation quotidienne.",
-    "translation": "internship",
+    "example": "Le stage revient souvent pendant la réunion.",
+    "translation": "The topic of internship often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3143,8 +3144,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « animateur » peut être utile dans une conversation quotidienne.",
-    "translation": "animator, host, presenter",
+    "example": "L’animateur revient souvent pendant la réunion.",
+    "translation": "The topic of animator often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3167,8 +3168,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « jeunesse » peut être utile dans une conversation quotidienne.",
-    "translation": "youth",
+    "example": "La jeunesse revient souvent pendant la réunion.",
+    "translation": "The topic of youth often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -3191,8 +3192,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « végétaux » peut être utile dans une conversation quotidienne.",
-    "translation": "plants, vegetables",
+    "example": "Le végétaux revient souvent pendant la réunion.",
+    "translation": "The topic of plants often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3215,8 +3216,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « branche » peut être utile dans une conversation quotidienne.",
-    "translation": "branch",
+    "example": "La branche revient souvent pendant la réunion.",
+    "translation": "The topic of branch often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3239,8 +3240,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « scier » dans un contexte naturel.",
-    "translation": "to saw",
+    "example": "Elle apprend à scier avec plus de confiance.",
+    "translation": "She is learning to saw with more confidence.",
     "structures": [
       "scier + complément"
     ],
@@ -3266,8 +3267,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « lieu » peut être utile dans une conversation quotidienne.",
-    "translation": "place",
+    "example": "Ce choix semble lieu à première vue.",
+    "translation": "This choice seems place at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3290,8 +3291,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « amitié » peut être utile dans une conversation quotidienne.",
-    "translation": "friendship",
+    "example": "Ce choix semble amitié à première vue.",
+    "translation": "This choice seems friendship at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3314,8 +3315,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « étranger » dans un contexte naturel.",
-    "translation": "foreigner, stranger",
+    "example": "Elle apprend à étranger avec plus de confiance.",
+    "translation": "She is learning to foreigner with more confidence.",
     "structures": [
       "étranger + complément"
     ],
@@ -3341,8 +3342,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « voyons » peut être utile dans une conversation quotidienne.",
-    "translation": "let's see",
+    "example": "Le voyons revient souvent pendant la réunion.",
+    "translation": "The topic of let's see often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3365,8 +3366,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se lier » dans un contexte naturel.",
-    "translation": "to bond",
+    "example": "Avec un peu de pratique, elle apprend à se lier.",
+    "translation": "She is learning to bond with more confidence.",
     "structures": [
       "se lier + complément"
     ],
@@ -3392,8 +3393,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « comporte » peut être utile dans une conversation quotidienne.",
-    "translation": "includes",
+    "example": "La comporte revient souvent pendant la réunion.",
+    "translation": "The topic of includes often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3416,8 +3417,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « réseautage » peut être utile dans une conversation quotidienne.",
-    "translation": "networking",
+    "example": "La réseautage revient souvent pendant la réunion.",
+    "translation": "The topic of networking often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -3440,8 +3441,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « interdiction de » peut être utile dans une conversation quotidienne.",
-    "translation": "the banning of",
+    "example": "L’interdiction de revient souvent pendant la réunion.",
+    "translation": "The topic of the banning of often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3464,8 +3465,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « paraître » dans un contexte naturel.",
-    "translation": "to appear",
+    "example": "Elle apprend à paraître avec plus de confiance.",
+    "translation": "She is learning to appear with more confidence.",
     "structures": [
       "paraître + complément"
     ],
@@ -3491,8 +3492,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « confiance » peut être utile dans une conversation quotidienne.",
-    "translation": "confidence, trust",
+    "example": "La confiance revient souvent pendant la réunion.",
+    "translation": "The topic of confidence often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3515,8 +3516,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bien-être » dans un contexte naturel.",
-    "translation": "well-being",
+    "example": "Elle apprend à bien-être avec plus de confiance.",
+    "translation": "She is learning to well-being with more confidence.",
     "structures": [
       "bien-être + complément"
     ],
@@ -3543,8 +3544,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « jeu » peut être utile dans une conversation quotidienne.",
-    "translation": "game",
+    "example": "Ce choix semble jeu à première vue.",
+    "translation": "This choice seems game at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3567,8 +3568,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « comportement » peut être utile dans une conversation quotidienne.",
-    "translation": "behaviour",
+    "example": "Le comportement revient souvent pendant la réunion.",
+    "translation": "The topic of behaviour often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3591,8 +3592,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « santé mentale » peut être utile dans une conversation quotidienne.",
-    "translation": "mental health",
+    "example": "La santé mentale revient souvent pendant la réunion.",
+    "translation": "The topic of mental health often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -3616,8 +3617,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « divertissement » peut être utile dans une conversation quotidienne.",
-    "translation": "entertainment",
+    "example": "Le divertissement revient souvent pendant la réunion.",
+    "translation": "The topic of entertainment often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3640,8 +3641,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « détente » peut être utile dans une conversation quotidienne.",
-    "translation": "relaxation",
+    "example": "La détente revient souvent pendant la réunion.",
+    "translation": "The topic of relaxation often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3664,8 +3665,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « gaspillage » peut être utile dans une conversation quotidienne.",
-    "translation": "waste",
+    "example": "La gaspillage revient souvent pendant la réunion.",
+    "translation": "The topic of waste often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -3689,8 +3690,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « surcharge » peut être utile dans une conversation quotidienne.",
-    "translation": "overload, overwork",
+    "example": "La surcharge revient souvent pendant la réunion.",
+    "translation": "The topic of overload often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -3714,8 +3715,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « gratuit » peut être utile dans une conversation quotidienne.",
-    "translation": "free",
+    "example": "Ce choix semble gratuit à première vue.",
+    "translation": "This choice seems free at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3738,8 +3739,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « transport en commun » peut être utile dans une conversation quotidienne.",
-    "translation": "public transportation",
+    "example": "Le transport en commun revient souvent pendant la réunion.",
+    "translation": "The topic of public transportation often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -3762,8 +3763,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « impôt » peut être utile dans une conversation quotidienne.",
-    "translation": "tax",
+    "example": "L’impôt revient souvent pendant la réunion.",
+    "translation": "The topic of tax often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -3786,8 +3787,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « usager » dans un contexte naturel.",
-    "translation": "user",
+    "example": "Elle apprend à usager avec plus de confiance.",
+    "translation": "She is learning to user with more confidence.",
     "structures": [
       "usager + complément"
     ],
@@ -3813,8 +3814,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « épreuve » peut être utile dans une conversation quotidienne.",
-    "translation": "test",
+    "example": "L’épreuve revient souvent pendant la réunion.",
+    "translation": "The topic of test often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -3838,8 +3839,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « franchement » peut être utile dans une conversation quotidienne.",
-    "translation": "frankly",
+    "example": "Franchement, elle a préparé son dossier avant l’examen.",
+    "translation": "Frankly, she prepared her file before the exam.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3862,8 +3863,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « constat » peut être utile dans une conversation quotidienne.",
-    "translation": "observation, finding",
+    "example": "Le constat revient souvent pendant la réunion.",
+    "translation": "The topic of observation often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3886,8 +3887,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « observation » peut être utile dans une conversation quotidienne.",
-    "translation": "observation",
+    "example": "L’observation revient souvent pendant la réunion.",
+    "translation": "The topic of observation often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3938,8 +3939,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « atténuation » peut être utile dans une conversation quotidienne.",
-    "translation": "mitigation",
+    "example": "L’atténuation revient souvent pendant la réunion.",
+    "translation": "The topic of mitigation often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3962,8 +3963,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « uniformité » peut être utile dans une conversation quotidienne.",
-    "translation": "uniformity",
+    "example": "Ce choix semble uniformité à première vue.",
+    "translation": "This choice seems uniformity at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -3986,8 +3987,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « personnage principal » peut être utile dans une conversation quotidienne.",
-    "translation": "main character",
+    "example": "Le personnage principal revient souvent pendant la réunion.",
+    "translation": "The topic of main character often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4010,8 +4011,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « conception » peut être utile dans une conversation quotidienne.",
-    "translation": "design",
+    "example": "La conception revient souvent pendant la réunion.",
+    "translation": "The topic of design often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4035,8 +4036,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « façon » peut être utile dans une conversation quotidienne.",
-    "translation": "way, manner, behaviour",
+    "example": "Le façon revient souvent pendant la réunion.",
+    "translation": "The topic of way often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4059,8 +4060,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « enseignement » peut être utile dans une conversation quotidienne.",
-    "translation": "education, teaching",
+    "example": "L’enseignement revient souvent pendant la réunion.",
+    "translation": "The topic of education often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -4083,8 +4084,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « monde » peut être utile dans une conversation quotidienne.",
-    "translation": "world",
+    "example": "Le monde revient souvent pendant la réunion.",
+    "translation": "The topic of world often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4107,8 +4108,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « investissement » peut être utile dans une conversation quotidienne.",
-    "translation": "investment",
+    "example": "L’investissement revient souvent pendant la réunion.",
+    "translation": "The topic of investment often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4132,8 +4133,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « investisseur » peut être utile dans une conversation quotidienne.",
-    "translation": "investor",
+    "example": "L’investisseur revient souvent pendant la réunion.",
+    "translation": "The topic of investor often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4157,8 +4158,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « punition » peut être utile dans une conversation quotidienne.",
-    "translation": "punishment",
+    "example": "La punition revient souvent pendant la réunion.",
+    "translation": "The topic of punishment often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4181,8 +4182,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « confondu » peut être utile dans une conversation quotidienne.",
-    "translation": "confused, mixed up",
+    "example": "Ce choix semble confondu à première vue.",
+    "translation": "This choice seems confused at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4205,8 +4206,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « taille » peut être utile dans une conversation quotidienne.",
-    "translation": "size",
+    "example": "La taille revient souvent pendant la réunion.",
+    "translation": "The topic of size often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4229,8 +4230,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « matière » dans un contexte naturel.",
-    "translation": "matter, subject, material",
+    "example": "Elle apprend à matière avec plus de confiance.",
+    "translation": "She is learning to matter with more confidence.",
     "structures": [
       "matière + complément"
     ],
@@ -4256,8 +4257,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « soumettre » dans un contexte naturel.",
-    "translation": "to submit",
+    "example": "Elle apprend à soumettre avec plus de confiance.",
+    "translation": "She is learning to submit with more confidence.",
     "structures": [
       "soumettre + complément"
     ],
@@ -4284,8 +4285,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « détenir » dans un contexte naturel.",
-    "translation": "to possess, hold",
+    "example": "Elle apprend à détenir avec plus de confiance.",
+    "translation": "She is learning to possess with more confidence.",
     "structures": [
       "détenir + complément"
     ],
@@ -4312,8 +4313,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « détenir un record » dans un contexte naturel.",
-    "translation": "to hold a record",
+    "example": "Elle apprend à détenir un record avec plus de confiance.",
+    "translation": "She is learning to hold a record with more confidence.",
     "structures": [
       "détenir un record + complément"
     ],
@@ -4339,8 +4340,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « détenir le pouvoir » dans un contexte naturel.",
-    "translation": "to hold power",
+    "example": "Elle apprend à détenir le pouvoir avec plus de confiance.",
+    "translation": "She is learning to hold power with more confidence.",
     "structures": [
       "détenir le pouvoir + complément"
     ],
@@ -4366,8 +4367,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « détenir un savoir » dans un contexte naturel.",
-    "translation": "to hold certain knowledge",
+    "example": "Elle apprend à détenir un savoir avec plus de confiance.",
+    "translation": "She is learning to hold certain knowledge with more confidence.",
     "structures": [
       "détenir un savoir + complément"
     ],
@@ -4393,8 +4394,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « tout le monde » peut être utile dans une conversation quotidienne.",
-    "translation": "everybody, everyone",
+    "example": "La tout le monde revient souvent pendant la réunion.",
+    "translation": "The topic of everybody often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4417,8 +4418,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « tranquillité » peut être utile dans une conversation quotidienne.",
-    "translation": "peace and quiet",
+    "example": "Ce choix semble tranquillité à première vue.",
+    "translation": "This choice seems peace and quiet at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4441,8 +4442,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « calme » peut être utile dans une conversation quotidienne.",
-    "translation": "calm, peaceful",
+    "example": "La calme revient souvent pendant la réunion.",
+    "translation": "The topic of calm often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4465,8 +4466,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « colocation » peut être utile dans une conversation quotidienne.",
-    "translation": "shared apartment",
+    "example": "La colocation revient souvent pendant la réunion.",
+    "translation": "The topic of shared apartment often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4489,8 +4490,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « colocataire » dans un contexte naturel.",
-    "translation": "roommate",
+    "example": "Elle apprend à colocataire avec plus de confiance.",
+    "translation": "She is learning to roommate with more confidence.",
     "structures": [
       "colocataire + complément"
     ],
@@ -4516,8 +4517,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « recette » peut être utile dans une conversation quotidienne.",
-    "translation": "recipe",
+    "example": "La recette revient souvent pendant la réunion.",
+    "translation": "The topic of recipe often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4540,8 +4541,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « entre » dans un contexte naturel.",
-    "translation": "between",
+    "example": "Elle apprend à entre avec plus de confiance.",
+    "translation": "She is learning to between with more confidence.",
     "structures": [
       "entre + complément"
     ],
@@ -4567,8 +4568,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « bas, basse » peut être utile dans une conversation quotidienne.",
-    "translation": "low",
+    "example": "Le bas revient souvent pendant la réunion.",
+    "translation": "The topic of low often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4591,8 +4592,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cimetière » dans un contexte naturel.",
-    "translation": "cemetery, graveyard",
+    "example": "Elle apprend à cimetière avec plus de confiance.",
+    "translation": "She is learning to cemetery with more confidence.",
     "structures": [
       "cimetière + complément"
     ],
@@ -4618,8 +4619,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « exprimer » dans un contexte naturel.",
-    "translation": "to express",
+    "example": "Elle apprend à exprimer avec plus de confiance.",
+    "translation": "She is learning to express with more confidence.",
     "structures": [
       "exprimer + complément"
     ],
@@ -4646,8 +4647,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « capacité » peut être utile dans une conversation quotidienne.",
-    "translation": "ability",
+    "example": "Ce choix semble capacité à première vue.",
+    "translation": "This choice seems ability at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4671,8 +4672,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « compétence » peut être utile dans une conversation quotidienne.",
-    "translation": "skill, competence",
+    "example": "La compétence revient souvent pendant la réunion.",
+    "translation": "The topic of skill often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4696,8 +4697,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « paroles » peut être utile dans une conversation quotidienne.",
-    "translation": "lyrics",
+    "example": "Le paroles revient souvent pendant la réunion.",
+    "translation": "The topic of lyrics often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4720,8 +4721,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sous-titre » dans un contexte naturel.",
-    "translation": "subtitles",
+    "example": "Elle apprend à sous-titre avec plus de confiance.",
+    "translation": "She is learning to subtitles with more confidence.",
     "structures": [
       "sous-titre + complément"
     ],
@@ -4747,8 +4748,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « quotidien, quotidienne » peut être utile dans une conversation quotidienne.",
-    "translation": "daily",
+    "example": "Ce choix semble quotidien à première vue.",
+    "translation": "This choice seems daily at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4772,8 +4773,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « défi » peut être utile dans une conversation quotidienne.",
-    "translation": "challenge",
+    "example": "Le défi revient souvent pendant la réunion.",
+    "translation": "The topic of challenge often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -4797,8 +4798,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « outil » peut être utile dans une conversation quotidienne.",
-    "translation": "tool",
+    "example": "L’outil revient souvent pendant la réunion.",
+    "translation": "The topic of tool often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4821,8 +4822,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « orage » peut être utile dans une conversation quotidienne.",
-    "translation": "thunderstorm",
+    "example": "L’orage revient souvent pendant la réunion.",
+    "translation": "The topic of thunderstorm often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4845,8 +4846,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « mensonge » peut être utile dans une conversation quotidienne.",
-    "translation": "lie",
+    "example": "La mensonge revient souvent pendant la réunion.",
+    "translation": "The topic of lie often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4869,8 +4870,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « un coup de main » peut être utile dans une conversation quotidienne.",
-    "translation": "a helping hand",
+    "example": "Un coup de main peut jouer un rôle important dans cette situation.",
+    "translation": "A helping hand can play an important role in this situation.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4893,8 +4894,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « montrer » dans un contexte naturel.",
-    "translation": "to show",
+    "example": "Elle apprend à montrer avec plus de confiance.",
+    "translation": "She is learning to show with more confidence.",
     "structures": [
       "montrer + complément"
     ],
@@ -4920,8 +4921,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « monter » dans un contexte naturel.",
-    "translation": "to go up",
+    "example": "Elle apprend à monter avec plus de confiance.",
+    "translation": "She is learning to go up with more confidence.",
     "structures": [
       "monter + complément"
     ],
@@ -4947,8 +4948,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « bruit » peut être utile dans une conversation quotidienne.",
-    "translation": "noise",
+    "example": "Le bruit revient souvent pendant la réunion.",
+    "translation": "The topic of noise often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4971,8 +4972,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « fond » peut être utile dans une conversation quotidienne.",
-    "translation": "bottom, background",
+    "example": "Le fond revient souvent pendant la réunion.",
+    "translation": "The topic of bottom often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -4995,8 +4996,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « poche » peut être utile dans une conversation quotidienne.",
-    "translation": "pocket",
+    "example": "La poche revient souvent pendant la réunion.",
+    "translation": "The topic of pocket often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5019,8 +5020,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « loin » peut être utile dans une conversation quotidienne.",
-    "translation": "far away, far from",
+    "example": "Le loin revient souvent pendant la réunion.",
+    "translation": "The topic of far away often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -5043,8 +5044,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « quelque chose » peut être utile dans une conversation quotidienne.",
-    "translation": "something",
+    "example": "La quelque chose revient souvent pendant la réunion.",
+    "translation": "The topic of something often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5067,8 +5068,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « quelque » peut être utile dans une conversation quotidienne.",
-    "translation": "some",
+    "example": "Ce choix semble quelque à première vue.",
+    "translation": "This choice seems some at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5091,8 +5092,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « quelqu'un » peut être utile dans une conversation quotidienne.",
-    "translation": "someone",
+    "example": "Le quelqu'un revient souvent pendant la réunion.",
+    "translation": "The topic of someone often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5115,8 +5116,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « appartenir à » dans un contexte naturel.",
-    "translation": "to belong to",
+    "example": "Elle apprend à appartenir à avec plus de confiance.",
+    "translation": "She is learning to belong to with more confidence.",
     "structures": [
       "appartenir à + complément"
     ],
@@ -5142,8 +5143,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « paix » peut être utile dans une conversation quotidienne.",
-    "translation": "peace",
+    "example": "Le paix revient souvent pendant la réunion.",
+    "translation": "The topic of peace often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5166,8 +5167,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « histoire » dans un contexte naturel.",
-    "translation": "history, story",
+    "example": "Elle apprend à histoire avec plus de confiance.",
+    "translation": "She is learning to history with more confidence.",
     "structures": [
       "histoire + complément"
     ],
@@ -5193,8 +5194,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « gris » peut être utile dans une conversation quotidienne.",
-    "translation": "grey",
+    "example": "Le gris revient souvent pendant la réunion.",
+    "translation": "The topic of grey often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5217,8 +5218,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « ciel » peut être utile dans une conversation quotidienne.",
-    "translation": "sky",
+    "example": "Ce choix semble ciel à première vue.",
+    "translation": "This choice seems sky at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5241,8 +5242,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « humeur » peut être utile dans une conversation quotidienne.",
-    "translation": "mood",
+    "example": "L’humeur revient souvent pendant la réunion.",
+    "translation": "The topic of mood often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5265,8 +5266,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « torchon » peut être utile dans une conversation quotidienne.",
-    "translation": "towel, dishcloth",
+    "example": "Le torchon revient souvent pendant la réunion.",
+    "translation": "The topic of towel often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5289,8 +5290,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « parapluie » peut être utile dans une conversation quotidienne.",
-    "translation": "umbrella",
+    "example": "La parapluie revient souvent pendant la réunion.",
+    "translation": "The topic of umbrella often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5313,8 +5314,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « méfiant » peut être utile dans une conversation quotidienne.",
-    "translation": "suspicious, wary",
+    "example": "Ce choix semble méfiant à première vue.",
+    "translation": "This choice seems suspicious at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5337,8 +5338,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « canapé » peut être utile dans une conversation quotidienne.",
-    "translation": "sofa, couch",
+    "example": "Ce choix semble canapé à première vue.",
+    "translation": "This choice seems sofa at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5361,8 +5362,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « circulation » peut être utile dans une conversation quotidienne.",
-    "translation": "traffic",
+    "example": "La circulation revient souvent pendant la réunion.",
+    "translation": "The topic of traffic often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5385,8 +5386,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rayon de lumière » dans un contexte naturel.",
-    "translation": "ray of light",
+    "example": "Elle apprend à rayon de lumière avec plus de confiance.",
+    "translation": "She is learning to ray of light with more confidence.",
     "structures": [
       "rayon de lumière + complément"
     ],
@@ -5412,8 +5413,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « jusqu'à » peut être utile dans une conversation quotidienne.",
-    "translation": "up to, until",
+    "example": "Le jusqu'à revient souvent pendant la réunion.",
+    "translation": "The topic of up to often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5436,8 +5437,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « vent » peut être utile dans une conversation quotidienne.",
-    "translation": "wind",
+    "example": "Le vent revient souvent pendant la réunion.",
+    "translation": "The topic of wind often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5460,8 +5461,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tomber en panne » dans un contexte naturel.",
-    "translation": "to break down",
+    "example": "Elle apprend à tomber en panne avec plus de confiance.",
+    "translation": "She is learning to break down with more confidence.",
     "structures": [
       "tomber en panne + complément"
     ],
@@ -5487,8 +5488,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « bougie » peut être utile dans une conversation quotidienne.",
-    "translation": "candle",
+    "example": "La bougie revient souvent pendant la réunion.",
+    "translation": "The topic of candle often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5511,8 +5512,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « allumette » peut être utile dans une conversation quotidienne.",
-    "translation": "matchstick",
+    "example": "L’allumette revient souvent pendant la réunion.",
+    "translation": "The topic of matchstick often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5535,8 +5536,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « mur » peut être utile dans une conversation quotidienne.",
-    "translation": "wall",
+    "example": "Le mur revient souvent pendant la réunion.",
+    "translation": "The topic of wall often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5559,8 +5560,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « s'échapper » dans un contexte naturel.",
-    "translation": "to escape",
+    "example": "Avec un peu de pratique, elle apprend à s'échapper.",
+    "translation": "She is learning to escape with more confidence.",
     "structures": [
       "s'échapper + complément"
     ],
@@ -5586,8 +5587,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « poisson » peut être utile dans une conversation quotidienne.",
-    "translation": "fish",
+    "example": "Le poisson revient souvent pendant la réunion.",
+    "translation": "The topic of fish often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5610,8 +5611,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « viande » peut être utile dans une conversation quotidienne.",
-    "translation": "meat",
+    "example": "La viande revient souvent pendant la réunion.",
+    "translation": "The topic of meat often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5634,8 +5635,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tout va bien se passer » dans un contexte naturel.",
-    "translation": "everything will be alright",
+    "example": "Elle apprend à tout va bien se passer avec plus de confiance.",
+    "translation": "She is learning to everything will be alright with more confidence.",
     "structures": [
       "tout va bien se passer + complément"
     ],
@@ -5661,8 +5662,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « voleur » peut être utile dans une conversation quotidienne.",
-    "translation": "thief",
+    "example": "Le voleur revient souvent pendant la réunion.",
+    "translation": "The topic of thief often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5685,8 +5686,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « sac de main » peut être utile dans une conversation quotidienne.",
-    "translation": "handbag",
+    "example": "Le sac de main revient souvent pendant la réunion.",
+    "translation": "The topic of handbag often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5709,8 +5710,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « voisin, voisine » peut être utile dans une conversation quotidienne.",
-    "translation": "neighbour",
+    "example": "Le voisin revient souvent pendant la réunion.",
+    "translation": "The topic of neighbour often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5757,8 +5758,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « étude » peut être utile dans une conversation quotidienne.",
-    "translation": "study",
+    "example": "L’étude revient souvent pendant la réunion.",
+    "translation": "The topic of study often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5781,8 +5782,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « habitude » peut être utile dans une conversation quotidienne.",
-    "translation": "habit",
+    "example": "L’habitude revient souvent pendant la réunion.",
+    "translation": "The topic of habit often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5805,8 +5806,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « véritable, authentique » peut être utile dans une conversation quotidienne.",
-    "translation": "true, real, authentic",
+    "example": "Ce choix semble véritable à première vue.",
+    "translation": "This choice seems true at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5829,8 +5830,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « couper du monde » peut être utile dans une conversation quotidienne.",
-    "translation": "cut off from the world, disconnected",
+    "example": "La couper du monde revient souvent pendant la réunion.",
+    "translation": "The topic of cut off from the world often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5853,8 +5854,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « silencieux, silencieuse » peut être utile dans une conversation quotidienne.",
-    "translation": "silent",
+    "example": "Ce choix semble silencieux à première vue.",
+    "translation": "This choice seems silent at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5877,8 +5878,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « en panne » peut être utile dans une conversation quotidienne.",
-    "translation": "broken down",
+    "example": "En panne, elle a mieux compris la situation.",
+    "translation": "Broken down, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5901,8 +5902,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « tempête » peut être utile dans une conversation quotidienne.",
-    "translation": "storm",
+    "example": "La tempête revient souvent pendant la réunion.",
+    "translation": "The topic of storm often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5925,8 +5926,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « chômage » peut être utile dans une conversation quotidienne.",
-    "translation": "unemployment",
+    "example": "La chômage revient souvent pendant la réunion.",
+    "translation": "The topic of unemployment often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -5950,8 +5951,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « témoin » peut être utile dans une conversation quotidienne.",
-    "translation": "witness",
+    "example": "Le témoin revient souvent pendant la réunion.",
+    "translation": "The topic of witness often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5974,8 +5975,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « tournure différente » peut être utile dans une conversation quotidienne.",
-    "translation": "different turn",
+    "example": "La tournure différente revient souvent pendant la réunion.",
+    "translation": "The topic of different turn often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -5998,8 +5999,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « œuvres » peut être utile dans une conversation quotidienne.",
-    "translation": "works",
+    "example": "Le œuvres revient souvent pendant la réunion.",
+    "translation": "The topic of works often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6022,8 +6023,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « ouvriers » peut être utile dans une conversation quotidienne.",
-    "translation": "workers",
+    "example": "L’ouvriers revient souvent pendant la réunion.",
+    "translation": "The topic of workers often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6046,8 +6047,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « pièce » peut être utile dans une conversation quotidienne.",
-    "translation": "room, play, coin, piece",
+    "example": "La pièce revient souvent pendant la réunion.",
+    "translation": "The topic of room often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6070,8 +6071,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « pauvreté » peut être utile dans une conversation quotidienne.",
-    "translation": "poverty",
+    "example": "Ce choix semble pauvreté à première vue.",
+    "translation": "This choice seems poverty at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -6095,8 +6096,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « seuil » peut être utile dans une conversation quotidienne.",
-    "translation": "threshold",
+    "example": "Le seuil revient souvent pendant la réunion.",
+    "translation": "The topic of threshold often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -6120,8 +6121,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « garantie » peut être utile dans une conversation quotidienne.",
-    "translation": "guarantee",
+    "example": "La garantie revient souvent pendant la réunion.",
+    "translation": "The topic of guarantee often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -6145,8 +6146,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « abus » peut être utile dans une conversation quotidienne.",
-    "translation": "abuse",
+    "example": "L’abus revient souvent pendant la réunion.",
+    "translation": "The topic of abuse often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -6198,8 +6199,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « disponible » peut être utile dans une conversation quotidienne.",
-    "translation": "available",
+    "example": "Ce choix semble disponible à première vue.",
+    "translation": "This choice seems available at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6222,8 +6223,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « horaire » dans un contexte naturel.",
-    "translation": "schedule",
+    "example": "Elle apprend à horaire avec plus de confiance.",
+    "translation": "She is learning to schedule with more confidence.",
     "structures": [
       "horaire + complément"
     ],
@@ -6249,8 +6250,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « bâtiment » peut être utile dans une conversation quotidienne.",
-    "translation": "building",
+    "example": "Le bâtiment revient souvent pendant la réunion.",
+    "translation": "The topic of building often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6273,8 +6274,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « immeuble » peut être utile dans une conversation quotidienne.",
-    "translation": "building",
+    "example": "L’immeuble revient souvent pendant la réunion.",
+    "translation": "The topic of building often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6297,8 +6298,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « truc » peut être utile dans une conversation quotidienne.",
-    "translation": "stuff, thing",
+    "example": "Le truc revient souvent pendant la réunion.",
+    "translation": "The topic of stuff often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6321,8 +6322,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « emplacement » peut être utile dans une conversation quotidienne.",
-    "translation": "location",
+    "example": "L’emplacement revient souvent pendant la réunion.",
+    "translation": "The topic of location often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6345,8 +6346,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « patrimoine » peut être utile dans une conversation quotidienne.",
-    "translation": "heritage",
+    "example": "La patrimoine revient souvent pendant la réunion.",
+    "translation": "The topic of heritage often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -6370,8 +6371,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « terre » dans un contexte naturel.",
-    "translation": "earth, ground",
+    "example": "Elle apprend à terre avec plus de confiance.",
+    "translation": "She is learning to earth with more confidence.",
     "structures": [
       "terre + complément"
     ],
@@ -6397,8 +6398,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « ennemi » peut être utile dans une conversation quotidienne.",
-    "translation": "enemy",
+    "example": "L’ennemi revient souvent pendant la réunion.",
+    "translation": "The topic of enemy often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6421,8 +6422,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « pilori » peut être utile dans une conversation quotidienne.",
-    "translation": "pillory",
+    "example": "Le pilori revient souvent pendant la réunion.",
+    "translation": "The topic of pillory often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6445,8 +6446,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « soldat » peut être utile dans une conversation quotidienne.",
-    "translation": "soldier",
+    "example": "Le soldat revient souvent pendant la réunion.",
+    "translation": "The topic of soldier often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6469,8 +6470,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « au loin » peut être utile dans une conversation quotidienne.",
-    "translation": "in the distance",
+    "example": "Au loin, elle a mieux compris la situation.",
+    "translation": "In the distance, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -6493,8 +6494,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « retour » peut être utile dans une conversation quotidienne.",
-    "translation": "return",
+    "example": "Le retour revient souvent pendant la réunion.",
+    "translation": "The topic of return often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6517,8 +6518,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « métrage » peut être utile dans une conversation quotidienne.",
-    "translation": "footage",
+    "example": "La métrage revient souvent pendant la réunion.",
+    "translation": "The topic of footage often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6541,8 +6542,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « bruitage » peut être utile dans une conversation quotidienne.",
-    "translation": "sound effects",
+    "example": "La bruitage revient souvent pendant la réunion.",
+    "translation": "The topic of sound effects often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6565,8 +6566,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « guerre » dans un contexte naturel.",
-    "translation": "war",
+    "example": "Elle apprend à guerre avec plus de confiance.",
+    "translation": "She is learning to war with more confidence.",
     "structures": [
       "guerre + complément"
     ],
@@ -6592,8 +6593,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « moitié » peut être utile dans une conversation quotidienne.",
-    "translation": "half",
+    "example": "Ce choix semble moitié à première vue.",
+    "translation": "This choice seems half at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6616,8 +6617,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « embouteillage » peut être utile dans une conversation quotidienne.",
-    "translation": "traffic jam",
+    "example": "L’embouteillage revient souvent pendant la réunion.",
+    "translation": "The topic of traffic jam often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6640,8 +6641,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « milliard » peut être utile dans une conversation quotidienne.",
-    "translation": "billion",
+    "example": "Le milliard revient souvent pendant la réunion.",
+    "translation": "The topic of billion often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6664,8 +6665,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « courses » peut être utile dans une conversation quotidienne.",
-    "translation": "shopping, errands",
+    "example": "Le courses revient souvent pendant la réunion.",
+    "translation": "The topic of shopping often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6688,8 +6689,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « jeu de société » peut être utile dans une conversation quotidienne.",
-    "translation": "board game",
+    "example": "La jeu de société revient souvent pendant la réunion.",
+    "translation": "The topic of board game often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -6712,8 +6713,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « éclairer » dans un contexte naturel.",
-    "translation": "to light up",
+    "example": "Elle apprend à éclairer avec plus de confiance.",
+    "translation": "She is learning to light up with more confidence.",
     "structures": [
       "éclairer + complément"
     ],
@@ -6739,8 +6740,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « poliment » peut être utile dans une conversation quotidienne.",
-    "translation": "politely",
+    "example": "Le poliment revient souvent pendant la réunion.",
+    "translation": "The topic of politely often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6763,8 +6764,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « barrage » peut être utile dans une conversation quotidienne.",
-    "translation": "dam",
+    "example": "La barrage revient souvent pendant la réunion.",
+    "translation": "The topic of dam often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6787,8 +6788,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « personnage » peut être utile dans une conversation quotidienne.",
-    "translation": "character",
+    "example": "La personnage revient souvent pendant la réunion.",
+    "translation": "The topic of character often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6835,8 +6836,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « affranchir » dans un contexte naturel.",
-    "translation": "to liberate, free",
+    "example": "Elle apprend à affranchir avec plus de confiance.",
+    "translation": "She is learning to liberate with more confidence.",
     "structures": [
       "affranchir + complément"
     ],
@@ -6862,8 +6863,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « prêche » peut être utile dans une conversation quotidienne.",
-    "translation": "sermon, preaching",
+    "example": "La prêche revient souvent pendant la réunion.",
+    "translation": "The topic of sermon often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6886,8 +6887,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « inédit, inédite » peut être utile dans une conversation quotidienne.",
-    "translation": "new, unpublished",
+    "example": "L’inédit revient souvent pendant la réunion.",
+    "translation": "The topic of new often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6910,8 +6911,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « séance » peut être utile dans une conversation quotidienne.",
-    "translation": "session",
+    "example": "La séance revient souvent pendant la réunion.",
+    "translation": "The topic of session often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6934,8 +6935,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « déçu, déçue » peut être utile dans une conversation quotidienne.",
-    "translation": "disappointed",
+    "example": "Ce choix semble déçu à première vue.",
+    "translation": "This choice seems disappointed at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -6982,8 +6983,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « tatouage » peut être utile dans une conversation quotidienne.",
-    "translation": "tattoo",
+    "example": "La tatouage revient souvent pendant la réunion.",
+    "translation": "The topic of tattoo often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7006,8 +7007,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « nombreux, nombreuse » peut être utile dans une conversation quotidienne.",
-    "translation": "many, numerous",
+    "example": "Ce choix semble nombreux à première vue.",
+    "translation": "This choice seems many at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7030,8 +7031,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « disparate » peut être utile dans une conversation quotidienne.",
-    "translation": "diverse, varied",
+    "example": "La disparate revient souvent pendant la réunion.",
+    "translation": "The topic of diverse often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7054,8 +7055,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « homogène » peut être utile dans une conversation quotidienne.",
-    "translation": "homogeneous",
+    "example": "L’homogène revient souvent pendant la réunion.",
+    "translation": "The topic of homogeneous often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7078,8 +7079,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « sourdine » peut être utile dans une conversation quotidienne.",
-    "translation": "mute, muffled",
+    "example": "La sourdine revient souvent pendant la réunion.",
+    "translation": "The topic of mute often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7102,8 +7103,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « exergue » peut être utile dans une conversation quotidienne.",
-    "translation": "inscription, emphasis",
+    "example": "Ce choix semble exergue à première vue.",
+    "translation": "This choice seems inscription at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7126,8 +7127,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « abîme » peut être utile dans une conversation quotidienne.",
-    "translation": "abyss",
+    "example": "L’abîme revient souvent pendant la réunion.",
+    "translation": "The topic of abyss often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7150,8 +7151,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « séjour » peut être utile dans une conversation quotidienne.",
-    "translation": "stay, visit",
+    "example": "Le séjour revient souvent pendant la réunion.",
+    "translation": "The topic of stay often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7174,8 +7175,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « soleil » peut être utile dans une conversation quotidienne.",
-    "translation": "sun",
+    "example": "Le soleil revient souvent pendant la réunion.",
+    "translation": "The topic of sun often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7198,8 +7199,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « balade » peut être utile dans une conversation quotidienne.",
-    "translation": "walk, ride",
+    "example": "La balade revient souvent pendant la réunion.",
+    "translation": "The topic of walk often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7222,8 +7223,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « moteur » peut être utile dans une conversation quotidienne.",
-    "translation": "engine, motor",
+    "example": "Le moteur revient souvent pendant la réunion.",
+    "translation": "The topic of engine often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7246,8 +7247,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « metteur » peut être utile dans une conversation quotidienne.",
-    "translation": "director",
+    "example": "Le metteur revient souvent pendant la réunion.",
+    "translation": "The topic of director often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7270,8 +7271,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Le mot « loi » peut être utile dans une conversation quotidienne.",
-    "translation": "law",
+    "example": "Le loi revient souvent pendant la réunion.",
+    "translation": "The topic of law often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -7294,8 +7295,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « dommage » peut être utile dans une conversation quotidienne.",
-    "translation": "a shame, too bad",
+    "example": "La dommage revient souvent pendant la réunion.",
+    "translation": "The topic of a shame often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7318,8 +7319,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « maladroit, maladroite » peut être utile dans une conversation quotidienne.",
-    "translation": "awkward, clumsy",
+    "example": "Le maladroit revient souvent pendant la réunion.",
+    "translation": "The topic of awkward often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7342,8 +7343,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « assiette » peut être utile dans une conversation quotidienne.",
-    "translation": "plate",
+    "example": "L’assiette revient souvent pendant la réunion.",
+    "translation": "The topic of plate often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7394,8 +7395,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « gâteau » peut être utile dans une conversation quotidienne.",
-    "translation": "cake",
+    "example": "Ce choix semble gâteau à première vue.",
+    "translation": "This choice seems cake at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7418,8 +7419,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mouchoir » dans un contexte naturel.",
-    "translation": "handkerchief, tissue",
+    "example": "Elle apprend à mouchoir avec plus de confiance.",
+    "translation": "She is learning to handkerchief with more confidence.",
     "structures": [
       "mouchoir + complément"
     ],
@@ -7445,8 +7446,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se prêter » dans un contexte naturel.",
-    "translation": "to lend itself, to be suitable",
+    "example": "Avec un peu de pratique, elle apprend à se prêter.",
+    "translation": "She is learning to lend itself with more confidence.",
     "structures": [
       "se prêter + complément"
     ],
@@ -7472,8 +7473,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « rôle » peut être utile dans une conversation quotidienne.",
-    "translation": "role, capacity, function",
+    "example": "La rôle revient souvent pendant la réunion.",
+    "translation": "The topic of role often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7496,8 +7497,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « dessin » peut être utile dans une conversation quotidienne.",
-    "translation": "drawing",
+    "example": "Le dessin revient souvent pendant la réunion.",
+    "translation": "The topic of drawing often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7520,8 +7521,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « camion » peut être utile dans une conversation quotidienne.",
-    "translation": "lorry, truck",
+    "example": "La camion revient souvent pendant la réunion.",
+    "translation": "The topic of lorry often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7544,8 +7545,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « rigolo, rigolote » peut être utile dans une conversation quotidienne.",
-    "translation": "funny",
+    "example": "Le rigolo revient souvent pendant la réunion.",
+    "translation": "The topic of funny often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7596,8 +7597,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « placard » peut être utile dans une conversation quotidienne.",
-    "translation": "closet, cupboard",
+    "example": "Le placard revient souvent pendant la réunion.",
+    "translation": "The topic of closet often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7620,8 +7621,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « armoire » dans un contexte naturel.",
-    "translation": "wardrobe, cupboard",
+    "example": "Elle apprend à armoire avec plus de confiance.",
+    "translation": "She is learning to wardrobe with more confidence.",
     "structures": [
       "armoire + complément"
     ],
@@ -7647,8 +7648,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « chaussettes » peut être utile dans une conversation quotidienne.",
-    "translation": "socks",
+    "example": "Le chaussettes revient souvent pendant la réunion.",
+    "translation": "The topic of socks often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7671,8 +7672,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « dedans » peut être utile dans une conversation quotidienne.",
-    "translation": "inside",
+    "example": "Le dedans revient souvent pendant la réunion.",
+    "translation": "The topic of inside often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7695,8 +7696,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « pêcher » dans un contexte naturel.",
-    "translation": "to fish",
+    "example": "Elle apprend à pêcher avec plus de confiance.",
+    "translation": "She is learning to fish with more confidence.",
     "structures": [
       "pêcher + complément"
     ],
@@ -7722,8 +7723,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rocher » dans un contexte naturel.",
-    "translation": "rock, boulder",
+    "example": "Elle apprend à rocher avec plus de confiance.",
+    "translation": "She is learning to rock with more confidence.",
     "structures": [
       "rocher + complément"
     ],
@@ -7749,8 +7750,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « trésors » peut être utile dans une conversation quotidienne.",
-    "translation": "treasures",
+    "example": "Le trésors revient souvent pendant la réunion.",
+    "translation": "The topic of treasures often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7773,8 +7774,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « bonhomme de neige » peut être utile dans une conversation quotidienne.",
-    "translation": "snowman",
+    "example": "La bonhomme de neige revient souvent pendant la réunion.",
+    "translation": "The topic of snowman often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7797,8 +7798,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « réclamer » dans un contexte naturel.",
-    "translation": "to demand, claim",
+    "example": "Elle apprend à réclamer avec plus de confiance.",
+    "translation": "She is learning to demand with more confidence.",
     "structures": [
       "réclamer + complément"
     ],
@@ -7824,8 +7825,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « mignon » peut être utile dans une conversation quotidienne.",
-    "translation": "cute",
+    "example": "Le mignon revient souvent pendant la réunion.",
+    "translation": "The topic of cute often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7848,8 +7849,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « salle » peut être utile dans une conversation quotidienne.",
-    "translation": "room",
+    "example": "La salle revient souvent pendant la réunion.",
+    "translation": "The topic of room often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7872,8 +7873,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « sale » peut être utile dans une conversation quotidienne.",
-    "translation": "dirty",
+    "example": "Ce choix semble sale à première vue.",
+    "translation": "This choice seems dirty at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7924,8 +7925,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « fou » peut être utile dans une conversation quotidienne.",
-    "translation": "crazy",
+    "example": "Ce choix semble fou à première vue.",
+    "translation": "This choice seems crazy at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -7948,8 +7949,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se détendre » dans un contexte naturel.",
-    "translation": "to relax",
+    "example": "Avec un peu de pratique, elle apprend à se détendre.",
+    "translation": "She is learning to relax with more confidence.",
     "structures": [
       "se détendre + complément"
     ],
@@ -8003,8 +8004,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « rien » peut être utile dans une conversation quotidienne.",
-    "translation": "nothing",
+    "example": "Le rien revient souvent pendant la réunion.",
+    "translation": "The topic of nothing often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8027,8 +8028,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « de rien » peut être utile dans une conversation quotidienne.",
-    "translation": "you're welcome, it's nothing",
+    "example": "De rien, elle a mieux compris la situation.",
+    "translation": "You're welcome, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8051,8 +8052,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « inutile » peut être utile dans une conversation quotidienne.",
-    "translation": "useless, unnecessary",
+    "example": "L’inutile revient souvent pendant la réunion.",
+    "translation": "The topic of useless often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8075,8 +8076,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « guillemets » peut être utile dans une conversation quotidienne.",
-    "translation": "quotation marks",
+    "example": "Le guillemets revient souvent pendant la réunion.",
+    "translation": "The topic of quotation marks often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8099,8 +8100,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « partie » peut être utile dans une conversation quotidienne.",
-    "translation": "part",
+    "example": "La partie revient souvent pendant la réunion.",
+    "translation": "The topic of part often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8123,8 +8124,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « salon de coiffure » dans un contexte naturel.",
-    "translation": "hair salon",
+    "example": "Elle apprend à salon de coiffure avec plus de confiance.",
+    "translation": "She is learning to hair salon with more confidence.",
     "structures": [
       "salon de coiffure + complément"
     ],
@@ -8150,8 +8151,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « grossesse » peut être utile dans une conversation quotidienne.",
-    "translation": "pregnancy",
+    "example": "La grossesse revient souvent pendant la réunion.",
+    "translation": "The topic of pregnancy often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8174,8 +8175,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « portefeuille » peut être utile dans une conversation quotidienne.",
-    "translation": "wallet",
+    "example": "La portefeuille revient souvent pendant la réunion.",
+    "translation": "The topic of wallet often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8198,8 +8199,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « fiche » peut être utile dans une conversation quotidienne.",
-    "translation": "file, sheet",
+    "example": "La fiche revient souvent pendant la réunion.",
+    "translation": "The topic of file often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8222,8 +8223,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cuir » dans un contexte naturel.",
-    "translation": "leather",
+    "example": "Elle apprend à cuir avec plus de confiance.",
+    "translation": "She is learning to leather with more confidence.",
     "structures": [
       "cuir + complément"
     ],
@@ -8249,8 +8250,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « processus » peut être utile dans une conversation quotidienne.",
-    "translation": "process",
+    "example": "Le processus revient souvent pendant la réunion.",
+    "translation": "The topic of process often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8273,8 +8274,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « souvenir » dans un contexte naturel.",
-    "translation": "memory, souvenir",
+    "example": "Elle apprend à souvenir avec plus de confiance.",
+    "translation": "She is learning to memory with more confidence.",
     "structures": [
       "souvenir + complément"
     ],
@@ -8300,8 +8301,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mémoire » dans un contexte naturel.",
-    "translation": "memory",
+    "example": "Elle apprend à mémoire avec plus de confiance.",
+    "translation": "She is learning to memory with more confidence.",
     "structures": [
       "mémoire + complément"
     ],
@@ -8327,8 +8328,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « banque » peut être utile dans une conversation quotidienne.",
-    "translation": "bank",
+    "example": "Ce choix semble banque à première vue.",
+    "translation": "This choice seems bank at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8351,8 +8352,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « banc » peut être utile dans une conversation quotidienne.",
-    "translation": "bench",
+    "example": "Le banc revient souvent pendant la réunion.",
+    "translation": "The topic of bench often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8375,8 +8376,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « vitesse » peut être utile dans une conversation quotidienne.",
-    "translation": "speed",
+    "example": "La vitesse revient souvent pendant la réunion.",
+    "translation": "The topic of speed often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8399,8 +8400,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « réflexion » peut être utile dans une conversation quotidienne.",
-    "translation": "reflection, thought",
+    "example": "La réflexion revient souvent pendant la réunion.",
+    "translation": "The topic of reflection often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8423,8 +8424,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « esprit » peut être utile dans une conversation quotidienne.",
-    "translation": "spirit, mind",
+    "example": "Le esprit revient souvent pendant la réunion.",
+    "translation": "The topic of spirit often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8447,8 +8448,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Le mot « moteur de recherche » peut être utile dans une conversation quotidienne.",
-    "translation": "search engine",
+    "example": "La moteur de recherche revient souvent pendant la réunion.",
+    "translation": "The topic of search engine often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Medium",
     "status": "New",
@@ -8471,8 +8472,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « question éthique » peut être utile dans une conversation quotidienne.",
-    "translation": "ethical question",
+    "example": "La question éthique revient souvent pendant la réunion.",
+    "translation": "The topic of ethical question often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8523,8 +8524,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « terre rare » dans un contexte naturel.",
-    "translation": "rare earth",
+    "example": "Elle apprend à terre rare avec plus de confiance.",
+    "translation": "She is learning to rare earth with more confidence.",
     "structures": [
       "terre rare + complément"
     ],
@@ -8550,8 +8551,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « terre à terre » dans un contexte naturel.",
-    "translation": "down-to-earth",
+    "example": "Elle apprend à terre à terre avec plus de confiance.",
+    "translation": "She is learning to down-to-earth with more confidence.",
     "structures": [
       "terre à terre + complément"
     ],
@@ -8602,8 +8603,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « majeur, majeure » dans un contexte naturel.",
-    "translation": "major",
+    "example": "Elle apprend à majeur avec plus de confiance.",
+    "translation": "She is learning to major with more confidence.",
     "structures": [
       "majeur, majeure + complément"
     ],
@@ -8629,8 +8630,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « une telle situation » peut être utile dans une conversation quotidienne.",
-    "translation": "such a situation",
+    "example": "Une telle situation peut jouer un rôle important dans cette situation.",
+    "translation": "Such a situation can play an important role in this situation.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -8653,8 +8654,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « prendre une décision » dans un contexte naturel.",
-    "translation": "to make a decision",
+    "example": "Elle apprend à prendre une décision avec plus de confiance.",
+    "translation": "She is learning to make a decision with more confidence.",
     "structures": [
       "prendre une décision + complément"
     ],
@@ -8680,8 +8681,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « investir » dans un contexte naturel.",
-    "translation": "to invest",
+    "example": "Elle apprend à investir avec plus de confiance.",
+    "translation": "She is learning to invest with more confidence.",
     "structures": [
       "investir + complément"
     ],
@@ -8707,8 +8708,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « parcourir » dans un contexte naturel.",
-    "translation": "to travel across",
+    "example": "Elle apprend à parcourir avec plus de confiance.",
+    "translation": "She is learning to travel across with more confidence.",
     "structures": [
       "parcourir + complément"
     ],
@@ -8734,8 +8735,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « découvrir » dans un contexte naturel.",
-    "translation": "to discover",
+    "example": "Elle apprend à découvrir avec plus de confiance.",
+    "translation": "She is learning to discover with more confidence.",
     "structures": [
       "découvrir + complément"
     ],
@@ -8817,8 +8818,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « obéir » dans un contexte naturel.",
-    "translation": "to obey",
+    "example": "Elle apprend à obéir avec plus de confiance.",
+    "translation": "She is learning to obey with more confidence.",
     "structures": [
       "obéir + complément"
     ],
@@ -8844,8 +8845,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « accueillir » dans un contexte naturel.",
-    "translation": "to welcome",
+    "example": "Elle apprend à accueillir avec plus de confiance.",
+    "translation": "She is learning to welcome with more confidence.",
     "structures": [
       "accueillir + complément"
     ],
@@ -8871,8 +8872,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « applaudir » dans un contexte naturel.",
-    "translation": "to applaud",
+    "example": "Elle apprend à applaudir avec plus de confiance.",
+    "translation": "She is learning to applaud with more confidence.",
     "structures": [
       "applaudir + complément"
     ],
@@ -8898,8 +8899,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bâtir » dans un contexte naturel.",
-    "translation": "to build",
+    "example": "Elle apprend à bâtir avec plus de confiance.",
+    "translation": "She is learning to build with more confidence.",
     "structures": [
       "bâtir + complément"
     ],
@@ -8925,8 +8926,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « choisir » dans un contexte naturel.",
-    "translation": "to choose",
+    "example": "Elle apprend à choisir avec plus de confiance.",
+    "translation": "She is learning to choose with more confidence.",
     "structures": [
       "choisir + complément"
     ],
@@ -8952,8 +8953,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « punir » dans un contexte naturel.",
-    "translation": "to punish, discipline",
+    "example": "Elle apprend à punir avec plus de confiance.",
+    "translation": "She is learning to punish with more confidence.",
     "structures": [
       "punir + complément"
     ],
@@ -8979,8 +8980,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ravir » dans un contexte naturel.",
-    "translation": "to delight",
+    "example": "Elle apprend à ravir avec plus de confiance.",
+    "translation": "She is learning to delight with more confidence.",
     "structures": [
       "ravir + complément"
     ],
@@ -9006,8 +9007,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « réfléchir » dans un contexte naturel.",
-    "translation": "to reflect",
+    "example": "Elle apprend à réfléchir avec plus de confiance.",
+    "translation": "She is learning to reflect with more confidence.",
     "structures": [
       "réfléchir + complément"
     ],
@@ -9033,8 +9034,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « remplir » dans un contexte naturel.",
-    "translation": "to fill out",
+    "example": "Elle apprend à remplir avec plus de confiance.",
+    "translation": "She is learning to fill out with more confidence.",
     "structures": [
       "remplir + complément"
     ],
@@ -9060,8 +9061,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « réussir » dans un contexte naturel.",
-    "translation": "to succeed",
+    "example": "Elle apprend à réussir avec plus de confiance.",
+    "translation": "She is learning to succeed with more confidence.",
     "structures": [
       "réussir + complément"
     ],
@@ -9087,8 +9088,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rougir » dans un contexte naturel.",
-    "translation": "to blush",
+    "example": "Elle apprend à rougir avec plus de confiance.",
+    "translation": "She is learning to blush with more confidence.",
     "structures": [
       "rougir + complément"
     ],
@@ -9114,8 +9115,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « saisir » dans un contexte naturel.",
-    "translation": "to seize, grasp",
+    "example": "Elle apprend à saisir avec plus de confiance.",
+    "translation": "She is learning to seize with more confidence.",
     "structures": [
       "saisir + complément"
     ],
@@ -9141,8 +9142,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bouillir » dans un contexte naturel.",
-    "translation": "to boil",
+    "example": "Elle apprend à bouillir avec plus de confiance.",
+    "translation": "She is learning to boil with more confidence.",
     "structures": [
       "bouillir + complément"
     ],
@@ -9168,8 +9169,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sentir » dans un contexte naturel.",
-    "translation": "to feel, smell",
+    "example": "Elle apprend à sentir avec plus de confiance.",
+    "translation": "She is learning to feel with more confidence.",
     "structures": [
       "sentir + complément"
     ],
@@ -9195,8 +9196,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « désobéir » dans un contexte naturel.",
-    "translation": "to disobey",
+    "example": "Elle apprend à désobéir avec plus de confiance.",
+    "translation": "She is learning to disobey with more confidence.",
     "structures": [
       "désobéir + complément"
     ],
@@ -9222,8 +9223,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « finir » dans un contexte naturel.",
-    "translation": "to finish",
+    "example": "Elle apprend à finir avec plus de confiance.",
+    "translation": "She is learning to finish with more confidence.",
     "structures": [
       "finir + complément"
     ],
@@ -9249,8 +9250,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « grandir » dans un contexte naturel.",
-    "translation": "to grow",
+    "example": "Elle apprend à grandir avec plus de confiance.",
+    "translation": "She is learning to grow with more confidence.",
     "structures": [
       "grandir + complément"
     ],
@@ -9276,8 +9277,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « guérir » dans un contexte naturel.",
-    "translation": "to cure, heal",
+    "example": "Elle apprend à guérir avec plus de confiance.",
+    "translation": "She is learning to cure with more confidence.",
     "structures": [
       "guérir + complément"
     ],
@@ -9303,8 +9304,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « nourrir » dans un contexte naturel.",
-    "translation": "to nourish, feed",
+    "example": "Elle apprend à nourrir avec plus de confiance.",
+    "translation": "She is learning to nourish with more confidence.",
     "structures": [
       "nourrir + complément"
     ],
@@ -9330,8 +9331,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « refroidir » dans un contexte naturel.",
-    "translation": "to cool down",
+    "example": "Elle apprend à refroidir avec plus de confiance.",
+    "translation": "She is learning to cool down with more confidence.",
     "structures": [
       "refroidir + complément"
     ],
@@ -9357,8 +9358,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « souffrir » dans un contexte naturel.",
-    "translation": "to suffer",
+    "example": "Elle apprend à souffrir avec plus de confiance.",
+    "translation": "She is learning to suffer with more confidence.",
     "structures": [
       "souffrir + complément"
     ],
@@ -9384,8 +9385,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « revenir » dans un contexte naturel.",
-    "translation": "to come back, return",
+    "example": "Elle apprend à revenir avec plus de confiance.",
+    "translation": "She is learning to come back with more confidence.",
     "structures": [
       "revenir + complément"
     ],
@@ -9411,8 +9412,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « entretenir » dans un contexte naturel.",
-    "translation": "to maintain",
+    "example": "Elle apprend à entretenir avec plus de confiance.",
+    "translation": "She is learning to maintain with more confidence.",
     "structures": [
       "entretenir + complément"
     ],
@@ -9438,8 +9439,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mentir » dans un contexte naturel.",
-    "translation": "to lie",
+    "example": "Elle apprend à mentir avec plus de confiance.",
+    "translation": "She is learning to lie with more confidence.",
     "structures": [
       "mentir + complément"
     ],
@@ -9465,8 +9466,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « pouvoir » dans un contexte naturel.",
-    "translation": "to be able to, can, may",
+    "example": "Elle apprend à pouvoir avec plus de confiance.",
+    "translation": "She is learning to be able to with more confidence.",
     "structures": [
       "pouvoir + complément"
     ],
@@ -9492,8 +9493,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « vouloir » dans un contexte naturel.",
-    "translation": "to want",
+    "example": "Elle apprend à vouloir avec plus de confiance.",
+    "translation": "She is learning to want with more confidence.",
     "structures": [
       "vouloir + complément"
     ],
@@ -9519,8 +9520,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « savoir » dans un contexte naturel.",
-    "translation": "to know",
+    "example": "Elle apprend à savoir avec plus de confiance.",
+    "translation": "She is learning to know with more confidence.",
     "structures": [
       "savoir + complément"
     ],
@@ -9546,8 +9547,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « pleuvoir » dans un contexte naturel.",
-    "translation": "to rain",
+    "example": "Elle apprend à pleuvoir avec plus de confiance.",
+    "translation": "She is learning to rain with more confidence.",
     "structures": [
       "pleuvoir + complément"
     ],
@@ -9573,8 +9574,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « falloir » dans un contexte naturel.",
-    "translation": "to be necessary",
+    "example": "Elle apprend à falloir avec plus de confiance.",
+    "translation": "She is learning to be necessary with more confidence.",
     "structures": [
       "falloir + complément"
     ],
@@ -9600,8 +9601,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « décevoir » dans un contexte naturel.",
-    "translation": "to disappoint",
+    "example": "Elle apprend à décevoir avec plus de confiance.",
+    "translation": "She is learning to disappoint with more confidence.",
     "structures": [
       "décevoir + complément"
     ],
@@ -9627,8 +9628,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « devoir » dans un contexte naturel.",
-    "translation": "to have to, must",
+    "example": "Elle apprend à devoir avec plus de confiance.",
+    "translation": "She is learning to have to with more confidence.",
     "structures": [
       "devoir + complément"
     ],
@@ -9654,8 +9655,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « prévoir » dans un contexte naturel.",
-    "translation": "to predict, foresee",
+    "example": "Elle apprend à prévoir avec plus de confiance.",
+    "translation": "She is learning to predict with more confidence.",
     "structures": [
       "prévoir + complément"
     ],
@@ -9681,8 +9682,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « émouvoir » dans un contexte naturel.",
-    "translation": "to stir, move emotionally",
+    "example": "Elle apprend à émouvoir avec plus de confiance.",
+    "translation": "She is learning to stir with more confidence.",
     "structures": [
       "émouvoir + complément"
     ],
@@ -9708,8 +9709,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « vêtir » dans un contexte naturel.",
-    "translation": "to wear, dress",
+    "example": "Elle apprend à vêtir avec plus de confiance.",
+    "translation": "She is learning to wear with more confidence.",
     "structures": [
       "vêtir + complément"
     ],
@@ -9735,8 +9736,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « agir » dans un contexte naturel.",
-    "translation": "to act",
+    "example": "Elle apprend à agir avec plus de confiance.",
+    "translation": "She is learning to act with more confidence.",
     "structures": [
       "agir + complément"
     ],
@@ -9762,8 +9763,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « réagir » dans un contexte naturel.",
-    "translation": "to react",
+    "example": "Elle apprend à réagir avec plus de confiance.",
+    "translation": "She is learning to react with more confidence.",
     "structures": [
       "réagir + complément"
     ],
@@ -9789,8 +9790,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « fournir » dans un contexte naturel.",
-    "translation": "to provide",
+    "example": "Elle apprend à fournir avec plus de confiance.",
+    "translation": "She is learning to provide with more confidence.",
     "structures": [
       "fournir + complément"
     ],
@@ -9844,8 +9845,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « attendre » dans un contexte naturel.",
-    "translation": "to wait",
+    "example": "Elle apprend à attendre avec plus de confiance.",
+    "translation": "She is learning to wait with more confidence.",
     "structures": [
       "attendre + complément"
     ],
@@ -9871,8 +9872,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « défendre » dans un contexte naturel.",
-    "translation": "to defend",
+    "example": "Elle apprend à défendre avec plus de confiance.",
+    "translation": "She is learning to defend with more confidence.",
     "structures": [
       "défendre + complément"
     ],
@@ -9898,8 +9899,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « descendre » dans un contexte naturel.",
-    "translation": "to go down",
+    "example": "Elle apprend à descendre avec plus de confiance.",
+    "translation": "She is learning to go down with more confidence.",
     "structures": [
       "descendre + complément"
     ],
@@ -9925,8 +9926,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « entendre » dans un contexte naturel.",
-    "translation": "to hear",
+    "example": "Elle apprend à entendre avec plus de confiance.",
+    "translation": "She is learning to hear with more confidence.",
     "structures": [
       "entendre + complément"
     ],
@@ -9952,8 +9953,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « perdre » dans un contexte naturel.",
-    "translation": "to lose",
+    "example": "Elle apprend à perdre avec plus de confiance.",
+    "translation": "She is learning to lose with more confidence.",
     "structures": [
       "perdre + complément"
     ],
@@ -9979,8 +9980,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rendre » dans un contexte naturel.",
-    "translation": "to give back, return",
+    "example": "Elle apprend à rendre avec plus de confiance.",
+    "translation": "She is learning to give back with more confidence.",
     "structures": [
       "rendre + complément"
     ],
@@ -10006,8 +10007,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « répondre » dans un contexte naturel.",
-    "translation": "to answer",
+    "example": "Elle apprend à répondre avec plus de confiance.",
+    "translation": "She is learning to answer with more confidence.",
     "structures": [
       "répondre + complément"
     ],
@@ -10033,8 +10034,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « vendre » dans un contexte naturel.",
-    "translation": "to sell",
+    "example": "Elle apprend à vendre avec plus de confiance.",
+    "translation": "She is learning to sell with more confidence.",
     "structures": [
       "vendre + complément"
     ],
@@ -10060,8 +10061,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « interdire » dans un contexte naturel.",
-    "translation": "to forbid, ban",
+    "example": "Elle apprend à interdire avec plus de confiance.",
+    "translation": "She is learning to forbid with more confidence.",
     "structures": [
       "interdire + complément"
     ],
@@ -10087,8 +10088,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « construire » dans un contexte naturel.",
-    "translation": "to build",
+    "example": "Elle apprend à construire avec plus de confiance.",
+    "translation": "She is learning to build with more confidence.",
     "structures": [
       "construire + complément"
     ],
@@ -10114,8 +10115,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « fondre » dans un contexte naturel.",
-    "translation": "to melt, dissolve",
+    "example": "Elle apprend à fondre avec plus de confiance.",
+    "translation": "She is learning to melt with more confidence.",
     "structures": [
       "fondre + complément"
     ],
@@ -10141,8 +10142,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « remettre » dans un contexte naturel.",
-    "translation": "to put back",
+    "example": "Elle apprend à remettre avec plus de confiance.",
+    "translation": "She is learning to put back with more confidence.",
     "structures": [
       "remettre + complément"
     ],
@@ -10168,8 +10169,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mettre » dans un contexte naturel.",
-    "translation": "to put",
+    "example": "Elle apprend à mettre avec plus de confiance.",
+    "translation": "She is learning to put with more confidence.",
     "structures": [
       "mettre + complément"
     ],
@@ -10195,8 +10196,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « poser » dans un contexte naturel.",
-    "translation": "to put, place",
+    "example": "Elle apprend à poser avec plus de confiance.",
+    "translation": "She is learning to put with more confidence.",
     "structures": [
       "poser + complément"
     ],
@@ -10222,8 +10223,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « placer » dans un contexte naturel.",
-    "translation": "to place",
+    "example": "Elle apprend à placer avec plus de confiance.",
+    "translation": "She is learning to place with more confidence.",
     "structures": [
       "placer + complément"
     ],
@@ -10249,8 +10250,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « accroître » dans un contexte naturel.",
-    "translation": "to grow, increase",
+    "example": "Elle apprend à accroître avec plus de confiance.",
+    "translation": "She is learning to grow with more confidence.",
     "structures": [
       "accroître + complément"
     ],
@@ -10276,8 +10277,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sourire » dans un contexte naturel.",
-    "translation": "to smile",
+    "example": "Elle apprend à sourire avec plus de confiance.",
+    "translation": "She is learning to smile with more confidence.",
     "structures": [
       "sourire + complément"
     ],
@@ -10303,8 +10304,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « dire » dans un contexte naturel.",
-    "translation": "to say",
+    "example": "Elle apprend à dire avec plus de confiance.",
+    "translation": "She is learning to say with more confidence.",
     "structures": [
       "dire + complément"
     ],
@@ -10358,8 +10359,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « apprendre » dans un contexte naturel.",
-    "translation": "to learn",
+    "example": "Elle apprend à apprendre avec plus de confiance.",
+    "translation": "She is learning to learn with more confidence.",
     "structures": [
       "apprendre + complément"
     ],
@@ -10385,8 +10386,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « suivre » dans un contexte naturel.",
-    "translation": "to follow",
+    "example": "Elle apprend à suivre avec plus de confiance.",
+    "translation": "She is learning to follow with more confidence.",
     "structures": [
       "suivre + complément"
     ],
@@ -10412,8 +10413,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « suivre un cours » dans un contexte naturel.",
-    "translation": "to take a class",
+    "example": "Elle apprend à suivre un cours avec plus de confiance.",
+    "translation": "She is learning to take a class with more confidence.",
     "structures": [
       "suivre un cours + complément"
     ],
@@ -10467,8 +10468,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se relaxer » dans un contexte naturel.",
-    "translation": "to relax",
+    "example": "Avec un peu de pratique, elle apprend à se relaxer.",
+    "translation": "She is learning to relax with more confidence.",
     "structures": [
       "se relaxer + complément"
     ],
@@ -10494,8 +10495,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « détruire » dans un contexte naturel.",
-    "translation": "to destroy",
+    "example": "Elle apprend à détruire avec plus de confiance.",
+    "translation": "She is learning to destroy with more confidence.",
     "structures": [
       "détruire + complément"
     ],
@@ -10521,8 +10522,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « interrompre » dans un contexte naturel.",
-    "translation": "to interrupt",
+    "example": "Elle apprend à interrompre avec plus de confiance.",
+    "translation": "She is learning to interrupt with more confidence.",
     "structures": [
       "interrompre + complément"
     ],
@@ -10548,8 +10549,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « poursuivre » dans un contexte naturel.",
-    "translation": "to pursue",
+    "example": "Elle apprend à poursuivre avec plus de confiance.",
+    "translation": "She is learning to pursue with more confidence.",
     "structures": [
       "poursuivre + complément"
     ],
@@ -10575,8 +10576,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « ressortissant, ressortissante » peut être utile dans une conversation quotidienne.",
-    "translation": "national",
+    "example": "Ce choix semble ressortissant à première vue.",
+    "translation": "This choice seems national at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10599,8 +10600,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « citoyen, citoyenne » peut être utile dans une conversation quotidienne.",
-    "translation": "citizen",
+    "example": "Le citoyen revient souvent pendant la réunion.",
+    "translation": "The topic of citizen often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10623,8 +10624,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « visa » peut être utile dans une conversation quotidienne.",
-    "translation": "visa",
+    "example": "Le visa revient souvent pendant la réunion.",
+    "translation": "The topic of visa often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10647,8 +10648,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « frontière » dans un contexte naturel.",
-    "translation": "border",
+    "example": "Elle apprend à frontière avec plus de confiance.",
+    "translation": "She is learning to border with more confidence.",
     "structures": [
       "frontière + complément"
     ],
@@ -10674,8 +10675,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « otage » peut être utile dans une conversation quotidienne.",
-    "translation": "hostage, prisoner",
+    "example": "L’otage revient souvent pendant la réunion.",
+    "translation": "The topic of hostage often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10698,8 +10699,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « échange » peut être utile dans une conversation quotidienne.",
-    "translation": "exchange",
+    "example": "L’échange revient souvent pendant la réunion.",
+    "translation": "The topic of exchange often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10722,8 +10723,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « inconfortable » peut être utile dans une conversation quotidienne.",
-    "translation": "uncomfortable",
+    "example": "Ce choix semble inconfortable à première vue.",
+    "translation": "This choice seems uncomfortable at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10746,8 +10747,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « mal à l'aise » peut être utile dans une conversation quotidienne.",
-    "translation": "uncomfortable",
+    "example": "La mal à l'aise revient souvent pendant la réunion.",
+    "translation": "The topic of uncomfortable often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10770,8 +10771,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « timide » peut être utile dans une conversation quotidienne.",
-    "translation": "shy",
+    "example": "La timide revient souvent pendant la réunion.",
+    "translation": "The topic of shy often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10794,8 +10795,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « fiscal, fiscale » peut être utile dans une conversation quotidienne.",
-    "translation": "tax-related, fiscal",
+    "example": "Ce choix semble fiscal à première vue.",
+    "translation": "This choice seems tax-related at first glance.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -10843,8 +10844,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « en pièce jointe » peut être utile dans une conversation quotidienne.",
-    "translation": "attached, enclosed",
+    "example": "En pièce jointe, elle a mieux compris la situation.",
+    "translation": "Attached, she understood the situation better.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10867,8 +10868,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « vide » peut être utile dans une conversation quotidienne.",
-    "translation": "empty, meaningless",
+    "example": "La vide revient souvent pendant la réunion.",
+    "translation": "The topic of empty often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10891,8 +10892,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « espoir » dans un contexte naturel.",
-    "translation": "hope",
+    "example": "Elle apprend à espoir avec plus de confiance.",
+    "translation": "She is learning to hope with more confidence.",
     "structures": [
       "espoir + complément"
     ],
@@ -10918,8 +10919,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « agréable » peut être utile dans une conversation quotidienne.",
-    "translation": "pleasant",
+    "example": "Ce choix semble agréable à première vue.",
+    "translation": "This choice seems pleasant at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -10942,8 +10943,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « amusant, amusante » peut être utile dans une conversation quotidienne.",
-    "translation": "funny, amusing",
+    "example": "Ce choix semble amusant à première vue.",
+    "translation": "This choice seems funny at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11062,8 +11063,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « efficace » peut être utile dans une conversation quotidienne.",
-    "translation": "efficient, effective",
+    "example": "L’efficace revient souvent pendant la réunion.",
+    "translation": "The topic of efficient often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11086,8 +11087,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « frais, fraîche » peut être utile dans une conversation quotidienne.",
-    "translation": "fresh, cool",
+    "example": "Le frais revient souvent pendant la réunion.",
+    "translation": "The topic of fresh often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11134,8 +11135,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « jeune » peut être utile dans une conversation quotidienne.",
-    "translation": "young",
+    "example": "La jeune revient souvent pendant la réunion.",
+    "translation": "The topic of young often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11158,8 +11159,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « libre » dans un contexte naturel.",
-    "translation": "free",
+    "example": "Elle apprend à libre avec plus de confiance.",
+    "translation": "She is learning to free with more confidence.",
     "structures": [
       "libre + complément"
     ],
@@ -11185,8 +11186,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « nouveau, nouvel, nouvelle » peut être utile dans une conversation quotidienne.",
-    "translation": "new",
+    "example": "Ce choix semble nouveau à première vue.",
+    "translation": "This choice seems new at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11257,8 +11258,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « fantôme » peut être utile dans une conversation quotidienne.",
-    "translation": "ghost",
+    "example": "La fantôme revient souvent pendant la réunion.",
+    "translation": "The topic of ghost often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11281,8 +11282,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « tort, faux » peut être utile dans une conversation quotidienne.",
-    "translation": "wrong",
+    "example": "Le tort revient souvent pendant la réunion.",
+    "translation": "The topic of wrong often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11305,8 +11306,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « créateur, créatrice » peut être utile dans une conversation quotidienne.",
-    "translation": "creator",
+    "example": "Le créateur revient souvent pendant la réunion.",
+    "translation": "The topic of creator often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11329,8 +11330,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « créateur de contenu » peut être utile dans une conversation quotidienne.",
-    "translation": "content creator",
+    "example": "Le créateur de contenu revient souvent pendant la réunion.",
+    "translation": "The topic of content creator often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11353,8 +11354,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « parcours » peut être utile dans une conversation quotidienne.",
-    "translation": "journey, path",
+    "example": "Le parcours revient souvent pendant la réunion.",
+    "translation": "The topic of journey often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11377,8 +11378,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « débuter » dans un contexte naturel.",
-    "translation": "to start, begin",
+    "example": "Elle apprend à débuter avec plus de confiance.",
+    "translation": "She is learning to start with more confidence.",
     "structures": [
       "débuter + complément"
     ],
@@ -11404,8 +11405,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « étonnamment » peut être utile dans une conversation quotidienne.",
-    "translation": "surprisingly",
+    "example": "Étonnamment, elle a préparé son dossier avant l’examen.",
+    "translation": "Surprisingly, she prepared her file before the exam.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11428,8 +11429,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « envie » peut être utile dans une conversation quotidienne.",
-    "translation": "desire",
+    "example": "L’envie revient souvent pendant la réunion.",
+    "translation": "The topic of desire often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11452,8 +11453,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « démarrer » dans un contexte naturel.",
-    "translation": "to start up",
+    "example": "Elle apprend à démarrer avec plus de confiance.",
+    "translation": "She is learning to start up with more confidence.",
     "structures": [
       "démarrer + complément"
     ],
@@ -11479,8 +11480,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « avouer » dans un contexte naturel.",
-    "translation": "to confess, admit",
+    "example": "Elle apprend à avouer avec plus de confiance.",
+    "translation": "She is learning to confess with more confidence.",
     "structures": [
       "avouer + complément"
     ],
@@ -11506,8 +11507,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « valeurs » peut être utile dans une conversation quotidienne.",
-    "translation": "values",
+    "example": "Le valeurs revient souvent pendant la réunion.",
+    "translation": "The topic of values often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -11559,8 +11560,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « injuste » peut être utile dans une conversation quotidienne.",
-    "translation": "unjust, unfair",
+    "example": "Ce choix semble injuste à première vue.",
+    "translation": "This choice seems unjust at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11583,8 +11584,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « chacun » peut être utile dans une conversation quotidienne.",
-    "translation": "each, everyone",
+    "example": "Le chacun revient souvent pendant la réunion.",
+    "translation": "The topic of each often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11607,8 +11608,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « frustrant » peut être utile dans une conversation quotidienne.",
-    "translation": "frustrating",
+    "example": "Ce choix semble frustrant à première vue.",
+    "translation": "This choice seems frustrating at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11631,8 +11632,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « données » peut être utile dans une conversation quotidienne.",
-    "translation": "data",
+    "example": "Le données revient souvent pendant la réunion.",
+    "translation": "The topic of data often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -11656,8 +11657,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « nous pousse » peut être utile dans une conversation quotidienne.",
-    "translation": "pushes us",
+    "example": "La nous pousse revient souvent pendant la réunion.",
+    "translation": "The topic of pushes us often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11680,8 +11681,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Theme",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « système capitaliste » peut être utile dans une conversation quotidienne.",
-    "translation": "capitalist system",
+    "example": "La système capitaliste revient souvent pendant la réunion.",
+    "translation": "The topic of capitalist system often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -11705,8 +11706,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « abonnés » peut être utile dans une conversation quotidienne.",
-    "translation": "followers",
+    "example": "L’abonnés revient souvent pendant la réunion.",
+    "translation": "The topic of followers often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11729,8 +11730,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « utopique » peut être utile dans une conversation quotidienne.",
-    "translation": "utopian",
+    "example": "Ce choix semble utopique à première vue.",
+    "translation": "This choice seems utopian at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11753,8 +11754,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « grave » peut être utile dans une conversation quotidienne.",
-    "translation": "serious, severe",
+    "example": "La grave revient souvent pendant la réunion.",
+    "translation": "The topic of serious often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11777,8 +11778,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « addition » peut être utile dans une conversation quotidienne.",
-    "translation": "bill, addition",
+    "example": "L’addition revient souvent pendant la réunion.",
+    "translation": "The topic of bill often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11801,8 +11802,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « énorme » peut être utile dans une conversation quotidienne.",
-    "translation": "enormous",
+    "example": "L’énorme revient souvent pendant la réunion.",
+    "translation": "The topic of enormous often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11825,8 +11826,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « décalage » peut être utile dans une conversation quotidienne.",
-    "translation": "gap, disconnect",
+    "example": "La décalage revient souvent pendant la réunion.",
+    "translation": "The topic of gap often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "High",
     "status": "New",
@@ -11850,8 +11851,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « volontaire » dans un contexte naturel.",
-    "translation": "voluntary",
+    "example": "Elle apprend à volontaire avec plus de confiance.",
+    "translation": "She is learning to voluntary with more confidence.",
     "structures": [
       "volontaire + complément"
     ],
@@ -11877,8 +11878,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « soutenable » peut être utile dans une conversation quotidienne.",
-    "translation": "sustainable",
+    "example": "Ce choix semble soutenable à première vue.",
+    "translation": "This choice seems sustainable at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11926,8 +11927,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « impopulaire » dans un contexte naturel.",
-    "translation": "unpopular",
+    "example": "Elle apprend à impopulaire avec plus de confiance.",
+    "translation": "She is learning to unpopular with more confidence.",
     "structures": [
       "impopulaire + complément"
     ],
@@ -11953,8 +11954,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « soigneusement » peut être utile dans une conversation quotidienne.",
-    "translation": "carefully, neatly",
+    "example": "Le soigneusement revient souvent pendant la réunion.",
+    "translation": "The topic of carefully often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -11977,8 +11978,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « canal » peut être utile dans une conversation quotidienne.",
-    "translation": "channel",
+    "example": "Ce choix semble canal à première vue.",
+    "translation": "This choice seems channel at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12001,8 +12002,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « canaux » peut être utile dans une conversation quotidienne.",
-    "translation": "channels",
+    "example": "Le canaux revient souvent pendant la réunion.",
+    "translation": "The topic of channels often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12025,8 +12026,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « propre » dans un contexte naturel.",
-    "translation": "own, clean",
+    "example": "Elle apprend à propre avec plus de confiance.",
+    "translation": "She is learning to own with more confidence.",
     "structures": [
       "propre + complément"
     ],
@@ -12052,8 +12053,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « désaccord » peut être utile dans une conversation quotidienne.",
-    "translation": "disagreement",
+    "example": "Le désaccord revient souvent pendant la réunion.",
+    "translation": "The topic of disagreement often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12076,8 +12077,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « autour de moi » peut être utile dans une conversation quotidienne.",
-    "translation": "around me",
+    "example": "L’autour de moi revient souvent pendant la réunion.",
+    "translation": "The topic of around me often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12100,8 +12101,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « concours » peut être utile dans une conversation quotidienne.",
-    "translation": "competition",
+    "example": "Le concours revient souvent pendant la réunion.",
+    "translation": "The topic of competition often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12180,8 +12181,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « cursus » peut être utile dans une conversation quotidienne.",
-    "translation": "course, curriculum",
+    "example": "Le cursus revient souvent pendant la réunion.",
+    "translation": "The topic of course often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12204,8 +12205,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cursus scolaire » dans un contexte naturel.",
-    "translation": "school curriculum",
+    "example": "Elle apprend à cursus scolaire avec plus de confiance.",
+    "translation": "She is learning to school curriculum with more confidence.",
     "structures": [
       "cursus scolaire + complément"
     ],
@@ -12231,8 +12232,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cadre » dans un contexte naturel.",
-    "translation": "framework, setting",
+    "example": "Elle apprend à cadre avec plus de confiance.",
+    "translation": "She is learning to framework with more confidence.",
     "structures": [
       "cadre + complément"
     ],
@@ -12258,8 +12259,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « valable » peut être utile dans une conversation quotidienne.",
-    "translation": "valid",
+    "example": "Ce choix semble valable à première vue.",
+    "translation": "This choice seems valid at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12282,8 +12283,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « valide » peut être utile dans une conversation quotidienne.",
-    "translation": "valid",
+    "example": "La valide revient souvent pendant la réunion.",
+    "translation": "The topic of valid often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12306,8 +12307,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « mauvaises habitudes alimentaires » peut être utile dans une conversation quotidienne.",
-    "translation": "bad eating habits",
+    "example": "Le mauvaises habitudes alimentaires revient souvent pendant la réunion.",
+    "translation": "The topic of bad eating habits often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12330,8 +12331,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « idéal, idéale » peut être utile dans une conversation quotidienne.",
-    "translation": "ideal",
+    "example": "Ce choix semble idéal à première vue.",
+    "translation": "This choice seems ideal at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12354,8 +12355,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « similaire » dans un contexte naturel.",
-    "translation": "similar",
+    "example": "Elle apprend à similaire avec plus de confiance.",
+    "translation": "She is learning to similar with more confidence.",
     "structures": [
       "similaire + complément"
     ],
@@ -12381,8 +12382,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « plainte » peut être utile dans une conversation quotidienne.",
-    "translation": "complaint",
+    "example": "La plainte revient souvent pendant la réunion.",
+    "translation": "The topic of complaint often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12405,8 +12406,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « déranger » dans un contexte naturel.",
-    "translation": "to bother, disturb",
+    "example": "Elle apprend à déranger avec plus de confiance.",
+    "translation": "She is learning to bother with more confidence.",
     "structures": [
       "déranger + complément"
     ],
@@ -12432,8 +12433,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « déclaration » peut être utile dans une conversation quotidienne.",
-    "translation": "statement, declaration",
+    "example": "La déclaration revient souvent pendant la réunion.",
+    "translation": "The topic of statement often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12456,8 +12457,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « lunettes » peut être utile dans une conversation quotidienne.",
-    "translation": "glasses",
+    "example": "Le lunettes revient souvent pendant la réunion.",
+    "translation": "The topic of glasses often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12480,8 +12481,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « féerique » peut être utile dans une conversation quotidienne.",
-    "translation": "magical, enchanting, fairy-like",
+    "example": "Ce choix semble féerique à première vue.",
+    "translation": "This choice seems magical at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12504,8 +12505,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « frigidaire » dans un contexte naturel.",
-    "translation": "refrigerator, fridge",
+    "example": "Elle apprend à frigidaire avec plus de confiance.",
+    "translation": "She is learning to refrigerator with more confidence.",
     "structures": [
       "frigidaire + complément"
     ],
@@ -12531,8 +12532,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « frigo » peut être utile dans une conversation quotidienne.",
-    "translation": "fridge",
+    "example": "Le frigo revient souvent pendant la réunion.",
+    "translation": "The topic of fridge often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12555,8 +12556,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « feu » peut être utile dans une conversation quotidienne.",
-    "translation": "fire",
+    "example": "Ce choix semble feu à première vue.",
+    "translation": "This choice seems fire at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12579,8 +12580,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « pompier, pompière » dans un contexte naturel.",
-    "translation": "firefighter",
+    "example": "Elle apprend à pompier avec plus de confiance.",
+    "translation": "She is learning to firefighter with more confidence.",
     "structures": [
       "pompier, pompière + complément"
     ],
@@ -12606,8 +12607,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « but » peut être utile dans une conversation quotidienne.",
-    "translation": "aim, goal",
+    "example": "Le but revient souvent pendant la réunion.",
+    "translation": "The topic of aim often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12630,8 +12631,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « s'agit » peut être utile dans une conversation quotidienne.",
-    "translation": "is about",
+    "example": "Avec un peu de pratique, elle apprend à s'agit.",
+    "translation": "She is learning to is about with more confidence.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12654,8 +12655,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « timbres » peut être utile dans une conversation quotidienne.",
-    "translation": "stamps",
+    "example": "Le timbres revient souvent pendant la réunion.",
+    "translation": "The topic of stamps often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12702,8 +12703,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « revenu » peut être utile dans une conversation quotidienne.",
-    "translation": "income",
+    "example": "Ce choix semble revenu à première vue.",
+    "translation": "This choice seems income at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12726,8 +12727,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « bondé » peut être utile dans une conversation quotidienne.",
-    "translation": "crowded",
+    "example": "Ce choix semble bondé à première vue.",
+    "translation": "This choice seems crowded at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12774,8 +12775,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « chaleur » peut être utile dans une conversation quotidienne.",
-    "translation": "heat, warmth",
+    "example": "Le chaleur revient souvent pendant la réunion.",
+    "translation": "The topic of heat often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12798,8 +12799,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « chaleureux, chaleureuse » peut être utile dans une conversation quotidienne.",
-    "translation": "warm and friendly",
+    "example": "Ce choix semble chaleureux à première vue.",
+    "translation": "This choice seems warm and friendly at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12822,8 +12823,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « accueillant » peut être utile dans une conversation quotidienne.",
-    "translation": "welcoming",
+    "example": "Ce choix semble accueillant à première vue.",
+    "translation": "This choice seems welcoming at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12846,8 +12847,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « poulet » peut être utile dans une conversation quotidienne.",
-    "translation": "chicken",
+    "example": "Le poulet revient souvent pendant la réunion.",
+    "translation": "The topic of chicken often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12870,8 +12871,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « dinde » peut être utile dans une conversation quotidienne.",
-    "translation": "turkey",
+    "example": "La dinde revient souvent pendant la réunion.",
+    "translation": "The topic of turkey often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12894,8 +12895,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Le mot « queue » peut être utile dans une conversation quotidienne.",
-    "translation": "tail, queue",
+    "example": "Ce choix semble queue à première vue.",
+    "translation": "This choice seems tail at first glance.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12918,8 +12919,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "General Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Le mot « file d'attente » peut être utile dans une conversation quotidienne.",
-    "translation": "waiting line, queue",
+    "example": "La file d'attente revient souvent pendant la réunion.",
+    "translation": "The topic of waiting line often comes up during the meeting.",
     "structures": [],
     "tcfPriority": "Low",
     "status": "New",
@@ -12942,8 +12943,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « demander » dans un contexte naturel.",
-    "translation": "to ask",
+    "example": "Elle apprend à demander avec plus de confiance.",
+    "translation": "She is learning to ask with more confidence.",
     "structures": [
       "demander + complément"
     ],
@@ -12969,8 +12970,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ficher » dans un contexte naturel.",
-    "translation": "to open a file, collect/save data",
+    "example": "Elle apprend à ficher avec plus de confiance.",
+    "translation": "She is learning to open a file with more confidence.",
     "structures": [
       "ficher + complément"
     ],
@@ -12996,8 +12997,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « orner » dans un contexte naturel.",
-    "translation": "to decorate",
+    "example": "Elle apprend à orner avec plus de confiance.",
+    "translation": "She is learning to decorate with more confidence.",
     "structures": [
       "orner + complément"
     ],
@@ -13023,8 +13024,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « raconter » dans un contexte naturel.",
-    "translation": "to tell",
+    "example": "Elle apprend à raconter avec plus de confiance.",
+    "translation": "She is learning to tell with more confidence.",
     "structures": [
       "raconter + complément"
     ],
@@ -13050,8 +13051,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ranger » dans un contexte naturel.",
-    "translation": "to tidy up",
+    "example": "Elle apprend à ranger avec plus de confiance.",
+    "translation": "She is learning to tidy up with more confidence.",
     "structures": [
       "ranger + complément"
     ],
@@ -13077,8 +13078,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « louer » dans un contexte naturel.",
-    "translation": "to rent",
+    "example": "Elle apprend à louer avec plus de confiance.",
+    "translation": "She is learning to rent with more confidence.",
     "structures": [
       "louer + complément"
     ],
@@ -13104,8 +13105,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « accompagner » dans un contexte naturel.",
-    "translation": "to accompany, go with",
+    "example": "Elle apprend à accompagner avec plus de confiance.",
+    "translation": "She is learning to accompany with more confidence.",
     "structures": [
       "accompagner + complément"
     ],
@@ -13131,8 +13132,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « aider » dans un contexte naturel.",
-    "translation": "to help",
+    "example": "Elle apprend à aider avec plus de confiance.",
+    "translation": "She is learning to help with more confidence.",
     "structures": [
       "aider + complément"
     ],
@@ -13158,8 +13159,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « aimer » dans un contexte naturel.",
-    "translation": "to like, love",
+    "example": "Elle apprend à aimer avec plus de confiance.",
+    "translation": "She is learning to like with more confidence.",
     "structures": [
       "aimer + complément"
     ],
@@ -13185,8 +13186,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ajouter » dans un contexte naturel.",
-    "translation": "to add",
+    "example": "Elle apprend à ajouter avec plus de confiance.",
+    "translation": "She is learning to add with more confidence.",
     "structures": [
       "ajouter + complément"
     ],
@@ -13212,8 +13213,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « féliciter » dans un contexte naturel.",
-    "translation": "to congratulate",
+    "example": "Elle apprend à féliciter avec plus de confiance.",
+    "translation": "She is learning to congratulate with more confidence.",
     "structures": [
       "féliciter + complément"
     ],
@@ -13239,8 +13240,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « apporter » dans un contexte naturel.",
-    "translation": "to bring",
+    "example": "Elle apprend à apporter avec plus de confiance.",
+    "translation": "She is learning to bring with more confidence.",
     "structures": [
       "apporter + complément"
     ],
@@ -13266,8 +13267,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « jouer » dans un contexte naturel.",
-    "translation": "to play",
+    "example": "Elle apprend à jouer avec plus de confiance.",
+    "translation": "She is learning to play with more confidence.",
     "structures": [
       "jouer + complément"
     ],
@@ -13293,8 +13294,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « fermer » dans un contexte naturel.",
-    "translation": "to close",
+    "example": "Elle apprend à fermer avec plus de confiance.",
+    "translation": "She is learning to close with more confidence.",
     "structures": [
       "fermer + complément"
     ],
@@ -13320,8 +13321,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « laver » dans un contexte naturel.",
-    "translation": "to wash",
+    "example": "Elle apprend à laver avec plus de confiance.",
+    "translation": "She is learning to wash with more confidence.",
     "structures": [
       "laver + complément"
     ],
@@ -13347,8 +13348,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « protéger » dans un contexte naturel.",
-    "translation": "to protect",
+    "example": "Elle apprend à protéger avec plus de confiance.",
+    "translation": "She is learning to protect with more confidence.",
     "structures": [
       "protéger + complément"
     ],
@@ -13374,8 +13375,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bavarder » dans un contexte naturel.",
-    "translation": "to chat",
+    "example": "Elle apprend à bavarder avec plus de confiance.",
+    "translation": "She is learning to chat with more confidence.",
     "structures": [
       "bavarder + complément"
     ],
@@ -13401,8 +13402,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « marcher » dans un contexte naturel.",
-    "translation": "to walk",
+    "example": "Elle apprend à marcher avec plus de confiance.",
+    "translation": "She is learning to walk with more confidence.",
     "structures": [
       "marcher + complément"
     ],
@@ -13428,8 +13429,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « briller » dans un contexte naturel.",
-    "translation": "to shine",
+    "example": "Elle apprend à briller avec plus de confiance.",
+    "translation": "She is learning to shine with more confidence.",
     "structures": [
       "briller + complément"
     ],
@@ -13455,8 +13456,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mériter » dans un contexte naturel.",
-    "translation": "to deserve",
+    "example": "Elle apprend à mériter avec plus de confiance.",
+    "translation": "She is learning to deserve with more confidence.",
     "structures": [
       "mériter + complément"
     ],
@@ -13482,8 +13483,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « brosser » dans un contexte naturel.",
-    "translation": "to brush",
+    "example": "Elle apprend à brosser avec plus de confiance.",
+    "translation": "She is learning to brush with more confidence.",
     "structures": [
       "brosser + complément"
     ],
@@ -13509,8 +13510,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cacher » dans un contexte naturel.",
-    "translation": "to hide",
+    "example": "Elle apprend à cacher avec plus de confiance.",
+    "translation": "She is learning to hide with more confidence.",
     "structures": [
       "cacher + complément"
     ],
@@ -13536,8 +13537,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « oublier » dans un contexte naturel.",
-    "translation": "to forget",
+    "example": "Elle apprend à oublier avec plus de confiance.",
+    "translation": "She is learning to forget with more confidence.",
     "structures": [
       "oublier + complément"
     ],
@@ -13563,8 +13564,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « cesser » dans un contexte naturel.",
-    "translation": "to cease, stop",
+    "example": "Elle apprend à cesser avec plus de confiance.",
+    "translation": "She is learning to cease with more confidence.",
     "structures": [
       "cesser + complément"
     ],
@@ -13590,8 +13591,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « arrêter » dans un contexte naturel.",
-    "translation": "to stop, arrest",
+    "example": "Elle apprend à arrêter avec plus de confiance.",
+    "translation": "She is learning to stop with more confidence.",
     "structures": [
       "arrêter + complément"
     ],
@@ -13617,8 +13618,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « chanter » dans un contexte naturel.",
-    "translation": "to sing",
+    "example": "Elle apprend à chanter avec plus de confiance.",
+    "translation": "She is learning to sing with more confidence.",
     "structures": [
       "chanter + complément"
     ],
@@ -13644,8 +13645,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « pardonner » dans un contexte naturel.",
-    "translation": "to forgive",
+    "example": "Elle apprend à pardonner avec plus de confiance.",
+    "translation": "She is learning to forgive with more confidence.",
     "structures": [
       "pardonner + complément"
     ],
@@ -13671,8 +13672,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « chercher » dans un contexte naturel.",
-    "translation": "to look for",
+    "example": "Elle apprend à chercher avec plus de confiance.",
+    "translation": "She is learning to look for with more confidence.",
     "structures": [
       "chercher + complément"
     ],
@@ -13698,8 +13699,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « commander » dans un contexte naturel.",
-    "translation": "to order",
+    "example": "Elle apprend à commander avec plus de confiance.",
+    "translation": "She is learning to order with more confidence.",
     "structures": [
       "commander + complément"
     ],
@@ -13725,8 +13726,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « compter » dans un contexte naturel.",
-    "translation": "to count",
+    "example": "Elle apprend à compter avec plus de confiance.",
+    "translation": "She is learning to count with more confidence.",
     "structures": [
       "compter + complément"
     ],
@@ -13752,8 +13753,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « parler » dans un contexte naturel.",
-    "translation": "to speak",
+    "example": "Elle apprend à parler avec plus de confiance.",
+    "translation": "She is learning to speak with more confidence.",
     "structures": [
       "parler + complément"
     ],
@@ -13779,8 +13780,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « passer » dans un contexte naturel.",
-    "translation": "to pass, spend time",
+    "example": "Elle apprend à passer avec plus de confiance.",
+    "translation": "She is learning to pass with more confidence.",
     "structures": [
       "passer + complément"
     ],
@@ -13806,8 +13807,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « peigner » dans un contexte naturel.",
-    "translation": "to comb",
+    "example": "Elle apprend à peigner avec plus de confiance.",
+    "translation": "She is learning to comb with more confidence.",
     "structures": [
       "peigner + complément"
     ],
@@ -13833,8 +13834,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « coûter » dans un contexte naturel.",
-    "translation": "to cost",
+    "example": "Elle apprend à coûter avec plus de confiance.",
+    "translation": "She is learning to cost with more confidence.",
     "structures": [
       "coûter + complément"
     ],
@@ -13860,8 +13861,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « danser » dans un contexte naturel.",
-    "translation": "to dance",
+    "example": "Elle apprend à danser avec plus de confiance.",
+    "translation": "She is learning to dance with more confidence.",
     "structures": [
       "danser + complément"
     ],
@@ -13887,8 +13888,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « penser » dans un contexte naturel.",
-    "translation": "to think",
+    "example": "Elle apprend à penser avec plus de confiance.",
+    "translation": "She is learning to think with more confidence.",
     "structures": [
       "penser + complément"
     ],
@@ -13914,8 +13915,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « déjeuner » dans un contexte naturel.",
-    "translation": "to have lunch",
+    "example": "Elle apprend à déjeuner avec plus de confiance.",
+    "translation": "She is learning to have lunch with more confidence.",
     "structures": [
       "déjeuner + complément"
     ],
@@ -13941,8 +13942,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « porter » dans un contexte naturel.",
-    "translation": "to wear, carry",
+    "example": "Elle apprend à porter avec plus de confiance.",
+    "translation": "She is learning to wear with more confidence.",
     "structures": [
       "porter + complément"
     ],
@@ -13968,8 +13969,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « désirer » dans un contexte naturel.",
-    "translation": "to want, desire",
+    "example": "Elle apprend à désirer avec plus de confiance.",
+    "translation": "She is learning to want with more confidence.",
     "structures": [
       "désirer + complément"
     ],
@@ -13995,8 +13996,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « dîner » dans un contexte naturel.",
-    "translation": "to have dinner",
+    "example": "Elle apprend à dîner avec plus de confiance.",
+    "translation": "She is learning to have dinner with more confidence.",
     "structures": [
       "dîner + complément"
     ],
@@ -14022,8 +14023,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « présenter » dans un contexte naturel.",
-    "translation": "to present, introduce",
+    "example": "Elle apprend à présenter avec plus de confiance.",
+    "translation": "She is learning to present with more confidence.",
     "structures": [
       "présenter + complément"
     ],
@@ -14049,8 +14050,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « donner » dans un contexte naturel.",
-    "translation": "to give",
+    "example": "Elle apprend à donner avec plus de confiance.",
+    "translation": "She is learning to give with more confidence.",
     "structures": [
       "donner + complément"
     ],
@@ -14076,8 +14077,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « prêter » dans un contexte naturel.",
-    "translation": "to lend",
+    "example": "Elle apprend à prêter avec plus de confiance.",
+    "translation": "She is learning to lend with more confidence.",
     "structures": [
       "prêter + complément"
     ],
@@ -14103,8 +14104,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « écouter » dans un contexte naturel.",
-    "translation": "to listen",
+    "example": "Elle apprend à écouter avec plus de confiance.",
+    "translation": "She is learning to listen with more confidence.",
     "structures": [
       "écouter + complément"
     ],
@@ -14130,8 +14131,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « quitter » dans un contexte naturel.",
-    "translation": "to leave",
+    "example": "Elle apprend à quitter avec plus de confiance.",
+    "translation": "She is learning to leave with more confidence.",
     "structures": [
       "quitter + complément"
     ],
@@ -14157,8 +14158,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « partir » dans un contexte naturel.",
-    "translation": "to leave",
+    "example": "Elle apprend à partir avec plus de confiance.",
+    "translation": "She is learning to leave with more confidence.",
     "structures": [
       "partir + complément"
     ],
@@ -14184,8 +14185,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « embrasser » dans un contexte naturel.",
-    "translation": "to kiss, embrace",
+    "example": "Elle apprend à embrasser avec plus de confiance.",
+    "translation": "She is learning to kiss with more confidence.",
     "structures": [
       "embrasser + complément"
     ],
@@ -14211,8 +14212,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « embarrasser » dans un contexte naturel.",
-    "translation": "to embarrass",
+    "example": "Elle apprend à embarrasser avec plus de confiance.",
+    "translation": "She is learning to embarrass with more confidence.",
     "structures": [
       "embarrasser + complément"
     ],
@@ -14238,8 +14239,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rappeler » dans un contexte naturel.",
-    "translation": "to remember, remind",
+    "example": "Elle apprend à rappeler avec plus de confiance.",
+    "translation": "She is learning to remember with more confidence.",
     "structures": [
       "rappeler + complément"
     ],
@@ -14265,8 +14266,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « entrer » dans un contexte naturel.",
-    "translation": "to enter",
+    "example": "Elle apprend à entrer avec plus de confiance.",
+    "translation": "She is learning to enter with more confidence.",
     "structures": [
       "entrer + complément"
     ],
@@ -14292,8 +14293,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « regretter » dans un contexte naturel.",
-    "translation": "to regret",
+    "example": "Elle apprend à regretter avec plus de confiance.",
+    "translation": "She is learning to regret with more confidence.",
     "structures": [
       "regretter + complément"
     ],
@@ -14319,8 +14320,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « épouser » dans un contexte naturel.",
-    "translation": "to marry",
+    "example": "Elle apprend à épouser avec plus de confiance.",
+    "translation": "She is learning to marry with more confidence.",
     "structures": [
       "épouser + complément"
     ],
@@ -14346,8 +14347,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « remercier » dans un contexte naturel.",
-    "translation": "to thank",
+    "example": "Elle apprend à remercier avec plus de confiance.",
+    "translation": "She is learning to thank with more confidence.",
     "structures": [
       "remercier + complément"
     ],
@@ -14373,8 +14374,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « étudier » dans un contexte naturel.",
-    "translation": "to study",
+    "example": "Elle apprend à étudier avec plus de confiance.",
+    "translation": "She is learning to study with more confidence.",
     "structures": [
       "étudier + complément"
     ],
@@ -14400,8 +14401,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « expliquer » dans un contexte naturel.",
-    "translation": "to explain",
+    "example": "Elle apprend à expliquer avec plus de confiance.",
+    "translation": "She is learning to explain with more confidence.",
     "structures": [
       "expliquer + complément"
     ],
@@ -14427,8 +14428,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rencontrer » dans un contexte naturel.",
-    "translation": "to meet",
+    "example": "Elle apprend à rencontrer avec plus de confiance.",
+    "translation": "She is learning to meet with more confidence.",
     "structures": [
       "rencontrer + complément"
     ],
@@ -14454,8 +14455,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « terminer » dans un contexte naturel.",
-    "translation": "to end, finish",
+    "example": "Elle apprend à terminer avec plus de confiance.",
+    "translation": "She is learning to end with more confidence.",
     "structures": [
       "terminer + complément"
     ],
@@ -14481,8 +14482,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « trouver » dans un contexte naturel.",
-    "translation": "to find",
+    "example": "Elle apprend à trouver avec plus de confiance.",
+    "translation": "She is learning to find with more confidence.",
     "structures": [
       "trouver + complément"
     ],
@@ -14508,8 +14509,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « essayer » dans un contexte naturel.",
-    "translation": "to try",
+    "example": "Elle apprend à essayer avec plus de confiance.",
+    "translation": "She is learning to try with more confidence.",
     "structures": [
       "essayer + complément"
     ],
@@ -14535,8 +14536,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rester » dans un contexte naturel.",
-    "translation": "to stay",
+    "example": "Elle apprend à rester avec plus de confiance.",
+    "translation": "She is learning to stay with more confidence.",
     "structures": [
       "rester + complément"
     ],
@@ -14562,8 +14563,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tromper » dans un contexte naturel.",
-    "translation": "to deceive, cheat on",
+    "example": "Elle apprend à tromper avec plus de confiance.",
+    "translation": "She is learning to deceive with more confidence.",
     "structures": [
       "tromper + complément"
     ],
@@ -14589,8 +14590,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « souhaiter » dans un contexte naturel.",
-    "translation": "to wish",
+    "example": "Elle apprend à souhaiter avec plus de confiance.",
+    "translation": "She is learning to wish with more confidence.",
     "structures": [
       "souhaiter + complément"
     ],
@@ -14616,8 +14617,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « espérer » dans un contexte naturel.",
-    "translation": "to hope",
+    "example": "Elle apprend à espérer avec plus de confiance.",
+    "translation": "She is learning to hope with more confidence.",
     "structures": [
       "espérer + complément"
     ],
@@ -14643,8 +14644,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « téléphoner » dans un contexte naturel.",
-    "translation": "to call",
+    "example": "Elle apprend à téléphoner avec plus de confiance.",
+    "translation": "She is learning to call with more confidence.",
     "structures": [
       "téléphoner + complément"
     ],
@@ -14670,8 +14671,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « supprimer » dans un contexte naturel.",
-    "translation": "to delete",
+    "example": "Elle apprend à supprimer avec plus de confiance.",
+    "translation": "She is learning to delete with more confidence.",
     "structures": [
       "supprimer + complément"
     ],
@@ -14697,8 +14698,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « télécharger » dans un contexte naturel.",
-    "translation": "to download",
+    "example": "Elle apprend à télécharger avec plus de confiance.",
+    "translation": "She is learning to download with more confidence.",
     "structures": [
       "télécharger + complément"
     ],
@@ -14724,8 +14725,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tomber » dans un contexte naturel.",
-    "translation": "to fall",
+    "example": "Elle apprend à tomber avec plus de confiance.",
+    "translation": "She is learning to fall with more confidence.",
     "structures": [
       "tomber + complément"
     ],
@@ -14751,8 +14752,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « lancer » dans un contexte naturel.",
-    "translation": "to throw, launch",
+    "example": "Elle apprend à lancer avec plus de confiance.",
+    "translation": "She is learning to throw with more confidence.",
     "structures": [
       "lancer + complément"
     ],
@@ -14778,8 +14779,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « jeter » dans un contexte naturel.",
-    "translation": "to throw",
+    "example": "Elle apprend à jeter avec plus de confiance.",
+    "translation": "She is learning to throw with more confidence.",
     "structures": [
       "jeter + complément"
     ],
@@ -14805,8 +14806,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « coiffer » dans un contexte naturel.",
-    "translation": "to style hair",
+    "example": "Elle apprend à coiffer avec plus de confiance.",
+    "translation": "She is learning to style hair with more confidence.",
     "structures": [
       "coiffer + complément"
     ],
@@ -14832,8 +14833,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « travailler » dans un contexte naturel.",
-    "translation": "to work",
+    "example": "Elle apprend à travailler avec plus de confiance.",
+    "translation": "She is learning to work with more confidence.",
     "structures": [
       "travailler + complément"
     ],
@@ -14859,8 +14860,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bouger » dans un contexte naturel.",
-    "translation": "to move, budge, stir",
+    "example": "Elle apprend à bouger avec plus de confiance.",
+    "translation": "She is learning to move with more confidence.",
     "structures": [
       "bouger + complément"
     ],
@@ -14886,8 +14887,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « chasser » dans un contexte naturel.",
-    "translation": "to hunt, chase",
+    "example": "Elle apprend à chasser avec plus de confiance.",
+    "translation": "She is learning to hunt with more confidence.",
     "structures": [
       "chasser + complément"
     ],
@@ -14941,8 +14942,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « gérer » dans un contexte naturel.",
-    "translation": "to manage, handle",
+    "example": "Elle apprend à gérer avec plus de confiance.",
+    "translation": "She is learning to manage with more confidence.",
     "structures": [
       "gérer + complément"
     ],
@@ -14968,8 +14969,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « piquer » dans un contexte naturel.",
-    "translation": "to sting",
+    "example": "Elle apprend à piquer avec plus de confiance.",
+    "translation": "She is learning to sting with more confidence.",
     "structures": [
       "piquer + complément"
     ],
@@ -14995,8 +14996,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « glisser » dans un contexte naturel.",
-    "translation": "to slip",
+    "example": "Elle apprend à glisser avec plus de confiance.",
+    "translation": "She is learning to slip with more confidence.",
     "structures": [
       "glisser + complément"
     ],
@@ -15022,8 +15023,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « juger » dans un contexte naturel.",
-    "translation": "to judge",
+    "example": "Elle apprend à juger avec plus de confiance.",
+    "translation": "She is learning to judge with more confidence.",
     "structures": [
       "juger + complément"
     ],
@@ -15049,8 +15050,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « gagner » dans un contexte naturel.",
-    "translation": "to earn, win",
+    "example": "Elle apprend à gagner avec plus de confiance.",
+    "translation": "She is learning to earn with more confidence.",
     "structures": [
       "gagner + complément"
     ],
@@ -15076,8 +15077,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sauver » dans un contexte naturel.",
-    "translation": "to save, rescue",
+    "example": "Elle apprend à sauver avec plus de confiance.",
+    "translation": "She is learning to save with more confidence.",
     "structures": [
       "sauver + complément"
     ],
@@ -15103,8 +15104,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « économiser » dans un contexte naturel.",
-    "translation": "to save money",
+    "example": "Elle apprend à économiser avec plus de confiance.",
+    "translation": "She is learning to save money with more confidence.",
     "structures": [
       "économiser + complément"
     ],
@@ -15158,8 +15159,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « émaner » dans un contexte naturel.",
-    "translation": "to come from",
+    "example": "Elle apprend à émaner avec plus de confiance.",
+    "translation": "She is learning to come from with more confidence.",
     "structures": [
       "émaner + complément"
     ],
@@ -15185,8 +15186,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « dessiner » dans un contexte naturel.",
-    "translation": "to draw",
+    "example": "Elle apprend à dessiner avec plus de confiance.",
+    "translation": "She is learning to draw with more confidence.",
     "structures": [
       "dessiner + complément"
     ],
@@ -15212,8 +15213,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sauter » dans un contexte naturel.",
-    "translation": "to jump",
+    "example": "Elle apprend à sauter avec plus de confiance.",
+    "translation": "She is learning to jump with more confidence.",
     "structures": [
       "sauter + complément"
     ],
@@ -15239,8 +15240,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « basculer » dans un contexte naturel.",
-    "translation": "to turn for the worse, tip over",
+    "example": "Elle apprend à basculer avec plus de confiance.",
+    "translation": "She is learning to turn for the worse with more confidence.",
     "structures": [
       "basculer + complément"
     ],
@@ -15266,8 +15267,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « démarcher » dans un contexte naturel.",
-    "translation": "to canvass, solicit",
+    "example": "Elle apprend à démarcher avec plus de confiance.",
+    "translation": "She is learning to canvass with more confidence.",
     "structures": [
       "démarcher + complément"
     ],
@@ -15293,8 +15294,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se dérouler » dans un contexte naturel.",
-    "translation": "to take place",
+    "example": "Avec un peu de pratique, elle apprend à se dérouler.",
+    "translation": "She is learning to take place with more confidence.",
     "structures": [
       "se dérouler + complément"
     ],
@@ -15320,8 +15321,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « manquer » dans un contexte naturel.",
-    "translation": "to lack, miss",
+    "example": "Elle apprend à manquer avec plus de confiance.",
+    "translation": "She is learning to lack with more confidence.",
     "structures": [
       "manquer + complément"
     ],
@@ -15347,8 +15348,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « partager » dans un contexte naturel.",
-    "translation": "to share",
+    "example": "Elle apprend à partager avec plus de confiance.",
+    "translation": "She is learning to share with more confidence.",
     "structures": [
       "partager + complément"
     ],
@@ -15374,8 +15375,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « récupérer » dans un contexte naturel.",
-    "translation": "to recover, get back",
+    "example": "Elle apprend à récupérer avec plus de confiance.",
+    "translation": "She is learning to recover with more confidence.",
     "structures": [
       "récupérer + complément"
     ],
@@ -15401,8 +15402,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « entraver » dans un contexte naturel.",
-    "translation": "to hinder",
+    "example": "Elle apprend à entraver avec plus de confiance.",
+    "translation": "She is learning to hinder with more confidence.",
     "structures": [
       "entraver + complément"
     ],
@@ -15428,8 +15429,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « enseigner » dans un contexte naturel.",
-    "translation": "to teach",
+    "example": "Elle apprend à enseigner avec plus de confiance.",
+    "translation": "She is learning to teach with more confidence.",
     "structures": [
       "enseigner + complément"
     ],
@@ -15455,8 +15456,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « embrouiller » dans un contexte naturel.",
-    "translation": "to confuse, mix up",
+    "example": "Elle apprend à embrouiller avec plus de confiance.",
+    "translation": "She is learning to confuse with more confidence.",
     "structures": [
       "embrouiller + complément"
     ],
@@ -15510,8 +15511,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « corriger » dans un contexte naturel.",
-    "translation": "to correct, mark",
+    "example": "Elle apprend à corriger avec plus de confiance.",
+    "translation": "She is learning to correct with more confidence.",
     "structures": [
       "corriger + complément"
     ],
@@ -15537,8 +15538,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « compliquer » dans un contexte naturel.",
-    "translation": "to complicate",
+    "example": "Elle apprend à compliquer avec plus de confiance.",
+    "translation": "She is learning to complicate with more confidence.",
     "structures": [
       "compliquer + complément"
     ],
@@ -15564,8 +15565,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « remarquer » dans un contexte naturel.",
-    "translation": "to notice",
+    "example": "Elle apprend à remarquer avec plus de confiance.",
+    "translation": "She is learning to notice with more confidence.",
     "structures": [
       "remarquer + complément"
     ],
@@ -15591,8 +15592,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « changer » dans un contexte naturel.",
-    "translation": "to change",
+    "example": "Elle apprend à changer avec plus de confiance.",
+    "translation": "She is learning to change with more confidence.",
     "structures": [
       "changer + complément"
     ],
@@ -15618,8 +15619,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « gaspiller » dans un contexte naturel.",
-    "translation": "to waste",
+    "example": "Elle apprend à gaspiller avec plus de confiance.",
+    "translation": "She is learning to waste with more confidence.",
     "structures": [
       "gaspiller + complément"
     ],
@@ -15645,8 +15646,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « rêver » dans un contexte naturel.",
-    "translation": "to dream",
+    "example": "Elle apprend à rêver avec plus de confiance.",
+    "translation": "She is learning to dream with more confidence.",
     "structures": [
       "rêver + complément"
     ],
@@ -15672,8 +15673,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « se dépêcher » dans un contexte naturel.",
-    "translation": "to hurry",
+    "example": "Avec un peu de pratique, elle apprend à se dépêcher.",
+    "translation": "She is learning to hurry with more confidence.",
     "structures": [
       "se dépêcher + complément"
     ],
@@ -15699,8 +15700,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « fonctionner » dans un contexte naturel.",
-    "translation": "to work, function",
+    "example": "Elle apprend à fonctionner avec plus de confiance.",
+    "translation": "She is learning to work with more confidence.",
     "structures": [
       "fonctionner + complément"
     ],
@@ -15726,8 +15727,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sortir » dans un contexte naturel.",
-    "translation": "to go out",
+    "example": "Elle apprend à sortir avec plus de confiance.",
+    "translation": "She is learning to go out with more confidence.",
     "structures": [
       "sortir + complément"
     ],
@@ -15753,8 +15754,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tremper » dans un contexte naturel.",
-    "translation": "to soak",
+    "example": "Elle apprend à tremper avec plus de confiance.",
+    "translation": "She is learning to soak with more confidence.",
     "structures": [
       "tremper + complément"
     ],
@@ -15780,8 +15781,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « laisser » dans un contexte naturel.",
-    "translation": "to leave, let",
+    "example": "Elle apprend à laisser avec plus de confiance.",
+    "translation": "She is learning to leave with more confidence.",
     "structures": [
       "laisser + complément"
     ],
@@ -15807,8 +15808,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sécher » dans un contexte naturel.",
-    "translation": "to dry",
+    "example": "Elle apprend à sécher avec plus de confiance.",
+    "translation": "She is learning to dry with more confidence.",
     "structures": [
       "sécher + complément"
     ],
@@ -15834,8 +15835,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « ronronner » dans un contexte naturel.",
-    "translation": "to purr",
+    "example": "Elle apprend à ronronner avec plus de confiance.",
+    "translation": "She is learning to purr with more confidence.",
     "structures": [
       "ronronner + complément"
     ],
@@ -15861,8 +15862,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « mélanger » dans un contexte naturel.",
-    "translation": "to mix, stir",
+    "example": "Elle apprend à mélanger avec plus de confiance.",
+    "translation": "She is learning to mix with more confidence.",
     "structures": [
       "mélanger + complément"
     ],
@@ -15888,8 +15889,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « remplacer » dans un contexte naturel.",
-    "translation": "to replace, substitute",
+    "example": "Elle apprend à remplacer avec plus de confiance.",
+    "translation": "She is learning to replace with more confidence.",
     "structures": [
       "remplacer + complément"
     ],
@@ -15915,8 +15916,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « craquer » dans un contexte naturel.",
-    "translation": "to strike, crack",
+    "example": "Elle apprend à craquer avec plus de confiance.",
+    "translation": "She is learning to strike with more confidence.",
     "structures": [
       "craquer + complément"
     ],
@@ -15942,8 +15943,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « allumer » dans un contexte naturel.",
-    "translation": "to turn/switch on",
+    "example": "Elle apprend à allumer avec plus de confiance.",
+    "translation": "She is learning to turn with more confidence.",
     "structures": [
       "allumer + complément"
     ],
@@ -15969,8 +15970,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « éviter » dans un contexte naturel.",
-    "translation": "to avoid",
+    "example": "Elle apprend à éviter avec plus de confiance.",
+    "translation": "She is learning to avoid with more confidence.",
     "structures": [
       "éviter + complément"
     ],
@@ -15996,8 +15997,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « profiter » dans un contexte naturel.",
-    "translation": "to enjoy, take advantage of",
+    "example": "Elle apprend à profiter avec plus de confiance.",
+    "translation": "She is learning to enjoy with more confidence.",
     "structures": [
       "profiter + complément"
     ],
@@ -16023,8 +16024,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « voler » dans un contexte naturel.",
-    "translation": "to steal, fly",
+    "example": "Elle apprend à voler avec plus de confiance.",
+    "translation": "She is learning to steal with more confidence.",
     "structures": [
       "voler + complément"
     ],
@@ -16050,8 +16051,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « tuer » dans un contexte naturel.",
-    "translation": "to kill",
+    "example": "Elle apprend à tuer avec plus de confiance.",
+    "translation": "She is learning to kill with more confidence.",
     "structures": [
       "tuer + complément"
     ],
@@ -16077,8 +16078,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « démissionner » dans un contexte naturel.",
-    "translation": "to resign, quit",
+    "example": "Elle apprend à démissionner avec plus de confiance.",
+    "translation": "She is learning to resign with more confidence.",
     "structures": [
       "démissionner + complément"
     ],
@@ -16104,8 +16105,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « élire » dans un contexte naturel.",
-    "translation": "to elect",
+    "example": "Elle apprend à élire avec plus de confiance.",
+    "translation": "She is learning to elect with more confidence.",
     "structures": [
       "élire + complément"
     ],
@@ -16131,8 +16132,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « paniquer » dans un contexte naturel.",
-    "translation": "to panic, freak out",
+    "example": "Elle apprend à paniquer avec plus de confiance.",
+    "translation": "She is learning to panic with more confidence.",
     "structures": [
       "paniquer + complément"
     ],
@@ -16158,8 +16159,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « souffler » dans un contexte naturel.",
-    "translation": "to blow, breathe out",
+    "example": "Elle apprend à souffler avec plus de confiance.",
+    "translation": "She is learning to blow with more confidence.",
     "structures": [
       "souffler + complément"
     ],
@@ -16185,8 +16186,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « peiner » dans un contexte naturel.",
-    "translation": "to struggle, grieve",
+    "example": "Elle apprend à peiner avec plus de confiance.",
+    "translation": "She is learning to struggle with more confidence.",
     "structures": [
       "peiner + complément"
     ],
@@ -16212,8 +16213,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « déménager » dans un contexte naturel.",
-    "translation": "to move house",
+    "example": "Elle apprend à déménager avec plus de confiance.",
+    "translation": "She is learning to move house with more confidence.",
     "structures": [
       "déménager + complément"
     ],
@@ -16239,8 +16240,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « échouer » dans un contexte naturel.",
-    "translation": "to fail",
+    "example": "Elle apprend à échouer avec plus de confiance.",
+    "translation": "She is learning to fail with more confidence.",
     "structures": [
       "échouer + complément"
     ],
@@ -16266,8 +16267,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « transformer » dans un contexte naturel.",
-    "translation": "to transform",
+    "example": "Elle apprend à transformer avec plus de confiance.",
+    "translation": "She is learning to transform with more confidence.",
     "structures": [
       "transformer + complément"
     ],
@@ -16293,8 +16294,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « transcender » dans un contexte naturel.",
-    "translation": "to transcend",
+    "example": "Elle apprend à transcender avec plus de confiance.",
+    "translation": "She is learning to transcend with more confidence.",
     "structures": [
       "transcender + complément"
     ],
@@ -16320,8 +16321,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « déléguer » dans un contexte naturel.",
-    "translation": "to delegate",
+    "example": "Elle apprend à déléguer avec plus de confiance.",
+    "translation": "She is learning to delegate with more confidence.",
     "structures": [
       "déléguer + complément"
     ],
@@ -16347,8 +16348,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « consommer » dans un contexte naturel.",
-    "translation": "to consume",
+    "example": "Elle apprend à consommer avec plus de confiance.",
+    "translation": "She is learning to consume with more confidence.",
     "structures": [
       "consommer + complément"
     ],
@@ -16374,8 +16375,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « abonner » dans un contexte naturel.",
-    "translation": "to subscribe",
+    "example": "Elle apprend à abonner avec plus de confiance.",
+    "translation": "She is learning to subscribe with more confidence.",
     "structures": [
       "abonner + complément"
     ],
@@ -16401,8 +16402,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « libérer » dans un contexte naturel.",
-    "translation": "to release, free",
+    "example": "Elle apprend à libérer avec plus de confiance.",
+    "translation": "She is learning to release with more confidence.",
     "structures": [
       "libérer + complément"
     ],
@@ -16456,8 +16457,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « assister à » dans un contexte naturel.",
-    "translation": "to attend",
+    "example": "Elle apprend à assister à avec plus de confiance.",
+    "translation": "She is learning to attend with more confidence.",
     "structures": [
       "assister à + complément"
     ],
@@ -16511,8 +16512,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « douter » dans un contexte naturel.",
-    "translation": "to doubt",
+    "example": "Elle apprend à douter avec plus de confiance.",
+    "translation": "She is learning to doubt with more confidence.",
     "structures": [
       "douter + complément"
     ],
@@ -16538,8 +16539,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sembler » dans un contexte naturel.",
-    "translation": "to seem, appear",
+    "example": "Elle apprend à sembler avec plus de confiance.",
+    "translation": "She is learning to seem with more confidence.",
     "structures": [
       "sembler + complément"
     ],
@@ -16593,8 +16594,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « sculpter » dans un contexte naturel.",
-    "translation": "to sculpt, carve",
+    "example": "Elle apprend à sculpter avec plus de confiance.",
+    "translation": "She is learning to sculpt with more confidence.",
     "structures": [
       "sculpter + complément"
     ],
@@ -16648,8 +16649,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « bloquer » dans un contexte naturel.",
-    "translation": "to block, obstruct",
+    "example": "Elle apprend à bloquer avec plus de confiance.",
+    "translation": "She is learning to block with more confidence.",
     "structures": [
       "bloquer + complément"
     ],
@@ -16675,8 +16676,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « goûter » dans un contexte naturel.",
-    "translation": "to taste",
+    "example": "Elle apprend à goûter avec plus de confiance.",
+    "translation": "She is learning to taste with more confidence.",
     "structures": [
       "goûter + complément"
     ],
@@ -16702,8 +16703,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « garder » dans un contexte naturel.",
-    "translation": "to keep",
+    "example": "Elle apprend à garder avec plus de confiance.",
+    "translation": "She is learning to keep with more confidence.",
     "structures": [
       "garder + complément"
     ],
@@ -16729,8 +16730,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « afficher » dans un contexte naturel.",
-    "translation": "to display, show",
+    "example": "Elle apprend à afficher avec plus de confiance.",
+    "translation": "She is learning to display with more confidence.",
     "structures": [
       "afficher + complément"
     ],
@@ -16756,8 +16757,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « retirer » dans un contexte naturel.",
-    "translation": "to remove, withdraw",
+    "example": "Elle apprend à retirer avec plus de confiance.",
+    "translation": "She is learning to remove with more confidence.",
     "structures": [
       "retirer + complément"
     ],
@@ -16811,8 +16812,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est important de savoir utiliser « étirer » dans un contexte naturel.",
-    "translation": "to stretch",
+    "example": "Elle apprend à étirer avec plus de confiance.",
+    "translation": "She is learning to stretch with more confidence.",
     "structures": [
       "étirer + complément"
     ],
@@ -20569,8 +20570,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Travel",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « les vacances » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"les vacances\" in a natural context.",
+    "example": "Les vacances peuvent jouer un rôle important dans cette situation.",
+    "translation": "Holidays can play an important role in this situation.",
     "structures": [
       "prendre des vacances"
     ],
@@ -20606,8 +20607,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un élève » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un élève\" in a natural context.",
+    "example": "Un élève peut jouer un rôle important dans cette situation.",
+    "translation": "Pupil can play an important role in this situation.",
     "structures": [
       "un élève de + niveau"
     ],
@@ -20644,8 +20645,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un étudiant » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un étudiant\" in a natural context.",
+    "example": "Un étudiant peut jouer un rôle important dans cette situation.",
+    "translation": "University student can play an important role in this situation.",
     "structures": [
       "un étudiant en + domaine"
     ],
@@ -20682,8 +20683,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un cours » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un cours\" in a natural context.",
+    "example": "Un cours peut jouer un rôle important dans cette situation.",
+    "translation": "Course can play an important role in this situation.",
     "structures": [
       "suivre un cours"
     ],
@@ -20720,8 +20721,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un examen » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un examen\" in a natural context.",
+    "example": "Un examen peut jouer un rôle important dans cette situation.",
+    "translation": "Exam can play an important role in this situation.",
     "structures": [
       "passer un examen"
     ],
@@ -20758,8 +20759,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « éduquer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"éduquer\" in a natural context.",
+    "example": "L’éduquer revient souvent pendant la réunion.",
+    "translation": "The topic of educate often comes up during the meeting.",
     "structures": [
       "éduquer + personne"
     ],
@@ -20796,8 +20797,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « passer un examen » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"passer un examen\" in a natural context.",
+    "example": "Le passer un examen revient souvent pendant la réunion.",
+    "translation": "The topic of sit an exam often comes up during the meeting.",
     "structures": [
       "passer un examen"
     ],
@@ -20834,8 +20835,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « réussir à un examen » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"réussir à un examen\" in a natural context.",
+    "example": "Le réussir à un examen revient souvent pendant la réunion.",
+    "translation": "The topic of pass an exam often comes up during the meeting.",
     "structures": [
       "réussir à un examen"
     ],
@@ -20872,8 +20873,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « échouer à un examen » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"échouer à un examen\" in a natural context.",
+    "example": "L’échouer à un examen revient souvent pendant la réunion.",
+    "translation": "The topic of fail an exam often comes up during the meeting.",
     "structures": [
       "échouer à un examen"
     ],
@@ -20910,8 +20911,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « recevoir son diplôme » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"recevoir son diplôme\" in a natural context.",
+    "example": "La recevoir son diplôme revient souvent pendant la réunion.",
+    "translation": "The topic of receive one's degree often comes up during the meeting.",
     "structures": [
       "recevoir son diplôme"
     ],
@@ -20948,8 +20949,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « les devoirs » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"les devoirs\" in a natural context.",
+    "example": "Les devoirs peuvent jouer un rôle important dans cette situation.",
+    "translation": "Homework can play an important role in this situation.",
     "structures": [
       "faire ses devoirs"
     ],
@@ -20986,8 +20987,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « une note » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"une note\" in a natural context.",
+    "example": "Une note peut jouer un rôle important dans cette situation.",
+    "translation": "Grade can play an important role in this situation.",
     "structures": [
       "obtenir une note"
     ],
@@ -21024,8 +21025,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « score » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"score\" in a natural context.",
+    "example": "Le score revient souvent pendant la réunion.",
+    "translation": "The topic of score often comes up during the meeting.",
     "structures": [
       "obtenir un score"
     ],
@@ -21061,8 +21062,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « analyser » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"analyser\" in a natural context.",
+    "example": "L’analyser revient souvent pendant la réunion.",
+    "translation": "The topic of analyse often comes up during the meeting.",
     "structures": [
       "analyser + situation / données"
     ],
@@ -21099,8 +21100,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « une ordonnance » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"une ordonnance\" in a natural context.",
+    "example": "Une ordonnance peut jouer un rôle important dans cette situation.",
+    "translation": "Prescription can play an important role in this situation.",
     "structures": [
       "une ordonnance médicale"
     ],
@@ -21137,8 +21138,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un médecin » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un médecin\" in a natural context.",
+    "example": "Un médecin peut jouer un rôle important dans cette situation.",
+    "translation": "Doctor can play an important role in this situation.",
     "structures": [
       "consulter un médecin"
     ],
@@ -21175,8 +21176,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un médicament » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un médicament\" in a natural context.",
+    "example": "Un médicament peut jouer un rôle important dans cette situation.",
+    "translation": "Medicine can play an important role in this situation.",
     "structures": [
       "prendre un médicament"
     ],
@@ -21213,8 +21214,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « le traitement » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"le traitement\" in a natural context.",
+    "example": "Le traitement peut jouer un rôle important dans cette situation.",
+    "translation": "Treatment can play an important role in this situation.",
     "structures": [
       "suivre un traitement"
     ],
@@ -21251,8 +21252,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « une toux » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"une toux\" in a natural context.",
+    "example": "Une toux peut jouer un rôle important dans cette situation.",
+    "translation": "Cough can play an important role in this situation.",
     "structures": [
       "avoir une toux"
     ],
@@ -21289,8 +21290,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « des effets secondaires » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"des effets secondaires\" in a natural context.",
+    "example": "Des effets secondaires peuvent jouer un rôle important dans cette situation.",
+    "translation": "Side effects can play an important role in this situation.",
     "structures": [
       "avoir des effets secondaires"
     ],
@@ -21327,8 +21328,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un pharmacien » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un pharmacien\" in a natural context.",
+    "example": "Un pharmacien peut jouer un rôle important dans cette situation.",
+    "translation": "Pharmacist can play an important role in this situation.",
     "structures": [
       "demander conseil à un pharmacien"
     ],
@@ -21365,8 +21366,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « une pharmacienne » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"une pharmacienne\" in a natural context.",
+    "example": "Une pharmacienne peut jouer un rôle important dans cette situation.",
+    "translation": "Female pharmacist can play an important role in this situation.",
     "structures": [
       "demander conseil à une pharmacienne"
     ],
@@ -21403,8 +21404,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « une gélule » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"une gélule\" in a natural context.",
+    "example": "Une gélule peut jouer un rôle important dans cette situation.",
+    "translation": "Capsule can play an important role in this situation.",
     "structures": [
       "prendre une gélule"
     ],
@@ -21440,8 +21441,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un analgésique » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un analgésique\" in a natural context.",
+    "example": "Un analgésique peut jouer un rôle important dans cette situation.",
+    "translation": "Painkiller can play an important role in this situation.",
     "structures": [
       "prendre un analgésique"
     ],
@@ -21477,8 +21478,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « avoir un rhume » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"avoir un rhume\" in a natural context.",
+    "example": "Après une longue journée, il peut avoir un rhume.",
+    "translation": "She is learning to have a cold with more confidence.",
     "structures": [
       "avoir un rhume"
     ],
@@ -21515,8 +21516,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « avoir la grippe » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"avoir la grippe\" in a natural context.",
+    "example": "Après une longue journée, il peut avoir la grippe.",
+    "translation": "She is learning to have the flu with more confidence.",
     "structures": [
       "avoir la grippe"
     ],
@@ -21553,8 +21554,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « avoir mal à la tête » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"avoir mal à la tête\" in a natural context.",
+    "example": "Après une longue journée, il peut avoir mal à la tête.",
+    "translation": "She is learning to have a headache with more confidence.",
     "structures": [
       "avoir mal à la tête"
     ],
@@ -21591,8 +21592,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Work",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « boulot » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"boulot\" in a natural context.",
+    "example": "Le boulot revient souvent pendant la réunion.",
+    "translation": "The topic of job often comes up during the meeting.",
     "structures": [
       "avoir du boulot"
     ],
@@ -21628,8 +21629,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « s’entendre avec » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"s’entendre avec\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à s’entendre avec.",
+    "translation": "She is learning to get along with with more confidence.",
     "structures": [
       "s’entendre avec + personne"
     ],
@@ -21666,8 +21667,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Work",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « rapport » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"rapport\" in a natural context.",
+    "example": "Le rapport revient souvent pendant la réunion.",
+    "translation": "The topic of report often comes up during the meeting.",
     "structures": [
       "rédiger un rapport"
     ],
@@ -21704,8 +21705,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Travel",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « vacances estivales » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"vacances estivales\" in a natural context.",
+    "example": "Le vacances estivales revient souvent pendant la réunion.",
+    "translation": "The topic of summer holidays often comes up during the meeting.",
     "structures": [
       "les vacances estivales"
     ],
@@ -21741,8 +21742,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « actuel » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"actuel\" in a natural context.",
+    "example": "Ce choix semble actuel à première vue.",
+    "translation": "This choice seems current at first glance.",
     "structures": [
       "la situation actuelle"
     ],
@@ -21779,8 +21780,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « rythme » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"rythme\" in a natural context.",
+    "example": "Le rythme revient souvent pendant la réunion.",
+    "translation": "The topic of pace often comes up during the meeting.",
     "structures": [
       "au rythme de + nom"
     ],
@@ -21817,8 +21818,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « délirant » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"délirant\" in a natural context.",
+    "example": "Ce choix semble délirant à première vue.",
+    "translation": "This choice seems delirious at first glance.",
     "structures": [
       "un rythme délirant"
     ],
@@ -21854,8 +21855,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Society",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « politique » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"politique\" in a natural context.",
+    "example": "Ce choix semble politique à première vue.",
+    "translation": "This choice seems policy at first glance.",
     "structures": [
       "une politique publique"
     ],
@@ -21892,8 +21893,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Legal",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « peine (pénalité) » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"peine (pénalité)\" in a natural context.",
+    "example": "La peine revient souvent pendant la réunion.",
+    "translation": "The topic of penalty often comes up during the meeting.",
     "structures": [
       "une peine de + durée"
     ],
@@ -21930,8 +21931,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « peine » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"peine\" in a natural context.",
+    "example": "La peine revient souvent pendant la réunion.",
+    "translation": "The topic of pain often comes up during the meeting.",
     "structures": [
       "avoir de la peine"
     ],
@@ -21968,8 +21969,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Connectors",
     "level": "B2",
     "partOfSpeech": "connector",
-    "example": "Il est utile de savoir employer « à peine » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"à peine\" in a natural context.",
+    "example": "Il reste à peine dix minutes avant le début de l’examen.",
+    "translation": "There are barely ten minutes left before the exam starts.",
     "structures": [
       "à peine + verbe"
     ],
@@ -22006,8 +22007,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « détestable » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"détestable\" in a natural context.",
+    "example": "Ce choix semble détestable à première vue.",
+    "translation": "This choice seems detestable at first glance.",
     "structures": [
       "un comportement détestable"
     ],
@@ -22043,8 +22044,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « admirable » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"admirable\" in a natural context.",
+    "example": "Ce choix semble admirable à première vue.",
+    "translation": "This choice seems admirable at first glance.",
     "structures": [
       "une attitude admirable"
     ],
@@ -22080,8 +22081,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « hériter » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"hériter\" in a natural context.",
+    "example": "Elle apprend à hériter avec plus de confiance.",
+    "translation": "She is learning to inherit with more confidence.",
     "structures": [
       "hériter de + nom"
     ],
@@ -22117,8 +22118,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « devoir + infinitif » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"devoir + infinitif\" in a natural context.",
+    "example": "Le devoir revient souvent pendant la réunion.",
+    "translation": "The topic of have to often comes up during the meeting.",
     "structures": [
       "devoir + infinitif"
     ],
@@ -22155,8 +22156,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « disparaître » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"disparaître\" in a natural context.",
+    "example": "Elle apprend à disparaître avec plus de confiance.",
+    "translation": "She is learning to disappear with more confidence.",
     "structures": [
       "disparaître progressivement"
     ],
@@ -22193,8 +22194,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « se balader » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"se balader\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à se balader.",
+    "translation": "She is learning to walk around with more confidence.",
     "structures": [
       "se balader dans + lieu"
     ],
@@ -22230,8 +22231,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Health",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « les genoux » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"les genoux\" in a natural context.",
+    "example": "Les genoux peuvent jouer un rôle important dans cette situation.",
+    "translation": "Knees can play an important role in this situation.",
     "structures": [
       "avoir mal aux genoux"
     ],
@@ -22267,8 +22268,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « tremblant » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"tremblant\" in a natural context.",
+    "example": "Ce choix semble tremblant à première vue.",
+    "translation": "This choice seems trembling at first glance.",
     "structures": [
       "être tremblant"
     ],
@@ -22304,8 +22305,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « à l’instant » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"à l’instant\" in a natural context.",
+    "example": "Elle vient d’arriver à l’instant.",
+    "translation": "She has just arrived.",
     "structures": [
       "à l’instant"
     ],
@@ -22341,8 +22342,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « dur » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"dur\" in a natural context.",
+    "example": "Ce choix semble dur à première vue.",
+    "translation": "This choice seems hard at first glance.",
     "structures": [
       "c'est dur de + infinitif"
     ],
@@ -22379,8 +22380,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « bien au chaud » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"bien au chaud\" in a natural context.",
+    "example": "Le bien au chaud revient souvent pendant la réunion.",
+    "translation": "The topic of nice and warm often comes up during the meeting.",
     "structures": [
       "rester bien au chaud"
     ],
@@ -22416,8 +22417,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Writing",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « virgule » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"virgule\" in a natural context.",
+    "example": "La virgule revient souvent pendant la réunion.",
+    "translation": "The topic of comma often comes up during the meeting.",
     "structures": [
       "mettre une virgule"
     ],
@@ -22453,8 +22454,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « décortiquer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"décortiquer\" in a natural context.",
+    "example": "Le décortiquer revient souvent pendant la réunion.",
+    "translation": "The topic of break down often comes up during the meeting.",
     "structures": [
       "décortiquer + problème / texte"
     ],
@@ -22491,8 +22492,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « peser » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"peser\" in a natural context.",
+    "example": "Elle apprend à peser avec plus de confiance.",
+    "translation": "She is learning to weigh with more confidence.",
     "structures": [
       "peser + poids / décision"
     ],
@@ -22528,8 +22529,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « l’un de l’autre » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"l’un de l’autre\" in a natural context.",
+    "example": "La l’un de l’autre revient souvent pendant la réunion.",
+    "translation": "The topic of each other often comes up during the meeting.",
     "structures": [
       "dépendre l’un de l’autre"
     ],
@@ -22565,8 +22566,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Travel",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « décoller » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"décoller\" in a natural context.",
+    "example": "Le décoller revient souvent pendant la réunion.",
+    "translation": "The topic of take off often comes up during the meeting.",
     "structures": [
       "l'avion décolle"
     ],
@@ -22602,8 +22603,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « dérober » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"dérober\" in a natural context.",
+    "example": "Elle apprend à dérober avec plus de confiance.",
+    "translation": "She is learning to steal with more confidence.",
     "structures": [
       "dérober + objet"
     ],
@@ -22639,8 +22640,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Society",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « défiler » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"défiler\" in a natural context.",
+    "example": "Le défiler revient souvent pendant la réunion.",
+    "translation": "The topic of parade often comes up during the meeting.",
     "structures": [
       "défiler dans la rue"
     ],
@@ -22676,8 +22677,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « déborder » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"déborder\" in a natural context.",
+    "example": "Elle apprend à déborder avec plus de confiance.",
+    "translation": "She is learning to overflow with more confidence.",
     "structures": [
       "déborder de + nom"
     ],
@@ -22713,8 +22714,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « débrouiller » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"débrouiller\" in a natural context.",
+    "example": "Elle apprend à débrouiller avec plus de confiance.",
+    "translation": "She is learning to sort out with more confidence.",
     "structures": [
       "débrouiller + situation"
     ],
@@ -22750,8 +22751,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « se débrouiller » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"se débrouiller\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à se débrouiller.",
+    "translation": "She is learning to manage with more confidence.",
     "structures": [
       "se débrouiller seul"
     ],
@@ -22788,8 +22789,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Connectors",
     "level": "B2",
     "partOfSpeech": "connector",
-    "example": "Il est utile de savoir employer « au fur et à mesure » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"au fur et à mesure\" in a natural context.",
+    "example": "Au fur et à mesure, elle comprend mieux les règles du cours.",
+    "translation": "Gradually, she understands the course rules better.",
     "structures": [
       "au fur et à mesure que + phrase"
     ],
@@ -22826,8 +22827,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Urban Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « piste cyclable » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"piste cyclable\" in a natural context.",
+    "example": "La piste cyclable revient souvent pendant la réunion.",
+    "translation": "The topic of cycle lane often comes up during the meeting.",
     "structures": [
       "prendre la piste cyclable"
     ],
@@ -22863,8 +22864,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Urban Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « trottoir » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"trottoir\" in a natural context.",
+    "example": "Le trottoir revient souvent pendant la réunion.",
+    "translation": "The topic of pavement often comes up during the meeting.",
     "structures": [
       "marcher sur le trottoir"
     ],
@@ -22900,8 +22901,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Driving",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « feu de circulation » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"feu de circulation\" in a natural context.",
+    "example": "Le feu de circulation revient souvent pendant la réunion.",
+    "translation": "The topic of traffic light often comes up during the meeting.",
     "structures": [
       "s'arrêter au feu de circulation"
     ],
@@ -22937,8 +22938,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Urban Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « passage piéton » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"passage piéton\" in a natural context.",
+    "example": "Le passage piéton revient souvent pendant la réunion.",
+    "translation": "The topic of pedestrian crossing often comes up during the meeting.",
     "structures": [
       "traverser au passage piéton"
     ],
@@ -22974,8 +22975,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Driving",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « bouchon » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"bouchon\" in a natural context.",
+    "example": "Le bouchon revient souvent pendant la réunion.",
+    "translation": "The topic of traffic jam often comes up during the meeting.",
     "structures": [
       "être coincé dans un bouchon"
     ],
@@ -23011,8 +23012,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « un honneur » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"un honneur\" in a natural context.",
+    "example": "Un honneur peut jouer un rôle important dans cette situation.",
+    "translation": "An honour can play an important role in this situation.",
     "structures": [
       "c'est un honneur de + infinitif"
     ],
@@ -23048,8 +23049,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Education",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « l’apprenant » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"l’apprenant\" in a natural context.",
+    "example": "Ce choix semble l’apprenant à première vue.",
+    "translation": "This choice seems learner at first glance.",
     "structures": [
       "l'apprenant progresse"
     ],
@@ -23086,8 +23087,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Connectors",
     "level": "B2",
     "partOfSpeech": "connector",
-    "example": "Il est utile de savoir employer « au fil du temps » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"au fil du temps\" in a natural context.",
+    "example": "Au fil du temps, cette solution demande encore du temps.",
+    "translation": "Au fil du temps, this solution still needs more time.",
     "structures": [
       "au fil du temps"
     ],
@@ -23124,8 +23125,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « domaine » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"domaine\" in a natural context.",
+    "example": "Le domaine revient souvent pendant la réunion.",
+    "translation": "The topic of field often comes up during the meeting.",
     "structures": [
       "dans le domaine de + nom"
     ],
@@ -23162,8 +23163,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Travel",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « trajet » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"trajet\" in a natural context.",
+    "example": "Le trajet revient souvent pendant la réunion.",
+    "translation": "The topic of journey often comes up during the meeting.",
     "structures": [
       "faire un trajet"
     ],
@@ -23199,8 +23200,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « désir » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"désir\" in a natural context.",
+    "example": "Le désir revient souvent pendant la réunion.",
+    "translation": "The topic of desire often comes up during the meeting.",
     "structures": [
       "exprimer un désir"
     ],
@@ -23236,8 +23237,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Travel",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « bagage » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"bagage\" in a natural context.",
+    "example": "Le bagage revient souvent pendant la réunion.",
+    "translation": "The topic of luggage often comes up during the meeting.",
     "structures": [
       "prendre un bagage"
     ],
@@ -23273,8 +23274,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « maintenir » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"maintenir\" in a natural context.",
+    "example": "Le maintenir revient souvent pendant la réunion.",
+    "translation": "The topic of maintain often comes up during the meeting.",
     "structures": [
       "maintenir + niveau / effort"
     ],
@@ -23311,8 +23312,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « gêner » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"gêner\" in a natural context.",
+    "example": "Le gêner revient souvent pendant la réunion.",
+    "translation": "The topic of bother often comes up during the meeting.",
     "structures": [
       "gêner + personne"
     ],
@@ -23348,8 +23349,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « valoriser » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"valoriser\" in a natural context.",
+    "example": "Le valoriser revient souvent pendant la réunion.",
+    "translation": "The topic of value often comes up during the meeting.",
     "structures": [
       "valoriser + compétence"
     ],
@@ -23386,8 +23387,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « déclencheur » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"déclencheur\" in a natural context.",
+    "example": "Le déclencheur revient souvent pendant la réunion.",
+    "translation": "The topic of trigger often comes up during the meeting.",
     "structures": [
       "un élément déclencheur"
     ],
@@ -23424,8 +23425,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « disperser » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"disperser\" in a natural context.",
+    "example": "Elle apprend à disperser avec plus de confiance.",
+    "translation": "She is learning to scatter with more confidence.",
     "structures": [
       "disperser + groupe / objet"
     ],
@@ -23461,8 +23462,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Food",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « l’addition » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"l’addition\" in a natural context.",
+    "example": "La l’addition revient souvent pendant la réunion.",
+    "translation": "The topic of the bill often comes up during the meeting.",
     "structures": [
       "demander l’addition"
     ],
@@ -23498,8 +23499,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « éloigner » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"éloigner\" in a natural context.",
+    "example": "Elle apprend à éloigner avec plus de confiance.",
+    "translation": "She is learning to move away with more confidence.",
     "structures": [
       "éloigner + personne / risque"
     ],
@@ -23535,8 +23536,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Technology",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « abonné / abonnée » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"abonné / abonnée\" in a natural context.",
+    "example": "Ce choix semble abonné à première vue.",
+    "translation": "This choice seems subscriber at first glance.",
     "structures": [
       "un abonné à + service"
     ],
@@ -23572,8 +23573,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Technology",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « contenu » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"contenu\" in a natural context.",
+    "example": "Ce choix semble contenu à première vue.",
+    "translation": "This choice seems content at first glance.",
     "structures": [
       "créer du contenu"
     ],
@@ -23610,8 +23611,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Environment",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « la planète » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"la planète\" in a natural context.",
+    "example": "La planète peut jouer un rôle important dans cette situation.",
+    "translation": "The planet can play an important role in this situation.",
     "structures": [
       "protéger la planète"
     ],
@@ -23648,8 +23649,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « changement » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"changement\" in a natural context.",
+    "example": "Le changement revient souvent pendant la réunion.",
+    "translation": "The topic of change often comes up during the meeting.",
     "structures": [
       "un changement majeur"
     ],
@@ -23686,8 +23687,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Society",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « éthique » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"éthique\" in a natural context.",
+    "example": "Ce choix semble éthique à première vue.",
+    "translation": "This choice seems ethical at first glance.",
     "structures": [
       "une question éthique"
     ],
@@ -23724,8 +23725,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « sans critique » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"sans critique\" in a natural context.",
+    "example": "Sans critique, elle a mieux compris la situation.",
+    "translation": "Without criticism, she understood the situation better.",
     "structures": [
       "accepter sans critique"
     ],
@@ -23761,8 +23762,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Technology",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « s’abonner » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"s’abonner\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à s’abonner.",
+    "translation": "She is learning to subscribe with more confidence.",
     "structures": [
       "s’abonner à + service"
     ],
@@ -23798,8 +23799,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « documentaire » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"documentaire\" in a natural context.",
+    "example": "Ce choix semble documentaire à première vue.",
+    "translation": "This choice seems documentary at first glance.",
     "structures": [
       "regarder un documentaire"
     ],
@@ -23835,8 +23836,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « tournage » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"tournage\" in a natural context.",
+    "example": "La tournage revient souvent pendant la réunion.",
+    "translation": "The topic of filming often comes up during the meeting.",
     "structures": [
       "un lieu de tournage"
     ],
@@ -23872,8 +23873,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « tourner » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"tourner\" in a natural context.",
+    "example": "Le tourner revient souvent pendant la réunion.",
+    "translation": "The topic of shoot a film often comes up during the meeting.",
     "structures": [
       "tourner un film"
     ],
@@ -23909,8 +23910,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « théâtre » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"théâtre\" in a natural context.",
+    "example": "Le théâtre revient souvent pendant la réunion.",
+    "translation": "The topic of theatre often comes up during the meeting.",
     "structures": [
       "aller au théâtre"
     ],
@@ -23946,8 +23947,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « intrigue » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"intrigue\" in a natural context.",
+    "example": "Ce choix semble intrigue à première vue.",
+    "translation": "This choice seems plot at first glance.",
     "structures": [
       "l'intrigue d'un film"
     ],
@@ -23983,8 +23984,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « vedette » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"vedette\" in a natural context.",
+    "example": "La vedette revient souvent pendant la réunion.",
+    "translation": "The topic of star often comes up during the meeting.",
     "structures": [
       "une vedette de cinéma"
     ],
@@ -24020,8 +24021,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Media",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « éclairage » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"éclairage\" in a natural context.",
+    "example": "Le éclairage revient souvent pendant la réunion.",
+    "translation": "The topic of lighting often comes up during the meeting.",
     "structures": [
       "un bon éclairage"
     ],
@@ -24057,8 +24058,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Emotion",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « colère » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"colère\" in a natural context.",
+    "example": "La colère revient souvent pendant la réunion.",
+    "translation": "The topic of anger often comes up during the meeting.",
     "structures": [
       "être en colère"
     ],
@@ -24094,8 +24095,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Family",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « mamie » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"mamie\" in a natural context.",
+    "example": "La mamie revient souvent pendant la réunion.",
+    "translation": "The topic of grandma often comes up during the meeting.",
     "structures": [
       "ma mamie"
     ],
@@ -24131,8 +24132,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « attraper » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"attraper\" in a natural context.",
+    "example": "Elle apprend à attraper avec plus de confiance.",
+    "translation": "She is learning to catch with more confidence.",
     "structures": [
       "attraper + objet / maladie"
     ],
@@ -24168,8 +24169,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « météo » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"météo\" in a natural context.",
+    "example": "Le météo revient souvent pendant la réunion.",
+    "translation": "The topic of weather forecast often comes up during the meeting.",
     "structures": [
       "regarder la météo"
     ],
@@ -24205,8 +24206,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « invité / invitée » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"invité / invitée\" in a natural context.",
+    "example": "Ce choix semble invité à première vue.",
+    "translation": "This choice seems guest at first glance.",
     "structures": [
       "un invité à + événement"
     ],
@@ -24242,8 +24243,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Everyday Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « la fin » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"la fin\" in a natural context.",
+    "example": "La fin peut jouer un rôle important dans cette situation.",
+    "translation": "The end can play an important role in this situation.",
     "structures": [
       "à la fin de + nom"
     ],
@@ -24279,8 +24280,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « étouffant / étouffante » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"étouffant / étouffante\" in a natural context.",
+    "example": "Ce choix semble étouffant à première vue.",
+    "translation": "This choice seems suffocating at first glance.",
     "structures": [
       "une atmosphère étouffante"
     ],
@@ -24316,8 +24317,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « inquiétant / inquiétante » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"inquiétant / inquiétante\" in a natural context.",
+    "example": "Ce choix semble inquiétant à première vue.",
+    "translation": "This choice seems worrying at first glance.",
     "structures": [
       "une situation inquiétante"
     ],
@@ -24353,8 +24354,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « méprisant / méprisante » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"méprisant / méprisante\" in a natural context.",
+    "example": "Ce choix semble méprisant à première vue.",
+    "translation": "This choice seems contemptuous at first glance.",
     "structures": [
       "un ton méprisant"
     ],
@@ -24390,8 +24391,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « autoritaire » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"autoritaire\" in a natural context.",
+    "example": "Ce choix semble autoritaire à première vue.",
+    "translation": "This choice seems authoritarian at first glance.",
     "structures": [
       "une attitude autoritaire"
     ],
@@ -24427,8 +24428,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « drame » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"drame\" in a natural context.",
+    "example": "Le drame revient souvent pendant la réunion.",
+    "translation": "The topic of drama often comes up during the meeting.",
     "structures": [
       "un drame familial"
     ],
@@ -24464,8 +24465,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « nervosité » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"nervosité\" in a natural context.",
+    "example": "Ce choix semble nervosité à première vue.",
+    "translation": "This choice seems nervousness at first glance.",
     "structures": [
       "montrer de la nervosité"
     ],
@@ -24501,8 +24502,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « interrogatoire » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"interrogatoire\" in a natural context.",
+    "example": "Le interrogatoire revient souvent pendant la réunion.",
+    "translation": "The topic of interrogation often comes up during the meeting.",
     "structures": [
       "subir un interrogatoire"
     ],
@@ -24538,8 +24539,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « grimper » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"grimper\" in a natural context.",
+    "example": "Le grimper revient souvent pendant la réunion.",
+    "translation": "The topic of climb often comes up during the meeting.",
     "structures": [
       "grimper sur + nom"
     ],
@@ -24575,8 +24576,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « aussitôt après » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"aussitôt après\" in a natural context.",
+    "example": "L’aussitôt après revient souvent pendant la réunion.",
+    "translation": "The topic of immediately after often comes up during the meeting.",
     "structures": [
       "aussitôt après + nom"
     ],
@@ -24612,8 +24613,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « logement » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"logement\" in a natural context.",
+    "example": "Le logement revient souvent pendant la réunion.",
+    "translation": "The topic of accommodation often comes up during the meeting.",
     "structures": [
       "trouver un logement"
     ],
@@ -24650,8 +24651,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Work",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « personnel » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"personnel\" in a natural context.",
+    "example": "Ce choix semble personnel à première vue.",
+    "translation": "This choice seems staff at first glance.",
     "structures": [
       "le personnel de + lieu"
     ],
@@ -24688,8 +24689,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « s’inquiéter » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"s’inquiéter\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à s’inquiéter.",
+    "translation": "She is learning to worry with more confidence.",
     "structures": [
       "s’inquiéter pour + personne"
     ],
@@ -24726,8 +24727,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « inquiet / inquiète » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"inquiet / inquiète\" in a natural context.",
+    "example": "Ce choix semble inquiet à première vue.",
+    "translation": "This choice seems worried at first glance.",
     "structures": [
       "être inquiet pour + personne"
     ],
@@ -24763,8 +24764,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « attaquer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"attaquer\" in a natural context.",
+    "example": "L’attaquer revient souvent pendant la réunion.",
+    "translation": "The topic of attack often comes up during the meeting.",
     "structures": [
       "attaquer + personne / problème"
     ],
@@ -24800,8 +24801,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « crier » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"crier\" in a natural context.",
+    "example": "Le crier revient souvent pendant la réunion.",
+    "translation": "The topic of shout often comes up during the meeting.",
     "structures": [
       "crier de + émotion"
     ],
@@ -24837,8 +24838,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « pleurer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"pleurer\" in a natural context.",
+    "example": "Le pleurer revient souvent pendant la réunion.",
+    "translation": "The topic of cry often comes up during the meeting.",
     "structures": [
       "pleurer de + émotion"
     ],
@@ -24874,8 +24875,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « sain et sauf » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"sain et sauf\" in a natural context.",
+    "example": "Le sain et sauf revient souvent pendant la réunion.",
+    "translation": "The topic of safe and sound often comes up during the meeting.",
     "structures": [
       "être sain et sauf"
     ],
@@ -24911,8 +24912,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « être en sécurité » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"être en sécurité\" in a natural context.",
+    "example": "Dans ce quartier, chacun veut être en sécurité.",
+    "translation": "She is learning to be safe with more confidence.",
     "structures": [
       "être en sécurité"
     ],
@@ -24949,8 +24950,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Story Vocabulary",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « gardien de zoo » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"gardien de zoo\" in a natural context.",
+    "example": "Le gardien de zoo revient souvent pendant la réunion.",
+    "translation": "The topic of zookeeper often comes up during the meeting.",
     "structures": [
       "un gardien de zoo"
     ],
@@ -24986,8 +24987,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « retenir » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"retenir\" in a natural context.",
+    "example": "Le retenir revient souvent pendant la réunion.",
+    "translation": "The topic of retain often comes up during the meeting.",
     "structures": [
       "retenir + information"
     ],
@@ -25024,8 +25025,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « dépendre » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"dépendre\" in a natural context.",
+    "example": "La dépendre revient souvent pendant la réunion.",
+    "translation": "The topic of depend often comes up during the meeting.",
     "structures": [
       "dépendre de + nom"
     ],
@@ -25062,8 +25063,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « emmener » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"emmener\" in a natural context.",
+    "example": "Elle apprend à emmener avec plus de confiance.",
+    "translation": "She is learning to take a person with more confidence.",
     "structures": [
       "emmener + personne à + lieu"
     ],
@@ -25099,8 +25100,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B1",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « reculer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"reculer\" in a natural context.",
+    "example": "Elle apprend à reculer avec plus de confiance.",
+    "translation": "She is learning to step back with more confidence.",
     "structures": [
       "reculer devant + obstacle"
     ],
@@ -25136,8 +25137,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « marquer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"marquer\" in a natural context.",
+    "example": "Le marquer revient souvent pendant la réunion.",
+    "translation": "The topic of mark often comes up during the meeting.",
     "structures": [
       "marquer + différence / point"
     ],
@@ -25174,8 +25175,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « dérouler » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"dérouler\" in a natural context.",
+    "example": "Le dérouler revient souvent pendant la réunion.",
+    "translation": "The topic of unfold often comes up during the meeting.",
     "structures": [
       "se dérouler à + lieu"
     ],
@@ -25212,8 +25213,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « manchot » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"manchot\" in a natural context.",
+    "example": "Le manchot revient souvent pendant la réunion.",
+    "translation": "The topic of penguin often comes up during the meeting.",
     "structures": [
       "un manchot"
     ],
@@ -25249,8 +25250,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « oiseau / oiseaux » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"oiseau / oiseaux\" in a natural context.",
+    "example": "Ce choix semble oiseau à première vue.",
+    "translation": "This choice seems bird at first glance.",
     "structures": [
       "un oiseau / des oiseaux"
     ],
@@ -25286,8 +25287,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « émigrer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"émigrer\" in a natural context.",
+    "example": "L’émigrer revient souvent pendant la réunion.",
+    "translation": "The topic of migrate often comes up during the meeting.",
     "structures": [
       "émigrer vers + pays"
     ],
@@ -25323,8 +25324,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « diriger » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"diriger\" in a natural context.",
+    "example": "Le diriger revient souvent pendant la réunion.",
+    "translation": "The topic of direct often comes up during the meeting.",
     "structures": [
       "diriger + équipe / projet"
     ],
@@ -25361,8 +25362,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « s’accoupler » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"s’accoupler\" in a natural context.",
+    "example": "Avec un peu de pratique, elle apprend à s’accoupler.",
+    "translation": "She is learning to mate with more confidence.",
     "structures": [
       "s’accoupler avec + animal"
     ],
@@ -25398,8 +25399,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « femelle » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"femelle\" in a natural context.",
+    "example": "Ce choix semble femelle à première vue.",
+    "translation": "This choice seems female at first glance.",
     "structures": [
       "une femelle"
     ],
@@ -25435,8 +25436,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « incubatrice » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"incubatrice\" in a natural context.",
+    "example": "L’incubatrice revient souvent pendant la réunion.",
+    "translation": "The topic of incubator often comes up during the meeting.",
     "structures": [
       "une incubatrice"
     ],
@@ -25472,8 +25473,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « poudrerie » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"poudrerie\" in a natural context.",
+    "example": "La poudrerie revient souvent pendant la réunion.",
+    "translation": "The topic of blowing snow often comes up during the meeting.",
     "structures": [
       "une forte poudrerie"
     ],
@@ -25509,8 +25510,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Adjective",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « faible » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"faible\" in a natural context.",
+    "example": "Ce choix semble faible à première vue.",
+    "translation": "This choice seems weak at first glance.",
     "structures": [
       "un niveau faible"
     ],
@@ -25547,8 +25548,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Environment",
     "level": "B2",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « réchauffer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"réchauffer\" in a natural context.",
+    "example": "Le réchauffer revient souvent pendant la réunion.",
+    "translation": "The topic of warm up often comes up during the meeting.",
     "structures": [
       "réchauffer + atmosphère / plat"
     ],
@@ -25585,8 +25586,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « force » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"force\" in a natural context.",
+    "example": "La force revient souvent pendant la réunion.",
+    "translation": "The topic of strength often comes up during the meeting.",
     "structures": [
       "la force de + nom"
     ],
@@ -25623,8 +25624,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « milieu » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"milieu\" in a natural context.",
+    "example": "Ce choix semble milieu à première vue.",
+    "translation": "This choice seems environment at first glance.",
     "structures": [
       "dans un milieu + adjectif"
     ],
@@ -25661,8 +25662,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Nature",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « pondre » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"pondre\" in a natural context.",
+    "example": "La pondre revient souvent pendant la réunion.",
+    "translation": "The topic of lay eggs often comes up during the meeting.",
     "structures": [
       "pondre des œufs"
     ],
@@ -25698,8 +25699,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Verb",
     "level": "B2",
     "partOfSpeech": "verb",
-    "example": "Il est utile de savoir employer « inventer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"inventer\" in a natural context.",
+    "example": "Elle apprend à inventer avec plus de confiance.",
+    "translation": "She is learning to invent with more confidence.",
     "structures": [
       "inventer + solution"
     ],
@@ -25736,8 +25737,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « exposer » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"exposer\" in a natural context.",
+    "example": "L’exposer revient souvent pendant la réunion.",
+    "translation": "The topic of expose often comes up during the meeting.",
     "structures": [
       "exposer + problème / personne à + risque"
     ],
@@ -25774,8 +25775,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "TCF Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
-    "example": "Il est utile de savoir employer « empêcher » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"empêcher\" in a natural context.",
+    "example": "L’empêcher revient souvent pendant la réunion.",
+    "translation": "The topic of prevent often comes up during the meeting.",
     "structures": [
       "empêcher + personne de + infinitif"
     ],
@@ -25812,8 +25813,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Household",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « arranger » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"arranger\" in a natural context.",
+    "example": "L’arranger revient souvent pendant la réunion.",
+    "translation": "The topic of arrange often comes up during the meeting.",
     "structures": [
       "arranger + pièce / situation"
     ],
@@ -25849,8 +25850,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "category": "Household",
     "level": "B1",
     "partOfSpeech": "word",
-    "example": "Il est utile de savoir employer « arroser » dans un contexte naturel.",
-    "translation": "It is useful to know how to use \"arroser\" in a natural context.",
+    "example": "L’arroser revient souvent pendant la réunion.",
+    "translation": "The topic of water plants often comes up during the meeting.",
     "structures": [
       "arroser + plantes"
     ],
@@ -25880,6 +25881,8 @@ export const seedVocabulary: VocabularyItem[] = [
     "meaningConfirmed": true
   }
 ];
+
+seedVocabulary.push(...createExpandedVocabulary(iso, seedVocabulary, 1500));
 
 export const seedAttempts: ReviewAttempt[] = [
   { id: "a1", wordId: "susciter", mode: "Flashcards", direction: "French -> English", result: "correct", rating: "Easy", createdAt: iso(-1), responseTimeMs: 2600 },
@@ -25931,6 +25934,14 @@ export const seedImports: ImportBatch[] = [
     uploadDate: iso(0),
     acceptedRows: 24,
     skippedDuplicates: 134,
+    invalidRows: 0
+  },
+  {
+    id: "tcf-expansion-curriculum-001",
+    source: "TCF expansion curriculum",
+    uploadDate: iso(0),
+    acceptedRows: 620,
+    skippedDuplicates: 0,
     invalidRows: 0
   }
 ];
