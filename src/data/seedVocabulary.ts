@@ -25879,6 +25879,505 @@ export const seedVocabulary: VocabularyItem[] = [
     "successStreak": 0,
     "lapses": 0,
     "meaningConfirmed": true
+  },
+  {
+    "id": "au-sein-de",
+    "french": "au sein de",
+    "meaning": "within, at the heart of",
+    "category": "Manual Batch",
+    "level": "B2",
+    "partOfSpeech": "expression",
+    "example": "Au sein de l’entreprise, la communication reste essentielle.",
+    "translation": "Within the company, communication remains essential.",
+    "structures": [
+      "au sein de + groupe / institution"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "expression",
+      "argumentation",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "dans",
+      "à l’intérieur de",
+      "au cœur de"
+    ],
+    "wordFamily": [
+      "sein",
+      "au sein de",
+      "au cœur de"
+    ],
+    "repairPrompt": "Use « au sein de » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "etre-au-seuil-de",
+    "french": "être au seuil de",
+    "meaning": "to be on the threshold of",
+    "category": "Manual Batch",
+    "level": "C1",
+    "partOfSpeech": "expression",
+    "example": "Le pays est au seuil d’une transformation importante.",
+    "translation": "The country is on the threshold of an important transformation.",
+    "structures": [
+      "être au seuil de + nom"
+    ],
+    "tcfPriority": "High",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "expression",
+      "argumentation",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "être sur le point de",
+      "approcher de",
+      "être à la veille de"
+    ],
+    "wordFamily": [
+      "seuil",
+      "au seuil de",
+      "être au seuil de"
+    ],
+    "repairPrompt": "Use « être au seuil de » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "froler",
+    "french": "frôler",
+    "meaning": "to brush against, narrowly avoid, come close to",
+    "category": "Manual Batch",
+    "level": "B2",
+    "partOfSpeech": "verb",
+    "example": "Le cycliste a frôlé la voiture en tournant trop vite.",
+    "translation": "The cyclist brushed against the car while turning too quickly.",
+    "structures": [
+      "frôler + nom",
+      "frôler la catastrophe"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "effleurer",
+      "raser",
+      "éviter de justesse"
+    ],
+    "wordFamily": [
+      "frôler",
+      "frôlement",
+      "frôlé"
+    ],
+    "repairPrompt": "Use « frôler » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "retorsion",
+    "french": "rétorsion",
+    "meaning": "retaliation, reprisal",
+    "category": "Manual Batch",
+    "level": "C1",
+    "partOfSpeech": "word",
+    "example": "Le gouvernement a annoncé des mesures de rétorsion après la décision.",
+    "translation": "The government announced retaliatory measures after the decision.",
+    "structures": [
+      "mesures de rétorsion"
+    ],
+    "tcfPriority": "High",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "argumentation",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "représailles",
+      "riposte",
+      "sanction"
+    ],
+    "wordFamily": [
+      "rétorsion",
+      "mesure de rétorsion",
+      "représailles"
+    ],
+    "repairPrompt": "Use « rétorsion » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "enerver",
+    "french": "énerver",
+    "meaning": "to annoy, irritate",
+    "category": "Manual Batch",
+    "level": "B1",
+    "partOfSpeech": "verb",
+    "example": "Ce bruit finit par énerver tout le monde.",
+    "translation": "This noise ends up annoying everyone.",
+    "structures": [
+      "énerver quelqu’un"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "agacer",
+      "irriter",
+      "exaspérer"
+    ],
+    "wordFamily": [
+      "énerver",
+      "énervant",
+      "énervement"
+    ],
+    "repairPrompt": "Use « énerver » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "au-fond",
+    "french": "au fond",
+    "meaning": "deep down, basically, at the bottom",
+    "category": "Manual Batch",
+    "level": "B2",
+    "partOfSpeech": "expression",
+    "example": "Au fond, il veut surtout trouver une solution juste.",
+    "translation": "Deep down, he mostly wants to find a fair solution.",
+    "structures": [
+      "au fond, + phrase"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "expression",
+      "argumentation",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "en réalité",
+      "finalement",
+      "dans le fond"
+    ],
+    "wordFamily": [
+      "fond",
+      "au fond",
+      "dans le fond"
+    ],
+    "repairPrompt": "Use « au fond » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "espionner",
+    "french": "espionner",
+    "meaning": "to spy on",
+    "category": "Manual Batch",
+    "level": "B2",
+    "partOfSpeech": "verb",
+    "example": "Il ne faut pas espionner ses collègues pour obtenir des informations.",
+    "translation": "You should not spy on your colleagues to obtain information.",
+    "structures": [
+      "espionner quelqu’un"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "surveiller",
+      "observer en secret",
+      "guetter"
+    ],
+    "wordFamily": [
+      "espionner",
+      "espion",
+      "espionnage"
+    ],
+    "repairPrompt": "Use « espionner » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "s-etirer",
+    "french": "s’étirer",
+    "meaning": "to stretch",
+    "category": "Manual Batch",
+    "level": "B1",
+    "partOfSpeech": "verb",
+    "example": "Elle s’étire chaque matin avant de commencer sa journée.",
+    "translation": "She stretches every morning before starting her day.",
+    "structures": [
+      "s’étirer avant / après + nom"
+    ],
+    "tcfPriority": "Low",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "s’allonger",
+      "se détendre",
+      "faire des étirements"
+    ],
+    "wordFamily": [
+      "étirer",
+      "s’étirer",
+      "étirement"
+    ],
+    "repairPrompt": "Use « s’étirer » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "saigner",
+    "french": "saigner",
+    "meaning": "to bleed",
+    "category": "Manual Batch",
+    "level": "B1",
+    "partOfSpeech": "verb",
+    "example": "Son doigt saigne après la coupure.",
+    "translation": "His finger is bleeding after the cut.",
+    "structures": [
+      "saigner après + nom"
+    ],
+    "tcfPriority": "Low",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "perdre du sang",
+      "se blesser"
+    ],
+    "wordFamily": [
+      "saigner",
+      "sang",
+      "saignement"
+    ],
+    "repairPrompt": "Use « saigner » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "demarquer",
+    "french": "démarquer",
+    "meaning": "to distinguish, set apart",
+    "category": "Manual Batch",
+    "level": "C1",
+    "partOfSpeech": "verb",
+    "example": "Cette approche permet de démarquer clairement le projet des autres.",
+    "translation": "This approach makes it possible to clearly distinguish the project from the others.",
+    "structures": [
+      "démarquer A de B",
+      "se démarquer de"
+    ],
+    "tcfPriority": "High",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "argumentation",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "distinguer",
+      "différencier",
+      "singulariser"
+    ],
+    "wordFamily": [
+      "démarquer",
+      "se démarquer",
+      "démarcation"
+    ],
+    "repairPrompt": "Use « démarquer » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "briser",
+    "french": "briser",
+    "meaning": "to break, shatter",
+    "category": "Manual Batch",
+    "level": "B2",
+    "partOfSpeech": "verb",
+    "example": "Cette décision risque de briser la confiance entre les deux équipes.",
+    "translation": "This decision risks breaking the trust between the two teams.",
+    "structures": [
+      "briser + nom"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "verb",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "casser",
+      "rompre",
+      "fracturer"
+    ],
+    "wordFamily": [
+      "briser",
+      "brisé",
+      "brisure"
+    ],
+    "repairPrompt": "Use « briser » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "tenebres",
+    "french": "ténèbres",
+    "meaning": "darkness, gloom",
+    "category": "Manual Batch",
+    "level": "C1",
+    "partOfSpeech": "word",
+    "example": "Le roman plonge le lecteur dans les ténèbres d’une ville abandonnée.",
+    "translation": "The novel plunges the reader into the darkness of an abandoned city.",
+    "structures": [
+      "les ténèbres de + nom"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "obscurité",
+      "noirceur",
+      "ombre"
+    ],
+    "wordFamily": [
+      "ténèbres",
+      "ténébreux",
+      "obscurité"
+    ],
+    "repairPrompt": "Use « ténèbres » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
+  },
+  {
+    "id": "sombre-fonce",
+    "french": "sombre / foncé",
+    "meaning": "dark, gloomy / dark-colored",
+    "category": "Manual Batch",
+    "level": "B1",
+    "partOfSpeech": "word",
+    "example": "La pièce est sombre, mais le mur bleu foncé lui donne du caractère.",
+    "translation": "The room is dark, but the dark blue wall gives it character.",
+    "structures": [
+      "couleur foncée",
+      "ambiance sombre"
+    ],
+    "tcfPriority": "Medium",
+    "status": "New",
+    "dateAdded": iso(0),
+    "source": "Manual TCF vocabulary batch 5",
+    "tags": [
+      "manual-batch",
+      "batch-5",
+      "description",
+      "word-family"
+    ],
+    "synonymLadder": [
+      "obscur",
+      "noir",
+      "peu lumineux"
+    ],
+    "wordFamily": [
+      "sombre",
+      "foncé",
+      "obscur"
+    ],
+    "repairPrompt": "Use « sombre / foncé » in one TCF-style sentence, then say it again with a synonym.",
+    "dueAt": iso(0),
+    "successStreak": 0,
+    "lapses": 0,
+    "meaningConfirmed": true
   }
 ];
 
@@ -25934,6 +26433,14 @@ export const seedImports: ImportBatch[] = [
     uploadDate: iso(0),
     acceptedRows: 24,
     skippedDuplicates: 134,
+    invalidRows: 0
+  },
+  {
+    id: "manual-tcf-batch-005",
+    source: "Manual TCF vocabulary batch 5",
+    uploadDate: iso(0),
+    acceptedRows: 13,
+    skippedDuplicates: 3,
     invalidRows: 0
   },
   {
