@@ -3,6 +3,7 @@ export type CefrLevel = "B1" | "B2" | "C1" | "Unknown";
 export type Priority = "Low" | "Medium" | "High";
 export type ReviewRating = "Again" | "Hard" | "Good" | "Easy";
 export type PracticeMode = "Flashcards" | "Multiple Choice" | "Typing" | "Listening";
+export type PracticeSize = number;
 export type ReviewDirection = "French -> English" | "English -> French";
 
 export interface VocabularyItem {

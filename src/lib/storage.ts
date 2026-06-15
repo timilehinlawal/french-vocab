@@ -1,30 +1,14 @@
 import { seedImports, seedVocabulary } from "../data/seedVocabulary";
 import { createContextualExample, createContextualTranslation, isGenericExample } from "./examples";
-import type { ImportBatch, ReviewAttempt, VocabularyItem } from "./types";
+import { parsePracticeSize } from "./practice";
+import { normalizeTerm } from "./terms";
+import type { ImportBatch, PracticeSize, ReviewAttempt, VocabularyItem } from "./types";
 
 const VOCABULARY_KEY = "fvt:vocabulary";
 const ATTEMPTS_KEY = "fvt:attempts";
 const IMPORTS_KEY = "fvt:imports";
+const PRACTICE_SIZE_KEY = "fvt:practice-size";
 const DEMO_ATTEMPT_IDS = new Set(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]);
-
-const normalizeTerm = (value: string) => {
-  const base = value
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[’‘`]/g, "'")
-    .replace(/\s*[,/]\s*/g, " ")
-    .replace(/\s+/g, " ");
-  const withoutArticle = base.replace(/^(un|une|le|la|les|l')\s+/, "");
-  const parts = withoutArticle.split(" ");
-
-  if (parts.length === 2 && parts[1].startsWith(parts[0]) && parts[1].length <= parts[0].length + 3) {
-    return parts[0];
-  }
-
-  return withoutArticle;
-};
 
 const read = <T,>(key: string, fallback: T): T => {
   const stored = window.localStorage.getItem(key);
@@ -96,6 +80,10 @@ export const loadVocabulary = () =>
   );
 export const loadAttempts = () => read<ReviewAttempt[]>(ATTEMPTS_KEY, []).filter((attempt) => !DEMO_ATTEMPT_IDS.has(attempt.id));
 export const loadImports = () => mergeSeedImports(read<ImportBatch[]>(IMPORTS_KEY, []));
+export const loadPracticeSize = () => {
+  const stored = read<unknown>(PRACTICE_SIZE_KEY, 10);
+  return parsePracticeSize(stored);
+};
 
 export const saveVocabulary = (items: VocabularyItem[]) => {
   window.localStorage.setItem(VOCABULARY_KEY, JSON.stringify(items));
@@ -107,4 +95,8 @@ export const saveAttempts = (attempts: ReviewAttempt[]) => {
 
 export const saveImports = (imports: ImportBatch[]) => {
   window.localStorage.setItem(IMPORTS_KEY, JSON.stringify(imports));
+};
+
+export const savePracticeSize = (practiceSize: PracticeSize) => {
+  window.localStorage.setItem(PRACTICE_SIZE_KEY, JSON.stringify(practiceSize));
 };
