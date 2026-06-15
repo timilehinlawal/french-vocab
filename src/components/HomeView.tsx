@@ -1,9 +1,7 @@
-import { Database, Flame, LineChart, Play, Plus, Target } from "lucide-react";
+import { Database, Flame, Play, Plus, Target } from "lucide-react";
 import { learnerStatus } from "../lib/analyticsSummary";
-import { getPracticeCount } from "../lib/practice";
 import type { AnalyticsSummary } from "../lib/analyticsSummary";
-import type { PracticeSize, ReviewAttempt, VocabularyItem } from "../lib/types";
-import { PracticeSizeControl } from "./common";
+import type { ReviewAttempt, VocabularyItem } from "../lib/types";
 
 function ReflectionCard({ analytics, dueWords }: { analytics: AnalyticsSummary; dueWords: VocabularyItem[] }) {
   const focus = analytics.weak[0]?.french ?? analytics.levelCounts[0]?.label ?? "today's vocabulary";
@@ -27,27 +25,20 @@ export function HomeView({
   attempts,
   dueWords,
   analytics,
-  practiceSize,
   onStartReview,
-  onAddWord,
-  onOpenAnalytics,
-  onPracticeSizeChange
+  onAddWord
 }: {
   vocabulary: VocabularyItem[];
   attempts: ReviewAttempt[];
   dueWords: VocabularyItem[];
   analytics: AnalyticsSummary;
-  practiceSize: PracticeSize;
   onStartReview: () => void;
   onAddWord: () => void;
-  onOpenAnalytics: () => void;
-  onPracticeSizeChange: (value: PracticeSize) => void;
 }) {
   const status = learnerStatus(vocabulary, attempts);
   const recommended = dueWords.length > 0 ? dueWords[0] : analytics.weak[0] ?? vocabulary[0];
   const tcfRecallValue = analytics.tcf.attempts > 0 ? `${analytics.tcf.accuracy}%` : "-";
   const tcfRecallLabel = analytics.tcf.attempts > 0 ? "TCF recall" : "no TCF reviews yet";
-  const nextSessionCount = getPracticeCount(practiceSize, dueWords.length);
 
   return (
     <section className="view-stack">
@@ -85,31 +76,14 @@ export function HomeView({
             </div>
           </div>
           <div className="hero-actions">
-            {dueWords.length > 0 ? (
-              <>
-                <PracticeSizeControl dueCount={dueWords.length} practiceSize={practiceSize} onChange={onPracticeSizeChange} />
-                <button className="primary-action" onClick={onStartReview}>
-                  <Play size={18} />
-                  Start {nextSessionCount}
-                </button>
-              </>
-            ) : (
-              <button className="primary-action" onClick={onAddWord}>
-                <Plus size={18} />
-                Add word
-              </button>
-            )}
-            {dueWords.length > 0 ? (
-              <button className="secondary-action" onClick={onAddWord}>
-                <Plus size={18} />
-                Capture vocab
-              </button>
-            ) : (
-              <button className="secondary-action" onClick={onOpenAnalytics}>
-                <LineChart size={18} />
-                Analytics
-              </button>
-            )}
+            <button className="primary-action" onClick={onStartReview}>
+              <Play size={18} />
+              Start practicing
+            </button>
+            <button className="secondary-action" onClick={onAddWord}>
+              <Plus size={18} />
+              Capture Vocab
+            </button>
           </div>
         </div>
       </div>

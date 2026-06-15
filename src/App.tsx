@@ -59,6 +59,13 @@ function App() {
     });
   }, [levelFilter, query, vocabulary]);
 
+  useEffect(() => {
+    if (view === "review" || sessionStats.reviewed === 0 || reviewSessionWords.length > 0) return;
+
+    setSessionStats(emptySessionStats);
+    setReviewSessionIds([]);
+  }, [reviewSessionWords.length, sessionStats.reviewed, view]);
+
   const reviewWord = (rating: ReviewRating) => {
     if (!activeReviewWord) return;
 
@@ -182,11 +189,8 @@ function App() {
             attempts={attempts}
             dueWords={dueWords}
             analytics={analytics}
-            practiceSize={practiceSize}
-            onStartReview={startReview}
+            onStartReview={() => setView("review")}
             onAddWord={openAddWord}
-            onOpenAnalytics={() => setView("analytics")}
-            onPracticeSizeChange={setPracticeSize}
           />
         )}
 
