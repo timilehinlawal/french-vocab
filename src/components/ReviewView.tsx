@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CheckCircle2, Play, RotateCcw } from "lucide-react";
+import { CheckCircle2, Play, RotateCcw, X } from "lucide-react";
 import { getPracticeCount } from "../lib/practice";
 import { ratingDelayLabel, reviewRatings } from "../lib/review";
 import type { SessionStats } from "../lib/review";
@@ -17,6 +17,7 @@ export function ReviewView({
   streak,
   word,
   onPracticeSizeChange,
+  onEndReview,
   onResetReview,
   onStartReview,
   onRate
@@ -29,6 +30,7 @@ export function ReviewView({
   streak: ReturnType<typeof streakSummary>;
   word?: VocabularyItem;
   onPracticeSizeChange: (value: PracticeSize) => void;
+  onEndReview: () => void;
   onResetReview: () => void;
   onStartReview: () => void;
   onRate: (rating: ReviewRating) => void;
@@ -130,17 +132,23 @@ export function ReviewView({
 
   return (
     <section className="review-layout review-stage">
-      <div className="session-header">
-        <div>
-          <span className="eyebrow">Review session</span>
-          <strong>{sessionStats.reviewed} reviewed / {remainingCount} remaining</strong>
-        </div>
-        <div className="session-progress">
-          <span>{progress}%</span>
-          <div className="bar-track">
-            <div style={{ width: `${Math.max(4, progress)}%` }} />
+      <div className="session-toolbar">
+        <div className="session-header">
+          <div>
+            <span className="eyebrow">Review session</span>
+            <strong>{sessionStats.reviewed} reviewed / {remainingCount} remaining</strong>
+          </div>
+          <div className="session-progress">
+            <span>{progress}%</span>
+            <div className="bar-track">
+              <div style={{ width: `${Math.max(4, progress)}%` }} />
+            </div>
           </div>
         </div>
+        <button className="secondary-action session-end-action" onClick={onEndReview}>
+          <X size={16} />
+          End review
+        </button>
       </div>
 
       <div className="flashcard-scene">

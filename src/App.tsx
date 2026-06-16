@@ -11,6 +11,7 @@ import { levelOptions } from "./lib/options";
 import { getPracticeCount } from "./lib/practice";
 import { applyReviewRating, createReviewAttempt, emptySessionStats, repairScore, reviewResult } from "./lib/review";
 import { loadAttempts, loadImports, loadPracticeSize, loadVocabulary, saveAttempts, savePracticeSize, saveVocabulary } from "./lib/storage";
+import { normalizeTerm } from "./lib/terms";
 import { createSuggestedSetup, createVocabularyItem, emptyAddWordForm, findDuplicateVocabulary, hasRequiredAddWordFields } from "./lib/vocabulary";
 import type { AddWordForm } from "./lib/vocabulary";
 import type { CefrLevel, PracticeSize, ReviewRating, VocabularyItem } from "./lib/types";
@@ -120,6 +121,12 @@ function App() {
     setView("review");
   };
 
+  const endReviewSession = () => {
+    setReviewSessionIds([]);
+    setSessionStats(emptySessionStats);
+    setView("review");
+  };
+
   const applySuggestedSetup = () => {
     const suggestion = createSuggestedSetup(addWordForm);
     setAddWordForm((form) => ({
@@ -157,8 +164,46 @@ function App() {
     setAddWordError("");
   };
 
+  const importVocabularyWords = (forms: AddWordForm[]) => {
+    const now = new Date().toISOString();
+    const knownTerms = new Set(vocabulary.map((word) => normalizeTerm(word.french)));
+    const importedWords: VocabularyItem[] = [];
+    let skippedDuplicates = 0;
+    let invalidRows = 0;
+
+    for (const form of forms) {
+      if (!hasRequiredAddWordFields(form)) {
+        invalidRows += 1;
+        continue;
+      }
+
+      const normalizedFrench = normalizeTerm(form.french);
+      if (knownTerms.has(normalizedFrench)) {
+        skippedDuplicates += 1;
+        continue;
+      }
+
+      knownTerms.add(normalizedFrench);
+      importedWords.push(createVocabularyItem(form, now));
+    }
+
+    if (importedWords.length > 0) {
+      setVocabulary((items) => [...importedWords, ...items]);
+      setQuery(importedWords[0].french);
+      setLevelFilter("All");
+    }
+
+    return {
+      added: importedWords.length,
+      skippedDuplicates,
+      invalidRows
+    };
+  };
+
+  const isAddingVocabulary = view === "vocabulary" && showAddWord;
+
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${isAddingVocabulary ? "adding-vocabulary" : ""}`}>
       <aside className="sidebar">
         <div className="brand">
           <div className="brand-mark">F</div>
@@ -211,6 +256,7 @@ function App() {
             setAddWordForm={setAddWordForm}
             applySuggestedSetup={applySuggestedSetup}
             addVocabularyWord={addVocabularyWord}
+            importVocabularyWords={importVocabularyWords}
             updateWord={updateWord}
           />
         )}
@@ -225,6 +271,7 @@ function App() {
             streak={analytics.streak}
             word={activeReviewWord}
             onPracticeSizeChange={setPracticeSize}
+            onEndReview={endReviewSession}
             onResetReview={resetReviewSession}
             onStartReview={startReview}
             onRate={reviewWord}

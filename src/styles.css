@@ -670,10 +670,21 @@ button:disabled {
   color: #141414;
 }
 
+.panel-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .status-bars,
 .vocab-list {
   display: grid;
   gap: 12px;
+}
+
+.vocabulary-main-content {
+  display: grid;
+  gap: 16px;
 }
 
 .status-row {
@@ -846,6 +857,38 @@ button:disabled {
   padding: 18px;
 }
 
+.add-word-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.add-word-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(20, 20, 20, 0.28);
+  backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.add-word-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(980px, calc(100vw - 48px));
+  max-height: min(86vh, 900px);
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.add-word-close {
+  width: 34px;
+  height: 34px;
+}
+
 .add-word-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -901,6 +944,125 @@ button:disabled {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.document-import-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(246, 245, 241, 0.48)),
+    rgba(255, 255, 255, 0.38);
+}
+
+.document-import-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.document-import-copy strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.document-import-copy small,
+.document-candidate small,
+.document-warning-list {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.document-upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.88);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(20, 20, 20, 0.12);
+}
+
+.document-upload-button input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.document-import-note,
+.document-warning-list,
+.document-candidate-list,
+.document-import-actions {
+  grid-column: 1 / -1;
+}
+
+.document-import-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(238, 237, 232, 0.62);
+  color: #141414;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.document-import-note.error {
+  background: var(--blush);
+  color: var(--blush-ink);
+}
+
+.document-warning-list,
+.document-candidate-list {
+  display: grid;
+  gap: 8px;
+}
+
+.document-candidate-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.document-candidate {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.document-candidate strong {
+  overflow-wrap: anywhere;
+}
+
+.document-candidate.more {
+  align-content: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.document-import-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .check {
@@ -1119,36 +1281,58 @@ button:disabled {
   backdrop-filter: blur(30px) saturate(1.12);
 }
 
-.session-header {
+.session-toolbar {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(170px, 0.34fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 18px;
-  padding: 10px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.76);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.48);
-  backdrop-filter: blur(24px) saturate(1.12);
-  box-shadow: var(--shadow-tight);
+  gap: 12px;
+  padding: 0 6px;
+}
+
+.session-header {
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(132px, 210px);
+  align-items: end;
+  gap: 16px;
+  min-width: 0;
 }
 
 .session-header strong {
   display: block;
-  margin-top: 4px;
-  font-size: 0.96rem;
+  margin-top: 2px;
+  color: rgba(20, 20, 20, 0.72);
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.session-header .eyebrow {
+  font-size: 0.66rem;
 }
 
 .session-progress {
   display: grid;
-  gap: 8px;
+  gap: 5px;
 }
 
 .session-progress span {
-  color: rgba(24, 24, 24, 0.66);
+  color: rgba(24, 24, 24, 0.52);
+  font-size: 0.8rem;
   font-weight: 600;
   text-align: right;
+}
+
+.session-end-action {
+  min-height: 36px;
+  padding: 0 14px;
+  width: fit-content;
+  max-width: 100%;
+  border-color: rgba(20, 20, 20, 0.08);
+  background: rgba(255, 255, 255, 0.42);
+  color: rgba(20, 20, 20, 0.66);
+  box-shadow: none;
+  white-space: nowrap;
 }
 
 .review-card {
@@ -1822,8 +2006,17 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 
+  .session-toolbar {
+    grid-template-columns: 1fr;
+  }
+
   .session-header {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .session-end-action {
+    justify-self: start;
   }
 
   .session-progress span {
@@ -1840,6 +2033,10 @@ button:disabled {
     padding: 16px 16px 104px;
   }
 
+  .app-shell.adding-vocabulary .main {
+    padding-bottom: 16px;
+  }
+
   .sidebar {
     position: fixed;
     inset: auto 12px 12px;
@@ -1854,6 +2051,10 @@ button:disabled {
       0 18px 50px rgba(24, 24, 24, 0.14),
       inset 0 1px 0 rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(26px) saturate(1.14);
+  }
+
+  .app-shell.adding-vocabulary .sidebar {
+    display: none;
   }
 
   .brand,
@@ -1913,6 +2114,8 @@ button:disabled {
   .readiness-card,
   .reflection-card,
   .learning-tools,
+  .document-import-panel,
+  .document-candidate-list,
   .edit-grid,
   .add-word-grid,
   .rating-grid {
@@ -1975,6 +2178,52 @@ button:disabled {
   .hero-actions .secondary-action,
   .hero-actions .icon-action {
     min-height: 44px;
+  }
+
+  .document-upload-button,
+  .document-import-actions .primary-action,
+  .document-import-actions .secondary-action {
+    width: 100%;
+  }
+
+  .document-import-actions {
+    display: grid;
+  }
+
+  .vocabulary-view.adding .vocabulary-main-content {
+    display: none;
+  }
+
+  .add-word-shell {
+    position: static;
+    display: block;
+    padding: 0;
+  }
+
+  .add-word-backdrop {
+    display: none;
+  }
+
+  .add-word-dialog {
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .vocabulary-view.adding .add-word-panel {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .vocabulary-view.adding .panel-header {
+    align-items: start;
+  }
+
+  .vocabulary-view.adding .panel-header-actions {
+    justify-content: space-between;
   }
 
   .review-stage {
@@ -2063,6 +2312,10 @@ button:disabled {
   .primary-action,
   .secondary-action {
     width: 100%;
+  }
+
+  .session-end-action {
+    width: fit-content;
   }
 
   .hero-actions .icon-action {
