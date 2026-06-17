@@ -17,6 +17,7 @@ import {
   savePracticeSize,
   saveVocabulary
 } from "./lib/storage";
+import { normalizeTerm } from "./lib/terms";
 import { defaultTheme, nextTheme, themeLabels } from "./lib/themes";
 import type { ThemeName } from "./lib/themes";
 import type { SessionStats } from "./lib/review";
@@ -111,7 +112,17 @@ function App() {
     setSessionStats(emptySessionStats);
   };
 
-  const addWord = (item: VocabularyItem) => setVocabulary((items) => [item, ...items]);
+  const addWords = (incoming: VocabularyItem[]) =>
+    setVocabulary((items) => {
+      const seen = new Set(items.map((word) => normalizeTerm(word.french)));
+      const fresh = incoming.filter((word) => {
+        const key = normalizeTerm(word.french);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+      return [...fresh, ...items];
+    });
   const updateWord = (id: string, patch: Partial<VocabularyItem>) =>
     setVocabulary((items) => items.map((word) => (word.id === id ? { ...word, ...patch } : word)));
 
@@ -172,7 +183,7 @@ function App() {
 
         {tab === "track" && <TrackView vocabulary={vocabulary} attempts={attempts} analytics={analytics} />}
 
-        {tab === "words" && <WordsView vocabulary={vocabulary} onAddWord={addWord} onUpdateWord={updateWord} />}
+        {tab === "words" && <WordsView vocabulary={vocabulary} onAddWords={addWords} onUpdateWord={updateWord} />}
       </main>
 
       <footer className="footer-note">
