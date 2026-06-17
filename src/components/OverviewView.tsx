@@ -1,20 +1,15 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Flame } from "lucide-react";
 import { learnerStatus } from "../lib/analyticsSummary";
 import type { AnalyticsSummary } from "../lib/analyticsSummary";
 import type { ReviewAttempt, VocabularyItem } from "../lib/types";
 
-const today = () =>
-  new Date().toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long" }).toLowerCase();
-
 export function OverviewView({
-  learnerName,
   vocabulary,
   attempts,
   dueWords,
   analytics,
   onStartReview
 }: {
-  learnerName: string;
   vocabulary: VocabularyItem[];
   attempts: ReviewAttempt[];
   dueWords: VocabularyItem[];
@@ -39,11 +34,11 @@ export function OverviewView({
   return (
     <article className="hero-card">
       <div className="hero-badge">
-        <Sparkles size={14} />
-        <span>{today()}</span>
+        <Flame size={14} />
+        <span>{streak} day streak</span>
       </div>
 
-      <p className="hero-greeting">bonjour, {learnerName.toLowerCase()}</p>
+      <p className="hero-greeting">Bonjour</p>
 
       <div className="hero-figure">
         <strong className="hero-due">{due}</strong>

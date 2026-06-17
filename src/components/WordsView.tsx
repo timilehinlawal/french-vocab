@@ -1,4 +1,5 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { UIEvent } from "react";
 import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Upload, X } from "lucide-react";
 import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } from "../lib/options";
 import { createVocabularyItem, emptyAddWordForm, findDuplicateVocabulary, getSynonymLadder, hasRequiredAddWordFields } from "../lib/vocabulary";
@@ -9,7 +10,7 @@ import type { CefrLevel, VocabularyItem } from "../lib/types";
 import { PronunciationButton } from "./common";
 
 const LEVELS: ("All" | CefrLevel)[] = ["All", ...levelOptions];
-const MAX_VISIBLE = 50;
+const BATCH = 40;
 
 export function WordsView({
   vocabulary,
@@ -25,6 +26,7 @@ export function WordsView({
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [showAdd, setShowAdd] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(BATCH);
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -36,8 +38,17 @@ export function WordsView({
     });
   }, [vocabulary, query, level]);
 
-  const visible = filtered.slice(0, MAX_VISIBLE);
-  const hiddenCount = filtered.length - visible.length;
+  // Reset the window whenever the result set changes (new search/filter).
+  useEffect(() => setVisibleCount(BATCH), [query, level]);
+
+  const visible = filtered.slice(0, visibleCount);
+
+  const handleScroll = (event: UIEvent<HTMLDivElement>) => {
+    const el = event.currentTarget;
+    if (el.scrollHeight - el.scrollTop - el.clientHeight < 280 && visibleCount < filtered.length) {
+      setVisibleCount((count) => Math.min(count + BATCH, filtered.length));
+    }
+  };
 
   return (
     <article className="words-card">
@@ -68,7 +79,7 @@ export function WordsView({
         </span>
       </div>
 
-      <div className="words-list">
+      <div className="words-list" onScroll={handleScroll}>
         {visible.length === 0 ? (
           <p className="words-empty">no words match “{query}”.</p>
         ) : (
@@ -157,7 +168,6 @@ export function WordsView({
           })
         )}
 
-        {hiddenCount > 0 && <p className="words-more">+{hiddenCount} more — refine your search to narrow down</p>}
       </div>
 
       {showAdd && (

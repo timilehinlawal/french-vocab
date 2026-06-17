@@ -454,6 +454,22 @@ button {
   color: var(--mid);
 }
 
+.footer-heart {
+  color: var(--accent);
+}
+
+.footer-note a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-note a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* ============================================================
    Review — flashcard deck
    ============================================================ */

@@ -23,8 +23,6 @@ import type { ThemeName } from "./lib/themes";
 import type { SessionStats } from "./lib/review";
 import type { PracticeSize, ReviewRating, VocabularyItem } from "./lib/types";
 
-const LEARNER_NAME = "Paul";
-
 type Tab = "overview" | "words" | "review" | "track";
 
 const TABS: { id: Tab; label: string; icon: typeof LayoutGrid }[] = [
@@ -156,7 +154,6 @@ function App() {
 
         {tab === "overview" && (
           <OverviewView
-            learnerName={LEARNER_NAME}
             vocabulary={vocabulary}
             attempts={attempts}
             dueWords={dueWords}
@@ -187,7 +184,10 @@ function App() {
       </main>
 
       <footer className="footer-note">
-        {dueWords.length} due · {analytics.streak.current}-day streak
+        Built with <span className="footer-heart">♥</span> by{" "}
+        <a href="https://www.timilawal.com" target="_blank" rel="noreferrer">
+          Timi Lawal
+        </a>
       </footer>
     </div>
   );
