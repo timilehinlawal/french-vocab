@@ -18,7 +18,7 @@ import {
   saveVocabulary
 } from "./lib/storage";
 import { normalizeTerm } from "./lib/terms";
-import { defaultTheme, nextTheme, themeLabels } from "./lib/themes";
+import { loadTheme, nextTheme, saveTheme, themeLabels } from "./lib/themes";
 import type { ThemeName } from "./lib/themes";
 import type { SessionStats } from "./lib/review";
 import type { PracticeSize, ReviewRating, VocabularyItem } from "./lib/types";
@@ -34,7 +34,7 @@ const TABS: { id: Tab; label: string; icon: typeof LayoutGrid }[] = [
 
 function App() {
   const [tab, setTab] = useState<Tab>("overview");
-  const [theme, setTheme] = useState<ThemeName>(defaultTheme);
+  const [theme, setTheme] = useState<ThemeName>(() => loadTheme());
   const [vocabulary, setVocabulary] = useState(() => loadVocabulary());
   const [attempts, setAttempts] = useState(() => loadAttempts());
   const [imports] = useState(() => loadImports());
@@ -44,6 +44,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
+    saveTheme(theme);
   }, [theme]);
   useEffect(() => saveVocabulary(vocabulary), [vocabulary]);
   useEffect(() => saveAttempts(attempts), [attempts]);

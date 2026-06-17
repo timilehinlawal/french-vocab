@@ -259,7 +259,7 @@ export function ReviewView({
           </div>
         ) : (
           <button className="reveal-btn" onClick={() => setRevealed(true)}>
-            reveal definition
+            reveal
           </button>
         )}
       </div>
