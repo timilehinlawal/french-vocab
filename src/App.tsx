@@ -130,7 +130,10 @@ function App() {
       <div className="grain" aria-hidden="true" />
 
       <header className="header">
-        <span className="logo">french vocab</span>
+        <div className="brand">
+          <span className="brand-mark" aria-hidden="true">fr</span>
+          <span className="logo">french vocab</span>
+        </div>
         <button className="theme-btn" onClick={() => setTheme((current) => nextTheme(current))} aria-label="Change theme">
           <Moon size={15} />
           <span>theme: {themeLabels[theme]}</span>
