@@ -1,12 +1,11 @@
 /* ============================================================
    French Vocab — immersive shell
-   Structure: UX Dictionary  ·  Themes: dany.works (animated tokens)
    Fonts: Geist (body), Geist Mono (display)
    ============================================================ */
 
 /* --- Animatable theme tokens -------------------------------
    Registering them as <color> lets the whole palette tween
-   smoothly (the dany.works technique) instead of hard-cutting. */
+   smoothly instead of hard-cutting. */
 @property --bg            { syntax: "<color>"; inherits: true; initial-value: #0e0e0e; }
 @property --text          { syntax: "<color>"; inherits: true; initial-value: #ececec; }
 @property --mid           { syntax: "<color>"; inherits: true; initial-value: #8a8a8a; }
