@@ -79,23 +79,6 @@ function App() {
     saveGuest(false);
   };
 
-  // Auth gate: only when Firebase is configured and the visitor is neither
-  // signed in nor an opted-out guest. Loading state avoids flashing the app.
-  if (auth.enabled && !auth.user && !guest) {
-    if (auth.loading) {
-      return (
-        <div className="app auth-app">
-          <div className="ambient" aria-hidden="true" />
-          <div className="grain" aria-hidden="true" />
-          <main className="stage">
-            <span className="brand-mark auth-mark auth-loading" aria-hidden="true">fr</span>
-          </main>
-        </div>
-      );
-    }
-    return <LoginView onGoogle={auth.signInWithGoogle} onGuest={continueAsGuest} error={auth.error} />;
-  }
-
   const dueWords = useMemo(
     () => vocabulary.filter((word) => isDue(word)).sort((a, b) => repairScore(b) - repairScore(a)),
     [vocabulary]
@@ -113,6 +96,24 @@ function App() {
     setSessionStats(emptySessionStats);
     setReviewSessionIds([]);
   }, [reviewSessionWords.length, sessionStats.reviewed, tab]);
+
+  // Auth gate: only when Firebase is configured and the visitor is neither
+  // signed in nor an opted-out guest. Placed after all hooks so the hook order
+  // stays identical between the gated and signed-in renders.
+  if (auth.enabled && !auth.user && !guest) {
+    if (auth.loading) {
+      return (
+        <div className="app auth-app">
+          <div className="ambient" aria-hidden="true" />
+          <div className="grain" aria-hidden="true" />
+          <main className="stage">
+            <span className="brand-mark auth-mark auth-loading" aria-hidden="true">fr</span>
+          </main>
+        </div>
+      );
+    }
+    return <LoginView onGoogle={auth.signInWithGoogle} onGuest={continueAsGuest} error={auth.error} />;
+  }
 
   const startReview = () => {
     const targetCount = getPracticeCount(practiceSize, dueWords.length);

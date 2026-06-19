@@ -19,6 +19,10 @@ const userDoc = (uid: string) => {
   return doc(db, "users", uid);
 };
 
+// Firestore rejects any field whose value is `undefined`, and several vocabulary
+// fields are optional. Round-tripping through JSON drops undefined keys cleanly.
+const stripUndefined = <T,>(value: T): T => JSON.parse(JSON.stringify(value)) as T;
+
 /** Read a user's saved progress. Returns null when they have no cloud record yet. */
 export const loadCloudState = async (uid: string): Promise<CloudState | null> => {
   const snapshot = await getDoc(userDoc(uid));
@@ -37,5 +41,5 @@ export const loadCloudState = async (uid: string): Promise<CloudState | null> =>
 
 /** Write a user's progress, stamping the server-side update time. */
 export const saveCloudState = async (uid: string, state: CloudState, updatedAt: string): Promise<void> => {
-  await setDoc(userDoc(uid), { ...state, updatedAt });
+  await setDoc(userDoc(uid), stripUndefined({ ...state, updatedAt }));
 };
