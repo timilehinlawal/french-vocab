@@ -14,6 +14,12 @@ export interface CloudDocument extends CloudState {
   updatedAt: string;
 }
 
+// A cloud read carries the server-recorded update time so callers can compare it
+// against the local copy and keep whichever is newer.
+export interface LoadedCloudState extends CloudState {
+  updatedAt: string | null;
+}
+
 const userDoc = (uid: string) => {
   if (!db) throw new Error("Firestore is not configured");
   return doc(db, "users", uid);
@@ -24,7 +30,7 @@ const userDoc = (uid: string) => {
 const stripUndefined = <T,>(value: T): T => JSON.parse(JSON.stringify(value)) as T;
 
 /** Read a user's saved progress. Returns null when they have no cloud record yet. */
-export const loadCloudState = async (uid: string): Promise<CloudState | null> => {
+export const loadCloudState = async (uid: string): Promise<LoadedCloudState | null> => {
   const snapshot = await getDoc(userDoc(uid));
   if (!snapshot.exists()) return null;
 
@@ -35,7 +41,8 @@ export const loadCloudState = async (uid: string): Promise<CloudState | null> =>
   return {
     vocabulary: data.vocabulary,
     attempts: Array.isArray(data.attempts) ? data.attempts : [],
-    practiceSize: typeof data.practiceSize === "number" ? data.practiceSize : 10
+    practiceSize: typeof data.practiceSize === "number" ? data.practiceSize : 10,
+    updatedAt: typeof data.updatedAt === "string" ? data.updatedAt : null
   };
 };
 
