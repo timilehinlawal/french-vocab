@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Activity, BookText, Brain, LayoutGrid, Moon } from "lucide-react";
+import { AccountMenu } from "./components/AccountMenu";
+import { LoginView } from "./components/LoginView";
 import { OverviewView } from "./components/OverviewView";
 import { ReviewView } from "./components/ReviewView";
 import { TrackView } from "./components/TrackView";
@@ -10,15 +12,19 @@ import { getPracticeCount } from "./lib/practice";
 import { applyReviewRating, createReviewAttempt, emptySessionStats, repairScore, reviewResult } from "./lib/review";
 import {
   loadAttempts,
+  loadGuest,
   loadImports,
   loadPracticeSize,
   loadVocabulary,
   saveAttempts,
+  saveGuest,
   savePracticeSize,
   saveVocabulary
 } from "./lib/storage";
 import { normalizeTerm } from "./lib/terms";
 import { loadTheme, nextTheme, saveTheme, themeLabels } from "./lib/themes";
+import { useAuth } from "./lib/useAuth";
+import { useCloudSync } from "./lib/useCloudSync";
 import type { ThemeName } from "./lib/themes";
 import type { SessionStats } from "./lib/review";
 import type { PracticeSize, ReviewRating, VocabularyItem } from "./lib/types";
@@ -42,6 +48,18 @@ function App() {
   const [reviewSessionIds, setReviewSessionIds] = useState<string[]>([]);
   const [sessionStats, setSessionStats] = useState<SessionStats>(emptySessionStats);
 
+  const auth = useAuth();
+  const [guest, setGuest] = useState(() => loadGuest());
+  const syncStatus = useCloudSync({
+    user: auth.user,
+    vocabulary,
+    attempts,
+    practiceSize,
+    setVocabulary,
+    setAttempts,
+    setPracticeSize
+  });
+
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     saveTheme(theme);
@@ -49,6 +67,34 @@ function App() {
   useEffect(() => saveVocabulary(vocabulary), [vocabulary]);
   useEffect(() => saveAttempts(attempts), [attempts]);
   useEffect(() => savePracticeSize(practiceSize), [practiceSize]);
+
+  const continueAsGuest = () => {
+    setGuest(true);
+    saveGuest(true);
+  };
+  const handleSignOut = async () => {
+    await auth.signOutUser();
+    // Returning to the sign-in gate after signing out.
+    setGuest(false);
+    saveGuest(false);
+  };
+
+  // Auth gate: only when Firebase is configured and the visitor is neither
+  // signed in nor an opted-out guest. Loading state avoids flashing the app.
+  if (auth.enabled && !auth.user && !guest) {
+    if (auth.loading) {
+      return (
+        <div className="app auth-app">
+          <div className="ambient" aria-hidden="true" />
+          <div className="grain" aria-hidden="true" />
+          <main className="stage">
+            <span className="brand-mark auth-mark auth-loading" aria-hidden="true">fr</span>
+          </main>
+        </div>
+      );
+    }
+    return <LoginView onGoogle={auth.signInWithGoogle} onGuest={continueAsGuest} error={auth.error} />;
+  }
 
   const dueWords = useMemo(
     () => vocabulary.filter((word) => isDue(word)).sort((a, b) => repairScore(b) - repairScore(a)),
@@ -135,10 +181,20 @@ function App() {
           <span className="brand-mark" aria-hidden="true">fr</span>
           <span className="logo">french vocab</span>
         </div>
-        <button className="theme-btn" onClick={() => setTheme((current) => nextTheme(current))} aria-label="Change theme">
-          <Moon size={15} />
-          <span>theme: {themeLabels[theme]}</span>
-        </button>
+        <div className="header-actions">
+          <button className="theme-btn" onClick={() => setTheme((current) => nextTheme(current))} aria-label="Change theme">
+            <Moon size={15} />
+            <span>theme: {themeLabels[theme]}</span>
+          </button>
+          {auth.enabled && (
+            <AccountMenu
+              user={auth.user}
+              syncStatus={syncStatus}
+              onSignIn={auth.signInWithGoogle}
+              onSignOut={handleSignOut}
+            />
+          )}
+        </div>
       </header>
 
       <main className="stage">

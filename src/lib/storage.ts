@@ -8,6 +8,7 @@ const VOCABULARY_KEY = "fvt:vocabulary";
 const ATTEMPTS_KEY = "fvt:attempts";
 const IMPORTS_KEY = "fvt:imports";
 const PRACTICE_SIZE_KEY = "fvt:practice-size";
+const GUEST_KEY = "fvt:guest";
 const DEMO_ATTEMPT_IDS = new Set(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]);
 
 const read = <T,>(key: string, fallback: T): T => {
@@ -99,4 +100,10 @@ export const saveImports = (imports: ImportBatch[]) => {
 
 export const savePracticeSize = (practiceSize: PracticeSize) => {
   window.localStorage.setItem(PRACTICE_SIZE_KEY, JSON.stringify(practiceSize));
+};
+
+// Remembers that a visitor chose to skip sign-in, so they aren't gated again.
+export const loadGuest = () => window.localStorage.getItem(GUEST_KEY) === "true";
+export const saveGuest = (guest: boolean) => {
+  window.localStorage.setItem(GUEST_KEY, guest ? "true" : "false");
 };

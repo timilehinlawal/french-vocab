@@ -1,0 +1,41 @@
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db } from "./firebase";
+import type { PracticeSize, ReviewAttempt, VocabularyItem } from "./types";
+
+// The slice of app state we persist per user. Theme stays device-local; imports
+// are derived from seeds and never mutated, so neither is synced.
+export interface CloudState {
+  vocabulary: VocabularyItem[];
+  attempts: ReviewAttempt[];
+  practiceSize: PracticeSize;
+}
+
+export interface CloudDocument extends CloudState {
+  updatedAt: string;
+}
+
+const userDoc = (uid: string) => {
+  if (!db) throw new Error("Firestore is not configured");
+  return doc(db, "users", uid);
+};
+
+/** Read a user's saved progress. Returns null when they have no cloud record yet. */
+export const loadCloudState = async (uid: string): Promise<CloudState | null> => {
+  const snapshot = await getDoc(userDoc(uid));
+  if (!snapshot.exists()) return null;
+
+  const data = snapshot.data() as Partial<CloudDocument>;
+  // An empty/partial doc counts as "no data" so a first sync can seed it.
+  if (!Array.isArray(data.vocabulary)) return null;
+
+  return {
+    vocabulary: data.vocabulary,
+    attempts: Array.isArray(data.attempts) ? data.attempts : [],
+    practiceSize: typeof data.practiceSize === "number" ? data.practiceSize : 10
+  };
+};
+
+/** Write a user's progress, stamping the server-side update time. */
+export const saveCloudState = async (uid: string, state: CloudState, updatedAt: string): Promise<void> => {
+  await setDoc(userDoc(uid), { ...state, updatedAt });
+};
