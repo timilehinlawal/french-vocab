@@ -51,7 +51,26 @@ export function useCloudSync({
   const lastSyncedRef = useRef<string | null>(null);
   const writeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Snapshot of the synced slice from the previous render, used to detect a
+  // genuine local change versus first mount or a cloud-applied echo.
+  const localPayloadRef = useRef<string | null>(null);
+
   const uid = user?.uid ?? null;
+
+  // Stamp the local update time on any genuine local change, regardless of
+  // sign-in/sync status. This keeps the "newest wins" check accurate even for
+  // changes made during the brief initial-sync window (e.g. an import right
+  // after sign-in), without re-stamping on first mount or cloud-applied data.
+  useEffect(() => {
+    const payload = serialize({ vocabulary, attempts, practiceSize });
+    const isFirstRender = localPayloadRef.current === null;
+    localPayloadRef.current = payload;
+
+    if (isFirstRender) return; // initial local load — not a user change
+    if (payload === lastSyncedRef.current) return; // echo of freshly-applied cloud data
+
+    saveUpdatedAt(new Date().toISOString());
+  }, [vocabulary, attempts, practiceSize]);
 
   // Initial sync whenever the signed-in user changes.
   useEffect(() => {
@@ -122,11 +141,11 @@ export function useCloudSync({
     if (payload === lastSyncedRef.current) return;
     lastSyncedRef.current = payload;
 
-    // Stamp the local update time synchronously, before the debounced write. If
-    // the write is cancelled by a refresh/close, the next load still sees that
-    // local is newer than the cloud and keeps (then re-pushes) this progress.
-    const updatedAt = new Date().toISOString();
-    saveUpdatedAt(updatedAt);
+    // The local-stamp effect above already recorded this change's update time
+    // (synchronously, before this debounced write). Reuse it so the timestamp
+    // sent to the cloud matches the one stored locally, and a cancelled write
+    // is still recovered on the next load via the "newest wins" check.
+    const updatedAt = loadUpdatedAt() ?? new Date().toISOString();
 
     if (writeTimer.current) clearTimeout(writeTimer.current);
     writeTimer.current = setTimeout(() => {
