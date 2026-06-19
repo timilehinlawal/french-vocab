@@ -146,7 +146,8 @@ button {
 /* --- App shell --------------------------------------------- */
 .app {
   position: relative;
-  height: 100vh;
+  height: 100vh; /* fallback for browsers without dvh */
+  height: 100dvh; /* tracks the visible area as mobile toolbars show/hide */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1161,7 +1162,8 @@ button {
 .words-card {
   position: relative;
   width: min(720px, 94vw);
-  max-height: min(640px, calc(100vh - 260px));
+  max-height: min(640px, calc(100vh - 260px)); /* fallback */
+  max-height: min(640px, calc(100dvh - 260px));
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -1480,7 +1482,8 @@ button {
 
 .overlay-card {
   width: min(720px, 94vw);
-  max-height: 88vh;
+  max-height: 88vh; /* fallback */
+  max-height: 88dvh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
