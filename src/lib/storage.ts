@@ -9,6 +9,7 @@ const ATTEMPTS_KEY = "fvt:attempts";
 const IMPORTS_KEY = "fvt:imports";
 const PRACTICE_SIZE_KEY = "fvt:practice-size";
 const GUEST_KEY = "fvt:guest";
+const UPDATED_AT_KEY = "fvt:updated-at";
 const DEMO_ATTEMPT_IDS = new Set(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]);
 
 const read = <T,>(key: string, fallback: T): T => {
@@ -100,6 +101,13 @@ export const saveImports = (imports: ImportBatch[]) => {
 
 export const savePracticeSize = (practiceSize: PracticeSize) => {
   window.localStorage.setItem(PRACTICE_SIZE_KEY, JSON.stringify(practiceSize));
+};
+
+// Tracks when local data was last meaningfully changed, so cloud sync can tell
+// whether the local copy is fresher than the cloud copy ("newest wins").
+export const loadUpdatedAt = () => window.localStorage.getItem(UPDATED_AT_KEY);
+export const saveUpdatedAt = (updatedAt: string) => {
+  window.localStorage.setItem(UPDATED_AT_KEY, updatedAt);
 };
 
 // Remembers that a visitor chose to skip sign-in, so they aren't gated again.
