@@ -426,7 +426,7 @@ function ImportStep({
       <div className="import-hint">
         <p>each line should include the french word & its meaning.</p>
         <p>separate with a comma, dash, tab, or colon. a table works too.</p>
-        <p>optional -> add the word in a sentence with its translation</p>
+        <p>optional — add the word in a sentence with its translation</p>
       </div>
 
       {busy && <p className="overlay-busy">reading {fileName}…</p>}
