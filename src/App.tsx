@@ -234,7 +234,6 @@ function App() {
         {tab === "overview" && (
           <OverviewView
             vocabulary={vocabulary}
-            attempts={attempts}
             dueWords={dueWords}
             analytics={analytics}
             onStartReview={startReview}
