@@ -105,3 +105,18 @@ export const getWordFamily = (word: VocabularyItem) =>
   uniqueList(word.wordFamily ?? []).filter((item) => !looksLikeUsagePattern(item) && normalizeTerm(item) !== normalizeTerm(word.french)).slice(0, 4);
 
 export const getUsagePatterns = (word: VocabularyItem) => uniqueList([...word.structures, ...(word.wordFamily ?? []).filter(looksLikeUsagePattern)]).slice(0, 2);
+
+const glossKey = (value: string) => value.trim().toLowerCase().replace(/\s+/g, " ");
+
+/** English under an example, if it is a real sentence translation — not a repeat of the meaning. */
+export const exampleTranslation = (word: Pick<VocabularyItem, "meaning" | "translation">) => {
+  const translation = word.translation?.trim() ?? "";
+  if (!translation) return "";
+
+  const meaning = glossKey(word.meaning);
+  const gloss = glossKey(translation);
+  if (!meaning || gloss === meaning) return "";
+  if (meaning.split(/\s*[,;/]\s*/).includes(gloss)) return "";
+
+  return translation;
+};

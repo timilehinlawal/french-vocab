@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { UIEvent } from "react";
 import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Trash2, Upload, X } from "lucide-react";
 import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } from "../lib/options";
-import { createVocabularyItem, emptyAddWordForm, findDuplicateVocabulary, getSynonymLadder, hasRequiredAddWordFields } from "../lib/vocabulary";
+import { createVocabularyItem, emptyAddWordForm, exampleTranslation, findDuplicateVocabulary, hasRequiredAddWordFields } from "../lib/vocabulary";
 import { entriesToItems, importFile } from "../lib/importVocabulary";
 import type { ParsedEntry } from "../lib/importVocabulary";
 import type { AddWordForm } from "../lib/vocabulary";
@@ -89,7 +89,7 @@ export function WordsView({
           visible.map((word) => {
             const open = expandedId === word.id;
             const editing = editingId === word.id;
-            const synonyms = getSynonymLadder(word);
+            const translation = exampleTranslation(word);
 
             return (
               <div className={`word-row${open ? " open" : ""}`} key={word.id}>
@@ -113,29 +113,14 @@ export function WordsView({
                 {open && (
                   <div className="word-detail">
                     <span className="word-detail-meta">
-                      {word.partOfSpeech} · {word.status.toLowerCase()} · {word.source.toLowerCase()}
+                      {word.partOfSpeech} · {word.status.toLowerCase()}
                     </span>
 
                     {word.example && (
                       <p className="word-example">
                         <span className="fr">{word.example}</span>
-                        {word.translation && <span className="en">{word.translation}</span>}
+                        {translation && <span className="en">{translation}</span>}
                       </p>
-                    )}
-
-                    {(word.structures.length > 0 || synonyms.length > 0) && (
-                      <div className="word-chips">
-                        {word.structures.map((structure) => (
-                          <span className="deck-chip" key={`s-${structure}`}>
-                            {structure}
-                          </span>
-                        ))}
-                        {synonyms.map((synonym) => (
-                          <span className="deck-chip subtle" key={`y-${synonym}`}>
-                            {synonym}
-                          </span>
-                        ))}
-                      </div>
                     )}
 
                     <div className="word-detail-actions">

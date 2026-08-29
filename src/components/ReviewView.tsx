@@ -4,6 +4,7 @@ import { getPracticeCount } from "../lib/practice";
 import { reviewRatings } from "../lib/review";
 import type { SessionStats } from "../lib/review";
 import type { PracticeSize, ReviewRating, VocabularyItem } from "../lib/types";
+import { exampleTranslation } from "../lib/vocabulary";
 import { PronunciationButton } from "./common";
 
 // Human-friendly recall ratings. `next` mirrors nextDueForRating() so the
@@ -59,7 +60,6 @@ export function ReviewView({
   dueWords,
   remainingSessionWords,
   sessionStats,
-  sessionTargetCount,
   practiceSize,
   onPracticeSizeChange,
   onStartReview,
@@ -71,7 +71,6 @@ export function ReviewView({
   dueWords: VocabularyItem[];
   remainingSessionWords: VocabularyItem[];
   sessionStats: SessionStats;
-  sessionTargetCount: number;
   practiceSize: PracticeSize;
   onPracticeSizeChange: (value: PracticeSize) => void;
   onStartReview: () => void;
@@ -170,9 +169,8 @@ export function ReviewView({
   }
 
   // --- Active flashcard ---
-  const sessionTotal = Math.max(sessionTargetCount, sessionStats.reviewed + remainingSessionWords.length);
-  const position = Math.min(sessionStats.reviewed + 1, sessionTotal);
   const nextWord = remainingSessionWords[1];
+  const translation = exampleTranslation(word);
 
   return (
     <div className="review-deck">
@@ -229,7 +227,7 @@ export function ReviewView({
               {word.example && (
                 <p className="deck-example">
                   <span className="fr">{word.example}</span>
-                  {word.translation && <span className="en">{word.translation}</span>}
+                  {translation && <span className="en">{translation}</span>}
                 </p>
               )}
               {word.structures.length > 0 && (
@@ -265,10 +263,6 @@ export function ReviewView({
           </button>
         )}
       </div>
-
-      <span className="deck-counter">
-        {position} / {sessionTotal}
-      </span>
     </div>
   );
 }

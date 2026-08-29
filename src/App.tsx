@@ -246,7 +246,6 @@ function App() {
             dueWords={dueWords}
             remainingSessionWords={reviewSessionWords}
             sessionStats={sessionStats}
-            sessionTargetCount={reviewSessionIds.length}
             practiceSize={practiceSize}
             onPracticeSizeChange={setPracticeSize}
             onStartReview={startReview}
