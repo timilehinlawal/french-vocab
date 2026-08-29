@@ -1,6 +1,6 @@
 /* ============================================================
    French Vocab — immersive shell
-   Fonts: Geist (body), Geist Mono (display)
+   Fonts: Geist
    ============================================================ */
 
 /* --- Animatable theme tokens -------------------------------
@@ -23,7 +23,7 @@
 
 :root {
   --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-mono: var(--font-sans);
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --radius-card: 40px;
   --pill-radius: 999px;
