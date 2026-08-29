@@ -50,6 +50,7 @@ function App() {
   const [removedTerms, setRemovedTerms] = useState(() => loadRemovedTerms());
   const [reviewSessionIds, setReviewSessionIds] = useState<string[]>([]);
   const [sessionStats, setSessionStats] = useState<SessionStats>(emptySessionStats);
+  const [addingWords, setAddingWords] = useState(false);
 
   const auth = useAuth();
   const [guest, setGuest] = useState(() => loadGuest());
@@ -217,19 +218,21 @@ function App() {
       </header>
 
       <main className="stage">
-        <nav className="nav" aria-label="Sections">
-          {TABS.map(({ id, label, icon: Icon }) => (
-            <button
-              key={id}
-              className={`nav-pill${tab === id ? " active" : ""}`}
-              onClick={() => setTab(id)}
-              aria-current={tab === id ? "page" : undefined}
-            >
-              <Icon size={15} />
-              {label}
-            </button>
-          ))}
-        </nav>
+        {!(tab === "review" && activeReviewWord) && !addingWords && (
+          <nav className="nav" aria-label="Sections">
+            {TABS.map(({ id, label, icon: Icon }) => (
+              <button
+                key={id}
+                className={`nav-pill${tab === id ? " active" : ""}`}
+                onClick={() => setTab(id)}
+                aria-current={tab === id ? "page" : undefined}
+              >
+                <Icon size={15} />
+                {label}
+              </button>
+            ))}
+          </nav>
+        )}
 
         {tab === "overview" && (
           <OverviewView
@@ -258,7 +261,13 @@ function App() {
         {tab === "track" && <TrackView vocabulary={vocabulary} attempts={attempts} analytics={analytics} />}
 
         {tab === "words" && (
-          <WordsView vocabulary={vocabulary} onAddWords={addWords} onUpdateWord={updateWord} onDeleteWord={deleteWord} />
+          <WordsView
+            vocabulary={vocabulary}
+            onAddWords={addWords}
+            onUpdateWord={updateWord}
+            onDeleteWord={deleteWord}
+            onAddOpenChange={setAddingWords}
+          />
         )}
       </main>
 

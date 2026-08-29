@@ -16,12 +16,14 @@ export function WordsView({
   vocabulary,
   onAddWords,
   onUpdateWord,
-  onDeleteWord
+  onDeleteWord,
+  onAddOpenChange
 }: {
   vocabulary: VocabularyItem[];
   onAddWords: (items: VocabularyItem[]) => void;
   onUpdateWord: (id: string, patch: Partial<VocabularyItem>) => void;
   onDeleteWord: (id: string) => void;
+  onAddOpenChange?: (open: boolean) => void;
 }) {
   const [query, setQuery] = useState("");
   const [level, setLevel] = useState<"All" | CefrLevel>("All");
@@ -30,6 +32,17 @@ export function WordsView({
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [showAdd, setShowAdd] = useState(false);
   const [visibleCount, setVisibleCount] = useState(BATCH);
+
+  const openAdd = () => {
+    onAddOpenChange?.(true);
+    setShowAdd(true);
+  };
+  const closeAdd = () => {
+    onAddOpenChange?.(false);
+    setShowAdd(false);
+  };
+
+  useEffect(() => () => onAddOpenChange?.(false), [onAddOpenChange]);
 
   const filtered = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -53,6 +66,22 @@ export function WordsView({
     }
   };
 
+  if (showAdd) {
+    return (
+      <AddWordOverlay
+        vocabulary={vocabulary}
+        initialFrench={query.trim()}
+        onClose={closeAdd}
+        onCommit={(items, focusQuery) => {
+          onAddWords(items);
+          setQuery(focusQuery ?? "");
+          setLevel("All");
+          closeAdd();
+        }}
+      />
+    );
+  }
+
   return (
     <article className="words-card">
       <div className="words-toolbar">
@@ -65,7 +94,7 @@ export function WordsView({
             </button>
           )}
         </label>
-        <button className="words-add" onClick={() => setShowAdd(true)}>
+        <button className="words-add" onClick={openAdd}>
           <Plus size={16} />
           add
         </button>
@@ -180,19 +209,6 @@ export function WordsView({
         )}
 
       </div>
-
-      {showAdd && (
-        <AddWordOverlay
-          vocabulary={vocabulary}
-          onClose={() => setShowAdd(false)}
-          onCommit={(items, focusQuery) => {
-            onAddWords(items);
-            setQuery(focusQuery ?? "");
-            setLevel("All");
-            setShowAdd(false);
-          }}
-        />
-      )}
     </article>
   );
 }
@@ -201,65 +217,77 @@ type AddStep = "choose" | "manual" | "import";
 
 function AddWordOverlay({
   vocabulary,
+  initialFrench = "",
   onCommit,
   onClose
 }: {
   vocabulary: VocabularyItem[];
+  initialFrench?: string;
   onCommit: (items: VocabularyItem[], focusQuery?: string) => void;
   onClose: () => void;
 }) {
-  const [step, setStep] = useState<AddStep>("choose");
+  const [step, setStep] = useState<AddStep>(initialFrench ? "manual" : "choose");
   const title = step === "choose" ? "add words" : step === "manual" ? "add a word" : "import words";
 
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
   return (
-    <div className="overlay" onClick={onClose}>
-      <div className="overlay-card" onClick={(event) => event.stopPropagation()}>
-        <div className="overlay-head">
-          <span className="overlay-title">
-            {step !== "choose" && (
-              <button className="overlay-back" onClick={() => setStep("choose")} aria-label="Back">
-                <ArrowLeft size={16} />
-              </button>
-            )}
-            {title}
-          </span>
-          <button className="icon-action compact" onClick={onClose} aria-label="Close">
-            <X size={16} />
+    <article className="words-card add-card">
+      <div className="overlay-head">
+        <span className="overlay-title">
+          {step !== "choose" && (
+            <button className="overlay-back" onClick={() => setStep("choose")} aria-label="Back">
+              <ArrowLeft size={16} />
+            </button>
+          )}
+          {title}
+        </span>
+        <button className="icon-action compact" onClick={onClose} aria-label="Close">
+          <X size={16} />
+        </button>
+      </div>
+
+      {step === "choose" && (
+        <div className="overlay-choices">
+          <button className="choice-card" onClick={() => setStep("manual")}>
+            <PenLine size={22} />
+            <strong>manual</strong>
+            <span>type a single word and its meaning.</span>
+          </button>
+          <button className="choice-card" onClick={() => setStep("import")}>
+            <Upload size={22} />
+            <strong>import</strong>
+            <span>scrape words from a .docx, .csv, or .txt file.</span>
           </button>
         </div>
+      )}
 
-        {step === "choose" && (
-          <div className="overlay-choices">
-            <button className="choice-card" onClick={() => setStep("manual")}>
-              <PenLine size={22} />
-              <strong>manual</strong>
-              <span>type a single word and its meaning.</span>
-            </button>
-            <button className="choice-card" onClick={() => setStep("import")}>
-              <Upload size={22} />
-              <strong>import</strong>
-              <span>scrape words from a .docx, .csv, or .txt file.</span>
-            </button>
-          </div>
-        )}
-
-        {step === "manual" && <ManualStep vocabulary={vocabulary} onClose={onClose} onCommit={onCommit} />}
-        {step === "import" && <ImportStep vocabulary={vocabulary} onClose={onClose} onCommit={onCommit} />}
-      </div>
-    </div>
+      {step === "manual" && (
+        <ManualStep vocabulary={vocabulary} initialFrench={initialFrench} onClose={onClose} onCommit={onCommit} />
+      )}
+      {step === "import" && <ImportStep vocabulary={vocabulary} onClose={onClose} onCommit={onCommit} />}
+    </article>
   );
 }
 
 function ManualStep({
   vocabulary,
+  initialFrench = "",
   onCommit,
   onClose
 }: {
   vocabulary: VocabularyItem[];
+  initialFrench?: string;
   onCommit: (items: VocabularyItem[], focusQuery?: string) => void;
   onClose: () => void;
 }) {
-  const [form, setForm] = useState<AddWordForm>(emptyAddWordForm);
+  const [form, setForm] = useState<AddWordForm>({ ...emptyAddWordForm, french: initialFrench });
   const [error, setError] = useState("");
 
   const update = <K extends keyof AddWordForm>(key: K, value: AddWordForm[K]) => setForm((current) => ({ ...current, [key]: value }));
@@ -393,6 +421,12 @@ function ImportStep({
           hidden
           onChange={(event) => handleFile(event.target.files?.[0])}
         />
+      </div>
+
+      <div className="import-hint">
+        <p>each line should include the french word & its meaning.</p>
+        <p>separate with a comma, dash, tab, or colon. a table works too.</p>
+        <p>optional -> add the word in a sentence with its translation</p>
       </div>
 
       {busy && <p className="overlay-busy">reading {fileName}…</p>}
