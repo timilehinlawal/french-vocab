@@ -8,7 +8,7 @@ import { TrackView } from "./components/TrackView";
 import { WordsView } from "./components/WordsView";
 import { isDue } from "./lib/analytics";
 import { buildAnalyticsSummary } from "./lib/analyticsSummary";
-import { getPracticeCount } from "./lib/practice";
+import { getPracticeCount, shuffle } from "./lib/practice";
 import { applyReviewRating, createReviewAttempt, emptySessionStats, repairScore, reviewResult } from "./lib/review";
 import {
   loadAttempts,
@@ -91,8 +91,11 @@ function App() {
     [vocabulary]
   );
   const reviewSessionWords = useMemo(() => {
-    const sessionIds = new Set(reviewSessionIds);
-    return dueWords.filter((word) => sessionIds.has(word.id));
+    const dueById = new Map(dueWords.map((word) => [word.id, word]));
+    return reviewSessionIds.flatMap((id) => {
+      const word = dueById.get(id);
+      return word ? [word] : [];
+    });
   }, [dueWords, reviewSessionIds]);
   const activeReviewWord = reviewSessionWords[0];
   const analytics = useMemo(() => buildAnalyticsSummary(vocabulary, attempts, imports), [attempts, imports, vocabulary]);
@@ -124,7 +127,7 @@ function App() {
 
   const startReview = () => {
     const targetCount = getPracticeCount(practiceSize, dueWords.length);
-    setReviewSessionIds(dueWords.slice(0, targetCount).map((word) => word.id));
+    setReviewSessionIds(shuffle(dueWords).slice(0, targetCount).map((word) => word.id));
     setSessionStats(emptySessionStats);
     setTab("review");
   };

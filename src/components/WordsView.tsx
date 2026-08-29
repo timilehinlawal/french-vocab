@@ -4,6 +4,15 @@ import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Trash2, Upload, 
 import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } from "../lib/options";
 import { createVocabularyItem, emptyAddWordForm, exampleTranslation, findDuplicateVocabulary, hasRequiredAddWordFields } from "../lib/vocabulary";
 import { entriesToItems, importFile } from "../lib/importVocabulary";
+import {
+  fetchEnglishWordSuggestions,
+  fetchFrenchSuggestions,
+  fetchTranslations,
+  localFrenchSuggestions,
+  localMeaningSuggestions,
+  localTranslations,
+  mergeSuggestions
+} from "../lib/suggestions";
 import type { ParsedEntry } from "../lib/importVocabulary";
 import type { AddWordForm } from "../lib/vocabulary";
 import type { CefrLevel, VocabularyItem } from "../lib/types";
@@ -11,6 +20,7 @@ import { PronunciationButton } from "./common";
 
 const LEVELS: ("All" | CefrLevel)[] = ["All", ...levelOptions];
 const BATCH = 40;
+const SUGGESTION_IDLE_MS = 1000;
 
 export function WordsView({
   vocabulary,
@@ -209,6 +219,20 @@ export function WordsView({
         )}
 
       </div>
+
+      {showAdd && (
+        <AddWordOverlay
+          vocabulary={vocabulary}
+          initialFrench={query.trim()}
+          onClose={() => setShowAdd(false)}
+          onCommit={(items, focusQuery) => {
+            onAddWords(items);
+            setQuery(focusQuery ?? "");
+            setLevel("All");
+            setShowAdd(false);
+          }}
+        />
+      )}
     </article>
   );
 }
@@ -276,6 +300,27 @@ function AddWordOverlay({
   );
 }
 
+function SuggestionList({ items, onPick }: { items: string[]; onPick: (value: string) => void }) {
+  if (items.length === 0) return null;
+
+  return (
+    <ul className="suggest-list" role="listbox">
+      {items.map((item) => (
+        <li key={item}>
+          <button
+            type="button"
+            className="suggest-item"
+            onMouseDown={(event) => event.preventDefault()}
+            onClick={() => onPick(item)}
+          >
+            {item}
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function ManualStep({
   vocabulary,
   initialFrench = "",
@@ -289,8 +334,101 @@ function ManualStep({
 }) {
   const [form, setForm] = useState<AddWordForm>({ ...emptyAddWordForm, french: initialFrench });
   const [error, setError] = useState("");
+  const [frenchFocused, setFrenchFocused] = useState(true);
+  const [meaningFocused, setMeaningFocused] = useState(false);
+  const [meaningTyping, setMeaningTyping] = useState(false);
+  const [frenchSuggestions, setFrenchSuggestions] = useState<string[]>([]);
+  const [meaningSuggestions, setMeaningSuggestions] = useState<string[]>([]);
+  const frenchInputRef = useRef<HTMLInputElement>(null);
 
   const update = <K extends keyof AddWordForm>(key: K, value: AddWordForm[K]) => setForm((current) => ({ ...current, [key]: value }));
+
+  useEffect(() => {
+    const input = frenchInputRef.current;
+    if (!input) return;
+    input.focus();
+    const cursor = input.value.length;
+    input.setSelectionRange(cursor, cursor);
+  }, []);
+
+  useEffect(() => {
+    const query = form.french.trim();
+    setFrenchSuggestions([]);
+    if (query.length < 2) return;
+
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      const local = localFrenchSuggestions(vocabulary, query);
+      void fetchFrenchSuggestions(query, controller.signal)
+        .then((remote) => mergeSuggestions(local, remote))
+        .catch(() => local)
+        .then((items) => {
+          if (controller.signal.aborted) return;
+          setFrenchSuggestions(items);
+        });
+    }, SUGGESTION_IDLE_MS);
+
+    return () => {
+      controller.abort();
+      window.clearTimeout(timer);
+    };
+  }, [form.french, vocabulary]);
+
+  useEffect(() => {
+    if (!meaningFocused) {
+      setMeaningSuggestions([]);
+      return;
+    }
+
+    const meaningQuery = form.meaning.trim();
+    const french = form.french.trim();
+    const showWordSuggestions = meaningTyping && meaningQuery.length >= 2;
+    if (!showWordSuggestions && !french) {
+      setMeaningSuggestions([]);
+      return;
+    }
+
+    setMeaningSuggestions([]);
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      const translations = localTranslations(vocabulary, french);
+      const typed = showWordSuggestions ? localMeaningSuggestions(vocabulary, meaningQuery) : [];
+      const local = showWordSuggestions
+        ? mergeSuggestions(typed, translations.filter((item) => item.toLowerCase().includes(meaningQuery.toLowerCase())))
+        : translations;
+
+      const remote = showWordSuggestions
+        ? fetchEnglishWordSuggestions(meaningQuery, controller.signal)
+        : fetchTranslations(french, controller.signal);
+
+      void remote
+        .then((items) => mergeSuggestions(local, items))
+        .catch(() => local)
+        .then((items) => {
+          if (controller.signal.aborted) return;
+          setMeaningSuggestions(items);
+        });
+    }, SUGGESTION_IDLE_MS);
+
+    return () => {
+      controller.abort();
+      window.clearTimeout(timer);
+    };
+  }, [form.french, form.meaning, meaningFocused, meaningTyping, vocabulary]);
+
+  const pickFrench = (value: string) => {
+    const match = vocabulary.find((word) => word.french === value);
+    setForm((current) => ({
+      ...current,
+      french: value,
+      meaning: current.meaning.trim() ? current.meaning : match?.meaning ?? current.meaning
+    }));
+  };
+
+  const pickMeaning = (value: string) => {
+    update("meaning", value);
+    setMeaningTyping(false);
+  };
 
   const save = () => {
     if (!hasRequiredAddWordFields(form)) {
@@ -309,14 +447,38 @@ function ManualStep({
   return (
     <>
       <div className="overlay-grid">
-        <label className="field wide">
+        <div className="field wide">
           french word
-          <input autoFocus value={form.french} onChange={(event) => update("french", event.target.value)} placeholder="ex. remettre en cause" />
-        </label>
-        <label className="field wide">
+          <input
+            ref={frenchInputRef}
+            autoFocus
+            value={form.french}
+            onChange={(event) => update("french", event.target.value)}
+            onFocus={() => setFrenchFocused(true)}
+            onBlur={() => setFrenchFocused(false)}
+            placeholder="ex. remettre en cause"
+            autoComplete="off"
+          />
+          {frenchFocused && <SuggestionList items={frenchSuggestions} onPick={pickFrench} />}
+        </div>
+        <div className="field wide">
           meaning
-          <input value={form.meaning} onChange={(event) => update("meaning", event.target.value)} placeholder="ex. to call into question" />
-        </label>
+          <input
+            value={form.meaning}
+            onChange={(event) => {
+              setMeaningTyping(true);
+              update("meaning", event.target.value);
+            }}
+            onFocus={() => {
+              setMeaningTyping(false);
+              setMeaningFocused(true);
+            }}
+            onBlur={() => setMeaningFocused(false)}
+            placeholder="ex. to call into question"
+            autoComplete="off"
+          />
+          {meaningFocused && <SuggestionList items={meaningSuggestions} onPick={pickMeaning} />}
+        </div>
         <label className="field">
           level
           <select value={form.level} onChange={(event) => update("level", parseCefrLevel(event.target.value, form.level))}>
