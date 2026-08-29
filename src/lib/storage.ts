@@ -8,6 +8,7 @@ const VOCABULARY_KEY = "fvt:vocabulary";
 const ATTEMPTS_KEY = "fvt:attempts";
 const IMPORTS_KEY = "fvt:imports";
 const PRACTICE_SIZE_KEY = "fvt:practice-size";
+const REMOVED_TERMS_KEY = "fvt:removed-terms";
 const GUEST_KEY = "fvt:guest";
 const UPDATED_AT_KEY = "fvt:updated-at";
 const DEMO_ATTEMPT_IDS = new Set(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"]);
@@ -73,13 +74,24 @@ const withFallbackExample = (word: VocabularyItem): VocabularyItem => {
   };
 };
 
-export const loadVocabulary = () =>
-  mergeSeedVocabulary(read<VocabularyItem[]>(VOCABULARY_KEY, [])).map((word) =>
-    withFallbackExample({
-      ...word,
-      meaningConfirmed: word.meaningConfirmed ?? true
-    })
-  );
+export const loadRemovedTerms = () =>
+  read<string[]>(REMOVED_TERMS_KEY, []).map((term) => normalizeTerm(term)).filter(Boolean);
+
+export const saveRemovedTerms = (terms: string[]) => {
+  window.localStorage.setItem(REMOVED_TERMS_KEY, JSON.stringify(terms.map((term) => normalizeTerm(term)).filter(Boolean)));
+};
+
+export const loadVocabulary = () => {
+  const removed = new Set(loadRemovedTerms());
+  return mergeSeedVocabulary(read<VocabularyItem[]>(VOCABULARY_KEY, []))
+    .map((word) =>
+      withFallbackExample({
+        ...word,
+        meaningConfirmed: word.meaningConfirmed ?? true
+      })
+    )
+    .filter((word) => !removed.has(normalizeTerm(word.french)));
+};
 export const loadAttempts = () => read<ReviewAttempt[]>(ATTEMPTS_KEY, []).filter((attempt) => !DEMO_ATTEMPT_IDS.has(attempt.id));
 export const loadImports = () => mergeSeedImports(read<ImportBatch[]>(IMPORTS_KEY, []));
 export const loadPracticeSize = () => {

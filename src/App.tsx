@@ -15,10 +15,12 @@ import {
   loadGuest,
   loadImports,
   loadPracticeSize,
+  loadRemovedTerms,
   loadVocabulary,
   saveAttempts,
   saveGuest,
   savePracticeSize,
+  saveRemovedTerms,
   saveVocabulary
 } from "./lib/storage";
 import { normalizeTerm } from "./lib/terms";
@@ -45,6 +47,7 @@ function App() {
   const [attempts, setAttempts] = useState(() => loadAttempts());
   const [imports] = useState(() => loadImports());
   const [practiceSize, setPracticeSize] = useState<PracticeSize>(() => loadPracticeSize());
+  const [removedTerms, setRemovedTerms] = useState(() => loadRemovedTerms());
   const [reviewSessionIds, setReviewSessionIds] = useState<string[]>([]);
   const [sessionStats, setSessionStats] = useState<SessionStats>(emptySessionStats);
 
@@ -55,9 +58,11 @@ function App() {
     vocabulary,
     attempts,
     practiceSize,
+    removedTerms,
     setVocabulary,
     setAttempts,
-    setPracticeSize
+    setPracticeSize,
+    setRemovedTerms
   });
 
   useEffect(() => {
@@ -67,6 +72,7 @@ function App() {
   useEffect(() => saveVocabulary(vocabulary), [vocabulary]);
   useEffect(() => saveAttempts(attempts), [attempts]);
   useEffect(() => savePracticeSize(practiceSize), [practiceSize]);
+  useEffect(() => saveRemovedTerms(removedTerms), [removedTerms]);
 
   const continueAsGuest = () => {
     setGuest(true);
@@ -158,7 +164,7 @@ function App() {
     setSessionStats(emptySessionStats);
   };
 
-  const addWords = (incoming: VocabularyItem[]) =>
+  const addWords = (incoming: VocabularyItem[]) => {
     setVocabulary((items) => {
       const seen = new Set(items.map((word) => normalizeTerm(word.french)));
       const fresh = incoming.filter((word) => {
@@ -169,8 +175,20 @@ function App() {
       });
       return [...fresh, ...items];
     });
+    const incomingTerms = new Set(incoming.map((word) => normalizeTerm(word.french)));
+    setRemovedTerms((terms) => terms.filter((term) => !incomingTerms.has(term)));
+  };
   const updateWord = (id: string, patch: Partial<VocabularyItem>) =>
     setVocabulary((items) => items.map((word) => (word.id === id ? { ...word, ...patch } : word)));
+  const deleteWord = (id: string) => {
+    const word = vocabulary.find((item) => item.id === id);
+    if (!word) return;
+    const term = normalizeTerm(word.french);
+    setVocabulary((items) => items.filter((item) => item.id !== id));
+    setAttempts((existing) => existing.filter((attempt) => attempt.wordId !== id));
+    setReviewSessionIds((ids) => ids.filter((sessionId) => sessionId !== id));
+    setRemovedTerms((terms) => (terms.includes(term) ? terms : [...terms, term]));
+  };
 
   return (
     <div className="app">
@@ -241,7 +259,9 @@ function App() {
 
         {tab === "track" && <TrackView vocabulary={vocabulary} attempts={attempts} analytics={analytics} />}
 
-        {tab === "words" && <WordsView vocabulary={vocabulary} onAddWords={addWords} onUpdateWord={updateWord} />}
+        {tab === "words" && (
+          <WordsView vocabulary={vocabulary} onAddWords={addWords} onUpdateWord={updateWord} onDeleteWord={deleteWord} />
+        )}
       </main>
 
       <footer className="footer-note">

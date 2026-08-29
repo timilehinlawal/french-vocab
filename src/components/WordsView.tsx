@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { UIEvent } from "react";
-import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Upload, X } from "lucide-react";
+import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Trash2, Upload, X } from "lucide-react";
 import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } from "../lib/options";
 import { createVocabularyItem, emptyAddWordForm, findDuplicateVocabulary, getSynonymLadder, hasRequiredAddWordFields } from "../lib/vocabulary";
 import { entriesToItems, importFile } from "../lib/importVocabulary";
@@ -15,16 +15,19 @@ const BATCH = 40;
 export function WordsView({
   vocabulary,
   onAddWords,
-  onUpdateWord
+  onUpdateWord,
+  onDeleteWord
 }: {
   vocabulary: VocabularyItem[];
   onAddWords: (items: VocabularyItem[]) => void;
   onUpdateWord: (id: string, patch: Partial<VocabularyItem>) => void;
+  onDeleteWord: (id: string) => void;
 }) {
   const [query, setQuery] = useState("");
   const [level, setLevel] = useState<"All" | CefrLevel>("All");
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [showAdd, setShowAdd] = useState(false);
   const [visibleCount, setVisibleCount] = useState(BATCH);
 
@@ -90,7 +93,13 @@ export function WordsView({
 
             return (
               <div className={`word-row${open ? " open" : ""}`} key={word.id}>
-                <button className="word-row-head" onClick={() => setExpandedId(open ? null : word.id)}>
+                <button
+                  className="word-row-head"
+                  onClick={() => {
+                    setExpandedId(open ? null : word.id);
+                    setConfirmDeleteId(null);
+                  }}
+                >
                   <span className="word-row-main">
                     <span className="word-fr">{word.french}</span>
                     <span className="word-en">{word.meaning}</span>
@@ -134,6 +143,23 @@ export function WordsView({
                       <button className="ghost-cta" onClick={() => setEditingId(editing ? null : word.id)}>
                         <Pencil size={14} />
                         {editing ? "done" : "edit"}
+                      </button>
+                      <button
+                        className={`icon-action word-delete${confirmDeleteId === word.id ? " danger" : ""}`}
+                        onClick={() => {
+                          if (confirmDeleteId === word.id) {
+                            onDeleteWord(word.id);
+                            setExpandedId(null);
+                            setEditingId(null);
+                            setConfirmDeleteId(null);
+                            return;
+                          }
+                          setConfirmDeleteId(word.id);
+                        }}
+                        title={confirmDeleteId === word.id ? "click again to delete" : "delete"}
+                        aria-label={confirmDeleteId === word.id ? `Confirm delete ${word.french}` : `Delete ${word.french}`}
+                      >
+                        <Trash2 size={15} />
                       </button>
                     </div>
 
