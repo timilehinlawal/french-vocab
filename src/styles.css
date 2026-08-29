@@ -1692,6 +1692,35 @@ button {
   grid-column: 1 / -1;
 }
 
+.suggest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suggest-item {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.35;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.suggest-item:hover,
+.suggest-item:focus-visible {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--card-border));
+}
+
 .overlay-error {
   font-family: var(--font-mono);
   font-size: 13px;
