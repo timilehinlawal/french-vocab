@@ -8,6 +8,7 @@ export interface CloudState {
   vocabulary: VocabularyItem[];
   attempts: ReviewAttempt[];
   practiceSize: PracticeSize;
+  removedTerms: string[];
 }
 
 export interface CloudDocument extends CloudState {
@@ -42,6 +43,7 @@ export const loadCloudState = async (uid: string): Promise<LoadedCloudState | nu
     vocabulary: data.vocabulary,
     attempts: Array.isArray(data.attempts) ? data.attempts : [],
     practiceSize: typeof data.practiceSize === "number" ? data.practiceSize : 10,
+    removedTerms: Array.isArray(data.removedTerms) ? data.removedTerms.filter((term): term is string => typeof term === "string") : [],
     updatedAt: typeof data.updatedAt === "string" ? data.updatedAt : null
   };
 };

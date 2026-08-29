@@ -11,9 +11,11 @@ interface Params {
   vocabulary: VocabularyItem[];
   attempts: ReviewAttempt[];
   practiceSize: PracticeSize;
+  removedTerms: string[];
   setVocabulary: (items: VocabularyItem[]) => void;
   setAttempts: (attempts: ReviewAttempt[]) => void;
   setPracticeSize: (size: PracticeSize) => void;
+  setRemovedTerms: (terms: string[]) => void;
 }
 
 const WRITE_DEBOUNCE_MS = 1200;
@@ -35,16 +37,18 @@ export function useCloudSync({
   vocabulary,
   attempts,
   practiceSize,
+  removedTerms,
   setVocabulary,
   setAttempts,
-  setPracticeSize
+  setPracticeSize,
+  setRemovedTerms
 }: Params): SyncStatus {
   const [status, setStatus] = useState<SyncStatus>("idle");
 
   // Latest state, so the initial-sync effect can seed the cloud with whatever
   // local data exists at sign-in without re-running on every keystroke.
-  const stateRef = useRef<CloudState>({ vocabulary, attempts, practiceSize });
-  stateRef.current = { vocabulary, attempts, practiceSize };
+  const stateRef = useRef<CloudState>({ vocabulary, attempts, practiceSize, removedTerms });
+  stateRef.current = { vocabulary, attempts, practiceSize, removedTerms };
 
   // The last payload we read from / wrote to the cloud — used to skip redundant
   // writes (including the echo from applying freshly-loaded cloud data).
@@ -62,7 +66,7 @@ export function useCloudSync({
   // changes made during the brief initial-sync window (e.g. an import right
   // after sign-in), without re-stamping on first mount or cloud-applied data.
   useEffect(() => {
-    const payload = serialize({ vocabulary, attempts, practiceSize });
+    const payload = serialize({ vocabulary, attempts, practiceSize, removedTerms });
     const isFirstRender = localPayloadRef.current === null;
     localPayloadRef.current = payload;
 
@@ -70,7 +74,7 @@ export function useCloudSync({
     if (payload === lastSyncedRef.current) return; // echo of freshly-applied cloud data
 
     saveUpdatedAt(new Date().toISOString());
-  }, [vocabulary, attempts, practiceSize]);
+  }, [vocabulary, attempts, practiceSize, removedTerms]);
 
   // Initial sync whenever the signed-in user changes.
   useEffect(() => {
@@ -105,12 +109,14 @@ export function useCloudSync({
             const cloudState: CloudState = {
               vocabulary: cloud.vocabulary,
               attempts: cloud.attempts,
-              practiceSize: cloud.practiceSize
+              practiceSize: cloud.practiceSize,
+              removedTerms: cloud.removedTerms
             };
             lastSyncedRef.current = serialize(cloudState);
             setVocabulary(cloud.vocabulary);
             setAttempts(cloud.attempts);
             setPracticeSize(cloud.practiceSize);
+            setRemovedTerms(cloud.removedTerms);
             saveUpdatedAt(cloud.updatedAt ?? new Date().toISOString());
           }
         } else {
@@ -137,7 +143,7 @@ export function useCloudSync({
   useEffect(() => {
     if (!uid || status !== "ready") return;
 
-    const payload = serialize({ vocabulary, attempts, practiceSize });
+    const payload = serialize({ vocabulary, attempts, practiceSize, removedTerms });
     if (payload === lastSyncedRef.current) return;
     lastSyncedRef.current = payload;
 
@@ -149,7 +155,7 @@ export function useCloudSync({
 
     if (writeTimer.current) clearTimeout(writeTimer.current);
     writeTimer.current = setTimeout(() => {
-      saveCloudState(uid, { vocabulary, attempts, practiceSize }, updatedAt).catch(() => {
+      saveCloudState(uid, { vocabulary, attempts, practiceSize, removedTerms }, updatedAt).catch(() => {
         // Leave lastSyncedRef as-is; a later change will retry the write.
       });
     }, WRITE_DEBOUNCE_MS);
@@ -157,7 +163,7 @@ export function useCloudSync({
     return () => {
       if (writeTimer.current) clearTimeout(writeTimer.current);
     };
-  }, [uid, status, vocabulary, attempts, practiceSize]);
+  }, [uid, status, vocabulary, attempts, practiceSize, removedTerms]);
 
   return status;
 }
