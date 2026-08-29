@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <script>
@@ -19,20 +19,63 @@
         document.documentElement.dataset.theme = "light";
       }
     </script>
+    <style>
+      html,
+      body,
+      #root {
+        min-height: 100%;
+        margin: 0;
+      }
+      .boot {
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        background: #f2efe9;
+        color: #1a1a1a;
+        font-family: Geist, ui-sans-serif, system-ui, sans-serif;
+      }
+      :root[data-theme="night"] .boot,
+      :root[data-theme="lofi"] .boot,
+      :root[data-theme="rain"] .boot {
+        background: #0e0e0e;
+        color: #ececec;
+      }
+      :root[data-theme="rain"] .boot {
+        background: #271a10;
+      }
+      :root[data-theme="lofi"] .boot {
+        background: #9aa4b0;
+      }
+      .boot-mark {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+        background: color-mix(in srgb, currentColor 10%, transparent);
+        animation: boot-pulse 1.4s ease-out infinite;
+      }
+      @keyframes boot-pulse {
+        0%,
+        100% {
+          opacity: 0.45;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root">
-      <main style="font-family: system-ui, sans-serif; max-width: 720px; margin: 48px auto; padding: 24px; line-height: 1.5;">
-        <h1>French Vocabulary Trainer</h1>
-        <p>This source file is meant to run through Vite during development.</p>
-        <p>If you opened it directly, use the standalone app file instead: <a href="./french-vocabulary-trainer.html">french-vocabulary-trainer.html</a>.</p>
-      </main>
+      <div class="boot">
+        <span class="boot-mark" aria-hidden="true">fr</span>
+      </div>
     </div>
-    <script>
-      if (location.protocol === "file:" && location.pathname.endsWith("/index.html") && !location.pathname.includes("/dist/")) {
-        location.replace("./french-vocabulary-trainer.html");
-      }
-    </script>
+    <noscript>french vocab needs JavaScript to run.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

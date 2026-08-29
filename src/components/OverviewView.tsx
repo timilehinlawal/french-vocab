@@ -1,22 +1,18 @@
 import { ArrowRight, Flame } from "lucide-react";
-import { learnerStatus } from "../lib/analyticsSummary";
 import type { AnalyticsSummary } from "../lib/analyticsSummary";
-import type { ReviewAttempt, VocabularyItem } from "../lib/types";
+import type { VocabularyItem } from "../lib/types";
 
 export function OverviewView({
   vocabulary,
-  attempts,
   dueWords,
   analytics,
   onStartReview
 }: {
   vocabulary: VocabularyItem[];
-  attempts: ReviewAttempt[];
   dueWords: VocabularyItem[];
   analytics: AnalyticsSummary;
   onStartReview: () => void;
 }) {
-  const status = learnerStatus(vocabulary, attempts).toLowerCase();
   const due = dueWords.length;
   const streak = analytics.streak.current;
   const mastered = analytics.statusCounts
@@ -45,16 +41,8 @@ export function OverviewView({
         <span className="hero-due-label">{due === 1 ? "word due" : "words due"}</span>
       </div>
 
-      <p className="hero-status">
-        {status}
-        <span className="hero-dot" aria-hidden="true">
-          ·
-        </span>
-        {streak > 0 ? `${streak}-day streak` : "start a streak today"}
-      </p>
-
       <button className="hero-cta" onClick={onStartReview} disabled={due === 0}>
-        {due > 0 ? "start review" : "all caught up"}
+        {due > 0 ? "review" : "all caught up"}
         {due > 0 && <ArrowRight size={18} />}
       </button>
 

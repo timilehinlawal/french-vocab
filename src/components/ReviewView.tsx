@@ -4,6 +4,7 @@ import { getPracticeCount } from "../lib/practice";
 import { reviewRatings } from "../lib/review";
 import type { SessionStats } from "../lib/review";
 import type { PracticeSize, ReviewRating, VocabularyItem } from "../lib/types";
+import { exampleTranslation } from "../lib/vocabulary";
 import { PronunciationButton } from "./common";
 
 // Human-friendly recall ratings. `next` mirrors nextDueForRating() so the
@@ -59,7 +60,6 @@ export function ReviewView({
   dueWords,
   remainingSessionWords,
   sessionStats,
-  sessionTargetCount,
   practiceSize,
   onPracticeSizeChange,
   onStartReview,
@@ -71,7 +71,6 @@ export function ReviewView({
   dueWords: VocabularyItem[];
   remainingSessionWords: VocabularyItem[];
   sessionStats: SessionStats;
-  sessionTargetCount: number;
   practiceSize: PracticeSize;
   onPracticeSizeChange: (value: PracticeSize) => void;
   onStartReview: () => void;
@@ -137,12 +136,11 @@ export function ReviewView({
           </>
         ) : (
           <>
-            <p className="hero-greeting">{hasDue ? "let's warm up the memory" : "nothing is due right now"}</p>
+            {!hasDue && <p className="hero-greeting">nothing is due right now</p>}
             <div className="hero-figure">
               <strong className="hero-due">{hasDue ? selectedCount : 0}</strong>
               <span className="hero-due-label">{hasDue ? (selectedCount === 1 ? "card this session" : "cards this session") : "words due"}</span>
             </div>
-            {hasDue && <span className="hero-subnote">of {dueWords.length} due</span>}
           </>
         )}
 
@@ -150,10 +148,13 @@ export function ReviewView({
 
         <div className="rest-actions">
           {hasDue && (
-            <button className="hero-cta" onClick={onStartReview}>
-              {isComplete ? `review ${selectedCount} more` : "start review"}
-              <ArrowRight size={18} />
-            </button>
+            <div className="rest-cta">
+              <button className="hero-cta" onClick={onStartReview}>
+                {isComplete ? `review ${selectedCount} more` : "review"}
+                <ArrowRight size={18} />
+              </button>
+              <span className="hero-subnote">{dueWords.length} due</span>
+            </div>
           )}
           {isComplete && (
             <button className="ghost-cta" onClick={onResetReview}>
@@ -168,9 +169,8 @@ export function ReviewView({
   }
 
   // --- Active flashcard ---
-  const sessionTotal = Math.max(sessionTargetCount, sessionStats.reviewed + remainingSessionWords.length);
-  const position = Math.min(sessionStats.reviewed + 1, sessionTotal);
   const nextWord = remainingSessionWords[1];
+  const translation = exampleTranslation(word);
 
   return (
     <div className="review-deck">
@@ -227,7 +227,7 @@ export function ReviewView({
               {word.example && (
                 <p className="deck-example">
                   <span className="fr">{word.example}</span>
-                  {word.translation && <span className="en">{word.translation}</span>}
+                  {translation && <span className="en">{translation}</span>}
                 </p>
               )}
               {word.structures.length > 0 && (
@@ -263,10 +263,6 @@ export function ReviewView({
           </button>
         )}
       </div>
-
-      <span className="deck-counter">
-        {position} / {sessionTotal}
-      </span>
     </div>
   );
 }
