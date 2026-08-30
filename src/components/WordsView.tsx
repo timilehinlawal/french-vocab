@@ -487,10 +487,6 @@ function ManualStep({
             ))}
           </select>
         </label>
-        <label className="field">
-          source
-          <input value={form.source} onChange={(event) => update("source", event.target.value)} placeholder="manual entry" />
-        </label>
         <label className="field wide">
           example sentence
           <input value={form.example} onChange={(event) => update("example", event.target.value)} placeholder="optional — auto-filled if blank" />
