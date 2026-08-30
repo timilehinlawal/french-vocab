@@ -58,25 +58,23 @@ export const localFrenchSuggestions = (vocabulary: VocabularyItem[], query: stri
   return uniqueKeepOrder(scored.map((row) => row.french)).slice(0, MAX_SUGGESTIONS);
 };
 
-export const localMeaningSuggestions = (vocabulary: VocabularyItem[], query: string) => {
-  const needle = query.trim().toLowerCase();
-  if (needle.length < 2) return [];
+const normalizeMeaningQuery = (value: string) => value.replace(/\s+/g, " ").trim().toLowerCase();
 
-  const pool = vocabulary.flatMap((word) => expandSenses(word.meaning));
-  const scored = pool
-    .map((meaning) => {
-      const hay = meaning.toLowerCase();
-      let score = 0;
-      if (hay === needle) score = 3;
-      else if (hay.startsWith(needle)) score = 2;
-      else if (hay.includes(needle)) score = 1;
-      return { meaning, score };
-    })
-    .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score || a.meaning.localeCompare(b.meaning, "en"));
+const stripLeadingTo = (value: string) => value.replace(/^to\s+/, "");
 
-  return uniqueKeepOrder(scored.map((row) => row.meaning)).slice(0, MAX_SUGGESTIONS);
+/** True while the typed meaning is still a prefix of a known translation (optional leading "to "). */
+export const meaningAlignsWithSuggestion = (typed: string, suggestion: string) => {
+  const needle = normalizeMeaningQuery(typed);
+  if (!needle) return true;
+
+  const hay = normalizeMeaningQuery(suggestion);
+  if (!hay) return false;
+
+  return hay.startsWith(needle) || stripLeadingTo(hay).startsWith(needle) || hay.startsWith(stripLeadingTo(needle));
 };
+
+export const filterAlignedMeanings = (suggestions: string[], typed: string) =>
+  uniqueKeepOrder(suggestions.filter((item) => meaningAlignsWithSuggestion(typed, item)));
 
 export const localTranslations = (vocabulary: VocabularyItem[], french: string) => {
   const needle = normalizeTerm(french);
@@ -115,18 +113,6 @@ export async function fetchFrenchSuggestions(query: string, signal?: AbortSignal
 
   const data = (await response.json()) as [string, string[]];
   return uniqueKeepOrder((data[1] ?? []).filter((title) => !title.includes(":"))).slice(0, MAX_SUGGESTIONS);
-}
-
-export async function fetchEnglishWordSuggestions(query: string, signal?: AbortSignal) {
-  const q = query.trim();
-  if (q.length < 2) return [];
-
-  const url = `https://api.datamuse.com/sug?s=${encodeURIComponent(q)}&max=3`;
-  const response = await fetch(url, { signal });
-  if (!response.ok) return [];
-
-  const data = (await response.json()) as { word?: string }[];
-  return uniqueKeepOrder(data.map((row) => row.word ?? "")).slice(0, MAX_SUGGESTIONS);
 }
 
 export async function fetchTranslations(french: string, signal?: AbortSignal) {
