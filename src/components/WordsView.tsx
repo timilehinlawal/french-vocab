@@ -5,11 +5,10 @@ import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } fr
 import { createVocabularyItem, emptyAddWordForm, exampleTranslation, findDuplicateVocabulary, hasRequiredAddWordFields } from "../lib/vocabulary";
 import { entriesToItems, importFile } from "../lib/importVocabulary";
 import {
-  fetchEnglishWordSuggestions,
   fetchFrenchSuggestions,
   fetchTranslations,
+  filterAlignedMeanings,
   localFrenchSuggestions,
-  localMeaningSuggestions,
   localTranslations,
   mergeSuggestions
 } from "../lib/suggestions";
@@ -336,9 +335,8 @@ function ManualStep({
   const [error, setError] = useState("");
   const [frenchFocused, setFrenchFocused] = useState(true);
   const [meaningFocused, setMeaningFocused] = useState(false);
-  const [meaningTyping, setMeaningTyping] = useState(false);
   const [frenchSuggestions, setFrenchSuggestions] = useState<string[]>([]);
-  const [meaningSuggestions, setMeaningSuggestions] = useState<string[]>([]);
+  const [meaningPool, setMeaningPool] = useState<string[]>([]);
   const frenchInputRef = useRef<HTMLInputElement>(null);
 
   const update = <K extends keyof AddWordForm>(key: K, value: AddWordForm[K]) => setForm((current) => ({ ...current, [key]: value }));
@@ -375,38 +373,22 @@ function ManualStep({
   }, [form.french, vocabulary]);
 
   useEffect(() => {
-    if (!meaningFocused) {
-      setMeaningSuggestions([]);
-      return;
-    }
-
-    const meaningQuery = form.meaning.trim();
     const french = form.french.trim();
-    const showWordSuggestions = meaningTyping && meaningQuery.length >= 2;
-    if (!showWordSuggestions && !french) {
-      setMeaningSuggestions([]);
+    if (!meaningFocused || !french) {
+      setMeaningPool([]);
       return;
     }
 
-    setMeaningSuggestions([]);
     const controller = new AbortController();
     const timer = window.setTimeout(() => {
-      const translations = localTranslations(vocabulary, french);
-      const typed = showWordSuggestions ? localMeaningSuggestions(vocabulary, meaningQuery) : [];
-      const local = showWordSuggestions
-        ? mergeSuggestions(typed, translations.filter((item) => item.toLowerCase().includes(meaningQuery.toLowerCase())))
-        : translations;
-
-      const remote = showWordSuggestions
-        ? fetchEnglishWordSuggestions(meaningQuery, controller.signal)
-        : fetchTranslations(french, controller.signal);
-
-      void remote
-        .then((items) => mergeSuggestions(local, items))
+      const local = localTranslations(vocabulary, french);
+      setMeaningPool(local);
+      void fetchTranslations(french, controller.signal)
+        .then((remote) => mergeSuggestions(local, remote))
         .catch(() => local)
         .then((items) => {
           if (controller.signal.aborted) return;
-          setMeaningSuggestions(items);
+          setMeaningPool(items);
         });
     }, SUGGESTION_IDLE_MS);
 
@@ -414,7 +396,12 @@ function ManualStep({
       controller.abort();
       window.clearTimeout(timer);
     };
-  }, [form.french, form.meaning, meaningFocused, meaningTyping, vocabulary]);
+  }, [form.french, meaningFocused, vocabulary]);
+
+  const meaningSuggestions = useMemo(
+    () => (meaningFocused ? filterAlignedMeanings(meaningPool, form.meaning) : []),
+    [form.meaning, meaningFocused, meaningPool]
+  );
 
   const pickFrench = (value: string) => {
     const match = vocabulary.find((word) => word.french === value);
@@ -427,7 +414,6 @@ function ManualStep({
 
   const pickMeaning = (value: string) => {
     update("meaning", value);
-    setMeaningTyping(false);
   };
 
   const save = () => {
@@ -465,14 +451,8 @@ function ManualStep({
           meaning
           <input
             value={form.meaning}
-            onChange={(event) => {
-              setMeaningTyping(true);
-              update("meaning", event.target.value);
-            }}
-            onFocus={() => {
-              setMeaningTyping(false);
-              setMeaningFocused(true);
-            }}
+            onChange={(event) => update("meaning", event.target.value)}
+            onFocus={() => setMeaningFocused(true)}
             onBlur={() => setMeaningFocused(false)}
             placeholder="ex. to call into question"
             autoComplete="off"
