@@ -14,22 +14,22 @@ export function AnalyticsView({
   dueWords: VocabularyItem[];
   analytics: AnalyticsSummary;
 }) {
-  const readiness = analytics.tcf.total === 0 ? 0 : Math.round((analytics.tcf.mastered / analytics.tcf.total) * 100);
+  const readiness = analytics.highPriority.total === 0 ? 0 : Math.round((analytics.highPriority.mastered / analytics.highPriority.total) * 100);
   const nextFocus = analytics.weak[0];
-  const highPriorityRemaining = Math.max(0, analytics.tcf.total - analytics.tcf.mastered);
+  const highPriorityRemaining = Math.max(0, analytics.highPriority.total - analytics.highPriority.mastered);
   const maxReviewVolume = Math.max(1, ...analytics.reviewVolume.map((day) => day.count));
 
   return (
     <section className="view-stack">
       <div className="section-heading">
         <div>
-          <span className="eyebrow">TCF analytics</span>
+          <span className="eyebrow">Progress</span>
           <h1>Readiness dashboard</h1>
         </div>
       </div>
 
       <div className="metric-grid">
-        <Metric icon={<Target />} label="TCF readiness" value={`${readiness}%`} detail={`${analytics.tcf.mastered}/${analytics.tcf.total} high priority active`} />
+        <Metric icon={<Target />} label="High-priority progress" value={`${readiness}%`} detail={`${analytics.highPriority.mastered}/${analytics.highPriority.total} high priority active`} />
         <Metric icon={<BarChart3 />} label="Review accuracy" value={`${analytics.accuracy}%`} detail={`${attempts.length} total attempts`} />
         <Metric icon={<Flame />} label="Streak" value={`${analytics.streak.current} days`} detail={`${analytics.streak.reviewsToday}/${analytics.streak.dailyGoal} reviews today`} />
         <Metric icon={<Clock3 />} label="Due today" value={dueWords.length.toString()} detail={`${analytics.streak.reviewsNeeded} reviews to maintain`} />
@@ -42,7 +42,7 @@ export function AnalyticsView({
             <h2>{nextFocus ? `Repair "${nextFocus.french}"` : "Keep the streak alive"}</h2>
             <p>
               {nextFocus
-                ? "This word is hurting recall most. Review it, then use it in one TCF-style opinion sentence."
+                ? "This word is hurting recall most. Review it, then use it in a sentence of your own."
                 : `No repair words are flagged. Complete ${analytics.streak.dailyGoal} reviews to protect the habit.`}
             </p>
           </div>

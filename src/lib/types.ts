@@ -16,7 +16,7 @@ export interface VocabularyItem {
   example: string;
   translation: string;
   structures: string[];
-  tcfPriority: Priority;
+  priority: Priority;
   status: VocabularyStatus;
   dateAdded: string;
   source: string;

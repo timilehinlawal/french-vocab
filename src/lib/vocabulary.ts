@@ -12,7 +12,7 @@ export type AddWordForm = {
   structures: string;
   synonymLadder: string;
   wordFamily: string;
-  tcfPriority: Priority;
+  priority: Priority;
   source: string;
   tags: string;
 };
@@ -20,14 +20,14 @@ export type AddWordForm = {
 export const emptyAddWordForm: AddWordForm = {
   french: "",
   meaning: "",
-  level: "B2",
+  level: "Unknown",
   partOfSpeech: "expression",
   example: "",
   translation: "",
   structures: "",
   synonymLadder: "",
   wordFamily: "",
-  tcfPriority: "Medium",
+  priority: "Medium",
   source: "Manual entry",
   tags: "manual"
 };
@@ -78,7 +78,7 @@ export const createVocabularyItem = (form: AddWordForm, createdAt: string): Voca
     structures: splitList(form.structures || suggestion.structures),
     synonymLadder: splitList(form.synonymLadder || suggestion.synonymLadder),
     wordFamily: splitList(form.wordFamily || suggestion.wordFamily),
-    tcfPriority: form.tcfPriority,
+    priority: form.priority,
     status: "New",
     dateAdded: createdAt,
     source: form.source.trim() || suggestion.source,

@@ -21,13 +21,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "approfondir + sujet / analyse"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -49,13 +48,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "contester + idée / décision"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -75,13 +73,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Dans ce contexte, le changement paraît presque inévitable.",
     "translation": "inevitable",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -102,13 +99,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "parvenir à + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -130,13 +126,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remettre en cause + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -158,13 +153,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remettre + nom + à plus tard"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -186,13 +180,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bouleverser + habitudes / secteur"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -214,13 +207,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "susciter + réaction / débat"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -242,13 +234,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "nuancer + opinion / propos"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -270,13 +261,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "contribuer à + nom / infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -298,13 +288,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "imprimer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -325,13 +314,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -351,13 +339,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La guérison revient souvent pendant la réunion.",
     "translation": "The topic of healing often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -375,13 +362,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois foncé selon le contexte.",
     "translation": "dark",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -399,13 +385,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le pointe du doigt revient souvent pendant la réunion.",
     "translation": "The topic of fingertip often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -425,13 +410,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -451,13 +435,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble inférieur à première vue.",
     "translation": "This choice seems inferior at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -477,13 +460,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ménager + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -504,13 +486,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "puer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -529,13 +510,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble tabou à première vue.",
     "translation": "This choice seems taboo at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -553,13 +533,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’alors jusqu'au bout revient souvent pendant la réunion.",
     "translation": "The topic of then to the very end often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -579,13 +558,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "banaliser + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -607,13 +585,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mener + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -633,13 +610,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble précoce à première vue.",
     "translation": "This choice seems premature; prematurely at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -652,21 +628,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "scolarisation",
     "french": "scolarisation",
     "meaning": "schooling",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "La scolarisation revient souvent pendant la réunion.",
     "translation": "The topic of schooling often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -683,13 +658,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Assidûment, elle a préparé son dossier avant l’examen.",
     "translation": "Diligently, she prepared her file before the exam.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -708,13 +682,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble flou à première vue.",
     "translation": "This choice seems blurred at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -735,13 +708,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -763,13 +735,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -791,13 +762,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -819,13 +789,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -847,13 +816,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -875,13 +843,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -903,13 +870,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -931,13 +897,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -959,13 +924,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -987,13 +951,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1015,13 +978,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1043,13 +1005,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1071,13 +1032,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1099,13 +1059,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1127,13 +1086,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1155,13 +1113,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1183,13 +1140,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1211,13 +1167,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1239,13 +1194,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1265,13 +1219,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Un tiers de peut jouer un rôle important dans cette situation.",
     "translation": "A third of can play an important role in this situation.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -1291,13 +1244,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1319,13 +1271,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1347,13 +1298,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1375,13 +1325,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1403,13 +1352,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1431,13 +1379,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1459,13 +1406,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1487,13 +1433,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1515,13 +1460,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1543,13 +1487,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1571,13 +1514,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1599,13 +1541,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1627,13 +1568,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1655,13 +1595,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1683,13 +1622,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1711,13 +1649,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1739,13 +1676,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1767,13 +1703,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1795,13 +1730,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1821,13 +1755,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’aucun revient souvent pendant la réunion.",
     "translation": "The topic of none often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -1845,13 +1778,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’aucun d'entre eux revient souvent pendant la réunion.",
     "translation": "The topic of none of them often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -1869,13 +1801,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’aucune idée revient souvent pendant la réunion.",
     "translation": "The topic of no idea often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -1895,13 +1826,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1923,13 +1853,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1951,13 +1880,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -1979,13 +1907,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2007,13 +1934,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2035,13 +1961,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2063,13 +1988,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2091,13 +2015,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2119,13 +2042,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2147,13 +2069,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2175,13 +2096,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2201,13 +2121,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le je ne sais pas revient souvent pendant la réunion.",
     "translation": "The topic of I don't know often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2225,13 +2144,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La plupart peut jouer un rôle important dans cette situation.",
     "translation": "Most can play an important role in this situation.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2249,13 +2167,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le moins revient souvent pendant la réunion.",
     "translation": "The topic of less often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2273,13 +2190,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le lendemain revient souvent pendant la réunion.",
     "translation": "The topic of the next day often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2297,13 +2213,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Sous, elle a mieux compris la situation.",
     "translation": "Under, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2321,13 +2236,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La boule dans la gorge revient souvent pendant la réunion.",
     "translation": "The topic of lump in the throat often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2345,13 +2259,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le partout revient souvent pendant la réunion.",
     "translation": "The topic of everywhere often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2371,13 +2284,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2399,13 +2311,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2427,13 +2338,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2455,13 +2365,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2481,13 +2390,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Sans critiques, elle a mieux compris la situation.",
     "translation": "Without criticism, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "expression"
     ],
     "dueAt": iso(0),
@@ -2507,13 +2415,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2535,13 +2442,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2563,13 +2469,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2591,13 +2496,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2619,13 +2523,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2647,13 +2550,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2675,13 +2577,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2703,13 +2604,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2731,13 +2631,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2759,13 +2658,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2787,13 +2685,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2815,13 +2712,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2843,13 +2739,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2871,13 +2766,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -2891,20 +2785,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "travail-d-equipe",
     "french": "travail d'équipe",
     "meaning": "teamwork",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "La travail d'équipe revient souvent pendant la réunion.",
     "translation": "The topic of teamwork often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -2915,20 +2808,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "equipe",
     "french": "équipe",
     "meaning": "team",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "L’équipe revient souvent pendant la réunion.",
     "translation": "The topic of team often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -2945,13 +2837,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La compagnie de téléphone revient souvent pendant la réunion.",
     "translation": "The topic of telephone company often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -2963,20 +2854,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "reseau",
     "french": "réseau",
     "meaning": "network",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "Ce choix semble réseau à première vue.",
     "translation": "This choice seems network at first glance.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -2987,20 +2877,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "recherche",
     "french": "recherche",
     "meaning": "research",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "La recherche revient souvent pendant la réunion.",
     "translation": "The topic of research often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3017,13 +2906,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le chercheur revient souvent pendant la réunion.",
     "translation": "The topic of researcher often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3043,13 +2931,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -3071,13 +2958,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "métier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3098,13 +2984,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "écolier, écolière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3123,13 +3008,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le stage revient souvent pendant la réunion.",
     "translation": "The topic of internship often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3147,13 +3031,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’animateur revient souvent pendant la réunion.",
     "translation": "The topic of animator often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3165,20 +3048,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "jeunesse",
     "french": "jeunesse",
     "meaning": "youth",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "La jeunesse revient souvent pendant la réunion.",
     "translation": "The topic of youth often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3195,13 +3077,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le végétaux revient souvent pendant la réunion.",
     "translation": "The topic of plants often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3219,13 +3100,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La branche revient souvent pendant la réunion.",
     "translation": "The topic of branch often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3245,13 +3125,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "scier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3270,13 +3149,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble lieu à première vue.",
     "translation": "This choice seems place at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3294,13 +3172,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble amitié à première vue.",
     "translation": "This choice seems friendship at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3320,13 +3197,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "étranger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3345,13 +3221,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le voyons revient souvent pendant la réunion.",
     "translation": "The topic of let's see often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3371,13 +3246,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se lier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3396,13 +3270,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La comporte revient souvent pendant la réunion.",
     "translation": "The topic of includes often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3414,20 +3287,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "reseautage",
     "french": "réseautage",
     "meaning": "networking",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "La réseautage revient souvent pendant la réunion.",
     "translation": "The topic of networking often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3444,13 +3316,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’interdiction de revient souvent pendant la réunion.",
     "translation": "The topic of the banning of often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3470,13 +3341,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "paraître + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3495,13 +3365,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La confiance revient souvent pendant la réunion.",
     "translation": "The topic of confidence often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3521,13 +3390,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bien-être + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -3547,13 +3415,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble jeu à première vue.",
     "translation": "This choice seems game at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3571,13 +3438,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le comportement revient souvent pendant la réunion.",
     "translation": "The topic of behaviour often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3589,21 +3455,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "sante-mentale",
     "french": "santé mentale",
     "meaning": "mental health",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "La santé mentale revient souvent pendant la réunion.",
     "translation": "The topic of mental health often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3620,13 +3485,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le divertissement revient souvent pendant la réunion.",
     "translation": "The topic of entertainment often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3644,13 +3508,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La détente revient souvent pendant la réunion.",
     "translation": "The topic of relaxation often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3662,21 +3525,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "gaspillage",
     "french": "gaspillage",
     "meaning": "waste",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "La gaspillage revient souvent pendant la réunion.",
     "translation": "The topic of waste often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3687,21 +3549,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "surcharge",
     "french": "surcharge",
     "meaning": "overload, overwork",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "La surcharge revient souvent pendant la réunion.",
     "translation": "The topic of overload often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3718,13 +3579,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble gratuit à première vue.",
     "translation": "This choice seems free at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3736,20 +3596,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "transport-en-commun",
     "french": "transport en commun",
     "meaning": "public transportation",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "Le transport en commun revient souvent pendant la réunion.",
     "translation": "The topic of public transportation often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3760,20 +3619,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "impot",
     "french": "impôt",
     "meaning": "tax",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "L’impôt revient souvent pendant la réunion.",
     "translation": "The topic of tax often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -3792,13 +3650,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "usager + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -3817,13 +3674,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’épreuve revient souvent pendant la réunion.",
     "translation": "The topic of test often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -3842,13 +3698,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Franchement, elle a préparé son dossier avant l’examen.",
     "translation": "Frankly, she prepared her file before the exam.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3866,13 +3721,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le constat revient souvent pendant la réunion.",
     "translation": "The topic of observation often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3890,13 +3744,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’observation revient souvent pendant la réunion.",
     "translation": "The topic of observation often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3916,13 +3769,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "atténuer + risque / problème"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -3942,13 +3794,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’atténuation revient souvent pendant la réunion.",
     "translation": "The topic of mitigation often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3966,13 +3817,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble uniformité à première vue.",
     "translation": "This choice seems uniformity at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -3990,13 +3840,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le personnage principal revient souvent pendant la réunion.",
     "translation": "The topic of main character often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4014,13 +3863,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La conception revient souvent pendant la réunion.",
     "translation": "The topic of design often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4039,13 +3887,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le façon revient souvent pendant la réunion.",
     "translation": "The topic of way often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4057,20 +3904,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "enseignement",
     "french": "enseignement",
     "meaning": "education, teaching",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "L’enseignement revient souvent pendant la réunion.",
     "translation": "The topic of education often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -4087,13 +3933,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le monde revient souvent pendant la réunion.",
     "translation": "The topic of world often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4105,21 +3950,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "investissement",
     "french": "investissement",
     "meaning": "investment",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "L’investissement revient souvent pendant la réunion.",
     "translation": "The topic of investment often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -4136,13 +3980,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’investisseur revient souvent pendant la réunion.",
     "translation": "The topic of investor often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4161,13 +4004,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La punition revient souvent pendant la réunion.",
     "translation": "The topic of punishment often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4185,13 +4027,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble confondu à première vue.",
     "translation": "This choice seems confused at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4209,13 +4050,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La taille revient souvent pendant la réunion.",
     "translation": "The topic of size often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4235,13 +4075,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "matière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4262,13 +4101,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "soumettre + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -4290,13 +4128,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "détenir + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -4318,13 +4155,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "détenir un record + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4345,13 +4181,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "détenir le pouvoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4372,13 +4207,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "détenir un savoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4397,13 +4231,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La tout le monde revient souvent pendant la réunion.",
     "translation": "The topic of everybody often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4421,13 +4254,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble tranquillité à première vue.",
     "translation": "This choice seems peace and quiet at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4445,13 +4277,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La calme revient souvent pendant la réunion.",
     "translation": "The topic of calm often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4469,13 +4300,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La colocation revient souvent pendant la réunion.",
     "translation": "The topic of shared apartment often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4495,13 +4325,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "colocataire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4520,13 +4349,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La recette revient souvent pendant la réunion.",
     "translation": "The topic of recipe often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4546,13 +4374,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "entre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4571,13 +4398,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le bas revient souvent pendant la réunion.",
     "translation": "The topic of low often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4597,13 +4423,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cimetière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4624,13 +4449,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "exprimer + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -4650,13 +4474,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble capacité à première vue.",
     "translation": "This choice seems ability at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4675,13 +4498,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La compétence revient souvent pendant la réunion.",
     "translation": "The topic of skill often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4700,13 +4522,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le paroles revient souvent pendant la réunion.",
     "translation": "The topic of lyrics often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4726,13 +4547,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sous-titre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4751,13 +4571,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble quotidien à première vue.",
     "translation": "This choice seems daily at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4776,13 +4595,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le défi revient souvent pendant la réunion.",
     "translation": "The topic of challenge often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -4801,13 +4619,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’outil revient souvent pendant la réunion.",
     "translation": "The topic of tool often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4825,13 +4642,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’orage revient souvent pendant la réunion.",
     "translation": "The topic of thunderstorm often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4849,13 +4665,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La mensonge revient souvent pendant la réunion.",
     "translation": "The topic of lie often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4873,13 +4688,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Un coup de main peut jouer un rôle important dans cette situation.",
     "translation": "A helping hand can play an important role in this situation.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4899,13 +4713,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "montrer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4926,13 +4739,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "monter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -4951,13 +4763,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le bruit revient souvent pendant la réunion.",
     "translation": "The topic of noise often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4975,13 +4786,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le fond revient souvent pendant la réunion.",
     "translation": "The topic of bottom often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -4999,13 +4809,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La poche revient souvent pendant la réunion.",
     "translation": "The topic of pocket often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5017,20 +4826,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "loin",
     "french": "loin",
     "meaning": "far away, far from",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "Le loin revient souvent pendant la réunion.",
     "translation": "The topic of far away often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -5047,13 +4855,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La quelque chose revient souvent pendant la réunion.",
     "translation": "The topic of something often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5071,13 +4878,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble quelque à première vue.",
     "translation": "This choice seems some at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5095,13 +4901,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le quelqu'un revient souvent pendant la réunion.",
     "translation": "The topic of someone often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5121,13 +4926,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "appartenir à + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5146,13 +4950,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le paix revient souvent pendant la réunion.",
     "translation": "The topic of peace often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5172,13 +4975,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "histoire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5197,13 +4999,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le gris revient souvent pendant la réunion.",
     "translation": "The topic of grey often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5221,13 +5022,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble ciel à première vue.",
     "translation": "This choice seems sky at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5245,13 +5045,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’humeur revient souvent pendant la réunion.",
     "translation": "The topic of mood often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5269,13 +5068,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le torchon revient souvent pendant la réunion.",
     "translation": "The topic of towel often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5293,13 +5091,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La parapluie revient souvent pendant la réunion.",
     "translation": "The topic of umbrella often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5317,13 +5114,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble méfiant à première vue.",
     "translation": "This choice seems suspicious at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5341,13 +5137,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble canapé à première vue.",
     "translation": "This choice seems sofa at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5365,13 +5160,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La circulation revient souvent pendant la réunion.",
     "translation": "The topic of traffic often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5391,13 +5185,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rayon de lumière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5416,13 +5209,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le jusqu'à revient souvent pendant la réunion.",
     "translation": "The topic of up to often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5440,13 +5232,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le vent revient souvent pendant la réunion.",
     "translation": "The topic of wind often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5466,13 +5257,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tomber en panne + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5491,13 +5281,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La bougie revient souvent pendant la réunion.",
     "translation": "The topic of candle often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5515,13 +5304,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’allumette revient souvent pendant la réunion.",
     "translation": "The topic of matchstick often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5539,13 +5327,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le mur revient souvent pendant la réunion.",
     "translation": "The topic of wall often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5565,13 +5352,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s'échapper + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5590,13 +5376,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le poisson revient souvent pendant la réunion.",
     "translation": "The topic of fish often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5614,13 +5399,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La viande revient souvent pendant la réunion.",
     "translation": "The topic of meat often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5640,13 +5424,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tout va bien se passer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -5665,13 +5448,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le voleur revient souvent pendant la réunion.",
     "translation": "The topic of thief often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5689,13 +5471,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le sac de main revient souvent pendant la réunion.",
     "translation": "The topic of handbag often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5713,13 +5494,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le voisin revient souvent pendant la réunion.",
     "translation": "The topic of neighbour often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5737,13 +5517,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois court selon le contexte.",
     "translation": "short",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -5761,13 +5540,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’étude revient souvent pendant la réunion.",
     "translation": "The topic of study often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5785,13 +5563,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’habitude revient souvent pendant la réunion.",
     "translation": "The topic of habit often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5809,13 +5586,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble véritable à première vue.",
     "translation": "This choice seems true at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5833,13 +5609,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La couper du monde revient souvent pendant la réunion.",
     "translation": "The topic of cut off from the world often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5857,13 +5632,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble silencieux à première vue.",
     "translation": "This choice seems silent at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5881,13 +5655,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "En panne, elle a mieux compris la situation.",
     "translation": "Broken down, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5905,13 +5678,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La tempête revient souvent pendant la réunion.",
     "translation": "The topic of storm often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5923,21 +5695,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "chomage",
     "french": "chômage",
     "meaning": "unemployment",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "La chômage revient souvent pendant la réunion.",
     "translation": "The topic of unemployment often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -5954,13 +5725,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le témoin revient souvent pendant la réunion.",
     "translation": "The topic of witness often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -5978,13 +5748,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La tournure différente revient souvent pendant la réunion.",
     "translation": "The topic of different turn often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6002,13 +5771,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le œuvres revient souvent pendant la réunion.",
     "translation": "The topic of works often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6026,13 +5794,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’ouvriers revient souvent pendant la réunion.",
     "translation": "The topic of workers often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6050,13 +5817,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La pièce revient souvent pendant la réunion.",
     "translation": "The topic of room often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6068,21 +5834,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "pauvrete",
     "french": "pauvreté",
     "meaning": "poverty",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "Ce choix semble pauvreté à première vue.",
     "translation": "This choice seems poverty at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -6099,13 +5864,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le seuil revient souvent pendant la réunion.",
     "translation": "The topic of threshold often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -6124,13 +5888,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La garantie revient souvent pendant la réunion.",
     "translation": "The topic of guarantee often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -6149,13 +5912,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’abus revient souvent pendant la réunion.",
     "translation": "The topic of abuse often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -6176,13 +5938,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "renforcer + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -6202,13 +5963,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble disponible à première vue.",
     "translation": "This choice seems available at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6228,13 +5988,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "horaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -6253,13 +6012,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le bâtiment revient souvent pendant la réunion.",
     "translation": "The topic of building often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6277,13 +6035,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’immeuble revient souvent pendant la réunion.",
     "translation": "The topic of building often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6301,13 +6058,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le truc revient souvent pendant la réunion.",
     "translation": "The topic of stuff often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6325,13 +6081,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’emplacement revient souvent pendant la réunion.",
     "translation": "The topic of location often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6343,21 +6098,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "patrimoine",
     "french": "patrimoine",
     "meaning": "heritage",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "La patrimoine revient souvent pendant la réunion.",
     "translation": "The topic of heritage often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -6376,13 +6130,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "terre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -6401,13 +6154,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’ennemi revient souvent pendant la réunion.",
     "translation": "The topic of enemy often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6425,13 +6177,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le pilori revient souvent pendant la réunion.",
     "translation": "The topic of pillory often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6449,13 +6200,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le soldat revient souvent pendant la réunion.",
     "translation": "The topic of soldier often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6467,20 +6217,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "au-loin",
     "french": "au loin",
     "meaning": "in the distance",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "Au loin, elle a mieux compris la situation.",
     "translation": "In the distance, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -6497,13 +6246,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le retour revient souvent pendant la réunion.",
     "translation": "The topic of return often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6521,13 +6269,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La métrage revient souvent pendant la réunion.",
     "translation": "The topic of footage often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6545,13 +6292,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La bruitage revient souvent pendant la réunion.",
     "translation": "The topic of sound effects often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6571,13 +6317,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "guerre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -6596,13 +6341,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble moitié à première vue.",
     "translation": "This choice seems half at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6620,13 +6364,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’embouteillage revient souvent pendant la réunion.",
     "translation": "The topic of traffic jam often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6644,13 +6387,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le milliard revient souvent pendant la réunion.",
     "translation": "The topic of billion often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6668,13 +6410,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le courses revient souvent pendant la réunion.",
     "translation": "The topic of shopping often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6686,20 +6427,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "jeu-de-societe",
     "french": "jeu de société",
     "meaning": "board game",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "La jeu de société revient souvent pendant la réunion.",
     "translation": "The topic of board game often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -6718,13 +6458,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "éclairer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -6743,13 +6482,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le poliment revient souvent pendant la réunion.",
     "translation": "The topic of politely often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6767,13 +6505,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La barrage revient souvent pendant la réunion.",
     "translation": "The topic of dam often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6791,13 +6528,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La personnage revient souvent pendant la réunion.",
     "translation": "The topic of character often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6815,13 +6551,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois moyen selon le contexte.",
     "translation": "average, medium",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -6841,13 +6576,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "affranchir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -6866,13 +6600,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La prêche revient souvent pendant la réunion.",
     "translation": "The topic of sermon often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6890,13 +6623,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’inédit revient souvent pendant la réunion.",
     "translation": "The topic of new often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6914,13 +6646,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La séance revient souvent pendant la réunion.",
     "translation": "The topic of session often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6938,13 +6669,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble déçu à première vue.",
     "translation": "This choice seems disappointed at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -6962,13 +6692,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois nerveux selon le contexte.",
     "translation": "nervous",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -6986,13 +6715,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La tatouage revient souvent pendant la réunion.",
     "translation": "The topic of tattoo often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7010,13 +6738,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble nombreux à première vue.",
     "translation": "This choice seems many at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7034,13 +6761,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La disparate revient souvent pendant la réunion.",
     "translation": "The topic of diverse often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7058,13 +6784,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’homogène revient souvent pendant la réunion.",
     "translation": "The topic of homogeneous often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7082,13 +6807,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La sourdine revient souvent pendant la réunion.",
     "translation": "The topic of mute often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7106,13 +6830,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble exergue à première vue.",
     "translation": "This choice seems inscription at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7130,13 +6853,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’abîme revient souvent pendant la réunion.",
     "translation": "The topic of abyss often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7154,13 +6876,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le séjour revient souvent pendant la réunion.",
     "translation": "The topic of stay often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7178,13 +6899,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le soleil revient souvent pendant la réunion.",
     "translation": "The topic of sun often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7202,13 +6922,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La balade revient souvent pendant la réunion.",
     "translation": "The topic of walk often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7226,13 +6945,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le moteur revient souvent pendant la réunion.",
     "translation": "The topic of engine often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7250,13 +6968,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le metteur revient souvent pendant la réunion.",
     "translation": "The topic of director often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7268,20 +6985,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "loi",
     "french": "loi",
     "meaning": "law",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "word",
     "example": "Le loi revient souvent pendant la réunion.",
     "translation": "The topic of law often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -7298,13 +7014,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La dommage revient souvent pendant la réunion.",
     "translation": "The topic of a shame often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7322,13 +7037,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le maladroit revient souvent pendant la réunion.",
     "translation": "The topic of awkward often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7346,13 +7060,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’assiette revient souvent pendant la réunion.",
     "translation": "The topic of plate often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7372,13 +7085,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -7398,13 +7110,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble gâteau à première vue.",
     "translation": "This choice seems cake at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7424,13 +7135,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mouchoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7451,13 +7161,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se prêter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7476,13 +7185,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La rôle revient souvent pendant la réunion.",
     "translation": "The topic of role often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7500,13 +7208,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le dessin revient souvent pendant la réunion.",
     "translation": "The topic of drawing often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7524,13 +7231,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La camion revient souvent pendant la réunion.",
     "translation": "The topic of lorry often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7548,13 +7254,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le rigolo revient souvent pendant la réunion.",
     "translation": "The topic of funny often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7574,13 +7279,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -7600,13 +7304,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le placard revient souvent pendant la réunion.",
     "translation": "The topic of closet often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7626,13 +7329,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "armoire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7651,13 +7353,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le chaussettes revient souvent pendant la réunion.",
     "translation": "The topic of socks often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7675,13 +7376,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le dedans revient souvent pendant la réunion.",
     "translation": "The topic of inside often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7701,13 +7401,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pêcher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7728,13 +7427,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rocher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7753,13 +7451,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le trésors revient souvent pendant la réunion.",
     "translation": "The topic of treasures often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7777,13 +7474,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La bonhomme de neige revient souvent pendant la réunion.",
     "translation": "The topic of snowman often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7803,13 +7499,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réclamer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7828,13 +7523,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le mignon revient souvent pendant la réunion.",
     "translation": "The topic of cute often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7852,13 +7546,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La salle revient souvent pendant la réunion.",
     "translation": "The topic of room often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7876,13 +7569,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble sale à première vue.",
     "translation": "This choice seems dirty at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7902,13 +7594,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -7928,13 +7619,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble fou à première vue.",
     "translation": "This choice seems crazy at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -7954,13 +7644,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se détendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -7981,13 +7670,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -8007,13 +7695,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le rien revient souvent pendant la réunion.",
     "translation": "The topic of nothing often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8031,13 +7718,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "De rien, elle a mieux compris la situation.",
     "translation": "You're welcome, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8055,13 +7741,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’inutile revient souvent pendant la réunion.",
     "translation": "The topic of useless often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8079,13 +7764,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le guillemets revient souvent pendant la réunion.",
     "translation": "The topic of quotation marks often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8103,13 +7787,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La partie revient souvent pendant la réunion.",
     "translation": "The topic of part often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8129,13 +7812,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "salon de coiffure + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8154,13 +7836,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La grossesse revient souvent pendant la réunion.",
     "translation": "The topic of pregnancy often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8178,13 +7859,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La portefeuille revient souvent pendant la réunion.",
     "translation": "The topic of wallet often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8202,13 +7882,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La fiche revient souvent pendant la réunion.",
     "translation": "The topic of file often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8228,13 +7907,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cuir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8253,13 +7931,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le processus revient souvent pendant la réunion.",
     "translation": "The topic of process often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8279,13 +7956,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "souvenir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8306,13 +7982,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mémoire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8331,13 +8006,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble banque à première vue.",
     "translation": "This choice seems bank at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8355,13 +8029,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le banc revient souvent pendant la réunion.",
     "translation": "The topic of bench often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8379,13 +8052,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La vitesse revient souvent pendant la réunion.",
     "translation": "The topic of speed often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8403,13 +8075,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La réflexion revient souvent pendant la réunion.",
     "translation": "The topic of reflection often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8427,13 +8098,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le esprit revient souvent pendant la réunion.",
     "translation": "The topic of spirit often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8445,20 +8115,19 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "moteur-de-recherche",
     "french": "moteur de recherche",
     "meaning": "search engine",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "La moteur de recherche revient souvent pendant la réunion.",
     "translation": "The topic of search engine often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -8475,13 +8144,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La question éthique revient souvent pendant la réunion.",
     "translation": "The topic of ethical question often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8501,13 +8169,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "questionner + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -8529,13 +8196,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "terre rare + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8556,13 +8222,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "terre à terre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8575,21 +8240,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "enjeux",
     "french": "enjeux",
     "meaning": "issues, challenges, stakes",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "Les enjeux de cette réforme sont considérables.",
     "translation": "issues, challenges, stakes",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -8608,13 +8272,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "majeur, majeure + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8633,13 +8296,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Une telle situation peut jouer un rôle important dans cette situation.",
     "translation": "Such a situation can play an important role in this situation.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -8659,13 +8321,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre une décision + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8686,13 +8347,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "investir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8713,13 +8373,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "parcourir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8740,13 +8399,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "découvrir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8767,13 +8425,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "soutenir + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -8795,13 +8452,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prévenir + risque / quelqu'un"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -8823,13 +8479,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "obéir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8850,13 +8505,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "accueillir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8877,13 +8531,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "applaudir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8904,13 +8557,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bâtir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8931,13 +8583,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "choisir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8958,13 +8609,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "punir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -8985,13 +8635,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ravir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9012,13 +8661,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réfléchir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9039,13 +8687,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remplir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9066,13 +8713,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réussir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9093,13 +8739,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rougir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9120,13 +8765,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "saisir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9147,13 +8791,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bouillir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9174,13 +8817,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sentir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9201,13 +8843,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "désobéir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9228,13 +8869,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "finir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9255,13 +8895,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "grandir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9282,13 +8921,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "guérir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9309,13 +8947,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "nourrir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9336,13 +8973,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "refroidir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9363,13 +8999,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "souffrir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9390,13 +9025,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "revenir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9417,13 +9051,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "entretenir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9444,13 +9077,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mentir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9471,13 +9103,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pouvoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9498,13 +9129,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "vouloir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9525,13 +9155,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "savoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9552,13 +9181,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pleuvoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9579,13 +9207,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "falloir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9606,13 +9233,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "décevoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9633,13 +9259,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "devoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9660,13 +9285,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prévoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9687,13 +9311,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "émouvoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9714,13 +9337,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "vêtir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9741,13 +9363,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "agir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9768,13 +9389,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réagir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9795,13 +9415,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fournir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9822,13 +9441,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "résoudre + problème"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -9850,13 +9468,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "attendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9877,13 +9494,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "défendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9904,13 +9520,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "descendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9931,13 +9546,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "entendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9958,13 +9572,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "perdre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -9985,13 +9598,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10012,13 +9624,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "répondre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10039,13 +9650,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "vendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10066,13 +9676,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "interdire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10093,13 +9702,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "construire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10120,13 +9728,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fondre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10147,13 +9754,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remettre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10174,13 +9780,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mettre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10201,13 +9806,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "poser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10228,13 +9832,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "placer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10255,13 +9858,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "accroître + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10282,13 +9884,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sourire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10309,13 +9910,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10336,13 +9936,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "permettre de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -10364,13 +9963,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "apprendre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10391,13 +9989,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "suivre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10418,13 +10015,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "suivre un cours + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10445,13 +10041,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "convaincre quelqu'un de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -10473,13 +10068,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se relaxer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10500,13 +10094,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "détruire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10527,13 +10120,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "interrompre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10554,13 +10146,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "poursuivre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10579,13 +10170,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble ressortissant à première vue.",
     "translation": "This choice seems national at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10603,13 +10193,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le citoyen revient souvent pendant la réunion.",
     "translation": "The topic of citizen often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10627,13 +10216,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le visa revient souvent pendant la réunion.",
     "translation": "The topic of visa often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10653,13 +10241,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "frontière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10678,13 +10265,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’otage revient souvent pendant la réunion.",
     "translation": "The topic of hostage often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10702,13 +10288,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’échange revient souvent pendant la réunion.",
     "translation": "The topic of exchange often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10726,13 +10311,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble inconfortable à première vue.",
     "translation": "This choice seems uncomfortable at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10750,13 +10334,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La mal à l'aise revient souvent pendant la réunion.",
     "translation": "The topic of uncomfortable often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10774,13 +10357,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La timide revient souvent pendant la réunion.",
     "translation": "The topic of shy often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10792,21 +10374,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "fiscal",
     "french": "fiscal, fiscale",
     "meaning": "tax-related, fiscal",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Ce choix semble fiscal à première vue.",
     "translation": "This choice seems tax-related at first glance.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -10823,13 +10404,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois profond selon le contexte.",
     "translation": "deep",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -10847,13 +10427,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "En pièce jointe, elle a mieux compris la situation.",
     "translation": "Attached, she understood the situation better.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10871,13 +10450,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La vide revient souvent pendant la réunion.",
     "translation": "The topic of empty often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10897,13 +10475,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "espoir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -10922,13 +10499,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble agréable à première vue.",
     "translation": "This choice seems pleasant at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10946,13 +10522,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble amusant à première vue.",
     "translation": "This choice seems funny at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -10970,13 +10545,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois beau selon le contexte.",
     "translation": "beautiful",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -10994,13 +10568,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois bon selon le contexte.",
     "translation": "good",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11018,13 +10591,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois charmant selon le contexte.",
     "translation": "charming",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11042,13 +10614,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois créatif selon le contexte.",
     "translation": "creative",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11066,13 +10637,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’efficace revient souvent pendant la réunion.",
     "translation": "The topic of efficient often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11090,13 +10660,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le frais revient souvent pendant la réunion.",
     "translation": "The topic of fresh often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11114,13 +10683,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois heureux selon le contexte.",
     "translation": "happy",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11138,13 +10706,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La jeune revient souvent pendant la réunion.",
     "translation": "The topic of young often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11164,13 +10731,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "libre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11189,13 +10755,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble nouveau à première vue.",
     "translation": "This choice seems new at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11213,13 +10778,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois sec selon le contexte.",
     "translation": "dry",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11237,13 +10801,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois vieux selon le contexte.",
     "translation": "old",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -11261,13 +10824,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La fantôme revient souvent pendant la réunion.",
     "translation": "The topic of ghost often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11285,13 +10847,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le tort revient souvent pendant la réunion.",
     "translation": "The topic of wrong often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11309,13 +10870,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le créateur revient souvent pendant la réunion.",
     "translation": "The topic of creator often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11333,13 +10893,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le créateur de contenu revient souvent pendant la réunion.",
     "translation": "The topic of content creator often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11357,13 +10916,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le parcours revient souvent pendant la réunion.",
     "translation": "The topic of journey often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11383,13 +10941,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "débuter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11408,13 +10965,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Étonnamment, elle a préparé son dossier avant l’examen.",
     "translation": "Surprisingly, she prepared her file before the exam.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11432,13 +10988,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’envie revient souvent pendant la réunion.",
     "translation": "The topic of desire often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11458,13 +11013,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "démarrer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11485,13 +11039,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avouer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11504,21 +11057,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "valeurs",
     "french": "valeurs",
     "meaning": "values",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "word",
     "example": "Le valeurs revient souvent pendant la réunion.",
     "translation": "The topic of values often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -11537,13 +11089,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -11563,13 +11114,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble injuste à première vue.",
     "translation": "This choice seems unjust at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11587,13 +11137,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le chacun revient souvent pendant la réunion.",
     "translation": "The topic of each often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11611,13 +11160,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble frustrant à première vue.",
     "translation": "This choice seems frustrating at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11635,13 +11183,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le données revient souvent pendant la réunion.",
     "translation": "The topic of data often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -11660,13 +11207,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La nous pousse revient souvent pendant la réunion.",
     "translation": "The topic of pushes us often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11678,21 +11224,20 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "systeme-capitaliste",
     "french": "système capitaliste",
     "meaning": "capitalist system",
-    "category": "TCF Theme",
+    "category": "Theme",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "La système capitaliste revient souvent pendant la réunion.",
     "translation": "The topic of capitalist system often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-theme"
+      "theme"
     ],
     "dueAt": iso(0),
     "successStreak": 0,
@@ -11709,13 +11254,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’abonnés revient souvent pendant la réunion.",
     "translation": "The topic of followers often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11733,13 +11277,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble utopique à première vue.",
     "translation": "This choice seems utopian at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11757,13 +11300,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La grave revient souvent pendant la réunion.",
     "translation": "The topic of serious often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11781,13 +11323,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’addition revient souvent pendant la réunion.",
     "translation": "The topic of bill often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11805,13 +11346,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’énorme revient souvent pendant la réunion.",
     "translation": "The topic of enormous often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11829,13 +11369,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La décalage revient souvent pendant la réunion.",
     "translation": "The topic of gap often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -11856,13 +11395,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "volontaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11881,13 +11419,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble soutenable à première vue.",
     "translation": "This choice seems sustainable at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11905,13 +11442,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Il faut privilégier une solution durable.",
     "translation": "sustainable, long-lasting",
     "structures": [],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "general-vocabulary"
     ],
@@ -11932,13 +11468,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "impopulaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -11957,13 +11492,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le soigneusement revient souvent pendant la réunion.",
     "translation": "The topic of carefully often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -11981,13 +11515,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble canal à première vue.",
     "translation": "This choice seems channel at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12005,13 +11538,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le canaux revient souvent pendant la réunion.",
     "translation": "The topic of channels often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12031,13 +11563,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "propre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12056,13 +11587,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le désaccord revient souvent pendant la réunion.",
     "translation": "The topic of disagreement often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12080,13 +11610,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "L’autour de moi revient souvent pendant la réunion.",
     "translation": "The topic of around me often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12104,13 +11633,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le concours revient souvent pendant la réunion.",
     "translation": "The topic of competition often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12130,13 +11658,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -12158,13 +11685,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "Connecteur logique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connector-structure",
       "structure"
@@ -12184,13 +11710,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le cursus revient souvent pendant la réunion.",
     "translation": "The topic of course often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12210,13 +11735,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cursus scolaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12237,13 +11761,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cadre + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12262,13 +11785,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble valable à première vue.",
     "translation": "This choice seems valid at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12286,13 +11808,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La valide revient souvent pendant la réunion.",
     "translation": "The topic of valid often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12310,13 +11831,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le mauvaises habitudes alimentaires revient souvent pendant la réunion.",
     "translation": "The topic of bad eating habits often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12334,13 +11854,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble idéal à première vue.",
     "translation": "This choice seems ideal at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12360,13 +11879,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "similaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12385,13 +11903,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La plainte revient souvent pendant la réunion.",
     "translation": "The topic of complaint often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12411,13 +11928,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déranger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12436,13 +11952,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La déclaration revient souvent pendant la réunion.",
     "translation": "The topic of statement often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12460,13 +11975,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le lunettes revient souvent pendant la réunion.",
     "translation": "The topic of glasses often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12484,13 +11998,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble féerique à première vue.",
     "translation": "This choice seems magical at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12510,13 +12023,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "frigidaire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12535,13 +12047,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le frigo revient souvent pendant la réunion.",
     "translation": "The topic of fridge often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12559,13 +12070,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble feu à première vue.",
     "translation": "This choice seems fire at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12585,13 +12095,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pompier, pompière + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12610,13 +12119,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le but revient souvent pendant la réunion.",
     "translation": "The topic of aim often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12634,13 +12142,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Avec un peu de pratique, elle apprend à s'agit.",
     "translation": "She is learning to is about with more confidence.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12658,13 +12165,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le timbres revient souvent pendant la réunion.",
     "translation": "The topic of stamps often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12682,13 +12188,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois attrayant selon le contexte.",
     "translation": "attractive",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -12706,13 +12211,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble revenu à première vue.",
     "translation": "This choice seems income at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12730,13 +12234,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble bondé à première vue.",
     "translation": "This choice seems crowded at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12754,13 +12257,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Cette situation est parfois lourd selon le contexte.",
     "translation": "heavy",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective-adverb"
     ],
     "dueAt": iso(0),
@@ -12778,13 +12280,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le chaleur revient souvent pendant la réunion.",
     "translation": "The topic of heat often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12802,13 +12303,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble chaleureux à première vue.",
     "translation": "This choice seems warm and friendly at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12826,13 +12326,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble accueillant à première vue.",
     "translation": "This choice seems welcoming at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12850,13 +12349,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Le poulet revient souvent pendant la réunion.",
     "translation": "The topic of chicken often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12874,13 +12372,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La dinde revient souvent pendant la réunion.",
     "translation": "The topic of turkey often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12898,13 +12395,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "Ce choix semble queue à première vue.",
     "translation": "This choice seems tail at first glance.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12922,13 +12418,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "example": "La file d'attente revient souvent pendant la réunion.",
     "translation": "The topic of waiting line often comes up during the meeting.",
     "structures": [],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary"
     ],
     "dueAt": iso(0),
@@ -12948,13 +12443,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "demander + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -12975,13 +12469,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ficher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13002,13 +12495,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "orner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13029,13 +12521,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "raconter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13056,13 +12547,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ranger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13083,13 +12573,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "louer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13110,13 +12599,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "accompagner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13137,13 +12625,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aider + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13164,13 +12651,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aimer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13191,13 +12677,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ajouter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13218,13 +12703,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "féliciter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13245,13 +12729,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "apporter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13272,13 +12755,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "jouer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13299,13 +12781,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fermer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13326,13 +12807,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "laver + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13353,13 +12833,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "protéger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13380,13 +12859,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bavarder + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13407,13 +12885,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "marcher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13434,13 +12911,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "briller + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13461,13 +12937,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mériter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13488,13 +12963,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "brosser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13515,13 +12989,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cacher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13542,13 +13015,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "oublier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13569,13 +13041,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cesser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13596,13 +13067,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "arrêter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13623,13 +13093,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "chanter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13650,13 +13119,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pardonner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13677,13 +13145,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "chercher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13704,13 +13171,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "commander + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13731,13 +13197,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "compter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13758,13 +13223,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "parler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13785,13 +13249,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "passer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13812,13 +13275,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "peigner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13839,13 +13301,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "coûter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13866,13 +13327,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "danser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13893,13 +13353,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "penser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13920,13 +13379,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déjeuner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13947,13 +13405,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "porter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -13974,13 +13431,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "désirer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14001,13 +13457,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dîner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14028,13 +13483,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "présenter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14055,13 +13509,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "donner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14082,13 +13535,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prêter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14109,13 +13561,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "écouter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14136,13 +13587,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "quitter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14163,13 +13613,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "partir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14190,13 +13639,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "embrasser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14217,13 +13665,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "embarrasser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14244,13 +13691,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rappeler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14271,13 +13717,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "entrer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14298,13 +13743,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "regretter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14325,13 +13769,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "épouser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14352,13 +13795,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remercier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14379,13 +13821,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "étudier + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14406,13 +13847,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "expliquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14433,13 +13873,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rencontrer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14460,13 +13899,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "terminer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14487,13 +13925,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "trouver + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14514,13 +13951,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "essayer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14541,13 +13977,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rester + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14568,13 +14003,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tromper + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14595,13 +14029,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "souhaiter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14622,13 +14055,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "espérer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14649,13 +14081,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "téléphoner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14676,13 +14107,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "supprimer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14703,13 +14133,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "télécharger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14730,13 +14159,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tomber + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14757,13 +14185,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "lancer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14784,13 +14211,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "jeter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14811,13 +14237,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "coiffer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14838,13 +14263,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "travailler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14865,13 +14289,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bouger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14892,13 +14315,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "chasser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14919,13 +14341,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "optimiser + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -14947,13 +14368,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gérer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -14974,13 +14394,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "piquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15001,13 +14420,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "glisser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15028,13 +14446,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "juger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15055,13 +14472,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gagner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15082,13 +14498,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sauver + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15109,13 +14524,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "économiser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15136,13 +14550,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sensibiliser quelqu'un à + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -15164,13 +14577,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "émaner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15191,13 +14603,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dessiner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15218,13 +14629,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sauter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15245,13 +14655,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "basculer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15272,13 +14681,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "démarcher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15299,13 +14707,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se dérouler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15326,13 +14733,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "manquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15353,13 +14759,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "partager + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15380,13 +14785,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "récupérer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15407,13 +14811,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "entraver + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15434,13 +14837,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "enseigner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15461,13 +14863,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "embrouiller + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15488,13 +14889,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "perturber + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -15516,13 +14916,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "corriger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15543,13 +14942,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "compliquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15570,13 +14968,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remarquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15597,13 +14994,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "changer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15624,13 +15020,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gaspiller + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15651,13 +15046,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rêver + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15678,13 +15072,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se dépêcher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15705,13 +15098,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fonctionner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15732,13 +15124,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sortir + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15759,13 +15150,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tremper + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15786,13 +15176,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "laisser + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15813,13 +15202,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sécher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15840,13 +15228,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ronronner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15867,13 +15254,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mélanger + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15894,13 +15280,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "remplacer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15921,13 +15306,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "craquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15948,13 +15332,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "allumer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -15975,13 +15358,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "éviter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16002,13 +15384,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "profiter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16029,13 +15410,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "voler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16056,13 +15436,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tuer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16083,13 +15462,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "démissionner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16110,13 +15488,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "élire + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16137,13 +15514,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "paniquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16164,13 +15540,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "souffler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16191,13 +15566,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "peiner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16218,13 +15592,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déménager + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16245,13 +15618,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "échouer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16272,13 +15644,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "transformer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16299,13 +15670,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "transcender + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16326,13 +15696,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déléguer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16353,13 +15722,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "consommer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16380,13 +15748,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "abonner + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16407,13 +15774,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "libérer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16434,13 +15800,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aborder + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -16462,13 +15827,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "assister à + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16489,13 +15853,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "souligner + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -16517,13 +15880,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "douter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16544,13 +15906,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sembler + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16571,13 +15932,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déclencher + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -16599,13 +15959,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "sculpter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16626,13 +15985,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "influencer + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -16654,13 +16012,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bloquer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16681,13 +16038,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "goûter + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16708,13 +16064,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "garder + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16735,13 +16090,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "afficher + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16762,13 +16116,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "retirer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16789,13 +16142,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "clarifier + complément"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure"
@@ -16817,13 +16169,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "étirer + complément"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
     "source": "Notion vocabulary database",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure"
     ],
@@ -16844,13 +16195,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être soucieux de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "adjective",
       "structure",
@@ -16868,7 +16218,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "se soucier de",
       "préoccupant"
     ],
-    "repairPrompt": "Use « soucieux / soucieuse » in one TCF-style sentence, then say it again with préoccupé.",
+    "repairPrompt": "Use « soucieux / soucieuse » in one natural sentence, then say it again with préoccupé.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -16886,13 +16236,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "effectuer + tâche / changement"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -16910,7 +16259,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "effectif",
       "effectivement"
     ],
-    "repairPrompt": "Use « effectuer » in one TCF-style sentence, then say it again with réaliser.",
+    "repairPrompt": "Use « effectuer » in one natural sentence, then say it again with réaliser.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -16928,13 +16277,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un savon naturel"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary",
       "structure",
       "manual-batch",
@@ -16949,7 +16297,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "savonner",
       "savonneux"
     ],
-    "repairPrompt": "Use « savon » in one TCF-style sentence, then say it again with produit lavant.",
+    "repairPrompt": "Use « savon » in one natural sentence, then say it again with produit lavant.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -16967,13 +16315,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pierre d’alun"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary",
       "structure",
       "manual-batch",
@@ -16988,7 +16335,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "minéral",
       "déodorant naturel"
     ],
-    "repairPrompt": "Use « alun » in one TCF-style sentence, then say it again with pierre d’alun.",
+    "repairPrompt": "Use « alun » in one natural sentence, then say it again with pierre d’alun.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17006,13 +16353,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "en pierre"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary",
       "structure",
       "manual-batch",
@@ -17029,7 +16375,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une carrière",
       "un rocher"
     ],
-    "repairPrompt": "Use « pierre » in one TCF-style sentence, then say it again with roche.",
+    "repairPrompt": "Use « pierre » in one natural sentence, then say it again with roche.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17047,13 +16393,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réunion / rythme hebdomadaire"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "adjective",
       "structure",
@@ -17071,7 +16416,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "hebdo",
       "mensuel"
     ],
-    "repairPrompt": "Use « hebdomadaire » in one TCF-style sentence, then say it again with chaque semaine.",
+    "repairPrompt": "Use « hebdomadaire » in one natural sentence, then say it again with chaque semaine.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17089,13 +16434,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "la couche d’ozone protège + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "environment",
       "structure",
@@ -17112,7 +16456,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "atmosphérique",
       "protéger"
     ],
-    "repairPrompt": "Use « couche d’ozone » in one TCF-style sentence, then say it again with protection atmosphérique.",
+    "repairPrompt": "Use « couche d’ozone » in one natural sentence, then say it again with protection atmosphérique.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17130,13 +16474,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "la reconstitution de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "noun",
       "structure",
@@ -17154,7 +16497,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "reconstruire",
       "restaurer"
     ],
-    "repairPrompt": "Use « reconstitution » in one TCF-style sentence, then say it again with reconstruction.",
+    "repairPrompt": "Use « reconstitution » in one natural sentence, then say it again with reconstruction.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17164,7 +16507,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "tenir-a-preciser-que",
     "french": "tenir à préciser que",
     "meaning": "I would like to clarify that",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Je tiens à préciser que je suis d’accord.",
@@ -17172,15 +16515,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "je tiens à préciser que + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17196,7 +16538,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une précision",
       "clair"
     ],
-    "repairPrompt": "Use « tenir à préciser que » in one TCF-style sentence, then say it again with je souhaite préciser que.",
+    "repairPrompt": "Use « tenir à préciser que » in one natural sentence, then say it again with je souhaite préciser que.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17206,7 +16548,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "tenir-a-insister-sur-le-fait-que",
     "french": "tenir à insister sur le fait que",
     "meaning": "to insist on the fact that",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Je tiens à insister sur le fait que cette mesure est importante.",
@@ -17214,15 +16556,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "je tiens à insister sur le fait que + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17238,7 +16579,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une insistance",
       "le fait que"
     ],
-    "repairPrompt": "Use « tenir à insister sur le fait que » in one TCF-style sentence, then say it again with je tiens à souligner que.",
+    "repairPrompt": "Use « tenir à insister sur le fait que » in one natural sentence, then say it again with je tiens à souligner que.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17256,13 +16597,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tenter de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17280,7 +16620,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "tentant",
       "tenter de"
     ],
-    "repairPrompt": "Use « tenter » in one TCF-style sentence, then say it again with essayer.",
+    "repairPrompt": "Use « tenter » in one natural sentence, then say it again with essayer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17298,13 +16638,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "favoriser + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17322,7 +16661,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la faveur",
       "défavoriser"
     ],
-    "repairPrompt": "Use « favoriser » in one TCF-style sentence, then say it again with encourager.",
+    "repairPrompt": "Use « favoriser » in one natural sentence, then say it again with encourager.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17332,7 +16671,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "tenter-de-favoriser",
     "french": "tenter de favoriser",
     "meaning": "to try to encourage",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le gouvernement tente de favoriser l’emploi.",
@@ -17340,15 +16679,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tenter de favoriser + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17364,7 +16702,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "favoriser",
       "une tentative"
     ],
-    "repairPrompt": "Use « tenter de favoriser » in one TCF-style sentence, then say it again with essayer d’encourager.",
+    "repairPrompt": "Use « tenter de favoriser » in one natural sentence, then say it again with essayer d’encourager.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17382,13 +16720,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "embaucher + personne"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "work",
       "structure",
@@ -17406,7 +16743,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un recrutement",
       "un employé"
     ],
-    "repairPrompt": "Use « embaucher » in one TCF-style sentence, then say it again with recruter.",
+    "repairPrompt": "Use « embaucher » in one natural sentence, then say it again with recruter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17424,13 +16761,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une démarche + adjectif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "noun",
       "structure",
@@ -17448,7 +16784,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une approche",
       "un processus"
     ],
-    "repairPrompt": "Use « démarche » in one TCF-style sentence, then say it again with approche.",
+    "repairPrompt": "Use « démarche » in one natural sentence, then say it again with approche.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17466,13 +16802,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "la filière + adjectif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "work",
       "structure",
@@ -17490,7 +16825,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "industriel",
       "une branche"
     ],
-    "repairPrompt": "Use « filière » in one TCF-style sentence, then say it again with secteur.",
+    "repairPrompt": "Use « filière » in one natural sentence, then say it again with secteur.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17508,13 +16843,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être cohérent avec + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "adjective",
       "structure",
@@ -17532,7 +16866,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "cohérent avec",
       "incohérent"
     ],
-    "repairPrompt": "Use « cohérent » in one TCF-style sentence, then say it again with logique.",
+    "repairPrompt": "Use « cohérent » in one natural sentence, then say it again with logique.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17542,7 +16876,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "parvenir-a-nouveau-a",
     "french": "parvenir à nouveau à",
     "meaning": "to manage once again to",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Elle est parvenue à nouveau à réussir.",
@@ -17550,15 +16884,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "parvenir à nouveau à + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17574,7 +16907,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la réussite",
       "réussir"
     ],
-    "repairPrompt": "Use « parvenir à nouveau à » in one TCF-style sentence, then say it again with réussir encore à.",
+    "repairPrompt": "Use « parvenir à nouveau à » in one natural sentence, then say it again with réussir encore à.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17592,13 +16925,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se rendre compte de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17616,7 +16948,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "conscient",
       "la prise de conscience"
     ],
-    "repairPrompt": "Use « se rendre compte de » in one TCF-style sentence, then say it again with réaliser.",
+    "repairPrompt": "Use « se rendre compte de » in one natural sentence, then say it again with réaliser.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17634,13 +16966,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "contraindre + nom à + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17658,7 +16989,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "contraignant",
       "être contraint de"
     ],
-    "repairPrompt": "Use « contraindre » in one TCF-style sentence, then say it again with obliger.",
+    "repairPrompt": "Use « contraindre » in one natural sentence, then say it again with obliger.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17676,13 +17007,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "restreindre + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17700,7 +17030,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "restreint",
       "restrictif"
     ],
-    "repairPrompt": "Use « restreindre » in one TCF-style sentence, then say it again with limiter.",
+    "repairPrompt": "Use « restreindre » in one natural sentence, then say it again with limiter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17718,13 +17048,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "encadrer + activité / pratique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17742,7 +17071,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un encadrement",
       "réglementaire"
     ],
-    "repairPrompt": "Use « encadrer » in one TCF-style sentence, then say it again with réglementer.",
+    "repairPrompt": "Use « encadrer » in one natural sentence, then say it again with réglementer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17760,13 +17089,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réaliser + objectif / projet"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17784,7 +17112,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "réalisable",
       "irréalisable"
     ],
-    "repairPrompt": "Use « réaliser » in one TCF-style sentence, then say it again with accomplir.",
+    "repairPrompt": "Use « réaliser » in one natural sentence, then say it again with accomplir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17802,13 +17130,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une ONG + verbe"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -17825,7 +17152,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "bénévole",
       "associatif"
     ],
-    "repairPrompt": "Use « ONG » in one TCF-style sentence, then say it again with organisation non gouvernementale.",
+    "repairPrompt": "Use « ONG » in one natural sentence, then say it again with organisation non gouvernementale.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17843,13 +17170,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "alimenter + débat / système"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -17867,7 +17193,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "alimentaire",
       "alimenté par"
     ],
-    "repairPrompt": "Use « alimenter » in one TCF-style sentence, then say it again with nourrir.",
+    "repairPrompt": "Use « alimenter » in one natural sentence, then say it again with nourrir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17885,13 +17211,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un cliché répandu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -17909,7 +17234,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "caricatural",
       "répandu"
     ],
-    "repairPrompt": "Use « cliché » in one TCF-style sentence, then say it again with stéréotype.",
+    "repairPrompt": "Use « cliché » in one natural sentence, then say it again with stéréotype.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17919,7 +17244,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "fait",
     "french": "le fait",
     "meaning": "the fact",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le fait est que la situation est complexe.",
@@ -17927,15 +17252,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "le fait est que + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17951,7 +17275,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "du fait de",
       "le fait que"
     ],
-    "repairPrompt": "Use « le fait » in one TCF-style sentence, then say it again with la réalité.",
+    "repairPrompt": "Use « le fait » in one natural sentence, then say it again with la réalité.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -17961,7 +17285,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "devenir-une-evidence",
     "french": "devenir une évidence",
     "meaning": "to become obvious",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Avec le temps, cela est devenu une évidence.",
@@ -17969,15 +17293,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "devenir une évidence"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -17993,7 +17316,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une évidence",
       "évidemment"
     ],
-    "repairPrompt": "Use « devenir une évidence » in one TCF-style sentence, then say it again with s’imposer comme évident.",
+    "repairPrompt": "Use « devenir une évidence » in one natural sentence, then say it again with s’imposer comme évident.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18003,7 +17326,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "ne-presque-plus",
     "french": "ne … presque plus",
     "meaning": "hardly … anymore",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Je ne regarde presque plus la télévision.",
@@ -18011,15 +17334,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ne + verbe + presque plus"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -18035,7 +17357,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "ne plus",
       "rarement"
     ],
-    "repairPrompt": "Use « ne … presque plus » in one TCF-style sentence, then say it again with à peine encore.",
+    "repairPrompt": "Use « ne … presque plus » in one natural sentence, then say it again with à peine encore.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18053,13 +17375,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "militer pour / contre + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -18077,7 +17398,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "militantisme",
       "militant"
     ],
-    "repairPrompt": "Use « militer » in one TCF-style sentence, then say it again with faire campagne.",
+    "repairPrompt": "Use « militer » in one natural sentence, then say it again with faire campagne.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18095,13 +17416,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "agir dans son coin"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -18118,7 +17438,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une action",
       "isolé"
     ],
-    "repairPrompt": "Use « agir dans son coin » in one TCF-style sentence, then say it again with agir seul.",
+    "repairPrompt": "Use « agir dans son coin » in one natural sentence, then say it again with agir seul.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18128,7 +17448,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "estimer-que",
     "french": "estimer que",
     "meaning": "to believe that, consider that",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "J’estime que cette décision est juste.",
@@ -18136,15 +17456,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "estimer que + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "ladder",
@@ -18160,7 +17479,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "estimable",
       "surestimer"
     ],
-    "repairPrompt": "Use « estimer que » in one TCF-style sentence, then say it again with considérer que.",
+    "repairPrompt": "Use « estimer que » in one natural sentence, then say it again with considérer que.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18178,13 +17497,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "en effet, + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connectors",
       "structure",
@@ -18202,7 +17520,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "effectivement",
       "en fait"
     ],
-    "repairPrompt": "Use « en effet » in one TCF-style sentence, then say it again with effectivement.",
+    "repairPrompt": "Use « en effet » in one natural sentence, then say it again with effectivement.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18220,13 +17538,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gonfler + nom / les prix gonflent"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -18243,7 +17560,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un gonflement",
       "dégonfler"
     ],
-    "repairPrompt": "Use « gonfler » in one TCF-style sentence, then say it again with augmenter.",
+    "repairPrompt": "Use « gonfler » in one natural sentence, then say it again with augmenter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18261,13 +17578,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "personne malvoyante"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -18283,7 +17599,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "voyant",
       "non-voyant"
     ],
-    "repairPrompt": "Use « malvoyant » in one TCF-style sentence, then say it again with déficient visuel.",
+    "repairPrompt": "Use « malvoyant » in one natural sentence, then say it again with déficient visuel.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18301,13 +17617,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "étonner + personne"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -18324,7 +17639,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "étonné",
       "un étonnement"
     ],
-    "repairPrompt": "Use « étonner » in one TCF-style sentence, then say it again with surprendre.",
+    "repairPrompt": "Use « étonner » in one natural sentence, then say it again with surprendre.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18342,13 +17657,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un projet déraille"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -18365,7 +17679,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un déraillement",
       "déraillé"
     ],
-    "repairPrompt": "Use « dérailler » in one TCF-style sentence, then say it again with échouer.",
+    "repairPrompt": "Use « dérailler » in one natural sentence, then say it again with échouer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18383,13 +17697,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "exiger + nom / que + subjonctif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18407,7 +17720,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "exigeant",
       "exigible"
     ],
-    "repairPrompt": "Use « exiger » in one TCF-style sentence, then say it again with demander.",
+    "repairPrompt": "Use « exiger » in one natural sentence, then say it again with demander.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18425,13 +17738,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "les oiseaux pouettent"
     ],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -18448,7 +17760,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un oiseau",
       "un gazouillis"
     ],
-    "repairPrompt": "Use « pouetter » in one TCF-style sentence, then say it again with piailler.",
+    "repairPrompt": "Use « pouetter » in one natural sentence, then say it again with piailler.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18466,13 +17778,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un morceau de + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "general-vocabulary",
       "structure",
       "manual-batch",
@@ -18489,7 +17800,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un fragment",
       "une part"
     ],
-    "repairPrompt": "Use « morceau » in one TCF-style sentence, then say it again with pièce.",
+    "repairPrompt": "Use « morceau » in one natural sentence, then say it again with pièce.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18507,13 +17818,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tousser depuis + moment"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -18529,7 +17839,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "toussoter",
       "tousseur"
     ],
-    "repairPrompt": "Use « tousser » in one TCF-style sentence, then say it again with avoir une toux.",
+    "repairPrompt": "Use « tousser » in one natural sentence, then say it again with avoir une toux.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18547,13 +17857,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "licencier + employé"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch",
+    "source": "Vocabulary batch",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "work",
       "structure",
@@ -18571,7 +17880,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "licencié",
       "un employé"
     ],
-    "repairPrompt": "Use « licencier » in one TCF-style sentence, then say it again with renvoyer.",
+    "repairPrompt": "Use « licencier » in one natural sentence, then say it again with renvoyer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18589,13 +17898,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "surgir + complément de temps / lieu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18614,7 +17922,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "soudain",
       "l'émergence"
     ],
-    "repairPrompt": "Use « surgir » in one TCF-style sentence, then say it again with apparaître.",
+    "repairPrompt": "Use « surgir » in one natural sentence, then say it again with apparaître.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18632,13 +17940,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "subir + conséquences / effets"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18657,7 +17964,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un préjudice",
       "la souffrance"
     ],
-    "repairPrompt": "Use « subir » in one TCF-style sentence, then say it again with endurer.",
+    "repairPrompt": "Use « subir » in one natural sentence, then say it again with endurer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18675,13 +17982,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rapprocher + deux groupes"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18700,7 +18006,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un rapprochement",
       "se rapprocher"
     ],
-    "repairPrompt": "Use « rapprocher » in one TCF-style sentence, then say it again with réunir.",
+    "repairPrompt": "Use « rapprocher » in one natural sentence, then say it again with réunir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18718,13 +18024,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "semer + graines / doute"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -18742,7 +18047,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un semis",
       "semer le doute"
     ],
-    "repairPrompt": "Use « semer » in one TCF-style sentence, then say it again with planter.",
+    "repairPrompt": "Use « semer » in one natural sentence, then say it again with planter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18760,13 +18065,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "creuser + trou / écart"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18785,7 +18089,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "creusé",
       "se creuser"
     ],
-    "repairPrompt": "Use « creuser » in one TCF-style sentence, then say it again with approfondir.",
+    "repairPrompt": "Use « creuser » in one natural sentence, then say it again with approfondir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18795,7 +18099,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "ecart",
     "french": "écart",
     "meaning": "gap, difference",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "L'écart entre les deux résultats est important.",
@@ -18803,15 +18107,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "l'écart entre + deux éléments"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -18828,7 +18131,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s'écarter",
       "un écartement"
     ],
-    "repairPrompt": "Use « écart » in one TCF-style sentence, then say it again with différence.",
+    "repairPrompt": "Use « écart » in one natural sentence, then say it again with différence.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18846,13 +18149,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une crise / un conflit éclate"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -18871,7 +18173,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "éclaté",
       "l'éclatement"
     ],
-    "repairPrompt": "Use « éclater » in one TCF-style sentence, then say it again with exploser.",
+    "repairPrompt": "Use « éclater » in one natural sentence, then say it again with exploser.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18881,7 +18183,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "ecarter",
     "french": "écarter",
     "meaning": "to spread apart, discard",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Il faut écarter cette hypothèse.",
@@ -18889,15 +18191,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "écarter + hypothèse / risque"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -18914,7 +18215,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s'écarter",
       "écarté"
     ],
-    "repairPrompt": "Use « écarter » in one TCF-style sentence, then say it again with rejeter.",
+    "repairPrompt": "Use « écarter » in one natural sentence, then say it again with rejeter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18932,13 +18233,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tartiner + aliment sur + support"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -18956,7 +18256,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le beurre",
       "la confiture"
     ],
-    "repairPrompt": "Use « tartiner » in one TCF-style sentence, then say it again with étaler.",
+    "repairPrompt": "Use « tartiner » in one natural sentence, then say it again with étaler.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -18966,7 +18266,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "repandre",
     "french": "répandre",
     "meaning": "to spread",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Les réseaux sociaux peuvent répandre une rumeur rapidement.",
@@ -18974,15 +18274,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "répandre + information / idée"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -18999,7 +18298,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la propagation",
       "se répandre"
     ],
-    "repairPrompt": "Use « répandre » in one TCF-style sentence, then say it again with diffuser.",
+    "repairPrompt": "Use « répandre » in one natural sentence, then say it again with diffuser.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19017,13 +18316,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "bourrer + objet de + contenu"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -19041,7 +18339,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le bourrage",
       "rembourrer"
     ],
-    "repairPrompt": "Use « bourrer » in one TCF-style sentence, then say it again with remplir.",
+    "repairPrompt": "Use « bourrer » in one natural sentence, then say it again with remplir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19059,13 +18357,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fourrer + objet dans + lieu"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -19083,7 +18380,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une fourrure",
       "se fourrer"
     ],
-    "repairPrompt": "Use « fourrer » in one TCF-style sentence, then say it again with mettre.",
+    "repairPrompt": "Use « fourrer » in one natural sentence, then say it again with mettre.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19101,13 +18398,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "embouteiller + liquide"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -19125,7 +18421,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "l'embouteillage",
       "bouteillé"
     ],
-    "repairPrompt": "Use « embouteiller » in one TCF-style sentence, then say it again with mettre en bouteille.",
+    "repairPrompt": "Use « embouteiller » in one natural sentence, then say it again with mettre en bouteille.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19135,7 +18431,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "vanter",
     "french": "vanter",
     "meaning": "to boast, praise",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "La publicité vante les qualités du produit.",
@@ -19143,15 +18439,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "vanter + mérite / qualité"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -19168,7 +18463,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "vantard",
       "un éloge"
     ],
-    "repairPrompt": "Use « vanter » in one TCF-style sentence, then say it again with louer.",
+    "repairPrompt": "Use « vanter » in one natural sentence, then say it again with louer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19186,13 +18481,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "fouiller + lieu / objet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -19210,7 +18504,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "fouillé",
       "un fouillis"
     ],
-    "repairPrompt": "Use « fouiller » in one TCF-style sentence, then say it again with chercher.",
+    "repairPrompt": "Use « fouiller » in one natural sentence, then say it again with chercher.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19220,7 +18514,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "eclaircir",
     "french": "éclaircir",
     "meaning": "to clarify, clear up",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Ce rapport permet d'éclaircir la situation.",
@@ -19228,15 +18522,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "éclaircir + situation / point"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -19253,7 +18546,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un éclaircissement",
       "s'éclaircir"
     ],
-    "repairPrompt": "Use « éclaircir » in one TCF-style sentence, then say it again with clarifier.",
+    "repairPrompt": "Use « éclaircir » in one natural sentence, then say it again with clarifier.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19271,13 +18564,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "suer pendant + activité"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -19294,7 +18586,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "suant",
       "sueur froide"
     ],
-    "repairPrompt": "Use « suer » in one TCF-style sentence, then say it again with transpirer.",
+    "repairPrompt": "Use « suer » in one natural sentence, then say it again with transpirer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19312,13 +18604,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "transpirer quand + phrase"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -19335,7 +18626,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "transpirant",
       "anti-transpirant"
     ],
-    "repairPrompt": "Use « transpirer » in one TCF-style sentence, then say it again with suer.",
+    "repairPrompt": "Use « transpirer » in one natural sentence, then say it again with suer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19353,13 +18644,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "plier + objet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -19377,7 +18667,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "pliable",
       "déplier"
     ],
-    "repairPrompt": "Use « plier » in one TCF-style sentence, then say it again with replier.",
+    "repairPrompt": "Use « plier » in one natural sentence, then say it again with replier.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19395,13 +18685,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "piler + aliment / matière"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -19419,7 +18708,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "pilé",
       "un mortier"
     ],
-    "repairPrompt": "Use « piler » in one TCF-style sentence, then say it again with écraser.",
+    "repairPrompt": "Use « piler » in one natural sentence, then say it again with écraser.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19437,13 +18726,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "piller + lieu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -19462,7 +18750,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "pilleur",
       "pillé"
     ],
-    "repairPrompt": "Use « piller » in one TCF-style sentence, then say it again with voler.",
+    "repairPrompt": "Use « piller » in one natural sentence, then say it again with voler.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19480,13 +18768,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "noyer + personne / chose"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -19504,7 +18791,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "noyé",
       "se noyer"
     ],
-    "repairPrompt": "Use « noyer » in one TCF-style sentence, then say it again with submerger.",
+    "repairPrompt": "Use « noyer » in one natural sentence, then say it again with submerger.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19522,13 +18809,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "grossir avec + temps / facteur"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -19546,7 +18832,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la grosseur",
       "grossissant"
     ],
-    "repairPrompt": "Use « grossir » in one TCF-style sentence, then say it again with augmenter.",
+    "repairPrompt": "Use « grossir » in one natural sentence, then say it again with augmenter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19564,13 +18850,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "maigrir de façon + adjectif"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -19588,7 +18873,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la maigreur",
       "amaigrir"
     ],
-    "repairPrompt": "Use « maigrir » in one TCF-style sentence, then say it again with perdre du poids.",
+    "repairPrompt": "Use « maigrir » in one natural sentence, then say it again with perdre du poids.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19598,7 +18883,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "raccourcir",
     "french": "raccourcir",
     "meaning": "to shorten",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Il faut raccourcir ce texte pour l'examen.",
@@ -19606,15 +18891,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "raccourcir + texte / délai"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -19631,7 +18915,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un raccourci",
       "raccourci"
     ],
-    "repairPrompt": "Use « raccourcir » in one TCF-style sentence, then say it again with abréger.",
+    "repairPrompt": "Use « raccourcir » in one natural sentence, then say it again with abréger.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19649,13 +18933,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rétrécir avec + temps / usage"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -19673,7 +18956,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un rétrécissement",
       "rétréci"
     ],
-    "repairPrompt": "Use « rétrécir » in one TCF-style sentence, then say it again with diminuer.",
+    "repairPrompt": "Use « rétrécir » in one natural sentence, then say it again with diminuer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19683,7 +18966,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "contourner",
     "french": "contourner",
     "meaning": "to bypass, circumvent",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Certaines entreprises cherchent à contourner la règle.",
@@ -19691,15 +18974,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "contourner + règle / obstacle"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -19716,7 +18998,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "contournement",
       "contourné"
     ],
-    "repairPrompt": "Use « contourner » in one TCF-style sentence, then say it again with éviter.",
+    "repairPrompt": "Use « contourner » in one natural sentence, then say it again with éviter.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19734,13 +19016,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "peler + fruit / légume"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -19758,7 +19039,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une pelure",
       "éplucher"
     ],
-    "repairPrompt": "Use « peler » in one TCF-style sentence, then say it again with éplucher.",
+    "repairPrompt": "Use « peler » in one natural sentence, then say it again with éplucher.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19776,13 +19057,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "cirer + chaussures / sol"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -19800,7 +19080,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "ciré",
       "un cirage"
     ],
-    "repairPrompt": "Use « cirer » in one TCF-style sentence, then say it again with polir.",
+    "repairPrompt": "Use « cirer » in one natural sentence, then say it again with polir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19818,13 +19098,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "serrer + objet / personne"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -19842,7 +19121,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un serrage",
       "desserrer"
     ],
-    "repairPrompt": "Use « serrer » in one TCF-style sentence, then say it again with resserrer.",
+    "repairPrompt": "Use « serrer » in one natural sentence, then say it again with resserrer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19852,7 +19131,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "racine",
     "french": "racine",
     "meaning": "root",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Les racines de ce problème sont profondes.",
@@ -19860,15 +19139,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "les racines de + problème / phénomène"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -19885,7 +19163,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "enraciner",
       "déraciner"
     ],
-    "repairPrompt": "Use « racine » in one TCF-style sentence, then say it again with origine.",
+    "repairPrompt": "Use « racine » in one natural sentence, then say it again with origine.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19903,13 +19181,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "arracher + objet à + lieu"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -19927,7 +19204,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "arraché",
       "déraciner"
     ],
-    "repairPrompt": "Use « arracher » in one TCF-style sentence, then say it again with retirer.",
+    "repairPrompt": "Use « arracher » in one natural sentence, then say it again with retirer.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19945,13 +19222,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "récolter + produit / résultat"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -19969,7 +19245,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "récolté",
       "un récoltant"
     ],
-    "repairPrompt": "Use « récolter » in one TCF-style sentence, then say it again with cueillir.",
+    "repairPrompt": "Use « récolter » in one natural sentence, then say it again with cueillir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -19987,13 +19263,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ramasser + objet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -20011,7 +19286,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "ramassé",
       "collecte"
     ],
-    "repairPrompt": "Use « ramasser » in one TCF-style sentence, then say it again with recueillir.",
+    "repairPrompt": "Use « ramasser » in one natural sentence, then say it again with recueillir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20029,13 +19304,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "recevoir / payer une amende"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "legal",
       "structure",
@@ -20054,7 +19328,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une contravention",
       "sanctionner"
     ],
-    "repairPrompt": "Use « amende » in one TCF-style sentence, then say it again with sanction.",
+    "repairPrompt": "Use « amende » in one natural sentence, then say it again with sanction.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20072,13 +19346,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "le montant de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "finance",
       "structure",
@@ -20097,7 +19370,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une somme",
       "un paiement"
     ],
-    "repairPrompt": "Use « montant » in one TCF-style sentence, then say it again with somme.",
+    "repairPrompt": "Use « montant » in one natural sentence, then say it again with somme.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20115,13 +19388,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aveugler + personne"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -20139,7 +19411,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un aveuglement",
       "malvoyant"
     ],
-    "repairPrompt": "Use « aveugler » in one TCF-style sentence, then say it again with éblouir.",
+    "repairPrompt": "Use « aveugler » in one natural sentence, then say it again with éblouir.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20157,13 +19429,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "épargner + argent / effort"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "finance",
       "structure",
@@ -20182,7 +19453,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "épargné",
       "un épargnant"
     ],
-    "repairPrompt": "Use « épargner » in one TCF-style sentence, then say it again with mettre de côté.",
+    "repairPrompt": "Use « épargner » in one natural sentence, then say it again with mettre de côté.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20192,7 +19463,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "enjeu",
     "french": "enjeu",
     "meaning": "stake, challenge, issue",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "L'enjeu principal est de réduire les inégalités.",
@@ -20200,15 +19471,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "l'enjeu est de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -20225,7 +19495,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un défi",
       "stratégique"
     ],
-    "repairPrompt": "Use « enjeu » in one TCF-style sentence, then say it again with défi.",
+    "repairPrompt": "Use « enjeu » in one natural sentence, then say it again with défi.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20243,13 +19513,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gratter + surface / peau"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -20267,7 +19536,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une égratignure",
       "gratté"
     ],
-    "repairPrompt": "Use « gratter » in one TCF-style sentence, then say it again with racler.",
+    "repairPrompt": "Use « gratter » in one natural sentence, then say it again with racler.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20285,13 +19554,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un gratte-ciel + verbe"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "urban-vocabulary",
       "structure",
       "manual-batch",
@@ -20309,7 +19577,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le ciel",
       "urbain"
     ],
-    "repairPrompt": "Use « gratte-ciel » in one TCF-style sentence, then say it again with tour.",
+    "repairPrompt": "Use « gratte-ciel » in one natural sentence, then say it again with tour.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20327,13 +19595,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un pneu crevé"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "driving",
       "structure",
       "manual-batch",
@@ -20350,7 +19617,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "crevé",
       "gonfler"
     ],
-    "repairPrompt": "Use « pneu » in one TCF-style sentence, then say it again with roue.",
+    "repairPrompt": "Use « pneu » in one natural sentence, then say it again with roue.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20368,13 +19635,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tenir le volant"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "driving",
       "structure",
       "manual-batch",
@@ -20391,7 +19657,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "conducteur",
       "conduire"
     ],
-    "repairPrompt": "Use « volant » in one TCF-style sentence, then say it again with direction.",
+    "repairPrompt": "Use « volant » in one natural sentence, then say it again with direction.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20409,13 +19675,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "du miel dans + boisson / plat"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -20432,7 +19697,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une abeille",
       "une ruche"
     ],
-    "repairPrompt": "Use « miel » in one TCF-style sentence, then say it again with sucre naturel.",
+    "repairPrompt": "Use « miel » in one natural sentence, then say it again with sucre naturel.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20450,13 +19715,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "partir en lune de miel"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -20473,7 +19737,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le mariage",
       "les noces"
     ],
-    "repairPrompt": "Use « lune de miel » in one TCF-style sentence, then say it again with voyage de noces.",
+    "repairPrompt": "Use « lune de miel » in one natural sentence, then say it again with voyage de noces.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20491,13 +19755,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une ruche abrite + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -20514,7 +19777,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le miel",
       "un apiculteur"
     ],
-    "repairPrompt": "Use « ruche » in one TCF-style sentence, then say it again with nid d'abeilles.",
+    "repairPrompt": "Use « ruche » in one natural sentence, then say it again with nid d'abeilles.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20524,7 +19787,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "songer",
     "french": "songer",
     "meaning": "to think, consider",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Il songe à changer de carrière.",
@@ -20532,15 +19795,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "songer à + infinitif / nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 2",
+    "source": "Vocabulary batch 2",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-2",
@@ -20557,7 +19819,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "songeur",
       "songer à"
     ],
-    "repairPrompt": "Use « songer » in one TCF-style sentence, then say it again with penser à.",
+    "repairPrompt": "Use « songer » in one natural sentence, then say it again with penser à.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20575,13 +19837,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre des vacances"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "travel",
       "structure",
       "manual-batch",
@@ -20594,7 +19855,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre des vacances",
       "les vacances"
     ],
-    "repairPrompt": "Use « les vacances » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « les vacances » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20612,13 +19873,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un élève de + niveau"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20632,7 +19892,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un élève de + niveau",
       "un élève"
     ],
-    "repairPrompt": "Use « un élève » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un élève » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20650,13 +19910,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un étudiant en + domaine"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20670,7 +19929,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un étudiant en + domaine",
       "un étudiant"
     ],
-    "repairPrompt": "Use « un étudiant » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un étudiant » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20688,13 +19947,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "suivre un cours"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20708,7 +19966,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "suivre un cours",
       "un cours"
     ],
-    "repairPrompt": "Use « un cours » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un cours » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20726,13 +19984,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "passer un examen"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20746,7 +20003,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "passer un examen",
       "un examen"
     ],
-    "repairPrompt": "Use « un examen » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un examen » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20764,13 +20021,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "éduquer + personne"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20784,7 +20040,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "éduquer + personne",
       "éduquer"
     ],
-    "repairPrompt": "Use « éduquer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « éduquer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20802,13 +20058,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "passer un examen"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20822,7 +20077,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "passer un examen",
       "passer un examen"
     ],
-    "repairPrompt": "Use « passer un examen » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « passer un examen » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20840,13 +20095,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réussir à un examen"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20860,7 +20114,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "réussir à un examen",
       "réussir à un examen"
     ],
-    "repairPrompt": "Use « réussir à un examen » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « réussir à un examen » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20878,13 +20132,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "échouer à un examen"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20898,7 +20151,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "échouer à un examen",
       "échouer à un examen"
     ],
-    "repairPrompt": "Use « échouer à un examen » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « échouer à un examen » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20916,13 +20169,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "recevoir son diplôme"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20936,7 +20188,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "recevoir son diplôme",
       "recevoir son diplôme"
     ],
-    "repairPrompt": "Use « recevoir son diplôme » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « recevoir son diplôme » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20954,13 +20206,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "faire ses devoirs"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -20974,7 +20225,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "faire ses devoirs",
       "les devoirs"
     ],
-    "repairPrompt": "Use « les devoirs » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « les devoirs » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -20992,13 +20243,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "obtenir une note"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -21012,7 +20262,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "obtenir une note",
       "une note"
     ],
-    "repairPrompt": "Use « une note » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « une note » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21030,13 +20280,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "obtenir un score"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "education",
       "structure",
       "manual-batch",
@@ -21049,7 +20298,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "obtenir un score",
       "score"
     ],
-    "repairPrompt": "Use « score » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « score » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21059,7 +20308,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "analyser",
     "french": "analyser",
     "meaning": "to analyse",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "L’analyser revient souvent pendant la réunion.",
@@ -21067,15 +20316,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "analyser + situation / données"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -21087,7 +20335,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "analyser + situation / données",
       "analyser"
     ],
-    "repairPrompt": "Use « analyser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « analyser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21105,13 +20353,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une ordonnance médicale"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21125,7 +20372,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une ordonnance médicale",
       "une ordonnance"
     ],
-    "repairPrompt": "Use « une ordonnance » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « une ordonnance » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21143,13 +20390,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "consulter un médecin"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21163,7 +20409,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "consulter un médecin",
       "un médecin"
     ],
-    "repairPrompt": "Use « un médecin » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un médecin » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21181,13 +20427,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre un médicament"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21201,7 +20446,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre un médicament",
       "un médicament"
     ],
-    "repairPrompt": "Use « un médicament » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un médicament » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21219,13 +20464,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "suivre un traitement"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21239,7 +20483,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "suivre un traitement",
       "le traitement"
     ],
-    "repairPrompt": "Use « le traitement » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « le traitement » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21257,13 +20501,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir une toux"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21277,7 +20520,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir une toux",
       "une toux"
     ],
-    "repairPrompt": "Use « une toux » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « une toux » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21295,13 +20538,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir des effets secondaires"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21315,7 +20557,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir des effets secondaires",
       "des effets secondaires"
     ],
-    "repairPrompt": "Use « des effets secondaires » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « des effets secondaires » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21333,13 +20575,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "demander conseil à un pharmacien"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21353,7 +20594,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "demander conseil à un pharmacien",
       "un pharmacien"
     ],
-    "repairPrompt": "Use « un pharmacien » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un pharmacien » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21371,13 +20612,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "demander conseil à une pharmacienne"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21391,7 +20631,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "demander conseil à une pharmacienne",
       "une pharmacienne"
     ],
-    "repairPrompt": "Use « une pharmacienne » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « une pharmacienne » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21409,13 +20649,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre une gélule"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -21428,7 +20667,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre une gélule",
       "une gélule"
     ],
-    "repairPrompt": "Use « une gélule » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « une gélule » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21446,13 +20685,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre un analgésique"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -21465,7 +20703,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre un analgésique",
       "un analgésique"
     ],
-    "repairPrompt": "Use « un analgésique » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un analgésique » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21483,13 +20721,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir un rhume"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21503,7 +20740,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir un rhume",
       "avoir un rhume"
     ],
-    "repairPrompt": "Use « avoir un rhume » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « avoir un rhume » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21521,13 +20758,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir la grippe"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21541,7 +20777,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir la grippe",
       "avoir la grippe"
     ],
-    "repairPrompt": "Use « avoir la grippe » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « avoir la grippe » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21559,13 +20795,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir mal à la tête"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "health",
       "structure",
@@ -21579,7 +20814,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir mal à la tête",
       "avoir mal à la tête"
     ],
-    "repairPrompt": "Use « avoir mal à la tête » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « avoir mal à la tête » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21597,13 +20832,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir du boulot"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "work",
       "structure",
       "manual-batch",
@@ -21616,7 +20850,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir du boulot",
       "boulot"
     ],
-    "repairPrompt": "Use « boulot » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « boulot » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21634,13 +20868,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s’entendre avec + personne"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "everyday-expressions",
       "structure",
@@ -21654,7 +20887,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s’entendre avec + personne",
       "s’entendre avec"
     ],
-    "repairPrompt": "Use « s’entendre avec » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « s’entendre avec » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21672,13 +20905,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rédiger un rapport"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "work",
       "structure",
@@ -21692,7 +20924,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "rédiger un rapport",
       "rapport"
     ],
-    "repairPrompt": "Use « rapport » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « rapport » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21710,13 +20942,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "les vacances estivales"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "travel",
       "structure",
       "manual-batch",
@@ -21729,7 +20960,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "les vacances estivales",
       "vacances estivales"
     ],
-    "repairPrompt": "Use « vacances estivales » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « vacances estivales » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21739,7 +20970,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "actuel",
     "french": "actuel",
     "meaning": "current",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Ce choix semble actuel à première vue.",
@@ -21747,15 +20978,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "la situation actuelle"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -21767,7 +20997,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la situation actuelle",
       "actuel"
     ],
-    "repairPrompt": "Use « actuel » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « actuel » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21777,7 +21007,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "rythme",
     "french": "rythme",
     "meaning": "pace, rhythm",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le rythme revient souvent pendant la réunion.",
@@ -21785,15 +21015,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "au rythme de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -21805,7 +21034,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au rythme de + nom",
       "rythme"
     ],
-    "repairPrompt": "Use « rythme » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « rythme » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21823,13 +21052,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un rythme délirant"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective",
       "structure",
       "manual-batch",
@@ -21842,7 +21070,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un rythme délirant",
       "délirant"
     ],
-    "repairPrompt": "Use « délirant » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « délirant » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21860,13 +21088,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une politique publique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -21880,7 +21107,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une politique publique",
       "politique"
     ],
-    "repairPrompt": "Use « politique » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « politique » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21898,13 +21125,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une peine de + durée"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "legal",
       "structure",
@@ -21918,7 +21144,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une peine de + durée",
       "peine (pénalité)"
     ],
-    "repairPrompt": "Use « peine (pénalité) » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « peine (pénalité) » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21936,13 +21162,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir de la peine"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "everyday-vocabulary",
       "structure",
@@ -21956,7 +21181,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir de la peine",
       "peine"
     ],
-    "repairPrompt": "Use « peine » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « peine » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -21974,13 +21199,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "à peine + verbe"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connectors",
       "structure",
@@ -21994,7 +21218,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "à peine + verbe",
       "à peine"
     ],
-    "repairPrompt": "Use « à peine » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « à peine » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22012,13 +21236,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un comportement détestable"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective",
       "structure",
       "manual-batch",
@@ -22031,7 +21254,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un comportement détestable",
       "détestable"
     ],
-    "repairPrompt": "Use « détestable » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « détestable » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22049,13 +21272,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une attitude admirable"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective",
       "structure",
       "manual-batch",
@@ -22068,7 +21290,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une attitude admirable",
       "admirable"
     ],
-    "repairPrompt": "Use « admirable » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « admirable » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22086,13 +21308,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "hériter de + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -22105,7 +21326,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "hériter de + nom",
       "hériter"
     ],
-    "repairPrompt": "Use « hériter » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « hériter » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22115,7 +21336,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "devoir-infinitif",
     "french": "devoir + infinitif",
     "meaning": "to have to, must",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le devoir revient souvent pendant la réunion.",
@@ -22123,15 +21344,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "devoir + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -22143,7 +21363,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "devoir + infinitif",
       "devoir + infinitif"
     ],
-    "repairPrompt": "Use « devoir + infinitif » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « devoir + infinitif » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22161,13 +21381,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "disparaître progressivement"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -22181,7 +21400,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "disparaître progressivement",
       "disparaître"
     ],
-    "repairPrompt": "Use « disparaître » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « disparaître » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22199,13 +21418,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se balader dans + lieu"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -22218,7 +21436,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "se balader dans + lieu",
       "se balader"
     ],
-    "repairPrompt": "Use « se balader » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « se balader » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22236,13 +21454,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "avoir mal aux genoux"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "health",
       "structure",
       "manual-batch",
@@ -22255,7 +21472,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "avoir mal aux genoux",
       "les genoux"
     ],
-    "repairPrompt": "Use « les genoux » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « les genoux » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22273,13 +21490,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être tremblant"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "adjective",
       "structure",
       "manual-batch",
@@ -22292,7 +21508,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être tremblant",
       "tremblant"
     ],
-    "repairPrompt": "Use « tremblant » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « tremblant » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22310,13 +21526,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "à l’instant"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -22329,7 +21544,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "à l’instant",
       "à l’instant"
     ],
-    "repairPrompt": "Use « à l’instant » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « à l’instant » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22347,13 +21562,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "c'est dur de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "adjective",
       "structure",
@@ -22367,7 +21581,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "c'est dur de + infinitif",
       "dur"
     ],
-    "repairPrompt": "Use « dur » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « dur » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22385,13 +21599,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "rester bien au chaud"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -22404,7 +21617,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "rester bien au chaud",
       "bien au chaud"
     ],
-    "repairPrompt": "Use « bien au chaud » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « bien au chaud » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22422,13 +21635,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mettre une virgule"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "writing",
       "structure",
       "manual-batch",
@@ -22441,7 +21653,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "mettre une virgule",
       "virgule"
     ],
-    "repairPrompt": "Use « virgule » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « virgule » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22451,7 +21663,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "decortiquer",
     "french": "décortiquer",
     "meaning": "to break down, analyse in detail",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le décortiquer revient souvent pendant la réunion.",
@@ -22459,15 +21671,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "décortiquer + problème / texte"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -22479,7 +21690,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "décortiquer + problème / texte",
       "décortiquer"
     ],
-    "repairPrompt": "Use « décortiquer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « décortiquer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22497,13 +21708,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "peser + poids / décision"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -22516,7 +21726,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "peser + poids / décision",
       "peser"
     ],
-    "repairPrompt": "Use « peser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « peser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22534,13 +21744,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dépendre l’un de l’autre"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -22553,7 +21762,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "dépendre l’un de l’autre",
       "l’un de l’autre"
     ],
-    "repairPrompt": "Use « l’un de l’autre » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « l’un de l’autre » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22571,13 +21780,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "l'avion décolle"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "travel",
       "structure",
       "manual-batch",
@@ -22590,7 +21798,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "l'avion décolle",
       "décoller"
     ],
-    "repairPrompt": "Use « décoller » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « décoller » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22608,13 +21816,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dérober + objet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -22627,7 +21834,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "dérober + objet",
       "dérober"
     ],
-    "repairPrompt": "Use « dérober » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « dérober » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22645,13 +21852,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "défiler dans la rue"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "society",
       "structure",
       "manual-batch",
@@ -22664,7 +21870,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "défiler dans la rue",
       "défiler"
     ],
-    "repairPrompt": "Use « défiler » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « défiler » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22682,13 +21888,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "déborder de + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -22701,7 +21906,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "déborder de + nom",
       "déborder"
     ],
-    "repairPrompt": "Use « déborder » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « déborder » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22719,13 +21924,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "débrouiller + situation"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -22738,7 +21942,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "débrouiller + situation",
       "débrouiller"
     ],
-    "repairPrompt": "Use « débrouiller » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « débrouiller » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22756,13 +21960,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se débrouiller seul"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "everyday-expressions",
       "structure",
@@ -22776,7 +21979,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "se débrouiller seul",
       "se débrouiller"
     ],
-    "repairPrompt": "Use « se débrouiller » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « se débrouiller » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22794,13 +21997,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "au fur et à mesure que + phrase"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connectors",
       "structure",
@@ -22814,7 +22016,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au fur et à mesure que + phrase",
       "au fur et à mesure"
     ],
-    "repairPrompt": "Use « au fur et à mesure » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « au fur et à mesure » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22832,13 +22034,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre la piste cyclable"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "urban-vocabulary",
       "structure",
       "manual-batch",
@@ -22851,7 +22052,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre la piste cyclable",
       "piste cyclable"
     ],
-    "repairPrompt": "Use « piste cyclable » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « piste cyclable » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22869,13 +22070,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "marcher sur le trottoir"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "urban-vocabulary",
       "structure",
       "manual-batch",
@@ -22888,7 +22088,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "marcher sur le trottoir",
       "trottoir"
     ],
-    "repairPrompt": "Use « trottoir » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « trottoir » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22906,13 +22106,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s'arrêter au feu de circulation"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "driving",
       "structure",
       "manual-batch",
@@ -22925,7 +22124,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s'arrêter au feu de circulation",
       "feu de circulation"
     ],
-    "repairPrompt": "Use « feu de circulation » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « feu de circulation » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22943,13 +22142,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "traverser au passage piéton"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "urban-vocabulary",
       "structure",
       "manual-batch",
@@ -22962,7 +22160,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "traverser au passage piéton",
       "passage piéton"
     ],
-    "repairPrompt": "Use « passage piéton » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « passage piéton » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -22980,13 +22178,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être coincé dans un bouchon"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "driving",
       "structure",
       "manual-batch",
@@ -22999,7 +22196,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être coincé dans un bouchon",
       "bouchon"
     ],
-    "repairPrompt": "Use « bouchon » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « bouchon » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23017,13 +22214,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "c'est un honneur de + infinitif"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-expressions",
       "structure",
       "manual-batch",
@@ -23036,7 +22232,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "c'est un honneur de + infinitif",
       "un honneur"
     ],
-    "repairPrompt": "Use « un honneur » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « un honneur » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23054,13 +22250,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "l'apprenant progresse"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "education",
       "structure",
@@ -23074,7 +22269,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "l'apprenant progresse",
       "l’apprenant"
     ],
-    "repairPrompt": "Use « l’apprenant » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « l’apprenant » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23092,13 +22287,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "au fil du temps"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "connectors",
       "structure",
@@ -23112,7 +22306,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au fil du temps",
       "au fil du temps"
     ],
-    "repairPrompt": "Use « au fil du temps » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « au fil du temps » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23122,7 +22316,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "domaine",
     "french": "domaine",
     "meaning": "field, area",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le domaine revient souvent pendant la réunion.",
@@ -23130,15 +22324,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dans le domaine de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23150,7 +22343,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "dans le domaine de + nom",
       "domaine"
     ],
-    "repairPrompt": "Use « domaine » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « domaine » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23168,13 +22361,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "faire un trajet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "travel",
       "structure",
       "manual-batch",
@@ -23187,7 +22379,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "faire un trajet",
       "trajet"
     ],
-    "repairPrompt": "Use « trajet » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « trajet » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23205,13 +22397,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "exprimer un désir"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -23224,7 +22415,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "exprimer un désir",
       "désir"
     ],
-    "repairPrompt": "Use « désir » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « désir » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23242,13 +22433,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "prendre un bagage"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "travel",
       "structure",
       "manual-batch",
@@ -23261,7 +22451,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "prendre un bagage",
       "bagage"
     ],
-    "repairPrompt": "Use « bagage » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « bagage » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23271,7 +22461,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "maintenir",
     "french": "maintenir",
     "meaning": "to maintain, keep",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le maintenir revient souvent pendant la réunion.",
@@ -23279,15 +22469,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "maintenir + niveau / effort"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23299,7 +22488,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "maintenir + niveau / effort",
       "maintenir"
     ],
-    "repairPrompt": "Use « maintenir » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « maintenir » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23317,13 +22506,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "gêner + personne"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -23336,7 +22524,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "gêner + personne",
       "gêner"
     ],
-    "repairPrompt": "Use « gêner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « gêner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23346,7 +22534,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "valoriser",
     "french": "valoriser",
     "meaning": "to value",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le valoriser revient souvent pendant la réunion.",
@@ -23354,15 +22542,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "valoriser + compétence"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23374,7 +22561,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "valoriser + compétence",
       "valoriser"
     ],
-    "repairPrompt": "Use « valoriser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « valoriser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23384,7 +22571,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "declencheur",
     "french": "déclencheur",
     "meaning": "trigger",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le déclencheur revient souvent pendant la réunion.",
@@ -23392,15 +22579,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un élément déclencheur"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23412,7 +22598,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un élément déclencheur",
       "déclencheur"
     ],
-    "repairPrompt": "Use « déclencheur » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « déclencheur » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23430,13 +22616,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "disperser + groupe / objet"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -23449,7 +22634,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "disperser + groupe / objet",
       "disperser"
     ],
-    "repairPrompt": "Use « disperser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « disperser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23467,13 +22652,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "demander l’addition"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "food",
       "structure",
       "manual-batch",
@@ -23486,7 +22670,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "demander l’addition",
       "l’addition"
     ],
-    "repairPrompt": "Use « l’addition » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « l’addition » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23504,13 +22688,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "éloigner + personne / risque"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -23523,7 +22706,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "éloigner + personne / risque",
       "éloigner"
     ],
-    "repairPrompt": "Use « éloigner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « éloigner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23541,13 +22724,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un abonné à + service"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "technology",
       "structure",
       "manual-batch",
@@ -23560,7 +22742,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un abonné à + service",
       "abonné / abonnée"
     ],
-    "repairPrompt": "Use « abonné / abonnée » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « abonné / abonnée » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23578,13 +22760,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "créer du contenu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "technology",
       "structure",
@@ -23598,7 +22779,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "créer du contenu",
       "contenu"
     ],
-    "repairPrompt": "Use « contenu » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « contenu » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23616,13 +22797,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "protéger la planète"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "environment",
       "structure",
@@ -23636,7 +22816,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "protéger la planète",
       "la planète"
     ],
-    "repairPrompt": "Use « la planète » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « la planète » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23646,7 +22826,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "changement",
     "french": "changement",
     "meaning": "change",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le changement revient souvent pendant la réunion.",
@@ -23654,15 +22834,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un changement majeur"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23674,7 +22853,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un changement majeur",
       "changement"
     ],
-    "repairPrompt": "Use « changement » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « changement » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23692,13 +22871,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une question éthique"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "society",
       "structure",
@@ -23712,7 +22890,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une question éthique",
       "éthique"
     ],
-    "repairPrompt": "Use « éthique » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « éthique » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23722,7 +22900,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "sans-critique",
     "french": "sans critique",
     "meaning": "without criticism",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B1",
     "partOfSpeech": "expression",
     "example": "Sans critique, elle a mieux compris la situation.",
@@ -23730,14 +22908,13 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "accepter sans critique"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-3",
@@ -23749,7 +22926,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "accepter sans critique",
       "sans critique"
     ],
-    "repairPrompt": "Use « sans critique » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « sans critique » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23767,13 +22944,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s’abonner à + service"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "technology",
       "structure",
       "manual-batch",
@@ -23786,7 +22962,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s’abonner à + service",
       "s’abonner"
     ],
-    "repairPrompt": "Use « s’abonner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « s’abonner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23804,13 +22980,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "regarder un documentaire"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -23823,7 +22998,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "regarder un documentaire",
       "documentaire"
     ],
-    "repairPrompt": "Use « documentaire » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « documentaire » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23841,13 +23016,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un lieu de tournage"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -23860,7 +23034,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un lieu de tournage",
       "tournage"
     ],
-    "repairPrompt": "Use « tournage » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « tournage » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23878,13 +23052,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "tourner un film"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -23897,7 +23070,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "tourner un film",
       "tourner"
     ],
-    "repairPrompt": "Use « tourner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « tourner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23915,13 +23088,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aller au théâtre"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -23934,7 +23106,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "aller au théâtre",
       "théâtre"
     ],
-    "repairPrompt": "Use « théâtre » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « théâtre » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23952,13 +23124,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "l'intrigue d'un film"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -23971,7 +23142,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "l'intrigue d'un film",
       "intrigue"
     ],
-    "repairPrompt": "Use « intrigue » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « intrigue » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -23989,13 +23160,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une vedette de cinéma"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -24008,7 +23178,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une vedette de cinéma",
       "vedette"
     ],
-    "repairPrompt": "Use « vedette » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « vedette » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24026,13 +23196,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un bon éclairage"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "media",
       "structure",
       "manual-batch",
@@ -24045,7 +23214,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un bon éclairage",
       "éclairage"
     ],
-    "repairPrompt": "Use « éclairage » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « éclairage » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24063,13 +23232,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être en colère"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "emotion",
       "structure",
       "manual-batch",
@@ -24082,7 +23250,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être en colère",
       "colère"
     ],
-    "repairPrompt": "Use « colère » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « colère » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24100,13 +23268,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "ma mamie"
     ],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "family",
       "structure",
       "manual-batch",
@@ -24119,7 +23286,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "ma mamie",
       "mamie"
     ],
-    "repairPrompt": "Use « mamie » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « mamie » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24137,13 +23304,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "attraper + objet / maladie"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -24156,7 +23322,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "attraper + objet / maladie",
       "attraper"
     ],
-    "repairPrompt": "Use « attraper » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « attraper » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24174,13 +23340,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "regarder la météo"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -24193,7 +23358,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "regarder la météo",
       "météo"
     ],
-    "repairPrompt": "Use « météo » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « météo » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24211,13 +23376,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un invité à + événement"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -24230,7 +23394,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un invité à + événement",
       "invité / invitée"
     ],
-    "repairPrompt": "Use « invité / invitée » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « invité / invitée » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24248,13 +23412,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "à la fin de + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "everyday-vocabulary",
       "structure",
       "manual-batch",
@@ -24267,7 +23430,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "à la fin de + nom",
       "la fin"
     ],
-    "repairPrompt": "Use « la fin » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « la fin » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24285,13 +23448,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une atmosphère étouffante"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24304,7 +23466,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une atmosphère étouffante",
       "étouffant / étouffante"
     ],
-    "repairPrompt": "Use « étouffant / étouffante » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « étouffant / étouffante » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24322,13 +23484,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une situation inquiétante"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24341,7 +23502,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une situation inquiétante",
       "inquiétant / inquiétante"
     ],
-    "repairPrompt": "Use « inquiétant / inquiétante » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « inquiétant / inquiétante » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24359,13 +23520,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un ton méprisant"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24378,7 +23538,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un ton méprisant",
       "méprisant / méprisante"
     ],
-    "repairPrompt": "Use « méprisant / méprisante » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « méprisant / méprisante » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24396,13 +23556,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une attitude autoritaire"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24415,7 +23574,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une attitude autoritaire",
       "autoritaire"
     ],
-    "repairPrompt": "Use « autoritaire » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « autoritaire » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24433,13 +23592,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un drame familial"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24452,7 +23610,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un drame familial",
       "drame"
     ],
-    "repairPrompt": "Use « drame » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « drame » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24470,13 +23628,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "montrer de la nervosité"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24489,7 +23646,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "montrer de la nervosité",
       "nervosité"
     ],
-    "repairPrompt": "Use « nervosité » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « nervosité » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24507,13 +23664,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "subir un interrogatoire"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24526,7 +23682,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "subir un interrogatoire",
       "interrogatoire"
     ],
-    "repairPrompt": "Use « interrogatoire » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « interrogatoire » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24544,13 +23700,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "grimper sur + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24563,7 +23718,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "grimper sur + nom",
       "grimper"
     ],
-    "repairPrompt": "Use « grimper » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « grimper » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24581,13 +23736,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "aussitôt après + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24600,7 +23754,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "aussitôt après + nom",
       "aussitôt après"
     ],
-    "repairPrompt": "Use « aussitôt après » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « aussitôt après » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24618,13 +23772,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "trouver un logement"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "story-vocabulary",
       "structure",
@@ -24638,7 +23791,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "trouver un logement",
       "logement"
     ],
-    "repairPrompt": "Use « logement » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « logement » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24656,13 +23809,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "le personnel de + lieu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "work",
       "structure",
@@ -24676,7 +23828,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "le personnel de + lieu",
       "personnel"
     ],
-    "repairPrompt": "Use « personnel » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « personnel » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24694,13 +23846,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s’inquiéter pour + personne"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "story-vocabulary",
       "structure",
@@ -24714,7 +23865,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s’inquiéter pour + personne",
       "s’inquiéter"
     ],
-    "repairPrompt": "Use « s’inquiéter » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « s’inquiéter » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24732,13 +23883,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être inquiet pour + personne"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24751,7 +23901,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être inquiet pour + personne",
       "inquiet / inquiète"
     ],
-    "repairPrompt": "Use « inquiet / inquiète » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « inquiet / inquiète » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24769,13 +23919,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "attaquer + personne / problème"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24788,7 +23937,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "attaquer + personne / problème",
       "attaquer"
     ],
-    "repairPrompt": "Use « attaquer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « attaquer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24806,13 +23955,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "crier de + émotion"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24825,7 +23973,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "crier de + émotion",
       "crier"
     ],
-    "repairPrompt": "Use « crier » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « crier » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24843,13 +23991,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pleurer de + émotion"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24862,7 +24009,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "pleurer de + émotion",
       "pleurer"
     ],
-    "repairPrompt": "Use « pleurer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « pleurer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24880,13 +24027,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être sain et sauf"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24899,7 +24045,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être sain et sauf",
       "sain et sauf"
     ],
-    "repairPrompt": "Use « sain et sauf » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « sain et sauf » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24917,13 +24063,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être en sécurité"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "story-vocabulary",
       "structure",
@@ -24937,7 +24082,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "être en sécurité",
       "être en sécurité"
     ],
-    "repairPrompt": "Use « être en sécurité » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « être en sécurité » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24955,13 +24100,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un gardien de zoo"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 3",
+    "source": "Vocabulary batch 3",
     "tags": [
       "notion-import",
-      "tcf",
       "story-vocabulary",
       "structure",
       "manual-batch",
@@ -24974,7 +24118,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un gardien de zoo",
       "gardien de zoo"
     ],
-    "repairPrompt": "Use « gardien de zoo » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « gardien de zoo » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -24984,7 +24128,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "retenir",
     "french": "retenir",
     "meaning": "to retain, remember",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le retenir revient souvent pendant la réunion.",
@@ -24992,15 +24136,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "retenir + information"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25012,7 +24155,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "retenir + information",
       "retenir"
     ],
-    "repairPrompt": "Use « retenir » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « retenir » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25022,7 +24165,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "dependre",
     "french": "dépendre",
     "meaning": "to depend",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "La dépendre revient souvent pendant la réunion.",
@@ -25030,15 +24173,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dépendre de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25050,7 +24192,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "dépendre de + nom",
       "dépendre"
     ],
-    "repairPrompt": "Use « dépendre » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « dépendre » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25068,13 +24210,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "emmener + personne à + lieu"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -25087,7 +24228,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "emmener + personne à + lieu",
       "emmener"
     ],
-    "repairPrompt": "Use « emmener » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « emmener » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25105,13 +24246,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "reculer devant + obstacle"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "verb",
       "structure",
       "manual-batch",
@@ -25124,7 +24264,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "reculer devant + obstacle",
       "reculer"
     ],
-    "repairPrompt": "Use « reculer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « reculer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25134,7 +24274,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "marquer",
     "french": "marquer",
     "meaning": "to mark, highlight",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le marquer revient souvent pendant la réunion.",
@@ -25142,15 +24282,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "marquer + différence / point"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25162,7 +24301,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "marquer + différence / point",
       "marquer"
     ],
-    "repairPrompt": "Use « marquer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « marquer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25172,7 +24311,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "derouler",
     "french": "dérouler",
     "meaning": "to unfold, take place",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le dérouler revient souvent pendant la réunion.",
@@ -25180,15 +24319,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "se dérouler à + lieu"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25200,7 +24338,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "se dérouler à + lieu",
       "dérouler"
     ],
-    "repairPrompt": "Use « dérouler » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « dérouler » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25218,13 +24356,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un manchot"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25237,7 +24374,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un manchot",
       "manchot"
     ],
-    "repairPrompt": "Use « manchot » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « manchot » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25255,13 +24392,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un oiseau / des oiseaux"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25274,7 +24410,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un oiseau / des oiseaux",
       "oiseau / oiseaux"
     ],
-    "repairPrompt": "Use « oiseau / oiseaux » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « oiseau / oiseaux » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25292,13 +24428,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "émigrer vers + pays"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25311,7 +24446,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "émigrer vers + pays",
       "émigrer"
     ],
-    "repairPrompt": "Use « émigrer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « émigrer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25321,7 +24456,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "diriger",
     "french": "diriger",
     "meaning": "to direct",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Le diriger revient souvent pendant la réunion.",
@@ -25329,15 +24464,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "diriger + équipe / projet"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25349,7 +24483,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "diriger + équipe / projet",
       "diriger"
     ],
-    "repairPrompt": "Use « diriger » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « diriger » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25367,13 +24501,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s’accoupler avec + animal"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25386,7 +24519,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s’accoupler avec + animal",
       "s’accoupler"
     ],
-    "repairPrompt": "Use « s’accoupler » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « s’accoupler » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25404,13 +24537,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une femelle"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25423,7 +24555,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une femelle",
       "femelle"
     ],
-    "repairPrompt": "Use « femelle » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « femelle » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25441,13 +24573,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une incubatrice"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25460,7 +24591,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une incubatrice",
       "incubatrice"
     ],
-    "repairPrompt": "Use « incubatrice » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « incubatrice » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25478,13 +24609,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "une forte poudrerie"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25497,7 +24627,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "une forte poudrerie",
       "poudrerie"
     ],
-    "repairPrompt": "Use « poudrerie » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « poudrerie » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25515,13 +24645,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "un niveau faible"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "adjective",
       "structure",
@@ -25535,7 +24664,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "un niveau faible",
       "faible"
     ],
-    "repairPrompt": "Use « faible » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « faible » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25553,13 +24682,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "réchauffer + atmosphère / plat"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "environment",
       "structure",
@@ -25573,7 +24701,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "réchauffer + atmosphère / plat",
       "réchauffer"
     ],
-    "repairPrompt": "Use « réchauffer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « réchauffer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25583,7 +24711,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "force",
     "french": "force",
     "meaning": "strength",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "La force revient souvent pendant la réunion.",
@@ -25591,15 +24719,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "la force de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25611,7 +24738,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "la force de + nom",
       "force"
     ],
-    "repairPrompt": "Use « force » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « force » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25621,7 +24748,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "milieu",
     "french": "milieu",
     "meaning": "environment, setting, middle",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "Ce choix semble milieu à première vue.",
@@ -25629,15 +24756,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "dans un milieu + adjectif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25649,7 +24775,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "dans un milieu + adjectif",
       "milieu"
     ],
-    "repairPrompt": "Use « milieu » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « milieu » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25667,13 +24793,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "pondre des œufs"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "nature",
       "structure",
       "manual-batch",
@@ -25686,7 +24811,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "pondre des œufs",
       "pondre"
     ],
-    "repairPrompt": "Use « pondre » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « pondre » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25704,13 +24829,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "inventer + solution"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
       "verb",
       "structure",
@@ -25724,7 +24848,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "inventer + solution",
       "inventer"
     ],
-    "repairPrompt": "Use « inventer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « inventer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25734,7 +24858,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "exposer",
     "french": "exposer",
     "meaning": "to expose",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "L’exposer revient souvent pendant la réunion.",
@@ -25742,15 +24866,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "exposer + problème / personne à + risque"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25762,7 +24885,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "exposer + problème / personne à + risque",
       "exposer"
     ],
-    "repairPrompt": "Use « exposer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « exposer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25772,7 +24895,7 @@ export const seedVocabulary: VocabularyItem[] = [
     "id": "empecher",
     "french": "empêcher",
     "meaning": "to prevent",
-    "category": "TCF Expressions",
+    "category": "Expressions",
     "level": "B2",
     "partOfSpeech": "expression",
     "example": "L’empêcher revient souvent pendant la réunion.",
@@ -25780,15 +24903,14 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "empêcher + personne de + infinitif"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "high-priority",
-      "tcf-expressions",
+      "expressions",
       "structure",
       "manual-batch",
       "batch-4",
@@ -25800,7 +24922,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "empêcher + personne de + infinitif",
       "empêcher"
     ],
-    "repairPrompt": "Use « empêcher » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « empêcher » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25818,13 +24940,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "arranger + pièce / situation"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "household",
       "structure",
       "manual-batch",
@@ -25837,7 +24958,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "arranger + pièce / situation",
       "arranger"
     ],
-    "repairPrompt": "Use « arranger » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « arranger » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25855,13 +24976,12 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "arroser + plantes"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(-24),
-    "source": "Manual TCF vocabulary batch 4",
+    "source": "Vocabulary batch 4",
     "tags": [
       "notion-import",
-      "tcf",
       "household",
       "structure",
       "manual-batch",
@@ -25874,7 +24994,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "arroser + plantes",
       "arroser"
     ],
-    "repairPrompt": "Use « arroser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « arroser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25892,10 +25012,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "au sein de + groupe / institution"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -25913,7 +25033,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au sein de",
       "au cœur de"
     ],
-    "repairPrompt": "Use « au sein de » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « au sein de » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25931,10 +25051,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "être au seuil de + nom"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -25952,7 +25072,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au seuil de",
       "être au seuil de"
     ],
-    "repairPrompt": "Use « être au seuil de » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « être au seuil de » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -25971,10 +25091,10 @@ export const seedVocabulary: VocabularyItem[] = [
       "frôler + nom",
       "frôler la catastrophe"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -25991,7 +25111,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "frôlement",
       "frôlé"
     ],
-    "repairPrompt": "Use « frôler » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « frôler » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26009,10 +25129,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "mesures de rétorsion"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26029,7 +25149,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "mesure de rétorsion",
       "représailles"
     ],
-    "repairPrompt": "Use « rétorsion » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « rétorsion » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26047,10 +25167,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "énerver quelqu’un"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26067,7 +25187,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "énervant",
       "énervement"
     ],
-    "repairPrompt": "Use « énerver » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « énerver » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26085,10 +25205,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "au fond, + phrase"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26106,7 +25226,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "au fond",
       "dans le fond"
     ],
-    "repairPrompt": "Use « au fond » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « au fond » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26124,10 +25244,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "espionner quelqu’un"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26144,7 +25264,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "espion",
       "espionnage"
     ],
-    "repairPrompt": "Use « espionner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « espionner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26162,10 +25282,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "s’étirer avant / après + nom"
     ],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26182,7 +25302,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "s’étirer",
       "étirement"
     ],
-    "repairPrompt": "Use « s’étirer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « s’étirer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26200,10 +25320,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "saigner après + nom"
     ],
-    "tcfPriority": "Low",
+    "priority": "Low",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26219,7 +25339,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "sang",
       "saignement"
     ],
-    "repairPrompt": "Use « saigner » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « saigner » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26238,10 +25358,10 @@ export const seedVocabulary: VocabularyItem[] = [
       "démarquer A de B",
       "se démarquer de"
     ],
-    "tcfPriority": "High",
+    "priority": "High",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26259,7 +25379,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "se démarquer",
       "démarcation"
     ],
-    "repairPrompt": "Use « démarquer » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « démarquer » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26277,10 +25397,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "briser + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26297,7 +25417,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "brisé",
       "brisure"
     ],
-    "repairPrompt": "Use « briser » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « briser » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26315,10 +25435,10 @@ export const seedVocabulary: VocabularyItem[] = [
     "structures": [
       "les ténèbres de + nom"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26334,7 +25454,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "ténébreux",
       "obscurité"
     ],
-    "repairPrompt": "Use « ténèbres » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « ténèbres » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26353,10 +25473,10 @@ export const seedVocabulary: VocabularyItem[] = [
       "couleur foncée",
       "ambiance sombre"
     ],
-    "tcfPriority": "Medium",
+    "priority": "Medium",
     "status": "New",
     "dateAdded": iso(0),
-    "source": "Manual TCF vocabulary batch 5",
+    "source": "Vocabulary batch 5",
     "tags": [
       "manual-batch",
       "batch-5",
@@ -26373,7 +25493,7 @@ export const seedVocabulary: VocabularyItem[] = [
       "foncé",
       "obscur"
     ],
-    "repairPrompt": "Use « sombre / foncé » in one TCF-style sentence, then say it again with a synonym.",
+    "repairPrompt": "Use « sombre / foncé » in one natural sentence, then say it again with a synonym.",
     "dueAt": iso(0),
     "successStreak": 0,
     "lapses": 0,
@@ -26404,48 +25524,48 @@ export const seedImports: ImportBatch[] = [
     invalidRows: 0
   },
   {
-    id: "manual-tcf-batch-001",
-    source: "Manual TCF vocabulary batch",
+    id: "vocab-batch-001",
+    source: "Vocabulary batch",
     uploadDate: iso(0),
     acceptedRows: 42,
     skippedDuplicates: 0,
     invalidRows: 0
   },
   {
-    id: "manual-tcf-batch-002",
-    source: "Manual TCF vocabulary batch 2",
+    id: "vocab-batch-002",
+    source: "Vocabulary batch 2",
     uploadDate: iso(0),
     acceptedRows: 47,
     skippedDuplicates: 5,
     invalidRows: 0
   },
   {
-    id: "manual-tcf-batch-003",
-    source: "Manual TCF vocabulary batch 3",
+    id: "vocab-batch-003",
+    source: "Vocabulary batch 3",
     uploadDate: iso(0),
     acceptedRows: 118,
     skippedDuplicates: 59,
     invalidRows: 0
   },
   {
-    id: "manual-tcf-batch-004",
-    source: "Manual TCF vocabulary batch 4",
+    id: "vocab-batch-004",
+    source: "Vocabulary batch 4",
     uploadDate: iso(0),
     acceptedRows: 24,
     skippedDuplicates: 134,
     invalidRows: 0
   },
   {
-    id: "manual-tcf-batch-005",
-    source: "Manual TCF vocabulary batch 5",
+    id: "vocab-batch-005",
+    source: "Vocabulary batch 5",
     uploadDate: iso(0),
     acceptedRows: 13,
     skippedDuplicates: 3,
     invalidRows: 0
   },
   {
-    id: "tcf-expansion-curriculum-001",
-    source: "TCF expansion curriculum",
+    id: "expansion-curriculum-001",
+    source: "Built-in vocabulary",
     uploadDate: iso(0),
     acceptedRows: 620,
     skippedDuplicates: 0,

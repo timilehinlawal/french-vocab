@@ -213,8 +213,8 @@ function AddWordPanel({
           <input value={form.partOfSpeech} onChange={(event) => update("partOfSpeech", event.target.value)} />
         </label>
         <label className="field">
-          TCF priority
-          <select value={form.tcfPriority} onChange={(event) => update("tcfPriority", parsePriority(event.target.value, form.tcfPriority))}>
+          Priority
+          <select value={form.priority} onChange={(event) => update("priority", parsePriority(event.target.value, form.priority))}>
             {priorityOptions.map((priority) => (
               <option key={priority}>{priority}</option>
             ))}

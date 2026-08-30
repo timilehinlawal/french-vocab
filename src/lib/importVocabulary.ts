@@ -1,8 +1,10 @@
 import { strFromU8, unzipSync } from "fflate";
+import { inferCefrLevel } from "./cefr";
+import { parseOptionalCefrLevel } from "./options";
 import { emptyAddWordForm, createVocabularyItem } from "./vocabulary";
-import type { VocabularyItem } from "./types";
+import type { CefrLevel, VocabularyItem } from "./types";
 
-export type ParsedEntry = { french: string; meaning: string };
+export type ParsedEntry = { french: string; meaning: string; level?: CefrLevel };
 
 const decodeEntities = (value: string) =>
   value
@@ -30,7 +32,7 @@ export const extractDocxText = (buffer: ArrayBuffer): string => {
 
   for (const row of xml.match(/<w:tr\b[\s\S]*?<\/w:tr>/g) || []) {
     const cells = (row.match(/<w:tc\b[\s\S]*?<\/w:tc>/g) || []).map(xmlText).filter(Boolean);
-    if (cells.length >= 2) lines.push(`${cells[0]}\t${cells[1]}`);
+    if (cells.length >= 2) lines.push(cells.join("\t"));
     else if (cells.length === 1) lines.push(cells[0]);
   }
 
@@ -46,18 +48,43 @@ export const extractDocxText = (buffer: ArrayBuffer): string => {
 // Separators we try, in priority order, to split a line into french + meaning.
 const SEPARATORS = ["\t", " — ", " – ", " - ", " = ", " : ", " | ", "—", "–", "=", ";", ",", ":"];
 
+const peelLevel = (chunks: string[]): { rest: string[]; level?: CefrLevel } => {
+  let level: CefrLevel | undefined;
+  const rest: string[] = [];
+
+  for (const chunk of chunks) {
+    const parsed = parseOptionalCefrLevel(chunk);
+    if (parsed && !level) level = parsed;
+    else rest.push(chunk);
+  }
+
+  return { rest, level };
+};
+
 const splitEntry = (raw: string): ParsedEntry | null => {
   const line = raw.replace(/^[\s\-•*•\d.)\]]+/, "").trim();
   if (!line) return null;
 
+  const tabbed = line.split(/\t/).map((part) => part.trim()).filter(Boolean);
+  if (tabbed.length >= 2) {
+    const { rest, level } = peelLevel(tabbed);
+    if (rest.length >= 2 && rest[0].length <= 60) {
+      return { french: rest[0].replace(/["']/g, ""), meaning: rest.slice(1).join(" ").replace(/^["']|["']$/g, ""), level };
+    }
+  }
+
   for (const separator of SEPARATORS) {
+    if (separator === "\t") continue;
     const index = line.indexOf(separator);
     if (index <= 0 || index >= line.length - separator.length) continue;
 
-    const french = line.slice(0, index).trim().replace(/["']/g, "");
-    const meaning = line.slice(index + separator.length).trim().replace(/^["']|["']$/g, "");
+    const left = line.slice(0, index).trim().replace(/["']/g, "");
+    const right = line.slice(index + separator.length).trim().replace(/^["']|["']$/g, "");
+    const { rest, level } = peelLevel([left, ...right.split(separator).map((part) => part.trim()).filter(Boolean)]);
+    const french = rest[0] ?? "";
+    const meaning = rest.slice(1).join(separator === "," ? ", " : " ").trim();
 
-    if (french && meaning && french.length <= 60) return { french, meaning };
+    if (french && meaning && french.length <= 60) return { french, meaning, level };
   }
 
   return null;
@@ -93,10 +120,17 @@ export const importFile = async (file: File): Promise<ParsedEntry[]> => {
   return parseVocabularyText(await file.text());
 };
 
-export const entriesToItems = (entries: ParsedEntry[], source: string, createdAt: string): VocabularyItem[] =>
+export const entriesToItems = (entries: ParsedEntry[], source: string, createdAt: string, library: VocabularyItem[] = []): VocabularyItem[] =>
   entries.map((entry, index) => {
     const item = createVocabularyItem(
-      { ...emptyAddWordForm, french: entry.french, meaning: entry.meaning, source, tags: "imported" },
+      {
+        ...emptyAddWordForm,
+        french: entry.french,
+        meaning: entry.meaning,
+        level: entry.level ?? inferCefrLevel(entry.french, library),
+        source,
+        tags: "imported"
+      },
       createdAt
     );
     return { ...item, id: `${item.id}-${index}` };
