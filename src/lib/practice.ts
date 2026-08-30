@@ -26,3 +26,10 @@ export const shuffle = <T>(items: T[]): T[] => {
   }
   return next;
 };
+
+/** Keep the first item (the one overview advertises) and shuffle the rest. */
+export const pickReviewSession = <T>(items: T[], count: number): T[] => {
+  if (items.length === 0 || count <= 0) return [];
+  const [lead, ...rest] = items;
+  return [lead, ...shuffle(rest)].slice(0, count);
+};

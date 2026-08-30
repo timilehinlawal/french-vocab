@@ -25,7 +25,6 @@ export function TrackView({
   const masteredPct = total === 0 ? 0 : Math.round((mastered / total) * 100);
   const maxVolume = Math.max(1, ...analytics.reviewVolume.map((day) => day.count));
   const hasActivity = attempts.length > 0;
-  const focus = analytics.weak[0];
 
   const stats = [
     { value: `${total}`, label: "words", detail: "in your library" },
@@ -86,13 +85,6 @@ export function TrackView({
             </div>
           ))}
         </div>
-        <p className="track-focus">
-          {hasActivity
-            ? focus
-              ? `focus next on ${focus.french.toLowerCase()} — ${focus.lapses} lapses`
-              : "no trouble words flagged — keep it up"
-            : "start a review to begin tracking your progress"}
-        </p>
       </section>
     </article>
   );

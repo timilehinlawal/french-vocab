@@ -8,7 +8,7 @@ import { TrackView } from "./components/TrackView";
 import { WordsView } from "./components/WordsView";
 import { isDue } from "./lib/analytics";
 import { buildAnalyticsSummary } from "./lib/analyticsSummary";
-import { getPracticeCount, shuffle } from "./lib/practice";
+import { getPracticeCount, pickReviewSession } from "./lib/practice";
 import { applyReviewRating, createReviewAttempt, emptySessionStats, repairScore, reviewResult } from "./lib/review";
 import {
   loadAttempts,
@@ -127,7 +127,7 @@ function App() {
 
   const startReview = () => {
     const targetCount = getPracticeCount(practiceSize, dueWords.length);
-    setReviewSessionIds(shuffle(dueWords).slice(0, targetCount).map((word) => word.id));
+    setReviewSessionIds(pickReviewSession(dueWords, targetCount).map((word) => word.id));
     setSessionStats(emptySessionStats);
     setTab("review");
   };
