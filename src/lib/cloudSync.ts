@@ -1,5 +1,6 @@
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "./firebase";
+import { migrateWordId, normalizeVocabularyItem } from "./storage";
 import type { PracticeSize, ReviewAttempt, VocabularyItem } from "./types";
 
 // The slice of app state we persist per user. Theme stays device-local; imports
@@ -40,8 +41,10 @@ export const loadCloudState = async (uid: string): Promise<LoadedCloudState | nu
   if (!Array.isArray(data.vocabulary)) return null;
 
   return {
-    vocabulary: data.vocabulary,
-    attempts: Array.isArray(data.attempts) ? data.attempts : [],
+    vocabulary: data.vocabulary.map((word) => normalizeVocabularyItem(word)),
+    attempts: Array.isArray(data.attempts)
+      ? data.attempts.map((attempt) => ({ ...attempt, wordId: migrateWordId(attempt.wordId) }))
+      : [],
     practiceSize: typeof data.practiceSize === "number" ? data.practiceSize : 10,
     removedTerms: Array.isArray(data.removedTerms) ? data.removedTerms.filter((term): term is string => typeof term === "string") : [],
     updatedAt: typeof data.updatedAt === "string" ? data.updatedAt : null

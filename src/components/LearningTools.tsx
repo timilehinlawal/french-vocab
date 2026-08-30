@@ -60,7 +60,7 @@ export function LearningTools({ compact = false, word }: { compact?: boolean; wo
       {isRepairWord(word) && (
         <span className="repair-note">
           <strong>Repair review</strong>
-          <span>{word.repairPrompt ?? "Use this word in one TCF-style sentence, then repeat it with a synonym."}</span>
+          <span>{word.repairPrompt ?? "Use this word in a sentence, then repeat it with a synonym."}</span>
         </span>
       )}
     </span>

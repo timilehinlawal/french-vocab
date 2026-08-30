@@ -10,5 +10,11 @@ export const isPriority = (value: unknown): value is Priority => priorityOptions
 export const isVocabularyStatus = (value: unknown): value is VocabularyStatus => statusOptions.some((status) => status === value);
 
 export const parseCefrLevel = (value: string, fallback: CefrLevel): CefrLevel => (isCefrLevel(value) ? value : fallback);
+export const parseOptionalCefrLevel = (value: string): CefrLevel | undefined => {
+  const normalized = value.trim().toUpperCase();
+  if (normalized === "UNKNOWN") return "Unknown";
+  return isCefrLevel(normalized) ? normalized : undefined;
+};
+
 export const parsePriority = (value: string, fallback: Priority): Priority => (isPriority(value) ? value : fallback);
 export const parseVocabularyStatus = (value: string, fallback: VocabularyStatus): VocabularyStatus => (isVocabularyStatus(value) ? value : fallback);

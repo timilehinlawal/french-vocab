@@ -1,4 +1,4 @@
-import { accuracy, byStatus, countBy, difficultWords, importGrowth, isDue, reviewVolumeLast7Days, streakSummary, tcfReadiness } from "./analytics";
+import { accuracy, byStatus, countBy, difficultWords, highPriorityProgress, importGrowth, isDue, reviewVolumeLast7Days, streakSummary } from "./analytics";
 import type { ImportBatch, ReviewAttempt, VocabularyItem, VocabularyStatus } from "./types";
 
 export type AnalyticsSummary = {
@@ -6,7 +6,7 @@ export type AnalyticsSummary = {
   levelCounts: { label: string; count: number }[];
   sourceCounts: { label: string; count: number }[];
   weak: (VocabularyItem & { difficultyScore: number })[];
-  tcf: ReturnType<typeof tcfReadiness>;
+  highPriority: ReturnType<typeof highPriorityProgress>;
   streak: ReturnType<typeof streakSummary>;
   accuracy: number;
   reviewVolume: { label: string; count: number }[];
@@ -18,7 +18,7 @@ export const buildAnalyticsSummary = (vocabulary: VocabularyItem[], attempts: Re
   levelCounts: countBy(vocabulary, (word) => word.level),
   sourceCounts: countBy(vocabulary, (word) => word.source),
   weak: difficultWords(vocabulary, attempts),
-  tcf: tcfReadiness(vocabulary, attempts),
+  highPriority: highPriorityProgress(vocabulary, attempts),
   streak: streakSummary(attempts),
   accuracy: accuracy(attempts),
   reviewVolume: reviewVolumeLast7Days(attempts),
@@ -28,11 +28,11 @@ export const buildAnalyticsSummary = (vocabulary: VocabularyItem[], attempts: Re
 export const learnerStatus = (vocabulary: VocabularyItem[], attempts: ReviewAttempt[]) => {
   const masteredCount = vocabulary.filter((word) => word.status === "Active" || word.status === "Mastered").length;
   const dueCount = vocabulary.filter((word) => isDue(word)).length;
-  const highPriority = tcfReadiness(vocabulary, attempts);
+  const highPriority = highPriorityProgress(vocabulary, attempts);
 
-  if (dueCount > 10) return "French Vocabulary Sprint";
-  if (highPriority.accuracy >= 80 && masteredCount > vocabulary.length * 0.35) return "Strengthening Active Recall";
-  if (masteredCount > vocabulary.length * 0.2) return "Building B2 Range";
+  if (dueCount > 10) return "French vocabulary sprint";
+  if (highPriority.accuracy >= 80 && masteredCount > vocabulary.length * 0.35) return "Strengthening active recall";
+  if (masteredCount > vocabulary.length * 0.2) return "Building range";
 
-  return "Building B2 Foundation";
+  return "Building a foundation";
 };

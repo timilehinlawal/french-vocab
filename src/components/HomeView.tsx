@@ -13,7 +13,7 @@ function ReflectionCard({ analytics, dueWords }: { analytics: AnalyticsSummary; 
         <span className="eyebrow">Weekly reflection</span>
         <h2>Keep the next session small.</h2>
         <p>
-          Review {reviewTarget} due cards, then use {focus} in one full TCF-style sentence.
+          Review {reviewTarget} due cards, then use {focus} in one full sentence.
         </p>
       </div>
     </section>
@@ -37,8 +37,8 @@ export function HomeView({
 }) {
   const status = learnerStatus(vocabulary, attempts);
   const recommended = dueWords.length > 0 ? dueWords[0] : analytics.weak[0] ?? vocabulary[0];
-  const tcfRecallValue = analytics.tcf.attempts > 0 ? `${analytics.tcf.accuracy}%` : "-";
-  const tcfRecallLabel = analytics.tcf.attempts > 0 ? "TCF recall" : "no TCF reviews yet";
+  const recallValue = analytics.highPriority.attempts > 0 ? `${analytics.highPriority.accuracy}%` : "-";
+  const recallLabel = analytics.highPriority.attempts > 0 ? "high-priority recall" : "no reviews yet";
 
   return (
     <section className="view-stack">
@@ -71,8 +71,8 @@ export function HomeView({
             </div>
             <div className="hero-mini-card">
               <Target size={18} />
-              <strong>{tcfRecallValue}</strong>
-              <small>{tcfRecallLabel}</small>
+              <strong>{recallValue}</strong>
+              <small>{recallLabel}</small>
             </div>
           </div>
           <div className="hero-actions">

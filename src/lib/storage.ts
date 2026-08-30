@@ -2,7 +2,7 @@ import { seedImports, seedVocabulary } from "../data/seedVocabulary";
 import { createContextualExample, createContextualTranslation, isGenericExample } from "./examples";
 import { parsePracticeSize } from "./practice";
 import { normalizeTerm } from "./terms";
-import type { ImportBatch, PracticeSize, ReviewAttempt, VocabularyItem } from "./types";
+import type { ImportBatch, PracticeSize, Priority, ReviewAttempt, VocabularyItem } from "./types";
 
 const VOCABULARY_KEY = "fvt:vocabulary";
 const ATTEMPTS_KEY = "fvt:attempts";
@@ -24,36 +24,72 @@ const read = <T,>(key: string, fallback: T): T => {
   }
 };
 
+type LegacyWord = VocabularyItem & { tcfPriority?: Priority };
+
+export const migrateWordId = (id: string) => id.replace(/^tcf-expansion-/, "expansion-");
+
+export const normalizeVocabularyItem = (word: LegacyWord): VocabularyItem => {
+  const { tcfPriority, ...rest } = word;
+  const tags = (word.tags ?? [])
+    .map((tag) => {
+      if (tag === "tcf-theme") return "theme";
+      if (tag === "tcf-expansion") return "expansion";
+      if (tag === "tcf-expressions") return "expressions";
+      return tag;
+    })
+    .filter((tag) => tag !== "tcf");
+
+  return {
+    ...rest,
+    id: migrateWordId(word.id),
+    priority: word.priority ?? tcfPriority ?? "Medium",
+    tags
+  };
+};
+
 const mergeSeedVocabulary = (stored: VocabularyItem[]) => {
   const merged = new Map(seedVocabulary.map((word) => [normalizeTerm(word.french), word]));
 
   stored.forEach((word) => {
     const key = normalizeTerm(word.french);
     const seeded = merged.get(key);
-    const generatedSeedSource = word.source === "Notion vocabulary database" || word.source.startsWith("Manual TCF vocabulary batch");
+    const generatedSeedSource =
+      word.source === "Notion vocabulary database" ||
+      word.source.startsWith("Manual TCF vocabulary batch") ||
+      word.source.startsWith("Vocabulary batch") ||
+      word.source === "Built-in vocabulary" ||
+      word.source === "TCF expansion curriculum";
 
     if (!seeded && generatedSeedSource) return;
 
+    const incoming = normalizeVocabularyItem(word);
     merged.set(key, {
       ...seeded,
-      ...word,
-      example: generatedSeedSource ? seeded?.example ?? word.example : word.example,
-      translation: generatedSeedSource ? seeded?.translation ?? word.translation : word.translation,
-      synonymLadder: generatedSeedSource ? seeded?.synonymLadder : word.synonymLadder?.length ? word.synonymLadder : seeded?.synonymLadder,
-      wordFamily: generatedSeedSource ? seeded?.wordFamily : word.wordFamily?.length ? word.wordFamily : seeded?.wordFamily,
-      repairPrompt: generatedSeedSource ? seeded?.repairPrompt : word.repairPrompt || seeded?.repairPrompt
+      ...incoming,
+      example: generatedSeedSource ? seeded?.example ?? incoming.example : incoming.example,
+      translation: generatedSeedSource ? seeded?.translation ?? incoming.translation : incoming.translation,
+      synonymLadder: generatedSeedSource ? seeded?.synonymLadder : incoming.synonymLadder?.length ? incoming.synonymLadder : seeded?.synonymLadder,
+      wordFamily: generatedSeedSource ? seeded?.wordFamily : incoming.wordFamily?.length ? incoming.wordFamily : seeded?.wordFamily,
+      repairPrompt: generatedSeedSource ? seeded?.repairPrompt : incoming.repairPrompt || seeded?.repairPrompt
     });
   });
 
-  return [...merged.values()];
+  return [...merged.values()].map(normalizeVocabularyItem);
 };
+
+const migrateImportId = (id: string) => id.replace(/^manual-tcf-batch-/, "vocab-batch-");
 
 const mergeSeedImports = (stored: ImportBatch[]) => {
   const merged = new Map(seedImports.map((batch) => [batch.id, batch]));
 
   stored.forEach((batch) => {
-    if (merged.has(batch.id)) return;
-    merged.set(batch.id, batch);
+    const id = migrateImportId(batch.id);
+    if (merged.has(id)) return;
+    merged.set(id, {
+      ...batch,
+      id,
+      source: batch.source.replace(/^Manual TCF vocabulary batch/, "Vocabulary batch").replace(/^TCF expansion curriculum$/, "Built-in vocabulary")
+    });
   });
 
   return [...merged.values()];
@@ -92,7 +128,10 @@ export const loadVocabulary = () => {
     )
     .filter((word) => !removed.has(normalizeTerm(word.french)));
 };
-export const loadAttempts = () => read<ReviewAttempt[]>(ATTEMPTS_KEY, []).filter((attempt) => !DEMO_ATTEMPT_IDS.has(attempt.id));
+export const loadAttempts = () =>
+  read<ReviewAttempt[]>(ATTEMPTS_KEY, [])
+    .filter((attempt) => !DEMO_ATTEMPT_IDS.has(attempt.id))
+    .map((attempt) => ({ ...attempt, wordId: migrateWordId(attempt.wordId) }));
 export const loadImports = () => mergeSeedImports(read<ImportBatch[]>(IMPORTS_KEY, []));
 export const loadPracticeSize = () => {
   const stored = read<unknown>(PRACTICE_SIZE_KEY, 10);

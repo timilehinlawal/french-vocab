@@ -143,14 +143,14 @@ export const importGrowth = (imports: ImportBatch[]) => {
   return imports.reduce((sum, batch) => sum + batch.acceptedRows, 0);
 };
 
-export const tcfReadiness = (vocabulary: VocabularyItem[], attempts: ReviewAttempt[]) => {
-  const tcfWords = vocabulary.filter((word) => word.tcfPriority === "High");
-  const tcfWordIds = new Set(tcfWords.map((word) => word.id));
-  const mastered = tcfWords.filter((word) => word.status === "Active" || word.status === "Mastered").length;
-  const relatedAttempts = attempts.filter((attempt) => tcfWordIds.has(attempt.wordId));
+export const highPriorityProgress = (vocabulary: VocabularyItem[], attempts: ReviewAttempt[]) => {
+  const focusWords = vocabulary.filter((word) => word.priority === "High");
+  const focusIds = new Set(focusWords.map((word) => word.id));
+  const mastered = focusWords.filter((word) => word.status === "Active" || word.status === "Mastered").length;
+  const relatedAttempts = attempts.filter((attempt) => focusIds.has(attempt.wordId));
 
   return {
-    total: tcfWords.length,
+    total: focusWords.length,
     mastered,
     attempts: relatedAttempts.length,
     accuracy: accuracy(relatedAttempts)

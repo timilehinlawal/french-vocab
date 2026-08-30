@@ -632,26 +632,26 @@ export const createExpandedVocabulary = (iso: IsoFactory, existing: VocabularyIt
 
     const example = createContextualExample(row);
     const translation = createContextualTranslation(row);
-    const id = `tcf-expansion-${slugifyTerm(row.french)}`;
+    const id = `expansion-${slugifyTerm(row.french)}`;
 
     output.push({
       id,
       french: row.french,
       meaning: row.meaning,
-      category: "TCF Expansion",
+      category: "General Vocabulary",
       level: row.level,
       partOfSpeech: row.partOfSpeech,
       example,
       translation,
       structures: [`${row.french} en contexte`],
-      tcfPriority: row.priority ?? "Medium",
+      priority: row.priority ?? "Medium",
       status: "New",
       dateAdded: iso(-1),
-      source: "TCF expansion curriculum",
-      tags: ["tcf-expansion", row.level.toLowerCase(), row.theme],
+      source: "Built-in vocabulary",
+      tags: ["expansion", row.level.toLowerCase(), row.theme],
       synonymLadder: [],
       wordFamily: [],
-      repairPrompt: `Use « ${row.french} » in one TCF-style sentence, then say it again with a synonym.`,
+      repairPrompt: `Use « ${row.french} » in a sentence, then say it again with a synonym.`,
       dueAt: iso(0),
       successStreak: 0,
       lapses: 0,

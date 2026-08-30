@@ -4,9 +4,9 @@
 
 ### Overview
 
-French Vocabulary Trainer is a personal language-learning platform designed to help learners acquire, retain, and actively use French vocabulary through spaced repetition, contextual learning, audio pronunciation, and TCF-focused practice.
+French Vocabulary Trainer is a personal language-learning platform designed to help learners acquire, retain, and actively use French vocabulary through spaced repetition, contextual learning, audio pronunciation, and progress tracking.
 
-The product is initially being built for a learner preparing for the TCF Canada exam, with a particular focus on building a strong B2/C1 vocabulary range and improving long-term recall.
+The product is a general French vocabulary flashcard system, with support for B1–C1 range and long-term recall.
 
 Unlike traditional flashcard tools, the platform focuses on:
 
@@ -17,7 +17,7 @@ Unlike traditional flashcard tools, the platform focuses on:
 * Personal progress tracking
 * Spaced repetition
 
-The platform should feel like a hybrid between Quizlet, Anki, and a personal TCF vocabulary coach.
+The platform should feel like a hybrid between Quizlet, Anki, and a personal French vocabulary coach.
 
 ---
 
@@ -39,12 +39,11 @@ The goal is to create a system where vocabulary is continuously revisited until 
 
 ### Primary User
 
-French learner preparing for:
+French learner, including:
 
-* TCF Canada
-* TEF Canada
-* DELF B2
-* General B2/C1 French proficiency
+* General B1–C1 proficiency
+* Exam prep if they choose (DELF, TEF, or similar)
+* Everyday speaking and writing
 
 Characteristics:
 
@@ -65,7 +64,7 @@ Characteristics:
 4. Provide real-world context for every word.
 5. Provide pronunciation support.
 6. Track mastery over time.
-7. Support TCF-focused learning.
+7. Support structured, reusable French vocabulary practice.
 
 ---
 
@@ -136,7 +135,7 @@ Each word contains:
 * English Translation
 * Common Structures
 * Audio Pronunciation
-* TCF Priority
+* Priority
 * Status
 * Date Added
 * Source
@@ -182,7 +181,7 @@ Current dataset:
 * Includes a mixture of:
   * General vocabulary
   * Everyday expressions
-  * TCF-oriented vocabulary
+  * Argumentation and connector phrases
   * B1/B2/C1 structures
   * Connectors and argumentation phrases
 
@@ -233,7 +232,7 @@ Import behavior:
 * Merge new batches into the existing database without creating duplicate entries.
 * Store an import source for each word or batch.
 * Assign imported words an initial status of "New".
-* Support bulk category, level, TCF priority, and tag assignment.
+* Support bulk category, level, priority, and tag assignment.
 * Report import results, including created entries, skipped duplicates, and invalid rows.
 
 Future:
@@ -343,7 +342,7 @@ Examples:
 * Business
 * Finance
 * General Vocabulary
-* TCF Expressions
+* Expressions
 
 ---
 
@@ -358,10 +357,10 @@ The home page should feel personal and status-driven. It should answer three que
 Display:
 
 * Personalized greeting using the learner's name.
-* Current learner status based on vocabulary progress, such as "Building B2 Foundation", "Strengthening Active Recall", or "TCF Review Sprint".
+* Current learner status based on vocabulary progress, such as "Building a foundation", "Strengthening active recall", or "French vocabulary sprint".
 * Today's review queue with due word count and estimated session time.
 * Primary action to start the recommended review session.
-* Secondary actions for TCF Mode, adding vocabulary, and reviewing weak words.
+* Secondary actions for adding vocabulary and reviewing weak words.
 * Progress summary for total words, new words, learning words, familiar words, active words, and mastered words.
 * Weekly streak and review consistency.
 * Recent imports, including source and number of accepted words.
@@ -386,7 +385,7 @@ Track:
 * Reviews due today and overdue.
 * Average accuracy across all practice modes.
 * Accuracy by practice mode.
-* Accuracy by category, level, and TCF priority.
+* Accuracy by category, level, and priority.
 * Retention rate based on successful reviews after scheduled intervals.
 * Mastery growth over time.
 * Active recall rate for French -> English and English -> French directions.
@@ -401,7 +400,7 @@ Analytics views:
 * Progress: mastery growth, review volume, streaks, and retention trends.
 * Vocabulary: breakdown by status, level, category, tag, and source.
 * Weak Areas: words, categories, levels, and structures with low recall.
-* TCF Readiness: argumentation vocabulary, connectors, formal structures, and high-priority TCF words.
+* High-priority words: argumentation vocabulary, connectors, formal structures, and other flagged items.
 
 Each analytics card should support drill-down into the underlying vocabulary list so the learner can act on the insight immediately.
 
@@ -439,9 +438,9 @@ Display:
 
 ---
 
-## TCF Mode
+## Focused practice
 
-Special mode focused on exam preparation.
+Optional session types for exam-style or formal French, still part of the same vocabulary library.
 
 Practice:
 
@@ -551,7 +550,7 @@ Storage:
 * Speaking practice
 * Pronunciation scoring
 * Conversation simulator
-* TCF oral preparation
+* Conversation practice
 * AI examiner mode
 
 ---

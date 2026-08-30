@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { UIEvent } from "react";
 import { ArrowLeft, ChevronDown, Pencil, PenLine, Plus, Search, Trash2, Upload, X } from "lucide-react";
 import { levelOptions, parseCefrLevel, parseVocabularyStatus, statusOptions } from "../lib/options";
-import { createVocabularyItem, emptyAddWordForm, exampleTranslation, findDuplicateVocabulary, hasRequiredAddWordFields } from "../lib/vocabulary";
+import { inferCefrLevel } from "../lib/cefr";
 import { entriesToItems, importFile } from "../lib/importVocabulary";
+import { createVocabularyItem, emptyAddWordForm, exampleTranslation, findDuplicateVocabulary, hasRequiredAddWordFields } from "../lib/vocabulary";
 import {
   fetchFrenchSuggestions,
   fetchTranslations,
@@ -331,7 +332,12 @@ function ManualStep({
   onCommit: (items: VocabularyItem[], focusQuery?: string) => void;
   onClose: () => void;
 }) {
-  const [form, setForm] = useState<AddWordForm>({ ...emptyAddWordForm, french: initialFrench });
+  const [form, setForm] = useState<AddWordForm>(() => ({
+    ...emptyAddWordForm,
+    french: initialFrench,
+    level: inferCefrLevel(initialFrench, vocabulary)
+  }));
+  const [levelLocked, setLevelLocked] = useState(false);
   const [error, setError] = useState("");
   const [frenchFocused, setFrenchFocused] = useState(true);
   const [meaningFocused, setMeaningFocused] = useState(false);
@@ -340,6 +346,14 @@ function ManualStep({
   const frenchInputRef = useRef<HTMLInputElement>(null);
 
   const update = <K extends keyof AddWordForm>(key: K, value: AddWordForm[K]) => setForm((current) => ({ ...current, [key]: value }));
+
+  const setFrench = (value: string) => {
+    setForm((current) => ({
+      ...current,
+      french: value,
+      level: levelLocked ? current.level : inferCefrLevel(value, vocabulary)
+    }));
+  };
 
   useEffect(() => {
     const input = frenchInputRef.current;
@@ -408,7 +422,8 @@ function ManualStep({
     setForm((current) => ({
       ...current,
       french: value,
-      meaning: current.meaning.trim() ? current.meaning : match?.meaning ?? current.meaning
+      meaning: current.meaning.trim() ? current.meaning : match?.meaning ?? current.meaning,
+      level: levelLocked ? current.level : match?.level && match.level !== "Unknown" ? match.level : inferCefrLevel(value, vocabulary)
     }));
   };
 
@@ -439,7 +454,7 @@ function ManualStep({
             ref={frenchInputRef}
             autoFocus
             value={form.french}
-            onChange={(event) => update("french", event.target.value)}
+            onChange={(event) => setFrench(event.target.value)}
             onFocus={() => setFrenchFocused(true)}
             onBlur={() => setFrenchFocused(false)}
             placeholder="ex. remettre en cause"
@@ -461,15 +476,17 @@ function ManualStep({
         </div>
         <label className="field">
           level
-          <select value={form.level} onChange={(event) => update("level", parseCefrLevel(event.target.value, form.level))}>
+          <select
+            value={form.level}
+            onChange={(event) => {
+              setLevelLocked(true);
+              update("level", parseCefrLevel(event.target.value, form.level));
+            }}
+          >
             {levelOptions.map((option) => (
               <option key={option}>{option}</option>
             ))}
           </select>
-        </label>
-        <label className="field">
-          source
-          <input value={form.source} onChange={(event) => update("source", event.target.value)} placeholder="manual entry" />
         </label>
         <label className="field wide">
           example sentence
@@ -534,7 +551,7 @@ function ImportStep({
 
   const runImport = () => {
     if (novel.length === 0) return;
-    onCommit(entriesToItems(novel, fileName || "Imported file", new Date().toISOString()));
+    onCommit(entriesToItems(novel, fileName || "Imported file", new Date().toISOString(), vocabulary));
   };
 
   return (
@@ -569,6 +586,7 @@ function ImportStep({
         <p>each line should include the french word & its meaning.</p>
         <p>separate with a comma, dash, tab, or colon. a table works too.</p>
         <p>optional — add the word in a sentence with its translation</p>
+        <p>if a B1 / B2 / C1 column is present it is used; otherwise the built-in list is checked.</p>
       </div>
 
       {busy && <p className="overlay-busy">reading {fileName}…</p>}
